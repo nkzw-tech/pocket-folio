@@ -1,0 +1,20 @@
+node_modules/
+dist/
+.DS_Store
+
+.void/
+.cloudflare/
+.void-wrangler.jsonc
+.env*
+.dev.vars*
+*.tsbuildinfo
+
+.wrangler/
+
+.cache/
+
+# Mirrored artwork belongs in the local cache / R2, never the repository or build.
+/public/cards/
+/public/set-logos/
+/public/energy/
+/public/social/

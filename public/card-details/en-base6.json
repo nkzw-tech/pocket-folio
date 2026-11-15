@@ -1,0 +1,3431 @@
+{
+  "en-base6-1": {
+    "kind": "stage2",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 80,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Kadabra", "local": "Kadabra" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "psychic", "psychic"],
+        "damage": "30",
+        "local": {
+          "name": "Confuse Ray",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        },
+        "en": {
+          "name": "Confuse Ray",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Damage Swap",
+          "text": "As often as you like during your turn (before your attack), you may move 1 damage counter from 1 of your Pokémon to another as long as you don't Knock Out that Pokémon. This power can't be used if Alakazam is affected by a Special Condition."
+        },
+        "en": {
+          "name": "Damage Swap",
+          "text": "As often as you like during your turn (before your attack), you may move 1 damage counter from 1 of your Pokémon to another as long as you don't Knock Out that Pokémon. This power can't be used if Alakazam is affected by a Special Condition."
+        }
+      }
+    ]
+  },
+  "en-base6-2": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 70,
+      "retreat": 2,
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water", "water"],
+        "damage": "30",
+        "local": {
+          "name": "Freeze Dry",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        "en": {
+          "name": "Freeze Dry",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      },
+      {
+        "cost": ["water", "water", "water", "water"],
+        "damage": "50",
+        "local": {
+          "name": "Blizzard",
+          "text": "Flip a coin. If heads, this attack does 10 damage to each of your opponent's Benched Pokémon. If tails, this attack does 10 damage to each of your own Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        "en": {
+          "name": "Blizzard",
+          "text": "Flip a coin. If heads, this attack does 10 damage to each of your opponent's Benched Pokémon. If tails, this attack does 10 damage to each of your own Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "en-base6-3": {
+    "kind": "stage2",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 120,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Charmeleon", "local": "Charmeleon" }
+    },
+    "attacks": [
+      {
+        "cost": ["fire", "fire", "fire", "fire"],
+        "damage": "100",
+        "local": {
+          "name": "Fire Spin",
+          "text": "Discard 2 Energy cards attached to Charizard or this attack does nothing."
+        },
+        "en": {
+          "name": "Fire Spin",
+          "text": "Discard 2 Energy cards attached to Charizard or this attack does nothing."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Energy Burn",
+          "text": "As often as you like during your turn (before your attack), you may turn all Energy attached to Charizard into Fire Energy for the rest of the turn. This power can't be used if Charizard is affected by a Special Condition."
+        },
+        "en": {
+          "name": "Energy Burn",
+          "text": "As often as you like during your turn (before your attack), you may turn all Energy attached to Charizard into Fire Energy for the rest of the turn. This power can't be used if Charizard is affected by a Special Condition."
+        }
+      }
+    ]
+  },
+  "en-base6-4": {
+    "kind": "stage2",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 70,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Dark Wartortle", "local": "Dark Wartortle" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water"],
+        "damage": "30+",
+        "local": {
+          "name": "Hydrocannon",
+          "text": "Does 30 damage plus 20 more damage for each Water Energy attached to Dark Blastoise but not used to pay for this attack's Energy cost. You can't add more than 40 damage in this way."
+        },
+        "en": {
+          "name": "Hydrocannon",
+          "text": "Does 30 damage plus 20 more damage for each Water Energy attached to Dark Blastoise but not used to pay for this attack's Energy cost. You can't add more than 40 damage in this way."
+        }
+      },
+      {
+        "cost": ["water", "colorless", "colorless"],
+        "damage": "40",
+        "local": {
+          "name": "Rocket Tackle",
+          "text": "Dark Blastoise does 10 damage to itself. Flip a coin. If heads, prevent all damage done to Dark Blastoise during your opponent's next turn. (Any other effects of attacks still happen.)"
+        },
+        "en": {
+          "name": "Rocket Tackle",
+          "text": "Dark Blastoise does 10 damage to itself. Flip a coin. If heads, prevent all damage done to Dark Blastoise during your opponent's next turn. (Any other effects of attacks still happen.)"
+        }
+      }
+    ]
+  },
+  "en-base6-5": {
+    "kind": "stage2",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 70,
+      "retreat": 2,
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Dark Dragonair", "local": "Dark Dragonair" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless", "colorless"],
+        "damage": "70",
+        "local": {
+          "name": "Giant Tail",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        },
+        "en": { "name": "Giant Tail", "text": "Flip a coin. If tails, this attack does nothing." }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Summon Minions",
+          "text": "When you play Dark Dragonite from your hand, search your deck for up to 2 Basic Pokémon and put them onto your Bench. Shuffle your deck afterward."
+        },
+        "en": {
+          "name": "Summon Minions",
+          "text": "When you play Dark Dragonite from your hand, search your deck for up to 2 Basic Pokémon and put them onto your Bench. Shuffle your deck afterward."
+        }
+      }
+    ]
+  },
+  "en-base6-6": {
+    "kind": "stage1",
+    "artist": "Shin-ichi Yoshida",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 60,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }],
+      "evolvesFrom": { "en": "Meowth", "local": "Meowth" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "Fascinate",
+          "text": "Flip a coin. If heads, choose 1 of your opponent's Benched Pokémon and switch it with the Defending Pokémon. This attack can't be used if your opponent has no Benched Pokémon."
+        },
+        "en": {
+          "name": "Fascinate",
+          "text": "Flip a coin. If heads, choose 1 of your opponent's Benched Pokémon and switch it with the Defending Pokémon. This attack can't be used if your opponent has no Benched Pokémon."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "10",
+        "local": {
+          "name": "Poison Claws",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+        },
+        "en": {
+          "name": "Poison Claws",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+        }
+      }
+    ]
+  },
+  "en-base6-7": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Pikachu", "local": "Pikachu" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "lightning", "lightning"],
+        "damage": "30",
+        "local": {
+          "name": "Surprise Thunder",
+          "text": "Flip a coin. If heads, flip another coin. If the second coins is heads, this attack does 20 damage to each of your opponent's Benched Pokémon. If the second coin is tails, this attack does 10 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        "en": {
+          "name": "Surprise Thunder",
+          "text": "Flip a coin. If heads, flip another coin. If the second coins is heads, this attack does 20 damage to each of your opponent's Benched Pokémon. If the second coin is tails, this attack does 10 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "en-base6-8": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 60,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Slowpoke", "local": "Slowpoke" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "psychic"],
+        "damage": "40",
+        "local": {
+          "name": "Fickle Attack",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        },
+        "en": {
+          "name": "Fickle Attack",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Reel In",
+          "text": "When you play Dark Slowbro from your hand, choose up to 3 Basic Pokémon and/or Evolution cards from your discard pile and put them into your hand."
+        },
+        "en": {
+          "name": "Reel In",
+          "text": "When you play Dark Slowbro from your hand, choose up to 3 Basic Pokémon and/or Evolution cards from your discard pile and put them into your hand."
+        }
+      }
+    ]
+  },
+  "en-base6-9": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Eevee", "local": "Eevee" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "30",
+        "local": { "name": "Bite", "text": "" },
+        "en": { "name": "Bite", "text": "" }
+      },
+      {
+        "cost": ["water", "water", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "Whirlpool",
+          "text": "If the Defending Pokémon has any Energy cards attached to it, choose 1 of them and discard it."
+        },
+        "en": {
+          "name": "Whirlpool",
+          "text": "If the Defending Pokémon has any Energy cards attached to it, choose 1 of them and discard it."
+        }
+      }
+    ]
+  },
+  "en-base6-10": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Eevee", "local": "Eevee" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "10+",
+        "local": {
+          "name": "Quick Attack",
+          "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+        },
+        "en": {
+          "name": "Quick Attack",
+          "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+        }
+      },
+      {
+        "cost": ["fire", "fire", "colorless", "colorless"],
+        "damage": "60",
+        "local": {
+          "name": "Flamethrower",
+          "text": "Discard 1 Fire Energy card attached to Flareon or this attack does nothing."
+        },
+        "en": {
+          "name": "Flamethrower",
+          "text": "Discard 1 Fire Energy card attached to Flareon or this attack does nothing."
+        }
+      }
+    ]
+  },
+  "en-base6-11": {
+    "kind": "stage2",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 80,
+      "retreat": 1,
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Haunter", "local": "Haunter" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "psychic", "psychic"],
+        "damage": "30",
+        "local": {
+          "name": "Dark Mind",
+          "text": "If your opponent has any Benched Pokémon, choose 1 of them and this attack does 10 damage to it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        "en": {
+          "name": "Dark Mind",
+          "text": "If your opponent has any Benched Pokémon, choose 1 of them and this attack does 10 damage to it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Curse",
+          "text": "Once during your turn (before your attack), you may move 1 damage counter from 1 of your opponent's Pokémon to another (even if it would Knock Out the other Pokémon). This power can't be used if Gengar is affected by a Special Condition."
+        },
+        "en": {
+          "name": "Curse",
+          "text": "Once during your turn (before your attack), you may move 1 damage counter from 1 of your opponent's Pokémon to another (even if it would Knock Out the other Pokémon). This power can't be used if Gengar is affected by a Special Condition."
+        }
+      }
+    ]
+  },
+  "en-base6-12": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 100,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Magikarp", "local": "Magikarp" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water", "water"],
+        "damage": "50",
+        "local": { "name": "Dragon Rage", "text": "" },
+        "en": { "name": "Dragon Rage", "text": "" }
+      },
+      {
+        "cost": ["water", "water", "water", "water"],
+        "damage": "40",
+        "local": {
+          "name": "Bubblebeam",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        "en": {
+          "name": "Bubblebeam",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      }
+    ]
+  },
+  "en-base6-13": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting"],
+        "damage": "",
+        "local": {
+          "name": "Stretch Kick",
+          "text": "Choose 1 of your opponent's Benched Pokémon, and this attack does 20 damage to it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        "en": {
+          "name": "Stretch Kick",
+          "text": "Choose 1 of your opponent's Benched Pokémon, and this attack does 20 damage to it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      },
+      {
+        "cost": ["fighting", "fighting", "fighting"],
+        "damage": "50",
+        "local": { "name": "High Jump Kick", "text": "" },
+        "en": { "name": "High Jump Kick", "text": "" }
+      }
+    ]
+  },
+  "en-base6-14": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Eevee", "local": "Eevee" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "10+",
+        "local": {
+          "name": "Quick Attack",
+          "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+        },
+        "en": {
+          "name": "Quick Attack",
+          "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+        }
+      },
+      {
+        "cost": ["lightning", "lightning", "colorless"],
+        "damage": "20×",
+        "local": {
+          "name": "Pin Missle",
+          "text": "Flip 4 coins. This attack does 20 damage times the number of heads."
+        },
+        "en": {
+          "name": "Pin Missle",
+          "text": "Flip 4 coins. This attack does 20 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "en-base6-15": {
+    "kind": "stage2",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 100,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Machoke", "local": "Machoke" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting", "fighting", "colorless"],
+        "damage": "60",
+        "local": { "name": "Seismic Toss", "text": "" },
+        "en": { "name": "Seismic Toss", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Strikes Back",
+          "text": "Whenever your opponent's attack damages Machamp (even if Machamp is Knocked Out), this power does 10 damage to the attacking Pokémon. (Don't apply Weakness and Resistance.) This power can't be used if Machamp is already affected by a Special Condition when your opponent attacks."
+        },
+        "en": {
+          "name": "Strikes Back",
+          "text": "Whenever your opponent's attack damages Machamp (even if Machamp is Knocked Out), this power does 10 damage to the attacking Pokémon. (Don't apply Weakness and Resistance.) This power can't be used if Machamp is already affected by a Special Condition when your opponent attacks."
+        }
+      }
+    ]
+  },
+  "en-base6-16": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 70,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Grimer", "local": "Grimer" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "grass", "grass"],
+        "damage": "30",
+        "local": {
+          "name": "Sludge",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+        },
+        "en": {
+          "name": "Sludge",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Toxic Gas",
+          "text": "Ignore all Pokémon Powers other than Toxic Gases. This power stops working while Muk is affected by a Special Condition."
+        },
+        "en": {
+          "name": "Toxic Gas",
+          "text": "Ignore all Pokémon Powers other than Toxic Gases. This power stops working while Muk is affected by a Special Condition."
+        }
+      }
+    ]
+  },
+  "en-base6-17": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Vulpix", "local": "Vulpix" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Lure",
+          "text": "If your opponent has any Benched Pokémon, choose 1 of them and switch it with the Defending Pokémon."
+        },
+        "en": {
+          "name": "Lure",
+          "text": "If your opponent has any Benched Pokémon, choose 1 of them and switch it with the Defending Pokémon."
+        }
+      },
+      {
+        "cost": ["fire", "fire", "fire", "fire"],
+        "damage": "80",
+        "local": {
+          "name": "Fire Blast",
+          "text": "Discard 1 Fire Energy card attached to Ninetales or this attack does nothing."
+        },
+        "en": {
+          "name": "Fire Blast",
+          "text": "Discard 1 Fire Energy card attached to Ninetales or this attack does nothing."
+        }
+      }
+    ]
+  },
+  "en-base6-18": {
+    "kind": "stage2",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 100,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Ivysaur", "local": "Ivysaur" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "grass", "grass", "grass"],
+        "damage": "60",
+        "local": { "name": "Solarbeam", "text": "" },
+        "en": { "name": "Solarbeam", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Energy Trans",
+          "text": "As often as you like during your turn (before your attack), you may take 1 Grass Energy card attached to 1 of your Pokémon and attach it to a different one. This power can't be used if Venusaur is affected by a Special Condition."
+        },
+        "en": {
+          "name": "Energy Trans",
+          "text": "As often as you like during your turn (before your attack), you may take 1 Grass Energy card attached to 1 of your Pokémon and attach it to a different one. This power can't be used if Venusaur is affected by a Special Condition."
+        }
+      }
+    ]
+  },
+  "en-base6-19": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 90,
+      "retreat": 3,
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "lightning", "lightning", "colorless"],
+        "damage": "60",
+        "local": {
+          "name": "Thunder",
+          "text": "Flip a coin. If tails, Zapdos does 30 damage to itself."
+        },
+        "en": {
+          "name": "Thunder",
+          "text": "Flip a coin. If tails, Zapdos does 30 damage to itself."
+        }
+      },
+      {
+        "cost": ["lightning", "lightning", "lightning", "lightning"],
+        "damage": "100",
+        "local": {
+          "name": "Thunderbolt",
+          "text": "Discard all Energy cards attached to Zapdos or this attack does nothing."
+        },
+        "en": {
+          "name": "Thunderbolt",
+          "text": "Discard all Energy cards attached to Zapdos or this attack does nothing."
+        }
+      }
+    ]
+  },
+  "en-base6-20": {
+    "kind": "stage2",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 80,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Kakuna", "local": "Kakuna" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "30×",
+        "local": {
+          "name": "Twineedle",
+          "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+        },
+        "en": {
+          "name": "Twineedle",
+          "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+        }
+      },
+      {
+        "cost": ["grass", "grass", "grass"],
+        "damage": "40",
+        "local": {
+          "name": "Poison Sting",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+        },
+        "en": {
+          "name": "Poison Sting",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+        }
+      }
+    ]
+  },
+  "en-base6-21": {
+    "kind": "stage2",
+    "artist": "Kagemaru Himeno",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 70,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Metapod", "local": "Metapod" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "Whirlwind",
+          "text": "Your opponent switches the Defending Pokémon with 1 of his or her Benched Pokémon, if any. (Do the damage before switching the Pokémon.)"
+        },
+        "en": {
+          "name": "Whirlwind",
+          "text": "Your opponent switches the Defending Pokémon with 1 of his or her Benched Pokémon, if any. (Do the damage before switching the Pokémon.)"
+        }
+      },
+      {
+        "cost": ["grass", "grass", "grass", "grass"],
+        "damage": "40",
+        "local": {
+          "name": "Mega Drain",
+          "text": "Remove a number of damage counters from Butterfree equal of half the damage done to the Defending Pokémon (after applying Weakness and Resistance) (rounded up to the nearest 10). If Butterfree has fewer damage counters that that, remove all of them."
+        },
+        "en": {
+          "name": "Mega Drain",
+          "text": "Remove a number of damage counters from Butterfree equal of half the damage done to the Defending Pokémon (after applying Weakness and Resistance) (rounded up to the nearest 10). If Butterfree has fewer damage counters that that, remove all of them."
+        }
+      }
+    ]
+  },
+  "en-base6-22": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 90,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Voltorb", "local": "Voltorb" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "Tackle", "text": "" },
+        "en": { "name": "Tackle", "text": "" }
+      },
+      {
+        "cost": ["lightning", "lightning", "lightning"],
+        "damage": "20",
+        "local": {
+          "name": "Chain Lightning",
+          "text": "If the Defending Pokémon isn't Colorless, this attack does 10 damage to each Benched Pokémon of the same type as the Defending Pokémon (including your own). (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        "en": {
+          "name": "Chain Lightning",
+          "text": "If the Defending Pokémon isn't Colorless, this attack does 10 damage to each Benched Pokémon of the same type as the Defending Pokémon (including your own). (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "en-base6-23": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 80,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Exeggcute", "local": "Exeggcute" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": { "name": "Teleport", "text": "Switch Exeggutor with 1 of your Benched Pokémon." },
+        "en": { "name": "Teleport", "text": "Switch Exeggutor with 1 of your Benched Pokémon." }
+      },
+      {
+        "cost": ["colorless"],
+        "damage": "20×",
+        "local": {
+          "name": "Big Eggsplosion",
+          "text": "Flip a number of coins equal to the number of Energy attached to Exeggutor. This attack does 20 damage times the number of heads."
+        },
+        "en": {
+          "name": "Big Eggsplosion",
+          "text": "Flip a number of coins equal to the number of Energy attached to Exeggutor. This attack does 20 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "en-base6-24": {
+    "kind": "stage2",
+    "artist": "Kagemaru Himeno",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 80,
+      "retreat": 4,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Graveler", "local": "Graveler" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting", "fighting", "colorless"],
+        "damage": "60",
+        "local": { "name": "Avalanche", "text": "" },
+        "en": { "name": "Avalanche", "text": "" }
+      },
+      {
+        "cost": ["fighting", "fighting", "fighting", "fighting"],
+        "damage": "100",
+        "local": {
+          "name": "Selfdestruct",
+          "text": "Does 20 damage to each Pokémon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pokémon.) Golem does 100 damage to itself."
+        },
+        "en": {
+          "name": "Selfdestruct",
+          "text": "Does 20 damage to each Pokémon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pokémon.) Golem does 100 damage to itself."
+        }
+      }
+    ]
+  },
+  "en-base6-25": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 90,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Drowzee", "local": "Drowzee" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": {
+          "name": "Prophecy",
+          "text": "Look at up to 3 cards from the top of either player's deck and rearrange them as you like."
+        },
+        "en": {
+          "name": "Prophecy",
+          "text": "Look at up to 3 cards from the top of either player's deck and rearrange them as you like."
+        }
+      },
+      {
+        "cost": ["psychic", "psychic", "psychic"],
+        "damage": "30",
+        "local": {
+          "name": "Dark Mind",
+          "text": "If your opponent has any Benched Pokémon, choose 1 of them and this attack does 10 damage to it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        "en": {
+          "name": "Dark Mind",
+          "text": "If your opponent has any Benched Pokémon, choose 1 of them and this attack does 10 damage to it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "en-base6-26": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 70,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "10×",
+        "local": {
+          "name": "Doubleslap",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        },
+        "en": {
+          "name": "Doubleslap",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        }
+      },
+      {
+        "cost": ["psychic", "psychic", "colorless"],
+        "damage": "20+",
+        "local": {
+          "name": "Meditate",
+          "text": "Does 20 damage plus 10 more damage for each damage counter on the Defending Pokémon."
+        },
+        "en": {
+          "name": "Meditate",
+          "text": "Does 20 damage plus 10 more damage for each damage counter on the Defending Pokémon."
+        }
+      }
+    ]
+  },
+  "en-base6-27": {
+    "kind": "stage2",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Kabuto", "local": "Kabuto" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting"],
+        "damage": "30",
+        "local": { "name": "Sharp Sickle", "text": "" },
+        "en": { "name": "Sharp Sickle", "text": "" }
+      },
+      {
+        "cost": ["fighting", "fighting", "fighting", "fighting"],
+        "damage": "40",
+        "local": {
+          "name": "Absorb",
+          "text": "Remove a number of damage counters from Kabutops equal to half the damage done to the Defending Pokémon (after applying Weakness and Resistance) (rounded up to the nearest 10). If Kabutops has fewer damage counters than that, remove all of them."
+        },
+        "en": {
+          "name": "Absorb",
+          "text": "Remove a number of damage counters from Kabutops equal to half the damage done to the Defending Pokémon (after applying Weakness and Resistance) (rounded up to the nearest 10). If Kabutops has fewer damage counters than that, remove all of them."
+        }
+      }
+    ]
+  },
+  "en-base6-28": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 80,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Magnemite", "local": "Magnemite" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "Sonicboom",
+          "text": "Don't apply Weakness and Resistance for this attack. (Any other effects that would happen after applying Weakness and Resistance still happen.)"
+        },
+        "en": {
+          "name": "Sonicboom",
+          "text": "Don't apply Weakness and Resistance for this attack. (Any other effects that would happen after applying Weakness and Resistance still happen.)"
+        }
+      },
+      {
+        "cost": ["lightning", "lightning", "lightning", "lightning"],
+        "damage": "100",
+        "local": {
+          "name": "Selfdestruct",
+          "text": "Does 20 damage to each Pokémon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pokémon.) Magneton does 100 damage to itself."
+        },
+        "en": {
+          "name": "Selfdestruct",
+          "text": "Does 20 damage to each Pokémon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pokémon.) Magneton does 100 damage to itself."
+        }
+      }
+    ]
+  },
+  "en-base6-29": {
+    "kind": "pokemon",
+    "artist": "Christopher Rush",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 60,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": {
+          "name": "Energy Control",
+          "text": "Flip a coin. If heads, choose a basic Energy card attached to 1 of your opponent's Pokémon and attach it to another of your opponent's Pokémon of your choice."
+        },
+        "en": {
+          "name": "Energy Control",
+          "text": "Flip a coin. If heads, choose a basic Energy card attached to 1 of your opponent's Pokémon and attach it to another of your opponent's Pokémon of your choice."
+        }
+      },
+      {
+        "cost": ["psychic", "psychic", "psychic"],
+        "damage": "",
+        "local": {
+          "name": "Telekinesis",
+          "text": "Choose 1 of your opponent's Pokémon. This attack does 30 damage to that Pokémon. Don't apply Weakness and Resistance for this attack. (Any other effects that would happen after applying Weakness and Resistance still happen.)"
+        },
+        "en": {
+          "name": "Telekinesis",
+          "text": "Choose 1 of your opponent's Pokémon. This attack does 30 damage to that Pokémon. Don't apply Weakness and Resistance for this attack. (Any other effects that would happen after applying Weakness and Resistance still happen.)"
+        }
+      }
+    ]
+  },
+  "en-base6-30": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 70,
+      "retreat": 2,
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire"],
+        "damage": "",
+        "local": {
+          "name": "Wildfire",
+          "text": "You may discard any number of Fire Energy cards attached to Moltres when you use this attack. If you do, discard that many cards from the top of your opponent's deck."
+        },
+        "en": {
+          "name": "Wildfire",
+          "text": "You may discard any number of Fire Energy cards attached to Moltres when you use this attack. If you do, discard that many cards from the top of your opponent's deck."
+        }
+      },
+      {
+        "cost": ["fire", "fire", "fire", "fire"],
+        "damage": "80",
+        "local": {
+          "name": "Dive Bomb",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        },
+        "en": { "name": "Dive Bomb", "text": "Flip a coin. If tails, this attack does nothing." }
+      }
+    ]
+  },
+  "en-base6-31": {
+    "kind": "stage2",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 90,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Nidorino", "local": "Nidorino" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "colorless", "colorless"],
+        "damage": "30+",
+        "local": {
+          "name": "Thrash",
+          "text": "Flip a coin. If heads, this attack does 30 damage plus 10 more damage; if tails, this attack does 30 damage and Nidoking does 10 damage to itself."
+        },
+        "en": {
+          "name": "Thrash",
+          "text": "Flip a coin. If heads, this attack does 30 damage plus 10 more damage; if tails, this attack does 30 damage and Nidoking does 10 damage to itself."
+        }
+      },
+      {
+        "cost": ["grass", "grass", "grass"],
+        "damage": "20",
+        "local": {
+          "name": "Toxic",
+          "text": "The Defending Pokémon is now Poisoned. It now takes 20 Poison damage instead of 10 after each player's turn (even if it was already Poisoned)."
+        },
+        "en": {
+          "name": "Toxic",
+          "text": "The Defending Pokémon is now Poisoned. It now takes 20 Poison damage instead of 10 after each player's turn (even if it was already Poisoned)."
+        }
+      }
+    ]
+  },
+  "en-base6-32": {
+    "kind": "stage2",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 90,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Nidorina", "local": "Nidorina" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "colorless"],
+        "damage": "20+",
+        "local": {
+          "name": "Boyfriends",
+          "text": "Does 20 damage plus 20 more damage for each Nidoking you have in play."
+        },
+        "en": {
+          "name": "Boyfriends",
+          "text": "Does 20 damage plus 20 more damage for each Nidoking you have in play."
+        }
+      },
+      {
+        "cost": ["grass", "grass", "colorless", "colorless"],
+        "damage": "50",
+        "local": { "name": "Mega Punch", "text": "" },
+        "en": { "name": "Mega Punch", "text": "" }
+      }
+    ]
+  },
+  "en-base6-33": {
+    "kind": "stage2",
+    "artist": "Kagemaru Himeno",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 80,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Pidgeotto", "local": "Pidgeotto" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "Wing Attack", "text": "" },
+        "en": { "name": "Wing Attack", "text": "" }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "Hurricane",
+          "text": "Unless this attack Knocks Out the Defending Pokémon, return the Defending Pokémon and all cards attached to it to your opponent's hand."
+        },
+        "en": {
+          "name": "Hurricane",
+          "text": "Unless this attack Knocks Out the Defending Pokémon, return the Defending Pokémon and all cards attached to it to your opponent's hand."
+        }
+      }
+    ]
+  },
+  "en-base6-34": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Pidgey", "local": "Pidgey" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "Whirlwind",
+          "text": "Your opponent switches the Defending Pokémon with 1 of his or her Benched Pokémon, if any. (Do the damage before switching the Pokémon.)"
+        },
+        "en": {
+          "name": "Whirlwind",
+          "text": "Your opponent switches the Defending Pokémon with 1 of his or her Benched Pokémon, if any. (Do the damage before switching the Pokémon.)"
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Mirror Move",
+          "text": "If Pidgeotto was attacked last turn, do the final result of that attack on Pidgeotto to the Defending Pokémon."
+        },
+        "en": {
+          "name": "Mirror Move",
+          "text": "If Pidgeotto was attacked last turn, do the final result of that attack on Pidgeotto to the Defending Pokémon."
+        }
+      }
+    ]
+  },
+  "en-base6-35": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 100,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }],
+      "evolvesFrom": { "en": "Rhyhorn", "local": "Rhyhorn" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "colorless", "colorless"],
+        "damage": "30",
+        "local": { "name": "Horn Attack", "text": "" },
+        "en": { "name": "Horn Attack", "text": "" }
+      },
+      {
+        "cost": ["fighting", "fighting", "fighting", "fighting"],
+        "damage": "50",
+        "local": {
+          "name": "Ram",
+          "text": "Rhydon does 20 damage to itself. Your opponent switches the Defending Pokémon with 1 of his or her Benched Pokémon, if any. (Do the damage before switching the Pokémon. Switch the Pokémon even if Rhydon is Knocked Out.)"
+        },
+        "en": {
+          "name": "Ram",
+          "text": "Rhydon does 20 damage to itself. Your opponent switches the Defending Pokémon with 1 of his or her Benched Pokémon, if any. (Do the damage before switching the Pokémon. Switch the Pokémon even if Rhydon is Knocked Out.)"
+        }
+      }
+    ]
+  },
+  "en-base6-36": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 100,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Growlithe", "local": "Growlithe" }
+    },
+    "attacks": [
+      {
+        "cost": ["fire", "fire", "colorless"],
+        "damage": "50",
+        "local": {
+          "name": "Flamethrower",
+          "text": "Discard 1 Fire Energy card attached to Arcanine or this attack does nothing."
+        },
+        "en": {
+          "name": "Flamethrower",
+          "text": "Discard 1 Fire Energy card attached to Arcanine or this attack does nothing."
+        }
+      },
+      {
+        "cost": ["fire", "fire", "colorless", "colorless"],
+        "damage": "80",
+        "local": { "name": "Take Down", "text": "Arcanine does 30 damage to itself." },
+        "en": { "name": "Take Down", "text": "Arcanine does 30 damage to itself." }
+      }
+    ]
+  },
+  "en-base6-37": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Charmander", "local": "Charmander" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "30",
+        "local": { "name": "Slash", "text": "" },
+        "en": { "name": "Slash", "text": "" }
+      },
+      {
+        "cost": ["fire", "fire", "colorless"],
+        "damage": "50",
+        "local": {
+          "name": "Flamethrower",
+          "text": "Discard 1 Fire Energy card attached to Charmeleon or this attack does nothing."
+        },
+        "en": {
+          "name": "Flamethrower",
+          "text": "Discard 1 Fire Energy card attached to Charmeleon or this attack does nothing."
+        }
+      }
+    ]
+  },
+  "en-base6-38": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 60,
+      "retreat": 2,
+      "resistances": [{ "energy": "psychic", "value": "-30" }],
+      "evolvesFrom": { "en": "Dratini", "local": "Dratini" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "20+",
+        "local": {
+          "name": "Tail Strike",
+          "text": "Flip a coin. If heads, this attack does 20 damage plus 20 more damage; if tails, this attack does 20 damage."
+        },
+        "en": {
+          "name": "Tail Strike",
+          "text": "Flip a coin. If heads, this attack does 20 damage plus 20 more damage; if tails, this attack does 20 damage."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Evolutionary Light",
+          "text": "Once during your turn (before your attack), you may search your deck for an Evolution card. Show it to your opponent and put it into your hand. Shuffle your deck afterward. This power can't be used if Dark Dragonair is affected by a Special Condition."
+        },
+        "en": {
+          "name": "Evolutionary Light",
+          "text": "Once during your turn (before your attack), you may search your deck for an Evolution card. Show it to your opponent and put it into your hand. Shuffle your deck afterward. This power can't be used if Dark Dragonair is affected by a Special Condition."
+        }
+      }
+    ]
+  },
+  "en-base6-39": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Squirtle", "local": "Squirtle" }
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "10×",
+        "local": {
+          "name": "Doubleslap",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        },
+        "en": {
+          "name": "Doubleslap",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        }
+      },
+      {
+        "cost": ["water", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Mirror Shell",
+          "text": "If an attack does damage to Dark Wartortle during your opponent's next turn (even if Dark Wartortle is Knocked Out), Dark Wartortle does an equal amount of damage to the Defending Pokémon."
+        },
+        "en": {
+          "name": "Mirror Shell",
+          "text": "If an attack does damage to Dark Wartortle during your opponent's next turn (even if Dark Wartortle is Knocked Out), Dark Wartortle does an equal amount of damage to the Defending Pokémon."
+        }
+      }
+    ]
+  },
+  "en-base6-40": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 80,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Seel", "local": "Seel" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water", "colorless"],
+        "damage": "50",
+        "local": { "name": "Aurora Beam", "text": "" },
+        "en": { "name": "Aurora Beam", "text": "" }
+      },
+      {
+        "cost": ["water", "water", "colorless", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "Ice Beam",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        "en": {
+          "name": "Ice Beam",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      }
+    ]
+  },
+  "en-base6-41": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 70,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Doduo", "local": "Doduo" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "10+",
+        "local": {
+          "name": "Rage",
+          "text": "Does 10 damage plus 10 more damage for each damage counter on Dodrio."
+        },
+        "en": {
+          "name": "Rage",
+          "text": "Does 10 damage plus 10 more damage for each damage counter on Dodrio."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Retreat Aid",
+          "text": "As long as Dodrio is Benched, pay Colorless less to retreat your Active Pokémon."
+        },
+        "en": {
+          "name": "Retreat Aid",
+          "text": "As long as Dodrio is Benched, pay Colorless less to retreat your Active Pokémon."
+        }
+      }
+    ]
+  },
+  "en-base6-42": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 70,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Spearow", "local": "Spearow" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "Agility",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Fearow."
+        },
+        "en": {
+          "name": "Agility",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Fearow."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless", "colorless"],
+        "damage": "40",
+        "local": { "name": "Drill Peck", "text": "" },
+        "en": { "name": "Drill Peck", "text": "" }
+      }
+    ]
+  },
+  "en-base6-43": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Psyduck", "local": "Psyduck" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "10",
+        "local": {
+          "name": "Psyshock",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        "en": {
+          "name": "Psyshock",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      },
+      {
+        "cost": ["water", "water", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "Hyper Beam",
+          "text": "If the Defending Pokémon has any Energy cards attached to it, choose 1 of them and discard it."
+        },
+        "en": {
+          "name": "Hyper Beam",
+          "text": "If the Defending Pokémon has any Energy cards attached to it, choose 1 of them and discard it."
+        }
+      }
+    ]
+  },
+  "en-base6-44": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 60,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Geodude", "local": "Geodude" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting"],
+        "damage": "",
+        "local": {
+          "name": "Harden",
+          "text": "During your opponent's next turn, whenever 30 or less damage is done to Graveler (after applying Weakness and Resistance), prevent that damage. (Any other effects of attacks still happen.)"
+        },
+        "en": {
+          "name": "Harden",
+          "text": "During your opponent's next turn, whenever 30 or less damage is done to Graveler (after applying Weakness and Resistance), prevent that damage. (Any other effects of attacks still happen.)"
+        }
+      },
+      {
+        "cost": ["fighting", "fighting", "colorless"],
+        "damage": "40",
+        "local": { "name": "Rock Throw", "text": "" },
+        "en": { "name": "Rock Throw", "text": "" }
+      }
+    ]
+  },
+  "en-base6-45": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire", "colorless"],
+        "damage": "20",
+        "local": { "name": "Flare", "text": "" },
+        "en": { "name": "Flare", "text": "" }
+      }
+    ]
+  },
+  "en-base6-46": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 50,
+      "retreat": 0,
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Gastly", "local": "Gastly" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "colorless"],
+        "damage": "10",
+        "local": { "name": "Nightmare", "text": "The Defending Pokémon is now Asleep." },
+        "en": { "name": "Nightmare", "text": "The Defending Pokémon is now Asleep." }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Transparency",
+          "text": "Whenever an attack does anything to Haunter, flip a coin. If heads, prevent all effects of that attack, including damage, done to Haunter. This power stops working while Haunter is affected by a Special Condition."
+        },
+        "en": {
+          "name": "Transparency",
+          "text": "Whenever an attack does anything to Haunter, flip a coin. If heads, prevent all effects of that attack, including damage, done to Haunter. This power stops working while Haunter is affected by a Special Condition."
+        }
+      }
+    ]
+  },
+  "en-base6-47": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Bulbasaur", "local": "Bulbasaur" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "colorless", "colorless"],
+        "damage": "30",
+        "local": { "name": "Vine Whip", "text": "" },
+        "en": { "name": "Vine Whip", "text": "" }
+      },
+      {
+        "cost": ["grass", "grass", "grass"],
+        "damage": "20",
+        "local": { "name": "Poisonpowder", "text": "The Defending Pokémon is now Poisoned." },
+        "en": { "name": "Poisonpowder", "text": "The Defending Pokémon is now Poisoned." }
+      }
+    ]
+  },
+  "en-base6-48": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 30,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Mysterious Fossil", "local": "Mysterious Fossil" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "Scratch", "text": "" },
+        "en": { "name": "Scratch", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Kabuto Armor",
+          "text": "Whenever an attack (even your own) does damage to Kabuto (after applying Weakness and Resistance), that attack does only half the damage to Kabuto (rounded down to the nearest 10). (Any other effects of attacks still happen.) This power stops working while Kabuto is affected by a Special Condition."
+        },
+        "en": {
+          "name": "Kabuto Armor",
+          "text": "Whenever an attack (even your own) does damage to Kabuto (after applying Weakness and Resistance), that attack does only half the damage to Kabuto (rounded down to the nearest 10). (Any other effects of attacks still happen.) This power stops working while Kabuto is affected by a Special Condition."
+        }
+      }
+    ]
+  },
+  "en-base6-49": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 60,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Abra", "local": "Abra" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "psychic"],
+        "damage": "",
+        "local": {
+          "name": "Recover",
+          "text": "Discard 1 Psychic Energy card attached to Kadabra or this attack does nothing. Remove all damage counters from Kadabra."
+        },
+        "en": {
+          "name": "Recover",
+          "text": "Discard 1 Psychic Energy card attached to Kadabra or this attack does nothing. Remove all damage counters from Kadabra."
+        }
+      },
+      {
+        "cost": ["psychic", "psychic", "colorless"],
+        "damage": "50",
+        "local": { "name": "Super Psy", "text": "" },
+        "en": { "name": "Super Psy", "text": "" }
+      }
+    ]
+  },
+  "en-base6-50": {
+    "kind": "stage1",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 80,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Weedle", "local": "Weedle" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Stiffen",
+          "text": "Flip a coin. If heads, prevent all damage done to Kakuna during your opponent's next turn. (Any other effects of attacks still happen.)"
+        },
+        "en": {
+          "name": "Stiffen",
+          "text": "Flip a coin. If heads, prevent all damage done to Kakuna during your opponent's next turn. (Any other effects of attacks still happen.)"
+        }
+      },
+      {
+        "cost": ["grass", "grass"],
+        "damage": "20",
+        "local": {
+          "name": "Poisonpowder",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+        },
+        "en": {
+          "name": "Poisonpowder",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+        }
+      }
+    ]
+  },
+  "en-base6-51": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 80,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Machop", "local": "Machop" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting", "colorless"],
+        "damage": "50-",
+        "local": {
+          "name": "Karate Chop",
+          "text": "Does 50 damage minus 10 damage for each damage counter on Machoke."
+        },
+        "en": {
+          "name": "Karate Chop",
+          "text": "Does 50 damage minus 10 damage for each damage counter on Machoke."
+        }
+      },
+      {
+        "cost": ["fighting", "fighting", "colorless", "colorless"],
+        "damage": "60",
+        "local": { "name": "Submission", "text": "Machoke does 20 damage to itself." },
+        "en": { "name": "Submission", "text": "Machoke does 20 damage to itself." }
+      }
+    ]
+  },
+  "en-base6-52": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 30,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "Tackle", "text": "" },
+        "en": { "name": "Tackle", "text": "" }
+      },
+      {
+        "cost": ["water"],
+        "damage": "10×",
+        "local": {
+          "name": "Flail",
+          "text": "Does 10 damage times the number of damage counters on Magikarp."
+        },
+        "en": {
+          "name": "Flail",
+          "text": "Does 10 damage times the number of damage counters on Magikarp."
+        }
+      }
+    ]
+  },
+  "en-base6-53": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "10",
+        "local": { "name": "Pay Day", "text": "Flip a coin. If heads, draw a card." },
+        "en": { "name": "Pay Day", "text": "Flip a coin. If heads, draw a card." }
+      }
+    ]
+  },
+  "en-base6-54": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 70,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Caterpie", "local": "Caterpie" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Stiffen",
+          "text": "Flip a coin. If heads, prevent all damage done to Metapod during your opponent's next turn. (Any other effects of attacks still happen.)"
+        },
+        "en": {
+          "name": "Stiffen",
+          "text": "Flip a coin. If heads, prevent all damage done to Metapod during your opponent's next turn. (Any other effects of attacks still happen.)"
+        }
+      },
+      {
+        "cost": ["grass", "grass"],
+        "damage": "20",
+        "local": {
+          "name": "Stun Spore",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        "en": {
+          "name": "Stun Spore",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      }
+    ]
+  },
+  "en-base6-55": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Nidoran ♀", "local": "Nidoran ♀" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "",
+        "local": {
+          "name": "Supersonic",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        },
+        "en": {
+          "name": "Supersonic",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        }
+      },
+      {
+        "cost": ["grass", "colorless", "colorless"],
+        "damage": "30×",
+        "local": {
+          "name": "Double Kick",
+          "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+        },
+        "en": {
+          "name": "Double Kick",
+          "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "en-base6-56": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Nidoran ♂", "local": "Nidoran ♂" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "colorless", "colorless"],
+        "damage": "30×",
+        "local": {
+          "name": "Double Kick",
+          "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+        },
+        "en": {
+          "name": "Double Kick",
+          "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+        }
+      },
+      {
+        "cost": ["grass", "grass", "colorless", "colorless"],
+        "damage": "50",
+        "local": { "name": "Horn Drill", "text": "" },
+        "en": { "name": "Horn Drill", "text": "" }
+      }
+    ]
+  },
+  "en-base6-57": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Mysterious Fossil", "local": "Mysterious Fossil" }
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "10+",
+        "local": {
+          "name": "Water Gun",
+          "text": "Does 10 damage plus 10 more damage for each Water Energy attached to Omanyte but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way."
+        },
+        "en": {
+          "name": "Water Gun",
+          "text": "Does 10 damage plus 10 more damage for each Water Energy attached to Omanyte but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Clairvoyance",
+          "text": "Your opponent plays with his or her hand face up. This power stops working while Omanyte is affected by a Special Condition."
+        },
+        "en": {
+          "name": "Clairvoyance",
+          "text": "Your opponent plays with his or her hand face up. This power stops working while Omanyte is affected by a Special Condition."
+        }
+      }
+    ]
+  },
+  "en-base6-58": {
+    "kind": "stage2",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Omanyte", "local": "Omanyte" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "colorless"],
+        "damage": "20+",
+        "local": {
+          "name": "Water Gun",
+          "text": "Does 20 damage plus 10 more damage for each Water Energy attached to Omastar but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way."
+        },
+        "en": {
+          "name": "Water Gun",
+          "text": "Does 20 damage plus 10 more damage for each Water Energy attached to Omastar but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way."
+        }
+      },
+      {
+        "cost": ["water", "water"],
+        "damage": "30×",
+        "local": {
+          "name": "Spike Cannon",
+          "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+        },
+        "en": {
+          "name": "Spike Cannon",
+          "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "en-base6-59": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Mankey", "local": "Mankey" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting"],
+        "damage": "20×",
+        "local": {
+          "name": "Fury Swipes",
+          "text": "Flip 3 coins. This attack does 20 damage times the number of heads."
+        },
+        "en": {
+          "name": "Fury Swipes",
+          "text": "Flip 3 coins. This attack does 20 damage times the number of heads."
+        }
+      },
+      {
+        "cost": ["fighting", "fighting", "colorless"],
+        "damage": "50",
+        "local": {
+          "name": "Tantrum",
+          "text": "Flip a coin. If tails, Primeape is now Confused (after doing damage)."
+        },
+        "en": {
+          "name": "Tantrum",
+          "text": "Flip a coin. If tails, Primeape is now Confused (after doing damage)."
+        }
+      }
+    ]
+  },
+  "en-base6-60": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 70,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Ponyta", "local": "Ponyta" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20+",
+        "local": {
+          "name": "Stomp",
+          "text": "Flip a coin. If heads, this attack does 20 damage plus 10 more damage; if tails, this attack does 20 damage."
+        },
+        "en": {
+          "name": "Stomp",
+          "text": "Flip a coin. If heads, this attack does 20 damage plus 10 more damage; if tails, this attack does 20 damage."
+        }
+      },
+      {
+        "cost": ["fire", "fire", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "Agility",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Rapidash."
+        },
+        "en": {
+          "name": "Agility",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Rapidash."
+        }
+      }
+    ]
+  },
+  "en-base6-61": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }],
+      "evolvesFrom": { "en": "Rattata", "local": "Rattata" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "20",
+        "local": { "name": "Bite", "text": "" },
+        "en": { "name": "Bite", "text": "" }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Super Fang",
+          "text": "Does damage to the Defending Pokémon equal to half the Defending Pokémon's remaining HP (rounded up to the nearest 10)."
+        },
+        "en": {
+          "name": "Super Fang",
+          "text": "Does damage to the Defending Pokémon equal to half the Defending Pokémon's remaining HP (rounded up to the nearest 10)."
+        }
+      }
+    ]
+  },
+  "en-base6-62": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }],
+      "evolvesFrom": { "en": "Sandshrew", "local": "Sandshrew" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "Slash", "text": "" },
+        "en": { "name": "Slash", "text": "" }
+      },
+      {
+        "cost": ["fighting", "fighting"],
+        "damage": "20×",
+        "local": {
+          "name": "Fury Swipes",
+          "text": "Flip 3 coins. This attack does 20 damage times the number of heads."
+        },
+        "en": {
+          "name": "Fury Swipes",
+          "text": "Flip 3 coins. This attack does 20 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "en-base6-63": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Horsea", "local": "Horsea" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "colorless"],
+        "damage": "20+",
+        "local": {
+          "name": "Water Gun",
+          "text": "Does 20 damage plus 10 more damage for each Water Energy attached to Seadra but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way."
+        },
+        "en": {
+          "name": "Water Gun",
+          "text": "Does 20 damage plus 10 more damage for each Water Energy attached to Seadra but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way."
+        }
+      },
+      {
+        "cost": ["water", "colorless", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "Agility",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Seadra."
+        },
+        "en": {
+          "name": "Agility",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Seadra."
+        }
+      }
+    ]
+  },
+  "en-base6-64": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 90,
+      "retreat": 4,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "Body Slam",
+          "text": "Flip a coin. If heads the Defending Pokémon is now Paralyzed."
+        },
+        "en": {
+          "name": "Body Slam",
+          "text": "Flip a coin. If heads the Defending Pokémon is now Paralyzed."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Thick Skinned",
+          "text": "Snorlax can't become Asleep, Confused, Paralyzed, Poisoned, or Burned. This power stops working while Snorlax is affected by a Special Condition."
+        },
+        "en": {
+          "name": "Thick Skinned",
+          "text": "Snorlax can't become Asleep, Confused, Paralyzed, Poisoned, or Burned. This power stops working while Snorlax is affected by a Special Condition."
+        }
+      }
+    ]
+  },
+  "en-base6-65": {
+    "kind": "pokemon",
+    "artist": "Kagemaru Himeno",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 60,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20+",
+        "local": {
+          "name": "Stomp",
+          "text": "Flip a coin. If heads, this attack does 20 damage plus 10 more damage; if tails, this attack does 20 damage."
+        },
+        "en": {
+          "name": "Stomp",
+          "text": "Flip a coin. If heads, this attack does 20 damage plus 10 more damage; if tails, this attack does 20 damage."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "20+",
+        "local": {
+          "name": "Rampage",
+          "text": "Does 20 damage plus 10 more damage for each damage counter on Tauros. Flip a coin. If tails, Tauros is now Confused (after doing damage)."
+        },
+        "en": {
+          "name": "Rampage",
+          "text": "Does 20 damage plus 10 more damage for each damage counter on Tauros. Flip a coin. If tails, Tauros is now Confused (after doing damage)."
+        }
+      }
+    ]
+  },
+  "en-base6-66": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 60,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Tentacool", "local": "Tentacool" }
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "",
+        "local": {
+          "name": "Supersonic",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        },
+        "en": {
+          "name": "Supersonic",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        }
+      },
+      {
+        "cost": ["water", "water"],
+        "damage": "10",
+        "local": { "name": "Jellyfish Sting", "text": "The Defending Pokémon is now Poisoned." },
+        "en": { "name": "Jellyfish Sting", "text": "The Defending Pokémon is now Poisoned." }
+      }
+    ]
+  },
+  "en-base6-67": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 30,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "10",
+        "local": {
+          "name": "Psyshock",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        "en": {
+          "name": "Psyshock",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      }
+    ]
+  },
+  "en-base6-68": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "grass"],
+        "damage": "20",
+        "local": {
+          "name": "Leech Seed",
+          "text": "Unless all damage from this attack is prevented, you may remove 1 damage counter from Bulbasaur."
+        },
+        "en": {
+          "name": "Leech Seed",
+          "text": "Unless all damage from this attack is prevented, you may remove 1 damage counter from Bulbasaur."
+        }
+      }
+    ]
+  },
+  "en-base6-69": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "10",
+        "local": {
+          "name": "String Shot",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        "en": {
+          "name": "String Shot",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      }
+    ]
+  },
+  "en-base6-70": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "Scratch", "text": "" },
+        "en": { "name": "Scratch", "text": "" }
+      },
+      {
+        "cost": ["fire", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "Ember",
+          "text": "Discard 1 Fire Energy card attached to Charmander or this attack does nothing."
+        },
+        "en": {
+          "name": "Ember",
+          "text": "Discard 1 Fire Energy card attached to Charmander or this attack does nothing."
+        }
+      }
+    ]
+  },
+  "en-base6-71": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 50,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10×",
+        "local": {
+          "name": "Fury Attack",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        },
+        "en": {
+          "name": "Fury Attack",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "en-base6-72": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 40,
+      "retreat": 1,
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "Pound", "text": "" },
+        "en": { "name": "Pound", "text": "" }
+      }
+    ]
+  },
+  "en-base6-73": {
+    "kind": "pokemon",
+    "artist": "Kagemaru Himeno",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "colorless"],
+        "damage": "10",
+        "local": { "name": "Nightmare", "text": "The Defending Pokémon is now Asleep." },
+        "en": { "name": "Nightmare", "text": "The Defending Pokémon is now Asleep." }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Long-Distance Hypnosis",
+          "text": "Once during your turn (before your attack), you may flip a coin. If heads, the Defending Pokémon is now Asleep; if tails, your Active Pokémon is now Asleep. The power can't be used if Drowzee is affected by a Special Condition."
+        },
+        "en": {
+          "name": "Long-Distance Hypnosis",
+          "text": "Once during your turn (before your attack), you may flip a coin. If heads, the Defending Pokémon is now Asleep; if tails, your Active Pokémon is now Asleep. The power can't be used if Drowzee is affected by a Special Condition."
+        }
+      }
+    ]
+  },
+  "en-base6-74": {
+    "kind": "pokemon",
+    "artist": "Kagemaru Himeno",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "Tail Wag",
+          "text": "Flip a coin. If heads, the Defending Pokémon can't attack Eevee during your opponent's next turn. (Benching either Pokémon ends this effect.)"
+        },
+        "en": {
+          "name": "Tail Wag",
+          "text": "Flip a coin. If heads, the Defending Pokémon can't attack Eevee during your opponent's next turn. (Benching either Pokémon ends this effect.)"
+        }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "10+",
+        "local": {
+          "name": "Quick Attack",
+          "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+        },
+        "en": {
+          "name": "Quick Attack",
+          "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+        }
+      }
+    ]
+  },
+  "en-base6-75": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": { "name": "Hypnosis", "text": "The Defending Pokémon is now Asleep." },
+        "en": { "name": "Hypnosis", "text": "The Defending Pokémon is now Asleep." }
+      },
+      {
+        "cost": ["grass", "grass"],
+        "damage": "20",
+        "local": {
+          "name": "Leech Seed",
+          "text": "Unless all damage from this attack is prevented, you may remove 1 damage counter from Exeggcute."
+        },
+        "en": {
+          "name": "Leech Seed",
+          "text": "Unless all damage from this attack is prevented, you may remove 1 damage counter from Exeggcute."
+        }
+      }
+    ]
+  },
+  "en-base6-76": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 50,
+      "retreat": 0,
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": {
+          "name": "Lick",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        "en": {
+          "name": "Lick",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      },
+      {
+        "cost": ["psychic", "psychic"],
+        "damage": "",
+        "local": {
+          "name": "Energy Conversion",
+          "text": "Put up to 2 Energy cards from your discard pile into your hand. Gastly does 10 damage to itself."
+        },
+        "en": {
+          "name": "Energy Conversion",
+          "text": "Put up to 2 Energy cards from your discard pile into your hand. Gastly does 10 damage to itself."
+        }
+      }
+    ]
+  },
+  "en-base6-77": {
+    "kind": "pokemon",
+    "artist": "Kagemaru Himeno",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "colorless"],
+        "damage": "10×",
+        "local": {
+          "name": "Stone Barrage",
+          "text": "Flip a coin until you get tails. This attack does 10 damage times the number of heads."
+        },
+        "en": {
+          "name": "Stone Barrage",
+          "text": "Flip a coin until you get tails. This attack does 10 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "en-base6-78": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": {
+          "name": "Nasty Goo",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        "en": {
+          "name": "Nasty Goo",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      },
+      {
+        "cost": ["grass"],
+        "damage": "",
+        "local": {
+          "name": "Minimized",
+          "text": "All damage done by attacks to Grimer during your opponent's next turn is reduced by 20 (after applying Weakness and Resistance)."
+        },
+        "en": {
+          "name": "Minimized",
+          "text": "All damage done by attacks to Grimer during your opponent's next turn is reduced by 20 (after applying Weakness and Resistance)."
+        }
+      }
+    ]
+  },
+  "en-base6-79": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "Punch", "text": "" },
+        "en": { "name": "Punch", "text": "" }
+      },
+      {
+        "cost": ["fighting", "colorless", "colorless"],
+        "damage": "30",
+        "local": { "name": "Kick", "text": "" },
+        "en": { "name": "Kick", "text": "" }
+      }
+    ]
+  },
+  "en-base6-80": {
+    "kind": "pokemon",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["lightning"],
+        "damage": "10",
+        "local": {
+          "name": "Thunder Wave",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        "en": {
+          "name": "Thunder Wave",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      },
+      {
+        "cost": ["lightning", "colorless"],
+        "damage": "40",
+        "local": {
+          "name": "Selfdestruct",
+          "text": "Does 10 damage to each Pokémon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pokémon.) Magnemite does 40 damage to itself."
+        },
+        "en": {
+          "name": "Selfdestruct",
+          "text": "Does 10 damage to each Pokémon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pokémon.) Magnemite does 40 damage to itself."
+        }
+      }
+    ]
+  },
+  "en-base6-81": {
+    "kind": "pokemon",
+    "artist": "Sumiyoshi Kizuki",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 40,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": { "name": "Mischief", "text": "Shuffle your opponent's deck." },
+        "en": { "name": "Mischief", "text": "Shuffle your opponent's deck." }
+      },
+      {
+        "cost": ["fighting", "colorless"],
+        "damage": "20+",
+        "local": {
+          "name": "Anger",
+          "text": "Flip a coin. If heads, this attack does 20 damage plus 20 more damage; if tails, this attack does 20 damage."
+        },
+        "en": {
+          "name": "Anger",
+          "text": "Flip a coin. If heads, this attack does 20 damage plus 20 more damage; if tails, this attack does 20 damage."
+        }
+      }
+    ]
+  },
+  "en-base6-82": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "10×",
+        "local": {
+          "name": "Fury Swipes",
+          "text": "Flip 3 coins. This attack does 10 damage times the number of heads."
+        },
+        "en": {
+          "name": "Fury Swipes",
+          "text": "Flip 3 coins. This attack does 10 damage times the number of heads."
+        }
+      },
+      {
+        "cost": ["grass", "grass"],
+        "damage": "",
+        "local": {
+          "name": "Call for Family",
+          "text": "Search your deck for a Basic Pokémon named Nidoran ♀ or Nidoran ♂ and put it onto your Bench. Shuffle your deck afterward. (You can't use this attack if your Bench is full.)"
+        },
+        "en": {
+          "name": "Call for Family",
+          "text": "Search your deck for a Basic Pokémon named Nidoran ♀ or Nidoran ♂ and put it onto your Bench. Shuffle your deck afterward. (You can't use this attack if your Bench is full.)"
+        }
+      }
+    ]
+  },
+  "en-base6-83": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "30",
+        "local": {
+          "name": "Horn Hazard",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        },
+        "en": { "name": "Horn Hazard", "text": "Flip a coin. If tails, this attack does nothing." }
+      }
+    ]
+  },
+  "en-base6-84": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 90,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting"],
+        "damage": "10",
+        "local": { "name": "Rock Throw", "text": "" },
+        "en": { "name": "Rock Throw", "text": "" }
+      },
+      {
+        "cost": ["fighting", "fighting"],
+        "damage": "",
+        "local": {
+          "name": "Harden",
+          "text": "During your opponent's next turn, whenever 30 or less damage is done to Onix (after applying Weakness and Resistance), prevent that damage. (Any other effects of attacks still happen.)"
+        },
+        "en": {
+          "name": "Harden",
+          "text": "During your opponent's next turn, whenever 30 or less damage is done to Onix (after applying Weakness and Resistance), prevent that damage. (Any other effects of attacks still happen.)"
+        }
+      }
+    ]
+  },
+  "en-base6-85": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "10",
+        "local": {
+          "name": "Whirlwind",
+          "text": "Your opponent switches the Defending Pokémon with 1 of his or her Benched Pokémon, if any. (Do the damage before switching the Pokémon.)"
+        },
+        "en": {
+          "name": "Whirlwind",
+          "text": "Your opponent switches the Defending Pokémon with 1 of his or her Benched Pokémon, if any. (Do the damage before switching the Pokémon.)"
+        }
+      }
+    ]
+  },
+  "en-base6-86": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "lightning"],
+        "damage": "20",
+        "local": {
+          "name": "Spark",
+          "text": "If your opponent has any Benched Pokémon, choose 1 of them and this attack does 10 damage to it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        "en": {
+          "name": "Spark",
+          "text": "If your opponent has any Benched Pokémon, choose 1 of them and this attack does 10 damage to it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "en-base6-87": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "Smash Kick", "text": "" },
+        "en": { "name": "Smash Kick", "text": "" }
+      },
+      {
+        "cost": ["fire", "fire"],
+        "damage": "30",
+        "local": { "name": "Flame Tail", "text": "" },
+        "en": { "name": "Flame Tail", "text": "" }
+      }
+    ]
+  },
+  "en-base6-88": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": { "name": "Dizziness", "text": "Draw a card." },
+        "en": { "name": "Dizziness", "text": "Draw a card." }
+      },
+      {
+        "cost": ["water", "colorless"],
+        "damage": "20+",
+        "local": {
+          "name": "Water Gun",
+          "text": "Does 20 damage plus 10 more damage for each Water Energy attached to Psyduck but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way."
+        },
+        "en": {
+          "name": "Water Gun",
+          "text": "Does 20 damage plus 10 more damage for each Water Energy attached to Psyduck but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way."
+        }
+      }
+    ]
+  },
+  "en-base6-89": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 30,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "20",
+        "local": { "name": "Bite", "text": "" },
+        "en": { "name": "Bite", "text": "" }
+      }
+    ]
+  },
+  "en-base6-90": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 70,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "Leer",
+          "text": "Flip a coin. If heads, the Defending Pokémon can't attack during your opponent's next turn. (Benching either Pokémon ends this effect.)"
+        },
+        "en": {
+          "name": "Leer",
+          "text": "Flip a coin. If heads, the Defending Pokémon can't attack during your opponent's next turn. (Benching either Pokémon ends this effect.)"
+        }
+      },
+      {
+        "cost": ["fighting", "colorless", "colorless"],
+        "damage": "30",
+        "local": { "name": "Horn Attack", "text": "" },
+        "en": { "name": "Horn Attack", "text": "" }
+      }
+    ]
+  },
+  "en-base6-91": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting"],
+        "damage": "10",
+        "local": {
+          "name": "Sand-attack",
+          "text": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing."
+        },
+        "en": {
+          "name": "Sand-attack",
+          "text": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing."
+        }
+      }
+    ]
+  },
+  "en-base6-92": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "10",
+        "local": { "name": "Headbutt", "text": "" },
+        "en": { "name": "Headbutt", "text": "" }
+      }
+    ]
+  },
+  "en-base6-93": {
+    "kind": "pokemon",
+    "artist": "Miki Tanaka",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "Spacing Out",
+          "text": "Flip a coin. If heads, remove a damage counter from Slowpoke. This attack can't be used if Slowpoke has no damage counters on it."
+        },
+        "en": {
+          "name": "Spacing Out",
+          "text": "Flip a coin. If heads, remove a damage counter from Slowpoke. This attack can't be used if Slowpoke has no damage counters on it."
+        }
+      },
+      {
+        "cost": ["psychic", "psychic"],
+        "damage": "",
+        "local": {
+          "name": "Scavenge",
+          "text": "Discard 1 Psychic Energy card attached to Slowpoke in order to use this attack. Put a Trainer card from your discard pile into your hand."
+        },
+        "en": {
+          "name": "Scavenge",
+          "text": "Discard 1 Psychic Energy card attached to Slowpoke in order to use this attack. Put a Trainer card from your discard pile into your hand."
+        }
+      }
+    ]
+  },
+  "en-base6-94": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 50,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "Peck", "text": "" },
+        "en": { "name": "Peck", "text": "" }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Mirror Move",
+          "text": "If Spearow was attacked last turn, do the final result of that attack on Spearow to the Defending Pokémon."
+        },
+        "en": {
+          "name": "Mirror Move",
+          "text": "If Spearow was attacked last turn, do the final result of that attack on Spearow to the Defending Pokémon."
+        }
+      }
+    ]
+  },
+  "en-base6-95": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "10",
+        "local": {
+          "name": "Bubble",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        },
+        "en": {
+          "name": "Bubble",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      },
+      {
+        "cost": ["water", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Withdraw",
+          "text": "Flip a coin. If heads, prevent all damage done to Squirtle during your opponent's next turn. (Any other effects of attacks still happen.)"
+        },
+        "en": {
+          "name": "Withdraw",
+          "text": "Flip a coin. If heads, prevent all damage done to Squirtle during your opponent's next turn. (Any other effects of attacks still happen.)"
+        }
+      }
+    ]
+  },
+  "en-base6-96": {
+    "kind": "pokemon",
+    "artist": "Kagemaru Himeno",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 30,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "10",
+        "local": { "name": "Acid", "text": "" },
+        "en": { "name": "Acid", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Cowardice",
+          "text": "At any time during your turn (before your attack), you may return Tentacool to your hand. (Discard all cards attached to Tentacool.) This power can't be used the turn you put Tentacool into play or if Tentacool is affected by a Special Condition."
+        },
+        "en": {
+          "name": "Cowardice",
+          "text": "At any time during your turn (before your attack), you may return Tentacool to your hand. (Discard all cards attached to Tentacool.) This power can't be used the turn you put Tentacool into play or if Tentacool is affected by a Special Condition."
+        }
+      }
+    ]
+  },
+  "en-base6-97": {
+    "kind": "pokemon",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "Tackle", "text": "" },
+        "en": { "name": "Tackle", "text": "" }
+      }
+    ]
+  },
+  "en-base6-98": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire", "fire"],
+        "damage": "10",
+        "local": {
+          "name": "Confuse Ray",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        },
+        "en": {
+          "name": "Confuse Ray",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        }
+      }
+    ]
+  },
+  "en-base6-99": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "10",
+        "local": {
+          "name": "Poison Sting",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+        },
+        "en": {
+          "name": "Poison Sting",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+        }
+      }
+    ]
+  },
+  "en-base6-100": {
+    "kind": "specialEnergy",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "If you play this card from your hand, the Pokémon you attach it to is no longer affected by a Special Condition. Full Heal Energy provides Colorless energy. (Doesn't count as a basic Energy card.)",
+      "local": "If you play this card from your hand, the Pokémon you attach it to is no longer affected by a Special Condition. Full Heal Energy provides Colorless energy. (Doesn't count as a basic Energy card.)"
+    }
+  },
+  "en-base6-101": {
+    "kind": "specialEnergy",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "If you play this card from your hand, remove 1 damage counter from the Pokémon you attach it to, if it has any. Potion Energy provides Colorless energy. (Doesn't count as a basic Energy card.)",
+      "local": "If you play this card from your hand, remove 1 damage counter from the Pokémon you attach it to, if it has any. Potion Energy provides Colorless energy. (Doesn't count as a basic Energy card.)"
+    }
+  },
+  "en-base6-102": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "rules": {
+      "en": "Put a Stage 2 Evolution card from your hand on the matching Basic Pokémon. You can play this card only when you would be allowed to evolve that Pokémon anyway.",
+      "local": "Put a Stage 2 Evolution card from your hand on the matching Basic Pokémon. You can play this card only when you would be allowed to evolve that Pokémon anyway."
+    }
+  },
+  "en-base6-103": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "rules": {
+      "en": "Trade 1 of the Basic Pokémon or Evolution cards in your hand for 1 of the Basic Pokémon or Evolution cards from your deck. Show both cards to your opponent. Shuffle your deck afterward.",
+      "local": "Trade 1 of the Basic Pokémon or Evolution cards in your hand for 1 of the Basic Pokémon or Evolution cards from your deck. Show both cards to your opponent. Shuffle your deck afterward."
+    }
+  },
+  "en-base6-104": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "rare",
+    "rules": {
+      "en": "Choose 1 of your Pokémon in play and return its Basic Pokémon card to your hand. (Discard all cards attached to that card.)",
+      "local": "Choose 1 of your Pokémon in play and return its Basic Pokémon card to your hand. (Discard all cards attached to that card.)"
+    }
+  },
+  "en-base6-105": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Search your deck for an Evolution card with Dark in its name. Show it to your opponent and put it into your hand. Shuffle your deck afterward.",
+      "local": "Search your deck for an Evolution card with Dark in its name. Show it to your opponent and put it into your hand. Shuffle your deck afterward."
+    }
+  },
+  "en-base6-106": {
+    "kind": "trainer",
+    "artist": "Kagemaru Himeno",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Ask your opponent if he or she accepts your challenge. If your opponent declines (or if both Benches are full), draw 2 cards. If your opponent accepts, each of you searches your decks for any number of Basic Pokémon cards and puts them face down onto your Benches. (A player can't do this if his or her Bench is full.) When you both have finished, shuffle your decks and turn those cards face up.",
+      "local": "Ask your opponent if he or she accepts your challenge. If your opponent declines (or if both Benches are full), draw 2 cards. If your opponent accepts, each of you searches your decks for any number of Basic Pokémon cards and puts them face down onto your Benches. (A player can't do this if his or her Bench is full.) When you both have finished, shuffle your decks and turn those cards face up."
+    }
+  },
+  "en-base6-107": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Trade 1 of the other cards in your hand for up to 2 basic Energy cards from your discard pile.",
+      "local": "Trade 1 of the other cards in your hand for up to 2 basic Energy cards from your discard pile."
+    }
+  },
+  "en-base6-108": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "rules": { "en": "Draw 2 cards.", "local": "Draw 2 cards." }
+  },
+  "en-base6-109": {
+    "kind": "trainer",
+    "hp": 10,
+    "artist": "Keiji Kinebuchi",
+    "rarity": "common",
+    "rules": {
+      "en": "Play Mysterious Fossil as if it were a Basic Pokémon. While in play, Mysterious Fossil counts as a Pokémon (instead of a Trainer card). Mysterious Fossil has no attacks, can't retreat, and can't be affected by Special Conditions. If Mysterious Fossil is Knocked Out, it doesn't count as a Knocked Out Pokémon. (Discard it anyway.) At any time during your turn before your attack, you may discard Mysterious Fossil from play. You can put Pokémon that evolve from Mysterious Fossil on this card.",
+      "local": "Play Mysterious Fossil as if it were a Basic Pokémon. While in play, Mysterious Fossil counts as a Pokémon (instead of a Trainer card). Mysterious Fossil has no attacks, can't retreat, and can't be affected by Special Conditions. If Mysterious Fossil is Knocked Out, it doesn't count as a Knocked Out Pokémon. (Discard it anyway.) At any time during your turn before your attack, you may discard Mysterious Fossil from play. You can put Pokémon that evolve from Mysterious Fossil on this card."
+    }
+  },
+  "en-base6-110": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "common",
+    "rules": {
+      "en": "Remove up to 2 damage counters from 1 of your Pokémon.",
+      "local": "Remove up to 2 damage counters from 1 of your Pokémon."
+    }
+  }
+}

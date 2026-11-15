@@ -1,0 +1,1178 @@
+{
+  "en-me55c-58": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "Gnaw", "text": "" },
+        "en": { "name": "Gnaw", "text": "" }
+      },
+      {
+        "cost": ["lightning", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "Thunder Jolt",
+          "text": "Flip a coin. If tails, Pikachu does 10 damage to itself."
+        },
+        "en": {
+          "name": "Thunder Jolt",
+          "text": "Flip a coin. If tails, Pikachu does 10 damage to itself."
+        }
+      }
+    ]
+  },
+  "en-me55c-4": {
+    "kind": "stage2",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 120,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Charmeleon", "local": "Charmeleon" }
+    },
+    "attacks": [
+      {
+        "cost": ["fire", "fire", "fire", "fire"],
+        "damage": "100",
+        "local": {
+          "name": "Fire Spin",
+          "text": "Discard 2 Energy cards attached to Charizard in order to use this attack."
+        },
+        "en": {
+          "name": "Fire Spin",
+          "text": "Discard 2 Energy cards attached to Charizard in order to use this attack."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Energy Burn",
+          "text": "As often as you like during your turn (before your attack), you may turn all Energy attached to Charizard into Fire Energy for the rest of the turn. This power can't be used if Charizard is Asleep, Confused, or Paralyzed."
+        },
+        "en": {
+          "name": "Energy Burn",
+          "text": "As often as you like during your turn (before your attack), you may turn all Energy attached to Charizard into Fire Energy for the rest of the turn. This power can't be used if Charizard is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "en-me55c-18": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "rules": {
+      "en": "Discard 2 of the other cards in your hand in order to play this card. If this turn's attack does damage to the Defending Pokémon (after applying Weakness and Resistance), and if the attacking Pokémon has Misty in its name, the attack does 20 more damage to the Defending Pokémon.",
+      "local": "Discard 2 of the other cards in your hand in order to play this card. If this turn's attack does damage to the Defending Pokémon (after applying Weakness and Resistance), and if the attacking Pokémon has Misty in its name, the attack does 20 more damage to the Defending Pokémon."
+    }
+  },
+  "en-me55c-69": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "Group Therapy",
+          "text": "You and your opponent remove 1 damage counter from each of your Pokémon with damage counters on them."
+        },
+        "en": {
+          "name": "Group Therapy",
+          "text": "You and your opponent remove 1 damage counter from each of your Pokémon with damage counters on them."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "40-",
+        "local": {
+          "name": "Pulled Punch",
+          "text": "If the Defending Pokémon has no damage counters on it, this attack does 40 damage. If it has any damage counters on it, this attack does 10 damage."
+        },
+        "en": {
+          "name": "Pulled Punch",
+          "text": "If the Defending Pokémon has no damage counters on it, this attack does 40 damage. If it has any damage counters on it, this attack does 10 damage."
+        }
+      }
+    ]
+  },
+  "en-me55c-25": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 60,
+      "retreat": 0,
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10×",
+        "local": {
+          "name": "Fury Swipes",
+          "text": "Flip 3 coins. This attack does 10 damage times the number of heads."
+        },
+        "en": {
+          "name": "Fury Swipes",
+          "text": "Flip 3 coins. This attack does 10 damage times the number of heads."
+        }
+      },
+      {
+        "cost": ["darkness", "darkness"],
+        "damage": "20×",
+        "local": {
+          "name": "Beat Up",
+          "text": "Flip a coin for each of your Pokémon in play (including this one). This attack does 20 damage times the number of heads."
+        },
+        "en": {
+          "name": "Beat Up",
+          "text": "Flip a coin for each of your Pokémon in play (including this one). This attack does 20 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "en-me55c-106": {
+    "kind": "pokemon",
+    "artist": "Hironobu Yoshida",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "",
+        "local": {
+          "name": "Healing Water",
+          "text": "Remove a number of damage counters from 1 of your Benched Pokémon equal to the number of Water Energy cards attached to Shining Celebi. If the Pokémon has fewer damage counters than that, remove all of them."
+        },
+        "en": {
+          "name": "Healing Water",
+          "text": "Remove a number of damage counters from 1 of your Benched Pokémon equal to the number of Water Energy cards attached to Shining Celebi. If the Pokémon has fewer damage counters than that, remove all of them."
+        }
+      },
+      {
+        "cost": ["grass", "psychic"],
+        "damage": "10",
+        "local": {
+          "name": "Miracle Leaf",
+          "text": "Flip a number of coins equal to the number of Energy attached to the Defending Pokémon. If you get 1 or more heads, the Defending Pokémon is now Asleep, Confused, or Poisoned (your choice)."
+        },
+        "en": {
+          "name": "Miracle Leaf",
+          "text": "Flip a number of coins equal to the number of Energy attached to the Defending Pokémon. If you get 1 or more heads, the Defending Pokémon is now Asleep, Confused, or Poisoned (your choice)."
+        }
+      }
+    ],
+    "rules": {
+      "en": "You can't have more than 1 Shining Celebi in your deck.",
+      "local": "You can't have more than 1 Shining Celebi in your deck."
+    }
+  },
+  "en-me55c-149": {
+    "kind": "pokemon",
+    "artist": "Naoyo Kimura",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 80,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "fire"],
+        "damage": "10×",
+        "local": {
+          "name": "Psychic",
+          "text": "This attack does 10 damage times the number of Energy cards attached to the Defending Pokémon."
+        },
+        "en": {
+          "name": "Psychic",
+          "text": "This attack does 10 damage times the number of Energy cards attached to the Defending Pokémon."
+        }
+      },
+      {
+        "cost": ["water", "water", "fire", "colorless"],
+        "damage": "50",
+        "local": { "name": "Steam Blast", "text": "Discard an Energy card attached to Lugia." },
+        "en": { "name": "Steam Blast", "text": "Discard an Energy card attached to Lugia." }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Crystal Type",
+          "text": "Whenever you attach a Fire, Water, or Psychic basic Energy card from your hand to Lugia, Lugia's type (color) becomes the same as that Energy card type until the end of the turn."
+        },
+        "en": {
+          "name": "Crystal Type",
+          "text": "Whenever you attach a Fire, Water, or Psychic basic Energy card from your hand to Lugia, Lugia's type (color) becomes the same as that Energy card type until the end of the turn."
+        }
+      }
+    ]
+  },
+  "en-me55c-5": {
+    "kind": "stage1",
+    "artist": "Atsuko Nishida",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Skitty", "local": "Skitty" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10×",
+        "local": {
+          "name": "Max Energy Source",
+          "text": "Does 10 damage times the amount of Energy attached to all of your Active Pokémon."
+        },
+        "en": {
+          "name": "Max Energy Source",
+          "text": "Does 10 damage times the amount of Energy attached to all of your Active Pokémon."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Energy Draw",
+          "text": "Once during your turn (before your attack), you may discard 1 Energy card from your hand. Then draw up to 3 cards from your deck. This power can't be used if Delcatty is affected by a Special Condition."
+        },
+        "en": {
+          "name": "Energy Draw",
+          "text": "Once during your turn (before your attack), you may discard 1 Energy card from your hand. Then draw up to 3 cards from your deck. This power can't be used if Delcatty is affected by a Special Condition."
+        }
+      }
+    ]
+  },
+  "en-me55c-19": {
+    "kind": "stage2",
+    "artist": "Nakaoka",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 120,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }],
+      "evolvesFrom": { "en": "Dark Pupitar", "local": "Dark Pupitar" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10+",
+        "local": {
+          "name": "Grind",
+          "text": "Does 10 damage plus 10 more damage for each Energy attached to Dark Tyranitar."
+        },
+        "en": {
+          "name": "Grind",
+          "text": "Does 10 damage plus 10 more damage for each Energy attached to Dark Tyranitar."
+        }
+      },
+      {
+        "cost": ["darkness", "colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Spinning Tail",
+          "text": "Does 20 damage to each of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        "en": {
+          "name": "Spinning Tail",
+          "text": "Does 20 damage to each of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      },
+      {
+        "cost": ["darkness", "darkness", "colorless", "colorless", "colorless"],
+        "damage": "70+",
+        "local": {
+          "name": "Bite Off",
+          "text": "If the Defending Pokémon is Pokémon-ex, this attack does 70 damage plus 50 more damage."
+        },
+        "en": {
+          "name": "Bite Off",
+          "text": "If the Defending Pokémon is Pokémon-ex, this attack does 70 damage plus 50 more damage."
+        }
+      }
+    ]
+  },
+  "en-me55c-108": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "metal",
+      "types": ["metal"],
+      "hp": 120,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "grass", "value": "-30" }],
+      "evolvesFrom": { "en": "Scyther", "local": "Scyther" }
+    },
+    "attacks": [
+      {
+        "cost": ["metal", "colorless"],
+        "damage": "40",
+        "local": {
+          "name": "Steel Wing",
+          "text": "During your opponent's next turn, any damage done to Scizor ex by attacks is reduced by 20 (after applying Weakness and Resistance)."
+        },
+        "en": {
+          "name": "Steel Wing",
+          "text": "During your opponent's next turn, any damage done to Scizor ex by attacks is reduced by 20 (after applying Weakness and Resistance)."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "50+",
+        "local": {
+          "name": "Cross-Cut",
+          "text": "If the Defending Pokémon is an Evolved Pokémon, this attack does 50 damage plus 30 more damage."
+        },
+        "en": {
+          "name": "Cross-Cut",
+          "text": "If the Defending Pokémon is an Evolved Pokémon, this attack does 50 damage plus 30 more damage."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Danger Perception",
+          "text": "As long as Scizor ex's remaining HP is 60 or less, Scizor ex does 40 more damage to the Defending Pokémon (before applying Weakness and Resistance)."
+        },
+        "en": {
+          "name": "Danger Perception",
+          "text": "As long as Scizor ex's remaining HP is 60 or less, Scizor ex does 40 more damage to the Defending Pokémon (before applying Weakness and Resistance)."
+        }
+      }
+    ],
+    "rules": {
+      "en": "When Pokémon-ex has been Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "When Pokémon-ex has been Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-me55c-11": {
+    "kind": "stage2",
+    "artist": "Masakazu Fukuda",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning", "metal"],
+      "hp": 100,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "grass", "value": "-30" }],
+      "evolvesFrom": { "en": "Metang", "local": "Metang" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "metal"],
+        "damage": "30+",
+        "local": {
+          "name": "Crush and Burn",
+          "text": "You may discard as many Energy cards as you like attached to your Pokémon in play. If you do, this attack does 30 damage plus 20 more damage for each Energy card you discarded."
+        },
+        "en": {
+          "name": "Crush and Burn",
+          "text": "You may discard as many Energy cards as you like attached to your Pokémon in play. If you do, this attack does 30 damage plus 20 more damage for each Energy card you discarded."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Delta Control",
+          "text": "Once during your turn (before your attack), you may look at the top 4 cards of your deck, choose 1 of them, and put it into your hand. Put the 3 other cards on the bottom of your deck in any order. This power can't be used if Metagross is affected by a Special Condition."
+        },
+        "en": {
+          "name": "Delta Control",
+          "text": "Once during your turn (before your attack), you may look at the top 4 cards of your deck, choose 1 of them, and put it into your hand. Put the 3 other cards on the bottom of your deck in any order. This power can't be used if Metagross is affected by a Special Condition."
+        }
+      }
+    ],
+    "rules": {
+      "en": "This Pokémon is both Lightning Metal type.",
+      "local": "This Pokémon is both Lightning Metal type."
+    }
+  },
+  "en-me55c-106p": {
+    "kind": "pokemon",
+    "artist": "Ryo Ueda",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 120,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Palkia", "local": "Palkia" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water", "water"],
+        "damage": "60",
+        "local": {
+          "name": "Hydro Reflect",
+          "text": "You may move all Energy cards attached to Palkia to your Benched Pokémon in any way you like. (Ignore this effect if you don't have any Benched Pokémon.)"
+        },
+        "en": {
+          "name": "Hydro Reflect",
+          "text": "You may move all Energy cards attached to Palkia to your Benched Pokémon in any way you like. (Ignore this effect if you don't have any Benched Pokémon.)"
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Restructure",
+          "text": "Once during your turn (before your attack), you may have your opponent switch 1 of your Active Pokémon with 1 of your Benched Pokémon. Then, you switch 1 of the Defending Pokémon with 1 of your opponent's Benched Pokémon. This power can't be used if Palkia is affected by a Special Condition."
+        },
+        "en": {
+          "name": "Restructure",
+          "text": "Once during your turn (before your attack), you may have your opponent switch 1 of your Active Pokémon with 1 of your Benched Pokémon. Then, you switch 1 of the Defending Pokémon with 1 of your opponent's Benched Pokémon. This power can't be used if Palkia is affected by a Special Condition."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Put this card onto your Active Palkia. Palkia LV.X can use any attack, Poké-Power, or Poké-Body from its previous level.",
+      "local": "Put this card onto your Active Palkia. Palkia LV.X can use any attack, Poké-Power, or Poké-Body from its previous level."
+    }
+  },
+  "en-me55c-43": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "+20" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "20",
+        "local": {
+          "name": "Psychic Restore",
+          "text": "You may put Uxie and all cards attached to it on the bottom of your deck in any order."
+        },
+        "en": {
+          "name": "Psychic Restore",
+          "text": "You may put Uxie and all cards attached to it on the bottom of your deck in any order."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Set Up",
+          "text": "Once during your turn, when you put Uxie from your hand onto your Bench, you may draw cards until you have 7 cards in your hand."
+        },
+        "en": {
+          "name": "Set Up",
+          "text": "Once during your turn, when you put Uxie from your hand onto your Bench, you may draw cards until you have 7 cards in your hand."
+        }
+      }
+    ]
+  },
+  "en-me55c-47": {
+    "kind": "pokemon",
+    "artist": "Makoto Imai",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 80,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-20" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Toxic Fang",
+          "text": "The Defending Pokémon is now Poisoned. Put 2 damage counters instead of 1 on the Defending Pokémon between turns."
+        },
+        "en": {
+          "name": "Toxic Fang",
+          "text": "The Defending Pokémon is now Poisoned. Put 2 damage counters instead of 1 on the Defending Pokémon between turns."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Flash Bite",
+          "text": "Once during your turn, when you put Crobat G from your hand onto your Bench, you may put 1 damage counter on 1 of your opponent's Pokémon."
+        },
+        "en": {
+          "name": "Flash Bite",
+          "text": "Once during your turn, when you put Crobat G from your hand onto your Bench, you may put 1 damage counter on 1 of your opponent's Pokémon."
+        }
+      }
+    ]
+  },
+  "en-me55c-94": {
+    "kind": "stage2",
+    "artist": "Takashi Yamaguchi",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 130,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "colorless", "value": "-20" }],
+      "evolvesFrom": { "en": "Haunter", "local": "Haunter" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": {
+          "name": "Hurl into Darkness",
+          "text": "Look at your opponent's hand and choose a number of Pokémon you find there up to the number of Psychic Energy attached to Gengar. Put the Pokémon you chose in the Lost Zone."
+        },
+        "en": {
+          "name": "Hurl into Darkness",
+          "text": "Look at your opponent's hand and choose a number of Pokémon you find there up to the number of Psychic Energy attached to Gengar. Put the Pokémon you chose in the Lost Zone."
+        }
+      },
+      {
+        "cost": ["psychic", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Cursed Drop",
+          "text": "Put 4 damage counters on your opponent's Pokémon in any way you like."
+        },
+        "en": {
+          "name": "Cursed Drop",
+          "text": "Put 4 damage counters on your opponent's Pokémon in any way you like."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Catastrophe",
+          "text": "As long as Gengar is your Active Pokémon, if any of your opponent's Pokémon would be Knocked Out, put that Pokémon in the Lost Zone instead of discarding. (Discard all cards attached to that Pokémon.)"
+        },
+        "en": {
+          "name": "Catastrophe",
+          "text": "As long as Gengar is your Active Pokémon, if any of your opponent's Pokémon would be Knocked Out, put that Pokémon in the Lost Zone instead of discarding. (Discard all cards attached to that Pokémon.)"
+        }
+      }
+    ]
+  },
+  "en-me55c-99": {
+    "kind": "pokemon",
+    "artist": "Noriko Takaya,                   \n                    \n                      Shinji Higuchi",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness", "psychic"],
+      "hp": 150,
+      "retreat": 2,
+      "weaknesses": [
+        { "energy": "fighting", "value": "×2" },
+        { "energy": "psychic", "value": "×2" }
+      ]
+    },
+    "attacks": [
+      {
+        "cost": ["darkness", "darkness", "colorless", "colorless"],
+        "damage": "100",
+        "local": {
+          "name": "Lost Crisis",
+          "text": "Choose 2 Energy attached to Darkrai & Cresselia LEGEND and put them in the Lost Zone. If any of your opponent's Pokémon would be Knocked Out by damage from this attack, put that Pokémon and all cards attached to it in the Lost Zone instead of discarding it."
+        },
+        "en": {
+          "name": "Lost Crisis",
+          "text": "Choose 2 Energy attached to Darkrai & Cresselia LEGEND and put them in the Lost Zone. If any of your opponent's Pokémon would be Knocked Out by damage from this attack, put that Pokémon and all cards attached to it in the Lost Zone instead of discarding it."
+        }
+      },
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": {
+          "name": "Moon's Invite",
+          "text": "Move as many damage counters on your opponent's Pokémon as you like to any of your opponent's other Pokémon in any way you like."
+        },
+        "en": {
+          "name": "Moon's Invite",
+          "text": "Move as many damage counters on your opponent's Pokémon as you like to any of your opponent's other Pokémon in any way you like."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Put this card from your hand onto your Bench only with the other half of Darkrai & Cresselia LEGEND.\nWhen this Pokémon has been Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "Put this card from your hand onto your Bench only with the other half of Darkrai & Cresselia LEGEND.\nWhen this Pokémon has been Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-me55c-100": {
+    "kind": "pokemon",
+    "artist": "Noriko Takaya,                   \n                    \n                      Shinji Higuchi",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness", "psychic"],
+      "hp": 150,
+      "retreat": 2,
+      "weaknesses": [
+        { "energy": "fighting", "value": "×2" },
+        { "energy": "psychic", "value": "×2" }
+      ]
+    },
+    "attacks": [
+      {
+        "cost": ["darkness", "darkness", "colorless", "colorless"],
+        "damage": "100",
+        "local": {
+          "name": "Lost Crisis",
+          "text": "Choose 2 Energy attached to Darkrai & Cresselia LEGEND and put them in the Lost Zone. If any of your opponent's Pokémon would be Knocked Out by damage from this attack, put that Pokémon and all cards attached to it in the Lost Zone instead of discarding it."
+        },
+        "en": {
+          "name": "Lost Crisis",
+          "text": "Choose 2 Energy attached to Darkrai & Cresselia LEGEND and put them in the Lost Zone. If any of your opponent's Pokémon would be Knocked Out by damage from this attack, put that Pokémon and all cards attached to it in the Lost Zone instead of discarding it."
+        }
+      },
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": {
+          "name": "Moon's Invite",
+          "text": "Move as many damage counters on your opponent's Pokémon as you like to any of your opponent's other Pokémon in any way you like."
+        },
+        "en": {
+          "name": "Moon's Invite",
+          "text": "Move as many damage counters on your opponent's Pokémon as you like to any of your opponent's other Pokémon in any way you like."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Put this card from your hand onto your Bench only with the other half of Darkrai & Cresselia LEGEND.\nWhen this Pokémon has been Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "Put this card from your hand onto your Bench only with the other half of Darkrai & Cresselia LEGEND.\nWhen this Pokémon has been Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-me55c-101": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "secret",
+    "rules": {
+      "en": "Each player shuffles his or her hand into his or her deck. Then, each player draws a card for each of his or her remaining Prize cards.\nYou may play only 1 Supporter card during your turn (before your attack).",
+      "local": "Each player shuffles his or her hand into his or her deck. Then, each player draws a card for each of his or her remaining Prize cards.\nYou may play only 1 Supporter card during your turn (before your attack)."
+    }
+  },
+  "en-me55c-85": {
+    "kind": "pokemon",
+    "artist": "Eske Yoshinob",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "dragon",
+      "types": ["dragon"],
+      "hp": 170,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "dragon", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "Celestial Roar",
+          "text": "Discard the top 3 cards of your deck. If any of those cards are Energy cards, attach them to this Pokémon."
+        },
+        "en": {
+          "name": "Celestial Roar",
+          "text": "Discard the top 3 cards of your deck. If any of those cards are Energy cards, attach them to this Pokémon."
+        }
+      },
+      {
+        "cost": ["fire", "lightning"],
+        "damage": "60×",
+        "local": {
+          "name": "Dragon Burst",
+          "text": "Discard all basic Fire Energy or all basic Lightning Energy attached to this Pokémon. This attack does 60 damage times the number of Energy cards you discarded."
+        },
+        "en": {
+          "name": "Dragon Burst",
+          "text": "Discard all basic Fire Energy or all basic Lightning Energy attached to this Pokémon. This attack does 60 damage times the number of Energy cards you discarded."
+        }
+      }
+    ],
+    "rules": {
+      "en": "When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-me55c-11g": {
+    "kind": "pokemon",
+    "artist": "Eske Yoshinob",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 170,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "grass", "colorless"],
+        "damage": "100",
+        "local": {
+          "name": "Megalo Cannon",
+          "text": "Does 20 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        "en": {
+          "name": "Megalo Cannon",
+          "text": "Does 20 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Red Signal",
+          "text": "When you attach a Plasma Energy from your hand to this Pokémon, you may switch 1 of your opponent's Benched Pokémon with his or her Active Pokémon."
+        },
+        "en": {
+          "name": "Red Signal",
+          "text": "When you attach a Plasma Energy from your hand to this Pokémon, you may switch 1 of your opponent's Benched Pokémon with his or her Active Pokémon."
+        }
+      }
+    ],
+    "rules": {
+      "en": "When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "When a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-me55c-106m": {
+    "kind": "pokemon",
+    "artist": "5ban Graphics",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "fairy",
+      "types": ["fairy"],
+      "hp": 210,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "metal", "value": "×2" }],
+      "resistances": [{ "energy": "darkness", "value": "-20" }],
+      "evolvesFrom": { "en": "Gardevoir-EX", "local": "Gardevoir-EX" }
+    },
+    "attacks": [
+      {
+        "cost": ["fairy", "colorless", "colorless"],
+        "damage": "30×",
+        "local": {
+          "name": "Brilliant Arrow",
+          "text": "This attack does 30 damage times the number of Fairy Energy attached to all of your Pokémon."
+        },
+        "en": {
+          "name": "Brilliant Arrow",
+          "text": "This attack does 30 damage times the number of Fairy Energy attached to all of your Pokémon."
+        }
+      }
+    ],
+    "rules": {
+      "en": "When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.\nWhen a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "When 1 of your Pokémon becomes a Mega Evolution Pokémon, your turn ends.\nWhen a Pokémon-EX has been Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-me55c-41": {
+    "kind": "pokemon",
+    "artist": "5ban Graphics",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 170,
+      "retreat": 0,
+      "evolvesFrom": { "en": "Greninja", "local": "Greninja" }
+    },
+    "powers": [
+      {
+        "local": {
+          "name": "Giant Water Shuriken",
+          "text": "Once during your turn (before your attack), if this Pokémon is your Active Pokémon, you may discard a Water Energy card from your hand. If you do, put 6 damage counters on 1 of your opponents Pokémon."
+        },
+        "en": {
+          "name": "Giant Water Shuriken",
+          "text": "Once during your turn (before your attack), if this Pokémon is your Active Pokémon, you may discard a Water Energy card from your hand. If you do, put 6 damage counters on 1 of your opponents Pokémon."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Greninja BREAK retains the attacks, Abilities, Weakness, Resistance, and Retreat Cost of its previous Evolution.",
+      "local": "Greninja BREAK retains the attacks, Abilities, Weakness, Resistance, and Retreat Cost of its previous Evolution."
+    }
+  },
+  "en-me55c-89": {
+    "kind": "stage2",
+    "artist": "PLANETA",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "metal",
+      "types": ["metal"],
+      "hp": 250,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-20" }],
+      "evolvesFrom": { "en": "Cosmoem", "local": "Cosmoem" }
+    },
+    "attacks": [
+      {
+        "cost": ["metal", "metal", "colorless"],
+        "damage": "230",
+        "local": { "name": "Sunsteel Strike", "text": "Discard all Energy from this Pokémon." },
+        "en": { "name": "Sunsteel Strike", "text": "Discard all Energy from this Pokémon." }
+      },
+      {
+        "cost": ["metal"],
+        "damage": "",
+        "local": {
+          "name": "Sol Burst-GX",
+          "text": "Search your deck for up to 5 Energy cards and attach them to your Pokémon in any way you like. Then, shuffle your deck. (You can't use more than 1 GX attack in a game.)"
+        },
+        "en": {
+          "name": "Sol Burst-GX",
+          "text": "Search your deck for up to 5 Energy cards and attach them to your Pokémon in any way you like. Then, shuffle your deck. (You can't use more than 1 GX attack in a game.)"
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Ultra Road",
+          "text": "Once during your turn (before your attack), you may switch your Active Pokémon with 1 of your Benched Pokémon."
+        },
+        "en": {
+          "name": "Ultra Road",
+          "text": "Once during your turn (before your attack), you may switch your Active Pokémon with 1 of your Benched Pokémon."
+        }
+      }
+    ],
+    "rules": {
+      "en": "When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-me55c-57": {
+    "kind": "pokemon",
+    "artist": "5ban Graphics",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 190,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting"],
+        "damage": "30",
+        "local": {
+          "name": "Jet Punch",
+          "text": "This attack does 30 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        "en": {
+          "name": "Jet Punch",
+          "text": "This attack does 30 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      },
+      {
+        "cost": ["fighting", "fighting", "fighting"],
+        "damage": "160",
+        "local": {
+          "name": "Knuckle Impact",
+          "text": "This Pokémon can't attack during your next turn."
+        },
+        "en": {
+          "name": "Knuckle Impact",
+          "text": "This Pokémon can't attack during your next turn."
+        }
+      },
+      {
+        "cost": ["fighting", "fighting", "fighting"],
+        "damage": "40×",
+        "local": {
+          "name": "Absorption-GX",
+          "text": "This attack does 40 damage for each of your remaining Prize cards. (You can't use more than 1 GX attack in a game.)"
+        },
+        "en": {
+          "name": "Absorption-GX",
+          "text": "This attack does 40 damage for each of your remaining Prize cards. (You can't use more than 1 GX attack in a game.)"
+        }
+      }
+    ],
+    "rules": {
+      "en": "When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "When your Pokémon-GX is Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-me55c-33": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 240,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "metal", "value": "-20" }]
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "lightning", "lightning"],
+        "damage": "150",
+        "local": {
+          "name": "Full Blitz",
+          "text": "Search your deck for up to 3 Lightning Energy cards and attach them to 1 of your Pokémon. Then, shuffle your deck."
+        },
+        "en": {
+          "name": "Full Blitz",
+          "text": "Search your deck for up to 3 Lightning Energy cards and attach them to 1 of your Pokémon. Then, shuffle your deck."
+        }
+      },
+      {
+        "cost": ["lightning", "lightning", "lightning"],
+        "damage": "200",
+        "local": {
+          "name": "Tag Bolt-GX",
+          "text": "If this Pokémon has at least 3 extra Lightning Energy attached to it (in addition to this attack's cost), this attack does 170 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.) (You can't use more than 1 GX attack in a game.)"
+        },
+        "en": {
+          "name": "Tag Bolt-GX",
+          "text": "If this Pokémon has at least 3 extra Lightning Energy attached to it (in addition to this attack's cost), this attack does 170 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.) (You can't use more than 1 GX attack in a game.)"
+        }
+      }
+    ],
+    "rules": {
+      "en": "When your TAG TEAM is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "When your TAG TEAM is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  },
+  "en-me55c-138": {
+    "kind": "pokemon",
+    "artist": "5ban Graphics",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "metal",
+      "types": ["metal"],
+      "hp": 220,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "grass", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["metal", "metal", "metal"],
+        "damage": "230",
+        "local": {
+          "name": "Brave Blade",
+          "text": "During your next turn, this Pokémon can't attack."
+        },
+        "en": { "name": "Brave Blade", "text": "During your next turn, this Pokémon can't attack." }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Intrepid Sword",
+          "text": "Once during your turn, you may look at the top 3 cards of your deck and attach any number of Metal Energy cards you find there to this Pokémon. Put the other cards into your hand. If you use this Ability, your turn ends."
+        },
+        "en": {
+          "name": "Intrepid Sword",
+          "text": "Once during your turn, you may look at the top 3 cards of your deck and attach any number of Metal Energy cards you find there to this Pokémon. Put the other cards into your hand. If you use this Ability, your turn ends."
+        }
+      }
+    ],
+    "rules": {
+      "en": "When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-me55c-50": {
+    "kind": "pokemon",
+    "artist": "Hideki Ishikawa",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 110,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "lightning", "metal"],
+        "damage": "120",
+        "local": {
+          "name": "Amazing Shot",
+          "text": "This attack also does 120 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        "en": {
+          "name": "Amazing Shot",
+          "text": "This attack also does 120 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "en-me55c-114": {
+    "kind": "pokemon",
+    "artist": "5ban Graphics",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 310,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Mew V", "local": "Mew V" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Cross Fusion Strike",
+          "text": "Choose 1 of your Benched Fusion Strike Pokémon's attacks and use it as this attack."
+        },
+        "en": {
+          "name": "Cross Fusion Strike",
+          "text": "Choose 1 of your Benched Fusion Strike Pokémon's attacks and use it as this attack."
+        }
+      },
+      {
+        "cost": ["psychic", "psychic"],
+        "damage": "130",
+        "local": {
+          "name": "Max Miracle",
+          "text": "This attack's damage isn't affected by any effects on your opponent's Active Pokémon."
+        },
+        "en": {
+          "name": "Max Miracle",
+          "text": "This attack's damage isn't affected by any effects on your opponent's Active Pokémon."
+        }
+      }
+    ],
+    "rules": {
+      "en": "When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  },
+  "en-me55c-123": {
+    "kind": "pokemon",
+    "artist": "5ban Graphics",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 280,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Arceus V", "local": "Arceus V" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "200",
+        "local": {
+          "name": "Trinity Nova",
+          "text": "Search your deck for up to 3 basic Energy cards and attach them to your Pokémon V in any way you like. Then, shuffle your deck."
+        },
+        "en": {
+          "name": "Trinity Nova",
+          "text": "Search your deck for up to 3 basic Energy cards and attach them to your Pokémon V in any way you like. Then, shuffle your deck."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Starbirth",
+          "text": "During your turn, you may search your deck for up to 2 cards and put them into your hand. Then, shuffle your deck. (You can't use more than 1 VSTAR Power in a game.)"
+        },
+        "en": {
+          "name": "Starbirth",
+          "text": "During your turn, you may search your deck for up to 2 cards and put them into your hand. Then, shuffle your deck. (You can't use more than 1 VSTAR Power in a game.)"
+        }
+      }
+    ],
+    "rules": {
+      "en": "When your Pokémon VSTAR is Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "When your Pokémon VSTAR is Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-me55c-203": {
+    "kind": "pokemon",
+    "artist": "Shinji Kanda",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 30,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "10+",
+        "local": {
+          "name": "Expert Splasher",
+          "text": "Flip 2 coins. If both of them are heads, this attack does 20 more damage."
+        },
+        "en": {
+          "name": "Expert Splasher",
+          "text": "Flip 2 coins. If both of them are heads, this attack does 20 more damage."
+        }
+      }
+    ]
+  }
+}

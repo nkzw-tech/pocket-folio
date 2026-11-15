@@ -1,0 +1,19 @@
+.binder-color-display-control {
+  flex: 1;
+  min-width: 0;
+}
+.binder-color-display-preview {
+  position: relative;
+  flex: 0 0 76px;
+  aspect-ratio: 245 / 342;
+  border-radius: 8px;
+  corner-shape: squircle;
+  overflow: hidden;
+}
+.binder-color-display-preview .folio-placeholder {
+  padding: 4px;
+  font-size: 8px;
+}
+.binder-color-display-preview .folio-placeholder-number {
+  font-size: 16px;
+}

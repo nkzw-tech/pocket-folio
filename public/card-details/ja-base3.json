@@ -1,0 +1,1553 @@
+{
+  "ja-base3-1": {
+    "kind": "pokemon",
+    "artist": "Kagemaru Himeno",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "",
+        "local": {
+          "name": "どくえき",
+          "text": "コインを投げて「おもて」なら、相手を「どく」状態にする。"
+        },
+        "en": {
+          "name": "Spit Poison",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+        }
+      },
+      {
+        "cost": ["grass", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "まきつく",
+          "text": "コインを投げて「おもて」なら、相手を「マヒ」状態にする。"
+        },
+        "en": {
+          "name": "Wrap",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-base3-2": {
+    "kind": "pokemon",
+    "artist": "Kagemaru Himeno",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 40,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "ちょうおんぱ",
+          "text": "コインを投げて「おもて」なら、相手を「こんらん」状態にする。"
+        },
+        "en": {
+          "name": "Supersonic",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        }
+      },
+      {
+        "cost": ["grass", "colorless"],
+        "damage": "10",
+        "local": {
+          "name": "きゅうけつ",
+          "text": "相手にダメージを与えたら、与えたぶんのダメージカウンターを自分からとりのぞく。"
+        },
+        "en": {
+          "name": "Leech Life",
+          "text": "Remove a number of damage counters from Zubat equal to the damage done to the Defending Pokémon (after applying Weakness and Resistance). If Zubat has fewer damage counters than that, remove all of them."
+        }
+      }
+    ]
+  },
+  "ja-base3-3": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": {
+          "name": "ベトベト",
+          "text": "コインを投げて「おもて」なら、相手を「マヒ」状態にする。"
+        },
+        "en": {
+          "name": "Nasty Goo",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      },
+      {
+        "cost": ["grass"],
+        "damage": "",
+        "local": {
+          "name": "ちいさくなる",
+          "text": "次の相手の番でこのカードが受けるダメージは20へる。(ダメージ以外の効果はそのまま)"
+        },
+        "en": {
+          "name": "Minimize",
+          "text": "All damage done by attacks to Grimer during your opponent's next turn is reduced by 20 (after applying Weakness and Resistance)."
+        }
+      }
+    ]
+  },
+  "ja-base3-4": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Ekans", "local": "アーボ" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "10",
+        "local": {
+          "name": "いかくこうげき",
+          "text": "コインを投げて「おもて」なら、相手を控えポケモンと入れ替える。入れ替わるポケモンは、相手が選ぶ。（相手に控えがいないとき、入れ替えはおこらない）"
+        },
+        "en": {
+          "name": "Terror Strike",
+          "text": "Flip a coin. If heads and if your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon. (Do the damage before switching the Pokémon.)"
+        }
+      },
+      {
+        "cost": ["grass", "grass", "colorless"],
+        "damage": "20",
+        "local": { "name": "どくのキバ", "text": "相手を「どく」状態にする。" },
+        "en": { "name": "Poison Fang", "text": "The Defending Pokémon is now Poisoned." }
+      }
+    ]
+  },
+  "ja-base3-5": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 60,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Zubat", "local": "ズバット" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "30",
+        "local": { "name": "つばさでうつ", "text": "" },
+        "en": { "name": "Wing Attack", "text": "" }
+      },
+      {
+        "cost": ["grass", "grass", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "きゅうけつ",
+          "text": "相手にダメージを与えたら、与えたぶんのダメージカウンターを自分からとりのぞく。"
+        },
+        "en": {
+          "name": "Leech Life",
+          "text": "Remove a number of damage counters from Golbat equal to the damage done to the Defending Pokémon (after applying Weakness and Resistance). If Golbat has fewer damage counters than that, remove all of them."
+        }
+      }
+    ]
+  },
+  "ja-base3-6": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Koffing", "local": "ドガース" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "grass"],
+        "damage": "20",
+        "local": {
+          "name": "スモッグ",
+          "text": "コインを投げて「おもて」なら、相手を「どく」状態にする。"
+        },
+        "en": {
+          "name": "Smog",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+        }
+      },
+      {
+        "cost": ["grass", "grass", "colorless"],
+        "damage": "60",
+        "local": {
+          "name": "じばく",
+          "text": "自分にも60ダメージ。お互いの控えポケモン全員にも、「弱点・抵抗力」に関係なく、それぞれ10ダメージ。"
+        },
+        "en": {
+          "name": "Selfdestruct",
+          "text": "Does 10 damage to each Pokémon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pokémon.) Weezing does 60 damage to itself."
+        }
+      }
+    ]
+  },
+  "ja-base3-7": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Grimer", "local": "ベトベター" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "grass", "grass"],
+        "damage": "30",
+        "local": {
+          "name": "ヘドロこうげき",
+          "text": "コインを投げて「おもて」なら、相手を「どく」状態にする。"
+        },
+        "en": {
+          "name": "Sludge",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "かがくへんかガス",
+          "text": "ベトベトンが場にいる限り、場にいる全てのポケモンの特殊能力は使えず、その力も消える。（ただし、この「かがくへんかガス」という特殊能力は除く）「ねむり・マヒ・こんらん」状態の時、この「かがくへんかガス」の力は消える。"
+        },
+        "en": {
+          "name": "Toxic Gas",
+          "text": "Ignore all Pokémon Powers other than Toxic Gases. This power stops working while Muk is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-base3-8": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire"],
+        "damage": "10",
+        "local": {
+          "name": "えんまく",
+          "text": "次の相手の番、このワザを受けた相手のバトルポケモンがワザを使うとき、相手はコインを1回投げる。ウラならそのワザは失敗。"
+        },
+        "en": {
+          "name": "Smokescreen",
+          "text": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing."
+        }
+      },
+      {
+        "cost": ["fire", "fire"],
+        "damage": "20",
+        "local": {
+          "name": "スモッグ",
+          "text": "コインを投げて「おもて」なら、相手を「どく」状態にする。"
+        },
+        "en": {
+          "name": "Smog",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+        }
+      }
+    ]
+  },
+  "ja-base3-9": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 70,
+      "retreat": 1,
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire"],
+        "damage": "",
+        "local": {
+          "name": "やまやき",
+          "text": "自分の「炎」エネルギーカードを好きなだけはがしてすてる。その後、はがしたのと同じ枚数のカードを相手の山札の上から取り、相手のトラッシュにすてる。"
+        },
+        "en": {
+          "name": "Wildfire",
+          "text": "You may discard any number of Fire Energy cards attached to Moltres when you use this attack. If you do, discard that many cards from the top of your opponent's deck."
+        }
+      },
+      {
+        "cost": ["fire", "fire", "fire", "fire"],
+        "damage": "80",
+        "local": {
+          "name": "ゴッドバード",
+          "text": "コインを投げて「うら」なら、相手にダメージをあたえることができない。"
+        },
+        "en": { "name": "Dive Bomb", "text": "Flip a coin. If tails, this attack does nothing." }
+      }
+    ]
+  },
+  "ja-base3-10": {
+    "kind": "pokemon",
+    "artist": "Kagemaru Himeno",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": {
+          "name": "ずつう",
+          "text": "次の相手の番の終わりまで、相手プレイヤーはトレーナーカードを使うことができない。"
+        },
+        "en": {
+          "name": "Headache",
+          "text": "Your opponent can't play Trainer cards during his or her next turn."
+        }
+      },
+      {
+        "cost": ["water"],
+        "damage": "10×",
+        "local": { "name": "みだれひっかき", "text": "コインを3回投げ、オモテの数×10ダメージ。" },
+        "en": {
+          "name": "Fury Swipes",
+          "text": "Flip 3 coins. This attack does 10 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "ja-base3-11": {
+    "kind": "pokemon",
+    "artist": "Kagemaru Himeno",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 30,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "10",
+        "local": { "name": "ようかいえき", "text": "" },
+        "en": { "name": "Acid", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "おくびょう",
+          "text": "自分の番であれば、いつでもこのカードを手札にもどしてよい。その時、このカードにのっていたダメージカウンターなどを全てとりのぞき、ついていたカードも全てはがしてすてる。このカードを場に出した番には、この力は使えない。また、「ねむり・マヒ・こんらん」状態の時にも、この力は使えない。"
+        },
+        "en": {
+          "name": "Cowardice",
+          "text": "At any time during your turn (before your attack), you may return Tentacool to your hand. (Discard all cards attached to Tentacool.) This power can't be used the turn you put Tentacool into play or if Tentacool is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-base3-12": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 30,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "",
+        "local": {
+          "name": "ちょうおんぱ",
+          "text": "コインを投げて「おもて」なら、相手を「こんらん」状態にする。"
+        },
+        "en": {
+          "name": "Supersonic",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        }
+      },
+      {
+        "cost": ["water"],
+        "damage": "",
+        "local": {
+          "name": "からをとじる",
+          "text": "コインを投げて「おもて」なら、次の相手の番にこのカードが受けるダメージは0になる。(ダメージ以外の効果はそのまま)"
+        },
+        "en": {
+          "name": "Hide in Shell",
+          "text": "Flip a coin. If heads, prevent all damage done to Shellder during your opponent's next turn. (Any other effects of attacks still happen.)"
+        }
+      }
+    ]
+  },
+  "ja-base3-13": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "",
+        "local": {
+          "name": "なかまをよぶ",
+          "text": "自分の山札から「クラブ」を1匹さがしてベンチに出す。その後、その山札をよくきる。自分のベンチに空きがなければ、このワザは使えない。"
+        },
+        "en": {
+          "name": "Call for Family",
+          "text": "Search your deck for a Basic Pokémon named Krabby and put it onto your Bench. Shuffle your deck afterward. (You can't use this attack if your Bench is full.)"
+        }
+      },
+      {
+        "cost": ["water", "colorless"],
+        "damage": "20",
+        "local": { "name": "はさむ", "text": "" },
+        "en": { "name": "Irongrip", "text": "" }
+      }
+    ]
+  },
+  "ja-base3-14": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 40,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "10",
+        "local": {
+          "name": "えんまく",
+          "text": "次の相手の番、このワザを受けた相手のバトルポケモンがワザを使うとき、相手はコインを1回投げる。ウラならそのワザは失敗。"
+        },
+        "en": {
+          "name": "Smokescreen",
+          "text": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing."
+        }
+      }
+    ]
+  },
+  "ja-base3-15": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Mysterious Fossil", "local": "なにかの化石" }
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "10+",
+        "local": {
+          "name": "みずでっぽう",
+          "text": "ワザに必要なぶんよりも多く「水」エネルギーカードがついている時、多いエネルギー1つにつき10ダメージを追加する。（ダメージ追加は2つぶんまで）"
+        },
+        "en": {
+          "name": "Water Gun",
+          "text": "Does 10 damage plus 10 more damage for each Water Energy attached to Omanyte but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "おみとおし",
+          "text": "オムナイトが場にいる限り、相手プレイヤーは自分の手札が全員に見えるようにしてプレイしなければならない。「ねむり・マヒ・こんらん」状態の時、この力は消える。"
+        },
+        "en": {
+          "name": "Clairvoyance",
+          "text": "Your opponent plays with his or her hand face up. This power stops working while Omanyte is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-base3-16": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Psyduck", "local": "コダック" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "10",
+        "local": {
+          "name": "ねんりき",
+          "text": "コインを投げて「おもて」なら、相手を「マヒ」状態にする。"
+        },
+        "en": {
+          "name": "Psyshock",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      },
+      {
+        "cost": ["water", "water", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "はかいこうせん",
+          "text": "相手の対戦ポケモンのエネルギーカードを1枚はがしてすてる。"
+        },
+        "en": {
+          "name": "Hyper Beam",
+          "text": "If the Defending Pokémon has any Energy cards attached to it, choose 1 of them and discard it."
+        }
+      }
+    ]
+  },
+  "ja-base3-17": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 60,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Tentacool", "local": "メノクラゲ" }
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "",
+        "local": {
+          "name": "ちょうおんぱ",
+          "text": "コインを投げて「おもて」なら、相手を「こんらん」状態にする。"
+        },
+        "en": {
+          "name": "Supersonic",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        }
+      },
+      {
+        "cost": ["water", "water"],
+        "damage": "10",
+        "local": { "name": "クラゲばり", "text": "相手を「どく」状態にする。" },
+        "en": { "name": "Jellyfish Sting", "text": "The Defending Pokémon is now Poisoned." }
+      }
+    ]
+  },
+  "ja-base3-18": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Shellder", "local": "シェルダー" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water"],
+        "damage": "30",
+        "local": {
+          "name": "からではさむ",
+          "text": "コインを1回投げ、「うら」なら、このワザは失敗する。「おもて」なら、相手を「マヒ」状態にする。"
+        },
+        "en": {
+          "name": "Clamp",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed. If tails, this attack does nothing (not even damage)."
+        }
+      },
+      {
+        "cost": ["water", "water"],
+        "damage": "30×",
+        "local": {
+          "name": "とげキャノン",
+          "text": "コインを2枚投げて「おもて」のでた数×30のダメージをあたえる。"
+        },
+        "en": {
+          "name": "Spike Cannon",
+          "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "ja-base3-19": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Krabby", "local": "クラブ" }
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "10×",
+        "local": {
+          "name": "じたばた",
+          "text": "自分にのっているダメージカウンターの数×10のダメージ。"
+        },
+        "en": {
+          "name": "Flail",
+          "text": "Does 10 damage times the number of damage counters on Kingler."
+        }
+      },
+      {
+        "cost": ["water", "water", "colorless"],
+        "damage": "40",
+        "local": { "name": "クラブハンマー", "text": "" },
+        "en": { "name": "Crabhammer", "text": "" }
+      }
+    ]
+  },
+  "ja-base3-20": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Horsea", "local": "タッツー" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "colorless"],
+        "damage": "20+",
+        "local": {
+          "name": "みずでっぽう",
+          "text": "ワザに必要なぶんよりも多く「水」エネルギーカードがついている時、多いエネルギー1つにつき10ダメージを追加する。(ダメージ追加は2つぶんまで)"
+        },
+        "en": {
+          "name": "Water Gun",
+          "text": "Does 20 damage plus 10 more damage for each Water Energy attached to Seadra but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way."
+        }
+      },
+      {
+        "cost": ["water", "colorless", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "こうそくいどう",
+          "text": "コインを投げて「おもて」なら、このカードは次の相手の番に、ワザによるダメージや効果を受けない。"
+        },
+        "en": {
+          "name": "Agility",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Seadra."
+        }
+      }
+    ]
+  },
+  "ja-base3-21": {
+    "kind": "stage2",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Omanyte", "local": "オムナイト" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "colorless"],
+        "damage": "20+",
+        "local": {
+          "name": "みずでっぽう",
+          "text": "ワザに必要なぶんよりも多く「水」エネルギーカードがついている時、多いエネルギー1つにつき10ダメージを追加する。(ダメージ追加は2つぶんまで)"
+        },
+        "en": {
+          "name": "Water Gun",
+          "text": "Does 20 damage plus 10 more damage for each Water Energy attached to Omastar but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way."
+        }
+      },
+      {
+        "cost": ["water", "water"],
+        "damage": "30×",
+        "local": {
+          "name": "とげキャノン",
+          "text": "コインを2枚投げて「おもて」のでた数×30のダメージをあたえる。"
+        },
+        "en": {
+          "name": "Spike Cannon",
+          "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "ja-base3-22": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "10+",
+        "local": {
+          "name": "みずでっぽう",
+          "text": "ワザに必要なぶんよりも多く「水」エネルギーカードがついている時、多いエネルギー1つにつき10ダメージを追加する。(ダメージ追加は2つぶんまで)"
+        },
+        "en": {
+          "name": "Water Gun",
+          "text": "Does 10 damage plus 10 more damage for each Water Energy attached to Lapras but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way."
+        }
+      },
+      {
+        "cost": ["water", "water"],
+        "damage": "10",
+        "local": {
+          "name": "あやしいひかり",
+          "text": "コインを投げて「おもて」なら、相手を「こんらん」状態にする。"
+        },
+        "en": {
+          "name": "Confuse Ray",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        }
+      }
+    ]
+  },
+  "ja-base3-23": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 70,
+      "retreat": 1,
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water", "water"],
+        "damage": "30",
+        "local": {
+          "name": "フリーズドライ",
+          "text": "コインを投げて「おもて」なら、相手を「マヒ」状態にする。"
+        },
+        "en": {
+          "name": "Freeze Dry",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      },
+      {
+        "cost": ["water", "water", "water", "water"],
+        "damage": "50",
+        "local": {
+          "name": "ふぶき",
+          "text": "コインを投げて、「おもて」なら相手の控えポケモン全員に、「うら」なら自分の控えポケモン全員に、「弱点・抵抗力」に関係なく、それぞれ10ダメージ。"
+        },
+        "en": {
+          "name": "Blizzard",
+          "text": "Flip a coin. If heads, this attack does 10 damage to each of your opponent's Benched Pokémon. If tails, this attack does 10 damage to each of your own Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "ja-base3-24": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 90,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Pikachu", "local": "ピカチュウ" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "lightning", "lightning", "lightning"],
+        "damage": "30",
+        "local": {
+          "name": "ギガスパーク",
+          "text": "相手の控えポケモンから最大3匹を選び、「弱点・抵抗力」に関係なく、それぞれ10ダメージ。"
+        },
+        "en": {
+          "name": "Gigashock",
+          "text": "Choose 3 of your opponent's Benched Pokémon and this attack does 10 damage to each of them. (Don't apply Weakness and Resistance for Benched Pokémon.) If your opponent has fewer than 3 Benched Pokémon, do the damage to each of them."
+        }
+      }
+    ]
+  },
+  "ja-base3-25": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Magnemite", "local": "コイル" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "ソニックブーム",
+          "text": "このワザは、相手の「弱点・抵抗力」に関係なく、ダメージを与える。"
+        },
+        "en": {
+          "name": "Sonicboom",
+          "text": "Don't apply Weakness and Resistance for this attack. (Any other effects that would happen after applying Weakness and Resistance still happen.)"
+        }
+      },
+      {
+        "cost": ["lightning", "lightning", "lightning", "lightning"],
+        "damage": "100",
+        "local": {
+          "name": "じばく",
+          "text": "自分にも100ダメージ。お互いの控えポケモン全員にも、「弱点・抵抗力」に関係なく、それぞれ20ダメージ。"
+        },
+        "en": {
+          "name": "Selfdestruct",
+          "text": "Does 20 damage to each Pokémon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pokémon.) Magneton does 100 damage to itself."
+        }
+      }
+    ]
+  },
+  "ja-base3-26": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 80,
+      "retreat": 1,
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "lightning", "lightning", "lightning"],
+        "damage": "40",
+        "local": {
+          "name": "サンダーストーム",
+          "text": "相手の控えポケモンそれぞれに対してコインを投げ、「おもて」ならそのポケモンに(「弱点・抵抗力」に関係なく)20ダメージ。相手の控えポケモン全員に対してコインを投げ終わったら、その間に出た「うら」の数×10ダメージをこのカードに与える。"
+        },
+        "en": {
+          "name": "Thunderstorm",
+          "text": "For each of your opponent's Benched Pokémon, flip a coin. If heads, this attack does 20 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.) Then, Zapdos does 10 damage times the number of tails to itself."
+        }
+      }
+    ]
+  },
+  "ja-base3-27": {
+    "kind": "pokemon",
+    "artist": "Miki Tanaka",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "ぼーっとする",
+          "text": "コインを投げて「おもて」なら、自分からダメージカウンターを1つとりのぞく。（ヤドンにダメージカウンターがない時、このワザは使えない）"
+        },
+        "en": {
+          "name": "Spacing Out",
+          "text": "Flip a coin. If heads, remove a damage counter from Slowpoke. This attack can't be used if Slowpoke has no damage counters on it."
+        }
+      },
+      {
+        "cost": ["psychic", "psychic"],
+        "damage": "",
+        "local": {
+          "name": "ゴミあさり",
+          "text": "このワザを使うためのエネルギーコストとして、「超」エネルギーカードを1枚はがしてトラッシュする。自分のトラッシュから「トレーナーカード」を1枚選び、手札に加える。"
+        },
+        "en": {
+          "name": "Scavenge",
+          "text": "Discard 1 Psychic Energy card attached to Slowpoke in order to use this attack. Put a Trainer card from your discard pile into your hand."
+        }
+      }
+    ]
+  },
+  "ja-base3-28": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Slowpoke", "local": "ヤドラン" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "psychic"],
+        "damage": "20",
+        "local": {
+          "name": "ねんりき",
+          "text": "コインを投げて「おもて」なら、相手を「マヒ」状態にする。"
+        },
+        "en": {
+          "name": "Psyshock",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "へんなこうどう",
+          "text": "「ヤドラン」は自分の番の中で何回でも、自分の場の「ヤドラン」以外のポケモンにのっているダメージカウンターを1つ、自分の上にのせかえることができる。（「ヤドラン」が「きぜつ」してしまうようなのせかえはできない）「ヤドラン」が「ねむり・こんらん・マヒ」状態のとき、この力は使えない。"
+        },
+        "en": {
+          "name": "Strange Behavior",
+          "text": "As often as you like during your turn (before your attack), you may move 1 damage counter from 1 of your Pokémon to Slowbro as long as you don't Knock Out Slowbro. This power can't be used if Slowbro is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-base3-29": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 50,
+      "retreat": 0,
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "10",
+        "local": {
+          "name": "したでなめる",
+          "text": "コインを投げて「おもて」なら、相手を「マヒ」状態にする。"
+        },
+        "en": {
+          "name": "Lick",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      },
+      {
+        "cost": ["psychic", "psychic"],
+        "damage": "",
+        "local": {
+          "name": "エナジーへんかん",
+          "text": "自分のトラッシュから最大2枚のエネルギーカードを選び、手札に加える。その後、自分に10ダメージ。"
+        },
+        "en": {
+          "name": "Energy Conversion",
+          "text": "Put up to 2 Energy cards from your discard pile into your hand. Gastly does 10 damage to itself."
+        }
+      }
+    ]
+  },
+  "ja-base3-30": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 50,
+      "retreat": 0,
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Gastly", "local": "ゴース" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "colorless"],
+        "damage": "10",
+        "local": { "name": "あくむ", "text": "相手を「ねむり」状態にする。" },
+        "en": { "name": "Nightmare", "text": "The Defending Pokémon is now Asleep." }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "とうめい",
+          "text": "このカードがワザによるダメージや効果を受ける時、コインを投げ、「おもて」ならこのカードはダメージや効果を受けない。「ねむり・マヒ・こんらん」状態の時、この力は消える。"
+        },
+        "en": {
+          "name": "Transparency",
+          "text": "Whenever an attack does anything to Haunter, flip a coin. If heads, prevent all effects of that attack, including damage, done to Haunter. This power stops working while Haunter is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-base3-31": {
+    "kind": "stage2",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 80,
+      "retreat": 1,
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Haunter", "local": "ゴースト" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "psychic", "psychic"],
+        "damage": "30",
+        "local": {
+          "name": "ナイトヘッド",
+          "text": "相手のベンチポケモン1匹にも、「弱点・抵抗力」に関係なく、10ダメージ。"
+        },
+        "en": {
+          "name": "Dark Mind",
+          "text": "If your opponent has any Benched Pokémon, choose 1 of them and this attack does 10 damage to it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "のろい",
+          "text": "自分の番ごとに1回だけ使える。相手の場のポケモンにのっているダメージカウンターを1つ選び、相手の場の別のポケモンの上にのせてよい。「ねむり・マヒ・こんらん」状態の時、この力は使えない。"
+        },
+        "en": {
+          "name": "Curse",
+          "text": "Once during your turn (before your attack), you may move 1 damage counter from 1 of your opponent's Pokémon to another (even if it would Knock Out the other Pokémon). This power can't be used if Gengar is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-base3-32": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 90,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Drowzee", "local": "スリープ" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": {
+          "name": "みらいよち",
+          "text": "自分または相手の山札の上から3枚まで見て、好きな順番に入れ替えて、もとの山札の上にもどす。"
+        },
+        "en": {
+          "name": "Prophecy",
+          "text": "Look at up to 3 cards from the top of either player's deck and rearrange them as you like."
+        }
+      },
+      {
+        "cost": ["psychic", "psychic", "psychic"],
+        "damage": "30",
+        "local": {
+          "name": "ナイトヘッド",
+          "text": "相手のベンチポケモン1匹にも、「弱点・抵抗力」に関係なく、10ダメージ。"
+        },
+        "en": {
+          "name": "Dark Mind",
+          "text": "If your opponent has any Benched Pokémon, choose 1 of them and this attack does 10 damage to it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "ja-base3-33": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "10×",
+        "local": {
+          "name": "サイコウェーブ",
+          "text": "相手についているエネルギーカード×10のダメージ。"
+        },
+        "en": {
+          "name": "Psywave",
+          "text": "Does 10 damage times the number of Energy cards attached to the Defending Pokémon."
+        }
+      },
+      {
+        "cost": ["psychic", "psychic"],
+        "damage": "",
+        "local": {
+          "name": "たいかビーム",
+          "text": "自分または相手の場にいるポケモンの中から「進化カード」のついているもの1匹を選び、その「進化カード」を上から1枚はがして持ち主の手札に戻す。"
+        },
+        "en": {
+          "name": "Devolution Beam",
+          "text": "Choose an evolved Pokémon (your own or your opponent's). Return the highest Stage Evolution card on that Pokémon to its player's hand. That Pokémon is no longer Asleep, Confused, Paralyzed, Poisoned, or anything else that might be the result of an attack (just as if you had evolved it)."
+        }
+      }
+    ]
+  },
+  "ja-base3-34": {
+    "kind": "pokemon",
+    "artist": "Kagemaru Himeno",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "colorless"],
+        "damage": "10×",
+        "local": {
+          "name": "れんぞくいしなげ",
+          "text": "ウラが出るまでコインを投げ続け、オモテの数×10ダメージ。"
+        },
+        "en": {
+          "name": "Stone Barrage",
+          "text": "Flip a coin until you get tails. This attack does 10 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "ja-base3-35": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 30,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Mysterious Fossil", "local": "なにかの化石" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "ひっかく", "text": "" },
+        "en": { "name": "Scratch", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "カブトアーマー",
+          "text": "このカードが受けるダメージは半分(切りすて)になる。(ダメージ以外の効果はそのまま)。「ねむり・マヒ・こんらん」状態の時、この力は使えない。"
+        },
+        "en": {
+          "name": "Kabuto Armor",
+          "text": "Whenever an attack (even your own) does damage to Kabuto (after applying Weakness and Resistance), that attack does half the damage to Kabuto (rounded down to the nearest 10). (Any other effects of attacks still happen.) This power stops working while Kabuto is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-base3-36": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }],
+      "evolvesFrom": { "en": "Sandshrew", "local": "サンド" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "きりさく", "text": "" },
+        "en": { "name": "Slash", "text": "" }
+      },
+      {
+        "cost": ["fighting", "fighting"],
+        "damage": "20×",
+        "local": { "name": "みだれひっかき", "text": "コインを3回投げ、オモテ×20ダメージ。" },
+        "en": {
+          "name": "Fury Swipes",
+          "text": "Flip 3 coins. This attack does 20 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "ja-base3-37": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Geodude", "local": "イシツブテ" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting"],
+        "damage": "",
+        "local": {
+          "name": "かたくなる",
+          "text": "次の相手の番にこのカードが受ける30以下のダメージは0になる。（ダメージ以外の効果はそのまま）。40以上のダメージはそのまま受ける。"
+        },
+        "en": {
+          "name": "Harden",
+          "text": "During your opponent's next turn, whenever 30 or less damage is done to Graveler (after applying Weakness and Resistance), prevent that damage. (Any other effects of attacks still happen.)"
+        }
+      },
+      {
+        "cost": ["fighting", "fighting", "colorless"],
+        "damage": "40",
+        "local": { "name": "いわおとし", "text": "" },
+        "en": { "name": "Rock Throw", "text": "" }
+      }
+    ]
+  },
+  "ja-base3-38": {
+    "kind": "stage2",
+    "artist": "Kagemaru Himeno",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Graveler", "local": "ゴローン" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting", "fighting", "colorless"],
+        "damage": "60",
+        "local": { "name": "ゆきなだれ", "text": "" },
+        "en": { "name": "Avalanche", "text": "" }
+      },
+      {
+        "cost": ["fighting", "fighting", "fighting", "fighting"],
+        "damage": "100",
+        "local": {
+          "name": "じばく",
+          "text": "自分にも100ダメージ。お互いの控えポケモン全員にも、「弱点・抵抗力」に関係なくそれぞれ20ダメージ。"
+        },
+        "en": {
+          "name": "Selfdestruct",
+          "text": "Does 20 damage to each Pokémon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pokémon.) Golem does 100 damage to itself."
+        }
+      }
+    ]
+  },
+  "ja-base3-39": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting"],
+        "damage": "",
+        "local": {
+          "name": "のびるキック",
+          "text": "相手の控えポケモンから1匹を選び、「弱点・抵抗力」に関係なく 20ダメージ。"
+        },
+        "en": {
+          "name": "Stretch Kick",
+          "text": "If your opponent has any Benched Pokémon, choose 1 of them and this attack does 20 damage to it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      },
+      {
+        "cost": ["fighting", "fighting", "fighting"],
+        "damage": "50",
+        "local": { "name": "とびひざげり", "text": "" },
+        "en": { "name": "High Jump Kick", "text": "" }
+      }
+    ]
+  },
+  "ja-base3-40": {
+    "kind": "stage2",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Kabuto", "local": "カブト" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting"],
+        "damage": "30",
+        "local": { "name": "するどいカマ", "text": "" },
+        "en": { "name": "Sharp Sickle", "text": "" }
+      },
+      {
+        "cost": ["fighting", "fighting", "fighting", "fighting"],
+        "damage": "40",
+        "local": {
+          "name": "すいとる",
+          "text": "相手にあたえたダメージの半分（切り上げ）のダメージカウンターを自分からとりのぞく。"
+        },
+        "en": {
+          "name": "Absorb",
+          "text": "Remove a number of damage counters from Kabutops equal to half the damage done to the Defending Pokémon (after applying Weakness and Resistance) (rounded up to the nearest 10). If Kabutops has fewer damage counters than that, remove all of them."
+        }
+      }
+    ]
+  },
+  "ja-base3-41": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Mysterious Fossil", "local": "なにかの化石" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "30",
+        "local": { "name": "つばさでうつ", "text": "" },
+        "en": { "name": "Wing Attack", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "げんしのちから",
+          "text": "プテラが場にいる限り、全てのポケモンは進化することができない。(すでに進化しているポケモンに影響はない)。「ねむり・マヒ・こんらん」状態の時、この力は消える。"
+        },
+        "en": {
+          "name": "Prehistoric Power",
+          "text": "No more Evolution cards can be played. This power stops working while Aerodactyl is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-base3-42": {
+    "kind": "pokemon",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "powers": [
+      {
+        "local": {
+          "name": "へんしん",
+          "text": "バトル場にいる限り、このカードは相手の対戦ポケモンと同じカードとしてあつかう。エネルギーカードは、このカードについている限り、どの色のエネルギーとしても使うことができる。「ねむり・マヒ・こんらん」状態の時やベンチにいる時には、この「へんしん」の力は消える。このカードに進化カードをつけることはできない。"
+        },
+        "en": {
+          "name": "Transform",
+          "text": "If Ditto is your Active Pokémon, treat it as if it were the same card as the Defending Pokémon, including type, Hit Points, Weakness, and so on, except Ditto can't evolve, always has this Pokémon Power, and you may treat any Energy attached to Ditto as Energy of any type. Ditto isn't a copy of any other Pokémon while Ditto is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-base3-43": {
+    "kind": "stage2",
+    "artist": "Kagemaru Himeno",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 100,
+      "retreat": 1,
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Dragonair", "local": "ハクリュー" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless", "colorless"],
+        "damage": "40×",
+        "local": { "name": "たたきつける", "text": "コインを2回投げ、オモテの数×40ダメージ。" },
+        "en": {
+          "name": "Slam",
+          "text": "Flip 2 coins. This attack does 40 damage times the number of heads."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "かけつける",
+          "text": "この能力はベンチにいるときに使う。自分の番ごとに1回だけ使える。バトル場にいる自分の対戦ポケモンとこのカードとを交換することができる。「ねむり・マヒ・こんらん」状態の時、この力は使えない。"
+        },
+        "en": {
+          "name": "Step In",
+          "text": "Once during your turn (before your attack), if Dragonite is on your Bench, you may switch it with your Active Pokémon."
+        }
+      }
+    ]
+  },
+  "ja-base3-44": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "common",
+    "rules": {
+      "en": "Search your deck for a basic Energy card and put it into your hand. Shuffle your deck afterward.",
+      "local": "自分の山札の中からエネルギーカードを1枚選び出し、手札に加える。ただし、特殊なエネルギーカード(無色2個エネルギーカードなど)を選ぶことはできない。その後、自分の山札をよくきる。"
+    }
+  },
+  "ja-base3-45": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "common",
+    "rules": {
+      "en": "Shuffle your hand into your deck. Flip a coin. If heads, draw 8 cards. If tails, draw 1 card.",
+      "local": "自分の手札を自分の山札に全てもどし、その山札をよくきる。その後、コインを投げて「おもて」なら8枚、「うら」なら1枚のカードを自分の山札からひいて手札にする。"
+    }
+  },
+  "ja-base3-46": {
+    "kind": "trainer",
+    "hp": 10,
+    "artist": "Keiji Kinebuchi",
+    "rarity": "common",
+    "rules": {
+      "en": "Play Mysterious Fossil as if it were a Basic Pokémon. While in play, Mysterious Fossil counts as a Pokémon (instead of a Trainer card). Mysterious Fossil has no attacks, can't retreat, and can't be Asleep, Confused, Paralyzed, or Poisoned. If Mysterious Fossil is Knocked Out, it doesn't count as a Knocked Out Pokémon. (Discard it anyway.) At any time during your turn before your attack, you may discard Mysterious Fossil from play.",
+      "local": "このカードはポケモンとして場に出すことができ、場に出ている限りポケモンとしてあつかわれる。このカードには、「なにかの化石から進化」と書かれている進化カードを重ねることができる。進化カードがのっていないときに限り、「きぜつ」しても「きぜつ」とカウントされず、自分の番の好きなときに自分のトラッシュにすてることができる。"
+    }
+  },
+  "ja-base3-47": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "common",
+    "rules": {
+      "en": "Flip a coin. If heads, put a card in your discard pile on top of your deck.",
+      "local": "コインを投げて「おもて」なら、自分のトラッシュから好きなカードを1枚選び、自分の山札の1番上に置く。"
+    }
+  },
+  "ja-base3-48": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Choose a Pokémon on your Bench. Shuffle it and any cards attached to it into your deck.",
+      "local": "自分の控えポケモンを1匹選び、そのカードとそれについているカード全てを自分の山札にもどす。その後、その山札をよくきる。"
+    }
+  }
+}

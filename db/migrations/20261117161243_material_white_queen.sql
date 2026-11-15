@@ -1,0 +1,1 @@
+ALTER TABLE `binder` ADD `showAllCardsInColor` integer;

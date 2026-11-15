@@ -1,0 +1,75 @@
+name: check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Keep validation and deployment ordered; never cancel a migration mid-flight.
+concurrency:
+  group: pocket-folio-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: voidzero-dev/setup-vp@v1
+        with:
+          node-version: 24
+          cache: true
+          run-install: true
+      - run: vp run prepare:void
+      - run: vp check
+      - run: vp test
+      - run: vp run test:agent-package
+      - run: node --test tests/binder-pages.test.mjs
+      - run: vp run build
+
+  deploy:
+    needs: check
+    if: >-
+      github.repository == 'nkzw-tech/pocket-folio' &&
+      github.ref == 'refs/heads/main' &&
+      (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: production
+      url: https://folio.nakazawa.tech
+    steps:
+      - uses: actions/checkout@v4
+      - uses: voidzero-dev/setup-vp@v1
+        with:
+          node-version: 24
+          cache: true
+          run-install: true
+      - name: Prepare application and catalog
+        run: |
+          vp run prepare:void
+          vpx scripts/catalog.ts
+          vp run catalog:translations
+          vp run fbtee:all
+      - name: Connect and deploy to Cloudflare
+        env:
+          CLOUDFLARE_ACCOUNT_ID: 004b3cabb810ff98895ea3a690f6ba00
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_WORKERS_SUBDOMAIN: ${{ vars.CLOUDFLARE_WORKERS_SUBDOMAIN }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo '::error::Add the CLOUDFLARE_API_TOKEN repository secret or grant this repository access to the organization secret.'
+            exit 1
+          fi
+          vp exec void connect --platform cloudflare
+          vp exec void deploy --platform cloudflare --atomic
+      - name: Sync catalog to Cloudflare D1
+        env:
+          CLOUDFLARE_ACCOUNT_ID: 004b3cabb810ff98895ea3a690f6ba00
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: vp run catalog:sync

@@ -1,0 +1,662 @@
+{
+  "smp_ja-407": {
+    "source": "https://images.scrydex.com/pokemon/smp_ja-407/large",
+    "reference": "https://bulbapedia.bulbagarden.net/wiki/Pretend_Comedian_Pikachu_(SM-P_Promo_407)",
+    "note": "Checked against the Japanese scan: the roster omitted the second attack. English text translates the printed effects; this promo has no English printing.",
+    "fields": {
+      "attacks": [
+        {
+          "name": "ニューオープン",
+          "text": "おたがいのプレイヤーは、それぞれ山札を上から1枚とり、オモテを相手に見せてから、手札に加える。",
+          "cost": ["無"],
+          "damage": ""
+        },
+        {
+          "name": "きまぐれこうげき",
+          "text": "コインを1回投げウラなら、このワザは失敗。",
+          "cost": ["無", "無", "無"],
+          "damage": "60"
+        }
+      ],
+      "englishAttacks": [
+        {
+          "name": "New Open",
+          "text": "Each player shows the top card of their deck to the other player, then adds it to their hand."
+        },
+        {
+          "name": "Fickle Attack",
+          "text": "Flip a coin. This attack fails if the result is tails."
+        }
+      ]
+    }
+  },
+  "m1l_ja-64": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/M1L-064",
+    "note": "HP independently checked against TCGdex; the matching English printing confirms the source roster error.",
+    "fields": {
+      "hp": "80"
+    }
+  },
+  "m2a_ja-124": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/M2A-124",
+    "note": "HP independently checked against TCGdex; the matching English printing confirms the source roster error.",
+    "fields": {
+      "hp": "80"
+    }
+  },
+  "m2a_ja-125": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/M2A-125",
+    "note": "HP independently checked against TCGdex; the matching English printing confirms the source roster error.",
+    "fields": {
+      "hp": "100"
+    }
+  },
+  "sv2d_ja-18": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/SV2D-018",
+    "note": "HP independently checked against TCGdex; the matching English printing confirms the source roster error.",
+    "fields": {
+      "hp": "140"
+    }
+  },
+  "sv2d_ja-48": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/SV2D-048",
+    "note": "HP independently checked against TCGdex; the matching English printing confirms the source roster error.",
+    "fields": {
+      "hp": "180"
+    }
+  },
+  "sv2d_ja-74": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/SV2D-074",
+    "note": "HP independently checked against TCGdex; the matching English printing confirms the source roster error.",
+    "fields": {
+      "hp": "140"
+    }
+  },
+  "sv3a_ja-28": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/SV3A-028",
+    "note": "HP independently checked against TCGdex; the matching English printing confirms the source roster error.",
+    "fields": {
+      "hp": "100"
+    }
+  },
+  "sv4a_ja-109": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/SV4A-109",
+    "note": "HP independently checked against TCGdex; the matching English printing confirms the source roster error.",
+    "fields": {
+      "hp": "180"
+    }
+  },
+  "sv4a_ja-285": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/SV4A-285",
+    "note": "HP independently checked against TCGdex; the matching English printing confirms the source roster error.",
+    "fields": {
+      "hp": "180"
+    }
+  },
+  "smp_ja-302": {
+    "source": "https://images.scrydex.com/pokemon/smp_ja-302/large",
+    "note": "The Japanese promo scan genuinely prints HP90, unlike the mechanically similar English card. Preserve the Japanese value.",
+    "fields": {
+      "hp": "90"
+    }
+  },
+  "mp_ja-56": {
+    "source": "https://images.scrydex.com/pokemon/mp_ja-56/large",
+    "note": "Verified against the scan: Omega Barrage is an Ancient Trait, not a third attack. Retain it once as a power and match the two printed attacks to the English Primal Clash reprint.",
+    "fields": {
+      "attacks": [
+        {
+          "name": "ほるほる",
+          "text": "相手の山札を上から1枚トラッシュする。",
+          "damage": "",
+          "cost": ["無"]
+        },
+        {
+          "name": "たがやす",
+          "text": "自分のトラッシュから好きなカードを1枚選び、相手に見せてから、山札にもどす。そして山札を切る。",
+          "damage": "",
+          "cost": ["無"]
+        }
+      ],
+      "englishAttacks": []
+    }
+  },
+  "sv8a_ja-225": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/SV8a-225",
+    "note": "Restore omitted alternate-art rules from the independent Japanese card record. Preserve original artwork and identity.",
+    "fields": {
+      "hp": "260",
+      "attacks": [
+        {
+          "cost": ["Colorless", "Colorless", "Colorless", "Colorless", "Colorless"],
+          "name": "ブラッドムーン",
+          "effect": "次の自分の番、このポケモンはワザが使えない。",
+          "damage": 240
+        }
+      ],
+      "abilities": [
+        {
+          "type": "Ability",
+          "name": "ろうれんのわざ",
+          "effect": "相手がすでにとったサイドの枚数ぶん、このポケモンが「ブラッドムーン」を使うためのエネルギーは少なくなる。"
+        }
+      ],
+      "types": ["Colorless"],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": null,
+      "retreat": ["Colorless", "Colorless", "Colorless"],
+      "evolvesFrom": null,
+      "englishAttacks": []
+    }
+  },
+  "sv8a_ja-204": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/SV8a-204",
+    "note": "Restore omitted alternate-art rules from the independent Japanese card record. Preserve original artwork and identity.",
+    "fields": {
+      "hp": "210",
+      "attacks": [
+        {
+          "cost": ["Fire", "Colorless", "Colorless"],
+          "name": "いかりがま",
+          "effect": "このポケモンにのっているダメカンの数×20ダメージ。",
+          "damage": "20×"
+        },
+        {
+          "cost": ["Fire", "Fire", "Fire"],
+          "name": "ダイナミックブレイズ",
+          "effect": "相手のバトルポケモンが進化ポケモンなら、140ダメージ追加。その場合、このポケモンについているエネルギーを、すべてトラッシュする。",
+          "damage": "140+"
+        }
+      ],
+      "abilities": null,
+      "types": ["Fire"],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": null,
+      "retreat": ["Colorless"],
+      "evolvesFrom": null,
+      "englishAttacks": []
+    }
+  },
+  "sv8a_ja-208": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/SV8a-208",
+    "note": "Restore omitted alternate-art rules from the independent Japanese card record. Preserve original artwork and identity.",
+    "fields": {
+      "hp": "210",
+      "attacks": [
+        {
+          "cost": ["Colorless"],
+          "name": "すすりなく",
+          "effect": "次の相手の番、このワザを受けたポケモンは、にげられない。",
+          "damage": 20
+        },
+        {
+          "cost": ["Water", "Colorless", "Colorless"],
+          "name": "げきりゅうポンプ",
+          "effect": "のぞむなら、このポケモンについているエネルギーを3個選び、山札にもどして切る。その場合、相手のベンチポケモン1匹にも、120ダメージ。［ベンチは弱点・抵抗力を計算しない。］",
+          "damage": 100
+        }
+      ],
+      "abilities": null,
+      "types": ["Water"],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": null,
+      "retreat": ["Colorless"],
+      "evolvesFrom": null,
+      "englishAttacks": []
+    }
+  },
+  "sm12_ja-114": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/SM12-114",
+    "note": "Restore omitted alternate-art rules from the independent Japanese card record. Preserve original artwork and identity.",
+    "fields": {
+      "hp": "240",
+      "attacks": [
+        {
+          "cost": ["Colorless", "Colorless", "Colorless"],
+          "name": "ジャンピングバルーン",
+          "effect": "相手の場の「ポケモンGX・EX」の数×60ダメージ追加。",
+          "damage": "60+"
+        },
+        {
+          "cost": ["Colorless"],
+          "name": "パフスマッシャーGX",
+          "effect": "相手のバトルポケモンをねむりにする。追加でエネルギーが4個ついているなら、相手のベンチポケモン1匹に、200ダメージ。［ベンチは弱点・抵抗力を計算しない。］［対戦中、自分はGXワザを1回しか使えない。］"
+        }
+      ],
+      "abilities": null,
+      "types": ["Colorless"],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "x2"
+        }
+      ],
+      "resistances": [],
+      "retreat": ["Colorless"],
+      "evolvesFrom": null,
+      "englishAttacks": []
+    }
+  },
+  "sv8a_ja-203": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/SV8a-203",
+    "note": "Restore omitted alternate-art rules from the independent Japanese card record. Preserve original artwork and identity.",
+    "fields": {
+      "hp": "270",
+      "attacks": [
+        {
+          "cost": ["Fire"],
+          "name": "しんえんほむら",
+          "effect": "自分のトラッシュにあるエネルギーの枚数×20ダメージ追加。",
+          "damage": "30+"
+        },
+        {
+          "cost": ["Fire", "Psychic", "Metal"],
+          "name": "アメジストレイジ",
+          "effect": "このポケモンについているエネルギーを、すべてトラッシュする。",
+          "damage": 280
+        }
+      ],
+      "abilities": null,
+      "types": ["Fire"],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "resistances": null,
+      "retreat": ["Colorless", "Colorless"],
+      "evolvesFrom": null,
+      "englishAttacks": []
+    }
+  },
+  "sv8a_ja-234": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/SV8a-234",
+    "note": "Restore omitted alternate-art rules from the independent Japanese card record. Preserve original artwork and identity.",
+    "fields": {
+      "hp": "210",
+      "attacks": [
+        {
+          "cost": ["Grass", "Grass", "Grass"],
+          "name": "まんようしぐれ",
+          "effect": "おたがいのバトルポケモンについているエネルギーの数×30ダメージ追加。",
+          "damage": "30+"
+        }
+      ],
+      "abilities": [
+        {
+          "type": "Ability",
+          "name": "みどりのまい",
+          "effect": "自分の番に1回使える。自分の手札から「基本エネルギー」を1枚選び、このポケモンにつける。その後、自分の山札を1枚引く。"
+        }
+      ],
+      "types": ["Grass"],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": null,
+      "retreat": ["Colorless"],
+      "evolvesFrom": null,
+      "englishAttacks": []
+    }
+  },
+  "sv8a_ja-201": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/SV8a-201",
+    "note": "Restore omitted alternate-art rules from the independent Japanese card record. Preserve original artwork and identity.",
+    "fields": {
+      "hp": "210",
+      "attacks": [
+        {
+          "cost": ["Grass", "Grass", "Grass"],
+          "name": "まんようしぐれ",
+          "effect": "おたがいのバトルポケモンについているエネルギーの数×30ダメージ追加。",
+          "damage": "30+"
+        }
+      ],
+      "abilities": [
+        {
+          "type": "Ability",
+          "name": "みどりのまい",
+          "effect": "自分の番に1回使える。自分の手札から「基本エネルギー」を1枚選び、このポケモンにつける。その後、自分の山札を1枚引く。"
+        }
+      ],
+      "types": ["Grass"],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "resistances": null,
+      "retreat": ["Colorless"],
+      "evolvesFrom": null,
+      "englishAttacks": []
+    }
+  },
+  "sm8b_ja-248": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/SM8b-248",
+    "note": "Restore omitted alternate-art rules from the independent Japanese card record. Preserve original artwork and identity.",
+    "fields": {
+      "hp": "250",
+      "attacks": [
+        {
+          "cost": ["Psychic", "Psychic", "Psychic", "Psychic"],
+          "name": "シャドーレイ",
+          "effect": "次の相手の番、このワザを受けたポケモンのHPは、回復しない。",
+          "damage": 120
+        },
+        {
+          "cost": ["Psychic", "Psychic", "Psychic"],
+          "name": "ルナフォールGX",
+          "effect": "相手のたねポケモン（「ポケモンGX」をのぞく）を1匹、きぜつさせる。［対戦中、自分はGXワザを1回しか使えない。］"
+        }
+      ],
+      "abilities": [
+        {
+          "type": "Ability",
+          "name": "サイコトランス",
+          "effect": "自分の番に何回でも使える。自分の場のポケモンについている[超]エネルギーを1個、自分の別のポケモンにつけ替える。"
+        }
+      ],
+      "types": ["Psychic"],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "x2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-20"
+        }
+      ],
+      "retreat": ["Colorless", "Colorless"],
+      "evolvesFrom": ["コスモウム"],
+      "englishAttacks": []
+    }
+  },
+  "sm8b_ja-244": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/SM8b-244",
+    "note": "Restore omitted alternate-art rules from the independent Japanese card record. Preserve original artwork and identity.",
+    "fields": {
+      "hp": "180",
+      "attacks": [
+        {
+          "cost": ["Grass"],
+          "name": "つのでつく",
+          "damage": 30
+        },
+        {
+          "cost": ["Grass", "Grass", "Colorless"],
+          "name": "しぜんのさばき",
+          "effect": "のぞむなら、このポケモンについているエネルギーを、すべてトラッシュする。その場合、60ダメージ追加。",
+          "damage": "120+"
+        },
+        {
+          "cost": ["Grass", "Grass", "Colorless"],
+          "name": "カプワイルドGX",
+          "effect": "このポケモンのHPを、すべて回復する。［対戦中、自分はGXワザを1回しか使えない。］",
+          "damage": 150
+        }
+      ],
+      "abilities": null,
+      "types": ["Grass"],
+      "weaknesses": [],
+      "resistances": [],
+      "retreat": ["Colorless", "Colorless", "Colorless"],
+      "evolvesFrom": null,
+      "englishAttacks": []
+    }
+  },
+  "sv8a_ja-236": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/SV8a-236",
+    "note": "Restore omitted alternate-art rules from the independent Japanese card record. Preserve original artwork and identity.",
+    "fields": {
+      "hp": "200",
+      "attacks": [
+        {
+          "cost": ["Grass", "Lightning", "Metal"],
+          "name": "トパーズボルト",
+          "effect": "このポケモンについているエネルギーを3個選び、トラッシュする。",
+          "damage": 300
+        }
+      ],
+      "abilities": [
+        {
+          "type": "Ability",
+          "name": "がんばりハート",
+          "effect": "このポケモンのHPがまんたんの状態で、このポケモンがワザのダメージを受けてきぜつするとき、きぜつせず、残りHPが「10」の状態で場に残る。"
+        }
+      ],
+      "types": ["Lightning"],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "resistances": null,
+      "retreat": ["Colorless"],
+      "evolvesFrom": null,
+      "englishAttacks": []
+    }
+  },
+  "sm8b_ja-245": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/SM8b-245",
+    "note": "Restore omitted alternate-art rules from the independent Japanese card record. Preserve original artwork and identity.",
+    "fields": {
+      "hp": "170",
+      "attacks": [
+        {
+          "cost": ["Colorless"],
+          "name": "アクアリング",
+          "effect": "のぞむなら、このポケモンをベンチポケモンと入れ替える。",
+          "damage": 20
+        },
+        {
+          "cost": ["Water", "Water", "Colorless"],
+          "name": "ハイドロシュート",
+          "effect": "このポケモンについている[水]エネルギーを2個トラッシュし、相手のポケモン1匹に、120ダメージ。［ベンチは弱点・抵抗力を計算しない。］"
+        },
+        {
+          "cost": ["Water"],
+          "name": "カプストームGX",
+          "effect": "相手のバトルポケモンと、ついているすべてのカードを、相手の山札にもどして切る。相手のベンチポケモンがいないなら、このワザは失敗。［対戦中、自分はGXワザを1回しか使えない。］"
+        }
+      ],
+      "abilities": null,
+      "types": ["Water"],
+      "weaknesses": [],
+      "resistances": [],
+      "retreat": ["Colorless"],
+      "evolvesFrom": null,
+      "englishAttacks": []
+    }
+  },
+  "sv8a_ja-216": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/SV8a-216",
+    "note": "Restore omitted alternate-art rules from the independent Japanese card record. Preserve original artwork and identity.",
+    "fields": {
+      "hp": "210",
+      "attacks": [
+        {
+          "cost": ["Fighting", "Colorless", "Colorless"],
+          "name": "ぶちやぶる",
+          "effect": "このワザのダメージは、弱点・抵抗力と、相手のバトルポケモンにかかっている効果を計算しない。",
+          "damage": 140
+        }
+      ],
+      "abilities": [
+        {
+          "type": "Ability",
+          "name": "いしずえのかまえ",
+          "effect": "このポケモンは、相手の特性を持つポケモンからワザのダメージを受けない。"
+        }
+      ],
+      "types": ["Fighting"],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "resistances": null,
+      "retreat": ["Colorless"],
+      "evolvesFrom": null,
+      "englishAttacks": []
+    }
+  },
+  "swsh8b_ja-280": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/S8b-280",
+    "note": "Restore omitted alternate-art rules from the independent Japanese card record. Preserve original artwork and identity.",
+    "fields": {
+      "hp": "310",
+      "attacks": [
+        {
+          "cost": ["Colorless", "Colorless"],
+          "name": "クロスフュージョン",
+          "effect": "自分のベンチの「フュージョン」のポケモンが持っているワザを1つ選び、このワザとして使う。"
+        },
+        {
+          "cost": ["Psychic", "Psychic"],
+          "name": "ダイミラクル",
+          "effect": "このワザのダメージは、相手のバトルポケモンにかかっている効果を計算しない。",
+          "damage": 130
+        }
+      ],
+      "abilities": null,
+      "types": ["Psychic"],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "x2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreat": [],
+      "evolvesFrom": ["ミュウV"],
+      "englishAttacks": []
+    }
+  },
+  "swsh7d_ja-87": {
+    "source": "https://api.tcgdex.net/v2/ja/cards/S7D-087",
+    "note": "Restore omitted alternate-art rules from the independent Japanese card record. Preserve original artwork and identity.",
+    "fields": {
+      "hp": "120",
+      "attacks": [
+        {
+          "cost": ["Psychic"],
+          "name": "みなぎるひかり",
+          "effect": "自分の山札から「基本[P]エネルギー」を2枚まで選び、このポケモンにつける。そして山札を切る。"
+        },
+        {
+          "cost": ["Psychic", "Psychic", "Colorless"],
+          "name": "オーロラビーム",
+          "damage": 90
+        }
+      ],
+      "abilities": null,
+      "types": ["Psychic"],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "x2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreat": ["Colorless"],
+      "evolvesFrom": null,
+      "englishAttacks": []
+    }
+  },
+  "swshp_ja-500": {
+    "source": "https://www.pokemon-card.com/info/003689.html",
+    "reference": "https://images.scrydex.com/pokemon/swshp_ja-500/large",
+    "note": "Unnumbered Jumbo Collection Lapras. Printed attacks match VSTAR Universe 177; source key 500 is not a printed card number.",
+    "fields": {
+      "attacks": [
+        {
+          "name": "レイジングフリーズ",
+          "text": "前の相手の番に、ワザのダメージで、自分のポケモンがきぜつしていたなら、相手のバトルポケモンをマヒにする。",
+          "damage": "110",
+          "cost": ["水", "水", "無"]
+        }
+      ],
+      "abilities": null,
+      "englishAttacks": [
+        {
+          "name": "Raging Freeze",
+          "text": "If any of your Pokémon were Knocked Out by damage from an attack from your opponent's Pokémon during their last turn, your opponent's Active Pokémon is now Paralyzed.",
+          "damage": "110",
+          "cost": ["Water", "Water", "Colorless"]
+        }
+      ]
+    }
+  },
+  "swsh6a_ja-98": {
+    "source": "https://images.scrydex.com/pokemon/swsh6a_ja-98/large",
+    "reference": "https://shinybeak.com/sets/swsh8b_ja",
+    "note": "Checked scan: Quick Shooting and Waterfall match VMAX Climax 38. Restore the omitted rules from that Japanese reprint.",
+    "fields": {
+      "attacks": [
+        {
+          "name": "たきのぼり",
+          "text": "",
+          "damage": "70",
+          "cost": ["無", "無"]
+        }
+      ],
+      "abilities": [
+        {
+          "name": "クイックシューター",
+          "text": "自分の番に1回使える。相手のポケモン1匹に、ダメカンを2個のせる。",
+          "type": "特性"
+        }
+      ],
+      "englishAttacks": [
+        {
+          "name": "Waterfall",
+          "text": "",
+          "damage": "70",
+          "cost": ["Colorless", "Colorless"]
+        }
+      ]
+    }
+  },
+  "swsh10b_ja-61": {
+    "source": "https://images.scrydex.com/pokemon/swsh10b_ja-61/large",
+    "note": "The Japanese scan prints HP110, not HP120 as listed in the source roster. Matches the English Pokémon GO Bibarel printing.",
+    "fields": {
+      "hp": "110"
+    }
+  }
+}

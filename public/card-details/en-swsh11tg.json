@@ -1,0 +1,967 @@
+{
+  "en-swsh11tg-TG01": {
+    "kind": "stage1",
+    "artist": "Oswaldo KATO",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 120,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Paras", "local": "Paras" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "colorless"],
+        "damage": "50+",
+        "local": {
+          "name": "X-Scissor",
+          "text": "Flip a coin. If heads, this attack does 50 more damage."
+        },
+        "en": {
+          "name": "X-Scissor",
+          "text": "Flip a coin. If heads, this attack does 50 more damage."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Lethargy Spores",
+          "text": "When you play this Pokémon from your hand to evolve 1 of your Pokémon during your turn, you may make both Active Pokémon Asleep and Poisoned."
+        },
+        "en": {
+          "name": "Lethargy Spores",
+          "text": "When you play this Pokémon from your hand to evolve 1 of your Pokémon during your turn, you may make both Active Pokémon Asleep and Poisoned."
+        }
+      }
+    ]
+  },
+  "en-swsh11tg-TG02": {
+    "kind": "stage1",
+    "artist": "saino misaki",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 120,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Roselia", "local": "Roselia" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "30",
+        "local": {
+          "name": "Poisonous Whip",
+          "text": "Your opponent's Active Pokémon is now Poisoned."
+        },
+        "en": {
+          "name": "Poisonous Whip",
+          "text": "Your opponent's Active Pokémon is now Poisoned."
+        }
+      },
+      {
+        "cost": ["grass", "colorless"],
+        "damage": "60",
+        "local": {
+          "name": "Assassin's Rose",
+          "text": "If your opponent's Active Pokémon is affected by a Special Condition, this attack also does 60 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        "en": {
+          "name": "Assassin's Rose",
+          "text": "If your opponent's Active Pokémon is affected by a Special Condition, this attack also does 60 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "en-swsh11tg-TG03": {
+    "kind": "stage2",
+    "artist": "GIDORA",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 170,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Charmeleon", "local": "Charmeleon" }
+    },
+    "attacks": [
+      {
+        "cost": ["fire", "fire"],
+        "damage": "100+",
+        "local": {
+          "name": "Royal Blaze",
+          "text": "This attack does 50 more damage for each Leon card in your discard pile."
+        },
+        "en": {
+          "name": "Royal Blaze",
+          "text": "This attack does 50 more damage for each Leon card in your discard pile."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Battle Sense",
+          "text": "Once during your turn, you may look at the top 3 cards of your deck and put 1 of them into your hand. Discard the other cards."
+        },
+        "en": {
+          "name": "Battle Sense",
+          "text": "Once during your turn, you may look at the top 3 cards of your deck and put 1 of them into your hand. Discard the other cards."
+        }
+      }
+    ]
+  },
+  "en-swsh11tg-TG04": {
+    "kind": "stage2",
+    "artist": "chibi",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 150,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Lampent", "local": "Lampent" }
+    },
+    "attacks": [
+      {
+        "cost": ["fire", "colorless"],
+        "damage": "90",
+        "local": { "name": "Heat Blast", "text": "" },
+        "en": { "name": "Heat Blast", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Mountain Roasting",
+          "text": "When you play this Pokémon from your hand to evolve 1 of your Pokémon during your turn, you may discard the top 3 cards of your opponent's deck."
+        },
+        "en": {
+          "name": "Mountain Roasting",
+          "text": "When you play this Pokémon from your hand to evolve 1 of your Pokémon during your turn, you may discard the top 3 cards of your opponent's deck."
+        }
+      }
+    ]
+  },
+  "en-swsh11tg-TG05": {
+    "kind": "pokemon",
+    "artist": "Atsushi Furusawa",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "colorless", "colorless"],
+        "damage": "50",
+        "local": {
+          "name": "Whimsy Tackle",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        },
+        "en": {
+          "name": "Whimsy Tackle",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Pika Dash",
+          "text": "If this Pokémon has any Energy attached, it has no Retreat Cost."
+        },
+        "en": {
+          "name": "Pika Dash",
+          "text": "If this Pokémon has any Energy attached, it has no Retreat Cost."
+        }
+      }
+    ]
+  },
+  "en-swsh11tg-TG06": {
+    "kind": "stage2",
+    "artist": "Akira Komayama",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 120,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Haunter", "local": "Haunter" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": {
+          "name": "Screaming Circle",
+          "text": "Put 2 damage counters on your opponent's Active Pokémon for each of your opponent's Benched Pokémon."
+        },
+        "en": {
+          "name": "Screaming Circle",
+          "text": "Put 2 damage counters on your opponent's Active Pokémon for each of your opponent's Benched Pokémon."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Netherworld Gate",
+          "text": "Once during your turn, if this Pokémon is in your discard pile, you may put it onto your Bench. If you do, put 3 damage counters on this Pokémon."
+        },
+        "en": {
+          "name": "Netherworld Gate",
+          "text": "Once during your turn, if this Pokémon is in your discard pile, you may put it onto your Bench. If you do, put 3 damage counters on this Pokémon."
+        }
+      }
+    ]
+  },
+  "en-swsh11tg-TG07": {
+    "kind": "stage1",
+    "artist": "Tomomi Kaneko",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Shuppet", "local": "Shuppet" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "20×",
+        "local": {
+          "name": "Resolute Spite",
+          "text": "Put up to 7 damage counters on this Pokémon. This attack does 20 damage for each damage counter you placed in this way."
+        },
+        "en": {
+          "name": "Resolute Spite",
+          "text": "Put up to 7 damage counters on this Pokémon. This attack does 20 damage for each damage counter you placed in this way."
+        }
+      },
+      {
+        "cost": ["psychic", "colorless"],
+        "damage": "50",
+        "local": {
+          "name": "Eerie Light",
+          "text": "Your opponent's Active Pokémon is now Confused."
+        },
+        "en": { "name": "Eerie Light", "text": "Your opponent's Active Pokémon is now Confused." }
+      }
+    ]
+  },
+  "en-swsh11tg-TG08": {
+    "kind": "stage1",
+    "artist": "You Iribi",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 130,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Hisuian Growlithe", "local": "Hisuian Growlithe" }
+    },
+    "attacks": [
+      {
+        "cost": [],
+        "damage": "10+",
+        "local": {
+          "name": "Very Vulnerable",
+          "text": "If you have no cards in your hand, this attack does 150 more damage."
+        },
+        "en": {
+          "name": "Very Vulnerable",
+          "text": "If you have no cards in your hand, this attack does 150 more damage."
+        }
+      },
+      {
+        "cost": ["fighting", "colorless", "colorless"],
+        "damage": "100",
+        "local": { "name": "Sharp Fang", "text": "" },
+        "en": { "name": "Sharp Fang", "text": "" }
+      }
+    ]
+  },
+  "en-swsh11tg-TG09": {
+    "kind": "pokemon",
+    "artist": "Hitoshi Ariga",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 60,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["darkness", "darkness"],
+        "damage": "10+",
+        "local": {
+          "name": "Chain of Spirits",
+          "text": "This attack does 60 more damage for each Spiritomb in your discard pile."
+        },
+        "en": {
+          "name": "Chain of Spirits",
+          "text": "This attack does 60 more damage for each Spiritomb in your discard pile."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Cursed Message",
+          "text": "If this Pokémon is Knocked Out by damage from an attack from your opponent's Pokémon, search your deck for a card and put it into your hand. Then, shuffle your deck."
+        },
+        "en": {
+          "name": "Cursed Message",
+          "text": "If this Pokémon is Knocked Out by damage from an attack from your opponent's Pokémon, search your deck for a card and put it into your hand. Then, shuffle your deck."
+        }
+      }
+    ]
+  },
+  "en-swsh11tg-TG10": {
+    "kind": "pokemon",
+    "artist": "Kouki Saitou",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 150,
+      "retreat": 4,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "180",
+        "local": {
+          "name": "Thumping Snore",
+          "text": "This Pokémon is now Asleep. During Pokémon Checkup, flip 2 coins instead of 1. If either of them is tails, this Pokémon is still Asleep."
+        },
+        "en": {
+          "name": "Thumping Snore",
+          "text": "This Pokémon is now Asleep. During Pokémon Checkup, flip 2 coins instead of 1. If either of them is tails, this Pokémon is still Asleep."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Unfazed Fat",
+          "text": "Prevent all effects of attacks from your opponent's Pokémon done to this Pokémon. (Damage is not an effect.)"
+        },
+        "en": {
+          "name": "Unfazed Fat",
+          "text": "Prevent all effects of attacks from your opponent's Pokémon done to this Pokémon. (Damage is not an effect.)"
+        }
+      }
+    ]
+  },
+  "en-swsh11tg-TG11": {
+    "kind": "pokemon",
+    "artist": "Atsushi Furusawa",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 70,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "80",
+        "local": {
+          "name": "Weather Force",
+          "text": "Draw cards until you have 6 cards in your hand."
+        },
+        "en": { "name": "Weather Force", "text": "Draw cards until you have 6 cards in your hand." }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Weather Reading",
+          "text": "If you have 8 or more Stadium cards in your discard pile, ignore all Energy in this Pokémon's attack costs."
+        },
+        "en": {
+          "name": "Weather Reading",
+          "text": "If you have 8 or more Stadium cards in your discard pile, ignore all Energy in this Pokémon's attack costs."
+        }
+      }
+    ]
+  },
+  "en-swsh11tg-TG12": {
+    "kind": "pokemon",
+    "artist": "Nisota Niso",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 180,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "20",
+        "local": {
+          "name": "Strafe",
+          "text": "You may switch this Pokémon with 1 of your Benched Pokémon."
+        },
+        "en": {
+          "name": "Strafe",
+          "text": "You may switch this Pokémon with 1 of your Benched Pokémon."
+        }
+      },
+      {
+        "cost": ["grass", "colorless"],
+        "damage": "50+",
+        "local": {
+          "name": "Mysterious Wave",
+          "text": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokémon."
+        },
+        "en": {
+          "name": "Mysterious Wave",
+          "text": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokémon."
+        }
+      }
+    ],
+    "rules": {
+      "en": "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-swsh11tg-TG13": {
+    "kind": "pokemon",
+    "artist": "Teeziro",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 310,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Orbeetle V", "local": "Orbeetle V" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "colorless"],
+        "damage": "50+",
+        "local": {
+          "name": "G-Max Wave",
+          "text": "This attack does 50 more damage for each Energy attached to your opponent's Active Pokémon."
+        },
+        "en": {
+          "name": "G-Max Wave",
+          "text": "This attack does 50 more damage for each Energy attached to your opponent's Active Pokémon."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Eerie Beam",
+          "text": "Once during your turn, if this Pokémon is in the Active Spot, you may put 1 damage counter on each of your opponent's Pokémon."
+        },
+        "en": {
+          "name": "Eerie Beam",
+          "text": "Once during your turn, if this Pokémon is in the Active Spot, you may put 1 damage counter on each of your opponent's Pokémon."
+        }
+      }
+    ],
+    "rules": {
+      "en": "VMAX rule: When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "VMAX rule: When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  },
+  "en-swsh11tg-TG14": {
+    "kind": "pokemon",
+    "artist": "Yuya Oka",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 210,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "water", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire"],
+        "damage": "20",
+        "local": {
+          "name": "Radiating Heat",
+          "text": "You may discard an Energy from this Pokémon. If you do, discard an Energy from your opponent's Active Pokémon."
+        },
+        "en": {
+          "name": "Radiating Heat",
+          "text": "You may discard an Energy from this Pokémon. If you do, discard an Energy from your opponent's Active Pokémon."
+        }
+      },
+      {
+        "cost": ["fire", "fire", "fire", "fire"],
+        "damage": "180",
+        "local": { "name": "Burning Train", "text": "" },
+        "en": { "name": "Burning Train", "text": "" }
+      }
+    ],
+    "rules": {
+      "en": "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-swsh11tg-TG15": {
+    "kind": "pokemon",
+    "artist": "Oswaldo KATO",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 320,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Centiskorch V", "local": "Centiskorch V" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "40+",
+        "local": {
+          "name": "G-Max Centiferno",
+          "text": "This attack does 40 more damage for each Fire Energy attached to this Pokémon. If you did any damage with this attack, you may attach a Fire Energy card from your discard pile to this Pokémon."
+        },
+        "en": {
+          "name": "G-Max Centiferno",
+          "text": "This attack does 40 more damage for each Fire Energy attached to this Pokémon. If you did any damage with this attack, you may attach a Fire Energy card from your discard pile to this Pokémon."
+        }
+      }
+    ],
+    "rules": {
+      "en": "VMAX rule: When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "VMAX rule: When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  },
+  "en-swsh11tg-TG16": {
+    "kind": "pokemon",
+    "artist": "Ryota Murayama",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 190,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["lightning"],
+        "damage": "",
+        "local": {
+          "name": "Charge",
+          "text": "Search your deck for up to 2 Lightning Energy cards and attach them to this Pokémon. Then, shuffle your deck."
+        },
+        "en": {
+          "name": "Charge",
+          "text": "Search your deck for up to 2 Lightning Energy cards and attach them to this Pokémon. Then, shuffle your deck."
+        }
+      },
+      {
+        "cost": ["lightning", "lightning", "colorless"],
+        "damage": "200",
+        "local": { "name": "Thunderbolt", "text": "Discard all Energy from this Pokémon." },
+        "en": { "name": "Thunderbolt", "text": "Discard all Energy from this Pokémon." }
+      }
+    ],
+    "rules": {
+      "en": "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-swsh11tg-TG17": {
+    "kind": "pokemon",
+    "artist": "Souichirou Gunjima",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 310,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Pikachu V", "local": "Pikachu V" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "lightning", "lightning"],
+        "damage": "120+",
+        "local": {
+          "name": "G-Max Volt Tackle",
+          "text": "You may discard all Energy from this Pokémon. If you do, this attack does 150 more damage."
+        },
+        "en": {
+          "name": "G-Max Volt Tackle",
+          "text": "You may discard all Energy from this Pokémon. If you do, this attack does 150 more damage."
+        }
+      }
+    ],
+    "rules": {
+      "en": "VMAX rule: When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "VMAX rule: When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  },
+  "en-swsh11tg-TG18": {
+    "kind": "pokemon",
+    "artist": "AKIRA EGAWA",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 210,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "metal", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "colorless", "colorless"],
+        "damage": "100",
+        "local": {
+          "name": "Blossom Tail",
+          "text": "Attach up to 2 basic Energy cards from your discard pile to your Benched Pokémon in any way you like."
+        },
+        "en": {
+          "name": "Blossom Tail",
+          "text": "Attach up to 2 basic Energy cards from your discard pile to your Benched Pokémon in any way you like."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Guardian of Love",
+          "text": "Prevent all effects of your opponent's Pokémon's Abilities done to each of your Pokémon that has any Psychic Energy attached, except any Enamorus V."
+        },
+        "en": {
+          "name": "Guardian of Love",
+          "text": "Prevent all effects of your opponent's Pokémon's Abilities done to each of your Pokémon that has any Psychic Energy attached, except any Enamorus V."
+        }
+      }
+    ],
+    "rules": {
+      "en": "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-swsh11tg-TG19": {
+    "kind": "pokemon",
+    "artist": "Souichirou Gunjima",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 220,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "colorless"],
+        "damage": "20+",
+        "local": {
+          "name": "Rising Sword",
+          "text": "This attack does 50 more damage for each Prize card you have taken."
+        },
+        "en": {
+          "name": "Rising Sword",
+          "text": "This attack does 50 more damage for each Prize card you have taken."
+        }
+      },
+      {
+        "cost": ["fighting", "fighting", "colorless"],
+        "damage": "130",
+        "local": {
+          "name": "Buster Swing",
+          "text": "This attack's damage isn't affected by Resistance."
+        },
+        "en": {
+          "name": "Buster Swing",
+          "text": "This attack's damage isn't affected by Resistance."
+        }
+      }
+    ],
+    "rules": {
+      "en": "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-swsh11tg-TG20": {
+    "kind": "pokemon",
+    "artist": "GOSSAN",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 180,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["darkness", "colorless"],
+        "damage": "70",
+        "local": {
+          "name": "Venomous Fang",
+          "text": "Your opponent's Active Pokémon is now Poisoned."
+        },
+        "en": { "name": "Venomous Fang", "text": "Your opponent's Active Pokémon is now Poisoned." }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Dark Asset",
+          "text": "When you play this Pokémon from your hand onto your Bench during your turn, you may draw cards until you have 6 cards in your hand. You can't use more than 1 Dark Asset Ability each turn."
+        },
+        "en": {
+          "name": "Dark Asset",
+          "text": "When you play this Pokémon from your hand onto your Bench during your turn, you may draw cards until you have 6 cards in your hand. You can't use more than 1 Dark Asset Ability each turn."
+        }
+      }
+    ],
+    "rules": {
+      "en": "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-swsh11tg-TG21": {
+    "kind": "pokemon",
+    "artist": "kodama",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 220,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "30",
+        "local": {
+          "name": "Power Accelerator",
+          "text": "You may attach a Darkness Energy card from your hand to 1 of your Benched Pokémon."
+        },
+        "en": {
+          "name": "Power Accelerator",
+          "text": "You may attach a Darkness Energy card from your hand to 1 of your Benched Pokémon."
+        }
+      },
+      {
+        "cost": ["darkness", "colorless", "colorless", "colorless"],
+        "damage": "120+",
+        "local": {
+          "name": "Dynamax Cannon",
+          "text": "If your opponent's Active Pokémon is a Pokémon VMAX, this attack does 120 more damage."
+        },
+        "en": {
+          "name": "Dynamax Cannon",
+          "text": "If your opponent's Active Pokémon is a Pokémon VMAX, this attack does 120 more damage."
+        }
+      }
+    ],
+    "rules": {
+      "en": "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "V rule: When your Pokémon V is Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-swsh11tg-TG22": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 340,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Eternatus V", "local": "Eternatus V" }
+    },
+    "attacks": [
+      {
+        "cost": ["darkness", "colorless"],
+        "damage": "30×",
+        "local": {
+          "name": "Dread End",
+          "text": "This attack does 30 damage for each of your Darkness Pokémon in play."
+        },
+        "en": {
+          "name": "Dread End",
+          "text": "This attack does 30 damage for each of your Darkness Pokémon in play."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Eternal Zone",
+          "text": "If all of your Pokémon in play are Darkness type, you can have up to 8 Pokémon on your Bench, and you can't put non-Darkness Pokémon into play. (If this Ability stops working, discard Pokémon from your Bench until you have 5.)"
+        },
+        "en": {
+          "name": "Eternal Zone",
+          "text": "If all of your Pokémon in play are Darkness type, you can have up to 8 Pokémon on your Bench, and you can't put non-Darkness Pokémon into play. (If this Ability stops working, discard Pokémon from your Bench until you have 5.)"
+        }
+      }
+    ],
+    "rules": {
+      "en": "VMAX rule: When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "VMAX rule: When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  },
+  "en-swsh11tg-TG23": {
+    "kind": "trainer",
+    "artist": "Taira Akitsu",
+    "rarity": "secret",
+    "rules": {
+      "en": "Search your deck for up to 3 Pokémon V, reveal them, and put them into your hand. Then, shuffle your deck.\nYou may play only 1 Supporter card during your turn.",
+      "local": "Search your deck for up to 3 Pokémon V, reveal them, and put them into your hand. Then, shuffle your deck.\nYou may play only 1 Supporter card during your turn."
+    }
+  },
+  "en-swsh11tg-TG24": {
+    "kind": "trainer",
+    "artist": "NC Empire",
+    "rarity": "secret",
+    "rules": {
+      "en": "Switch 1 of your opponent's Benched Pokémon with their Active Pokémon.\nYou may play only 1 Supporter card during your turn.",
+      "local": "Switch 1 of your opponent's Benched Pokémon with their Active Pokémon.\nYou may play only 1 Supporter card during your turn."
+    }
+  },
+  "en-swsh11tg-TG25": {
+    "kind": "trainer",
+    "artist": "Sanosuke Sakuma",
+    "rarity": "secret",
+    "rules": {
+      "en": "Heal 70 damage from your Active Pokémon.\nYou may play only 1 Supporter card during your turn.",
+      "local": "Heal 70 damage from your Active Pokémon.\nYou may play only 1 Supporter card during your turn."
+    }
+  },
+  "en-swsh11tg-TG26": {
+    "kind": "trainer",
+    "artist": "Hideki Ishikawa",
+    "rarity": "secret",
+    "rules": {
+      "en": "Shuffle your hand into your deck. Then, draw 4 cards. If your Active Pokémon is your only Pokémon in play, draw 8 cards instead.\nYou may play only 1 Supporter card during your turn.",
+      "local": "Shuffle your hand into your deck. Then, draw 4 cards. If your Active Pokémon is your only Pokémon in play, draw 8 cards instead.\nYou may play only 1 Supporter card during your turn."
+    }
+  },
+  "en-swsh11tg-TG27": {
+    "kind": "trainer",
+    "artist": "saino misaki",
+    "rarity": "secret",
+    "rules": {
+      "en": "Put up to 4 in any combination of Water Pokémon and Water Energy cards from your discard pile into your hand.\nYou may play only 1 Supporter card during your turn.",
+      "local": "Put up to 4 in any combination of Water Pokémon and Water Energy cards from your discard pile into your hand.\nYou may play only 1 Supporter card during your turn."
+    }
+  },
+  "en-swsh11tg-TG28": {
+    "kind": "trainer",
+    "artist": "Taira Akitsu",
+    "rarity": "secret",
+    "rules": {
+      "en": "Flip 2 coins. Search your deck for a number of cards up to the number of heads, put them into your hand, and shuffle your deck.\nYou may play only 1 Supporter card during your turn.",
+      "local": "Flip 2 coins. Search your deck for a number of cards up to the number of heads, put them into your hand, and shuffle your deck.\nYou may play only 1 Supporter card during your turn."
+    }
+  },
+  "en-swsh11tg-TG29": {
+    "kind": "pokemon",
+    "artist": "aky CG Works",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 310,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Pikachu V", "local": "Pikachu V" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "lightning", "lightning"],
+        "damage": "120+",
+        "local": {
+          "name": "G-Max Volt Tackle",
+          "text": "You may discard all Energy from this Pokémon. If you do, this attack does 150 more damage."
+        },
+        "en": {
+          "name": "G-Max Volt Tackle",
+          "text": "You may discard all Energy from this Pokémon. If you do, this attack does 150 more damage."
+        }
+      }
+    ],
+    "rules": {
+      "en": "VMAX rule: When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "VMAX rule: When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  },
+  "en-swsh11tg-TG30": {
+    "kind": "pokemon",
+    "artist": "5ban Graphics",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 310,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Mew V", "local": "Mew V" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Cross Fusion Strike",
+          "text": "Choose 1 of your Benched Fusion Strike Pokémon's attacks and use it as this attack."
+        },
+        "en": {
+          "name": "Cross Fusion Strike",
+          "text": "Choose 1 of your Benched Fusion Strike Pokémon's attacks and use it as this attack."
+        }
+      },
+      {
+        "cost": ["psychic", "psychic"],
+        "damage": "130",
+        "local": {
+          "name": "Max Miracle",
+          "text": "This attack's damage isn't affected by any effects on your opponent's Active Pokémon."
+        },
+        "en": {
+          "name": "Max Miracle",
+          "text": "This attack's damage isn't affected by any effects on your opponent's Active Pokémon."
+        }
+      }
+    ],
+    "rules": {
+      "en": "VMAX rule: When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "VMAX rule: When your Pokémon VMAX is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  }
+}

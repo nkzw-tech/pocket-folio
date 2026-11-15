@@ -1,0 +1,1869 @@
+{
+  "ja-sm10b-1": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 270,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": [],
+        "damage": "",
+        "local": {
+          "name": "スーパーグロウ",
+          "text": "自分の場のGrassポケモン1匹から進化するカードを、自分の山札から1枚選び、そのポケモンにのせて進化させる。進化後が1進化なら、続けて2進化を1枚選び進化させる。そして山札を切る。"
+        },
+        "en": {
+          "name": "Super Growth",
+          "text": "Search your deck for a card that evolves from 1 of your Grass Pokémon and put it onto that Pokémon to evolve it. If that Pokémon is now a Stage 1 Pokémon, search your deck for a Stage 2 Pokémon that evolves from that Pokémon and put it onto that Pokémon to evolve it. Then, shuffle your deck."
+        }
+      },
+      {
+        "cost": ["grass", "grass", "colorless"],
+        "damage": "150",
+        "local": { "name": "やすらぎハリケーン", "text": "このポケモンのHPを「30」回復する。" },
+        "en": { "name": "Calming Hurricane", "text": "Heal 30 damage from this Pokémon." }
+      },
+      {
+        "cost": ["grass", "grass", "grass"],
+        "damage": "200",
+        "local": {
+          "name": "トロピカルアワーGX",
+          "text": "追加でエネルギーが3個ついているなら、相手の場のポケモンについているエネルギーを、すべて山札にもどして切る。［対戦中、自分はGXワザを1回しか使えない。］"
+        },
+        "en": {
+          "name": "Tropical Hour-GX",
+          "text": "If this Pokémon has at least 3 extra Energy attached to it (in addition to this attack's cost), your opponent shuffles all Energy from all of their Pokémon into their deck. (You can't use more than 1 GX attack in a game.)"
+        }
+      }
+    ]
+  },
+  "ja-sm10b-2": {
+    "kind": "pokemon",
+    "artist": "kawayoo",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 70,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "ツメをたてる", "text": "" },
+        "en": { "name": "Dig Claws", "text": "" }
+      }
+    ]
+  },
+  "ja-sm10b-3": {
+    "kind": "stage1",
+    "artist": "Tomokazu Komiya",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 120,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Dwebble", "local": "イシズマイ" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "colorless", "colorless"],
+        "damage": "50+",
+        "local": {
+          "name": "れんぞくぎり",
+          "text": "コインを3回投げる。オモテが1回なら、40ダメージ追加。オモテが2回なら、80ダメージ追加。すべてオモテなら、150ダメージ追加。"
+        },
+        "en": {
+          "name": "Fury Cutter",
+          "text": "Flip 3 coins. If 1 of them is heads, this attack does 40 more damage. If 2 of them are heads, this attack does 80 more damage. If all of them are heads, this attack does 150 more damage."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "シェルアーマー",
+          "text": "このポケモンが受けるワザのダメージは「-30」される。"
+        },
+        "en": {
+          "name": "Shell Armor",
+          "text": "This Pokémon takes 30 less damage from attacks (after applying Weakness and Resistance)."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-4": {
+    "kind": "pokemon",
+    "artist": "Yuka Morii",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": { "name": "あまいかおり", "text": "自分のポケモン1匹のHPを「30」回復する。" },
+        "en": { "name": "Sweet Scent", "text": "Heal 30 damage from 1 of your Pokémon." }
+      },
+      {
+        "cost": ["grass"],
+        "damage": "10",
+        "local": { "name": "このは", "text": "" },
+        "en": { "name": "Leafage", "text": "" }
+      }
+    ]
+  },
+  "ja-sm10b-5": {
+    "kind": "stage1",
+    "artist": "AKIRA EGAWA",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 110,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Fomantis", "local": "カリキリ" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "はなふぶき",
+          "text": "相手のポケモン全員に、それぞれ10ダメージ。［ベンチは弱点・抵抗力を計算しない。］"
+        },
+        "en": {
+          "name": "Petal Blizzard",
+          "text": "This attack does 10 damage to each of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      },
+      {
+        "cost": ["grass"],
+        "damage": "50+",
+        "local": {
+          "name": "ソルスラッシュ",
+          "text": "このポケモンにFireエネルギーがついているなら、50ダメージ追加。"
+        },
+        "en": {
+          "name": "Sol Slice",
+          "text": "If this Pokémon has any Fire Energy attached to it, this attack does 50 more damage."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-6": {
+    "kind": "pokemon",
+    "artist": "Mizue",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "10",
+        "local": { "name": "はねる", "text": "" },
+        "en": { "name": "Splash", "text": "" }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "かいてんアタック", "text": "" },
+        "en": { "name": "Spinning Attack", "text": "" }
+      }
+    ]
+  },
+  "ja-sm10b-7": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 90,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Bounsweet", "local": "アマカジ" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "30×",
+        "local": { "name": "おうふくビンタ", "text": "コインを2回投げ、オモテの数×30ダメージ。" },
+        "en": {
+          "name": "Double Slap",
+          "text": "Flip 2 coins. This attack does 30 damage for each heads."
+        }
+      },
+      {
+        "cost": ["grass", "colorless", "colorless"],
+        "damage": "60",
+        "local": { "name": "リーフステップ", "text": "" },
+        "en": { "name": "Leaf Step", "text": "" }
+      }
+    ]
+  },
+  "ja-sm10b-8": {
+    "kind": "stage2",
+    "artist": "kirisAki",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 140,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Steenee", "local": "アママイコ" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "colorless", "colorless"],
+        "damage": "90",
+        "local": { "name": "とびひざげり", "text": "" },
+        "en": { "name": "High Jump Kick", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "じょおうのほうび",
+          "text": "自分の番に1回使える。自分のトラッシュにあるGrassエネルギーを1枚、バトルポケモンにつける。"
+        },
+        "en": {
+          "name": "Queenly Reward",
+          "text": "Once during your turn (before your attack), you may attach a Grass Energy card from your discard pile to your Active Pokémon."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-9": {
+    "kind": "pokemon",
+    "artist": "Motofumi Fujiwara",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 90,
+      "retreat": 4,
+      "weaknesses": [{ "energy": "water", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "たいあたり", "text": "" },
+        "en": { "name": "Tackle", "text": "" }
+      },
+      {
+        "cost": ["fire", "colorless", "colorless", "colorless"],
+        "damage": "80",
+        "local": {
+          "name": "かえんほうしゃ",
+          "text": "このポケモンについているエネルギーを、1個トラッシュする。"
+        },
+        "en": { "name": "Flamethrower", "text": "Discard an Energy from this Pokémon." }
+      }
+    ]
+  },
+  "ja-sm10b-10": {
+    "kind": "stage1",
+    "artist": "Masakazu Fukuda",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 140,
+      "retreat": 4,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Numel", "local": "ドンメル" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "50",
+        "local": { "name": "たいあたり", "text": "" },
+        "en": { "name": "Tackle", "text": "" }
+      },
+      {
+        "cost": ["fire", "colorless", "colorless", "colorless"],
+        "damage": "150",
+        "local": {
+          "name": "ストロングフレア",
+          "text": "このポケモンについているエネルギーを、2個トラッシュする。"
+        },
+        "en": { "name": "Strong Flare", "text": "Discard 2 Energy from this Pokémon." }
+      }
+    ]
+  },
+  "ja-sm10b-11": {
+    "kind": "pokemon",
+    "artist": "Mizue",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire"],
+        "damage": "",
+        "local": {
+          "name": "ビクトリーサイン",
+          "text": "自分の山札にある、それぞれちがうタイプの基本エネルギーを2枚まで、自分のポケモンに好きなようにつける。そして山札を切る。"
+        },
+        "en": {
+          "name": "Victory Sign",
+          "text": "Search your deck for up to 2 basic Energy cards of different types and attach them to your Pokémon in any way you like. Then, shuffle your deck."
+        }
+      },
+      {
+        "cost": ["fire"],
+        "damage": "20",
+        "local": { "name": "ほのお", "text": "" },
+        "en": { "name": "Flare", "text": "" }
+      }
+    ]
+  },
+  "ja-sm10b-12": {
+    "kind": "stage1",
+    "artist": "Mina Nakai",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Fletchling", "local": "ヤヤコマ" }
+    },
+    "attacks": [
+      {
+        "cost": ["fire"],
+        "damage": "20",
+        "local": {
+          "name": "ニトロチャージ",
+          "text": "自分の山札にあるFireエネルギーを1枚、このポケモンにつける。そして山札を切る。"
+        },
+        "en": {
+          "name": "Flame Charge",
+          "text": "Search your deck for a Fire Energy card and attach it to this Pokémon. Then, shuffle your deck."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-13": {
+    "kind": "stage2",
+    "artist": "SATOSHI NAKAI",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 130,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Fletchinder", "local": "ヒノヤコマ" }
+    },
+    "attacks": [
+      {
+        "cost": ["fire"],
+        "damage": "40",
+        "local": { "name": "ねっぷう", "text": "相手のバトルポケモンをやけどにする。" },
+        "en": { "name": "Heat Wave", "text": "Your opponent's Active Pokémon is now Burned." }
+      },
+      {
+        "cost": ["fire", "colorless"],
+        "damage": "100",
+        "local": {
+          "name": "フレアブリッツ",
+          "text": "このポケモンについているエネルギーを1個トラッシュし、相手のベンチポケモン1匹にも、50ダメージ。［ベンチは弱点・抵抗力を計算しない。］"
+        },
+        "en": {
+          "name": "Flare Raid",
+          "text": "Discard an Energy from this Pokémon. This attack does 50 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "ja-sm10b-14": {
+    "kind": "pokemon",
+    "artist": "Naoyo Kimura",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "metal", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "20",
+        "local": { "name": "つらら", "text": "" },
+        "en": { "name": "Icicle", "text": "" }
+      }
+    ]
+  },
+  "ja-sm10b-15": {
+    "kind": "stage1",
+    "artist": "Mizue",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "metal", "value": "×2" }],
+      "evolvesFrom": { "en": "Snorunt", "local": "ユキワラシ" }
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "20×",
+        "local": {
+          "name": "うらみのといき",
+          "text": "このポケモンにダメカンを7個までのせ、のせた数×20ダメージ。"
+        },
+        "en": {
+          "name": "Spiteful Sigh",
+          "text": "Put up to 7 damage counters on this Pokémon. This attack does 20 damage for each damage counter you placed in this way."
+        }
+      },
+      {
+        "cost": ["water"],
+        "damage": "40",
+        "local": { "name": "こごえるかぜ", "text": "相手のバトルポケモンをねむりにする。" },
+        "en": { "name": "Icy Wind", "text": "Your opponent's Active Pokémon is now Asleep." }
+      }
+    ]
+  },
+  "ja-sm10b-16": {
+    "kind": "pokemon",
+    "artist": "otumami",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 90,
+      "retreat": 4,
+      "weaknesses": [{ "energy": "metal", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "10",
+        "local": { "name": "こなゆき", "text": "相手のバトルポケモンをねむりにする。" },
+        "en": { "name": "Powder Snow", "text": "Your opponent's Active Pokémon is now Asleep." }
+      }
+    ]
+  },
+  "ja-sm10b-17": {
+    "kind": "stage1",
+    "artist": "Shin Nagasawa",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 140,
+      "retreat": 4,
+      "weaknesses": [{ "energy": "metal", "value": "×2" }],
+      "evolvesFrom": { "en": "Snover", "local": "ユキカブリ" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "colorless", "colorless"],
+        "damage": "70",
+        "local": {
+          "name": "きゅうそくれいとう",
+          "text": "相手のバトルポケモンにWaterエネルギーがついているなら、相手のバトルポケモンをマヒにする。"
+        },
+        "en": {
+          "name": "Quick Freeze",
+          "text": "If your opponent's Active Pokémon has any Water Energy attached to it, it is now Paralyzed."
+        }
+      },
+      {
+        "cost": ["water", "water", "colorless", "colorless"],
+        "damage": "140",
+        "local": { "name": "ワイルドタックル", "text": "このポケモンにも20ダメージ。" },
+        "en": { "name": "Wild Tackle", "text": "This Pokémon does 20 damage to itself." }
+      }
+    ]
+  },
+  "ja-sm10b-18": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 90,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "metal", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "10",
+        "local": {
+          "name": "カチカチロック",
+          "text": "次の相手の番、相手は手札からグッズを出して使えない。"
+        },
+        "en": {
+          "name": "Frozen Lock",
+          "text": "Your opponent can't play any Item cards from their hand during their next turn."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-19": {
+    "kind": "pokemon",
+    "artist": "5ban Graphics",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 170,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water", "colorless"],
+        "damage": "110",
+        "local": {
+          "name": "ソニックエッジ",
+          "text": "このワザのダメージは、相手のバトルポケモンにかかっている効果を計算しない。"
+        },
+        "en": {
+          "name": "Sonic Edge",
+          "text": "This attack's damage isn't affected by any effects on your opponent's Active Pokémon."
+        }
+      },
+      {
+        "cost": ["water", "water", "colorless"],
+        "damage": "50×",
+        "local": {
+          "name": "かくごのつるぎGX",
+          "text": "相手のベンチポケモンの数×50ダメージ。［対戦中、自分はGXワザを1回しか使えない。］"
+        },
+        "en": {
+          "name": "Resolute Blade-GX",
+          "text": "This attack does 50 damage for each of your opponent's Benched Pokémon. (You can't use more than 1 GX attack in a game.)"
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "ホーリーハート",
+          "text": "このポケモンは、相手の「ポケモンGX・EX」からワザのダメージや効果を受けない。"
+        },
+        "en": {
+          "name": "Pure Heart",
+          "text": "Prevent all effects of attacks, including damage, done to this Pokémon by your opponent's Pokémon-GX or Pokémon-EX."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-20": {
+    "kind": "pokemon",
+    "artist": "Hasuno",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 120,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "20",
+        "local": { "name": "ひれカッター", "text": "" },
+        "en": { "name": "Razor Fin", "text": "" }
+      },
+      {
+        "cost": ["water", "water", "colorless"],
+        "damage": "100",
+        "local": {
+          "name": "ネイチャーウェーブ",
+          "text": "このワザは、相手の場に「ウルトラビースト」がいるなら、Colorlessエネルギー1個で使える。"
+        },
+        "en": {
+          "name": "Nature Wave",
+          "text": "If your opponent has any Ultra Beasts in play, this attack can be used for Colorless."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-21": {
+    "kind": "pokemon",
+    "artist": "sowsow",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "metal", "value": "-20" }]
+    },
+    "attacks": [
+      {
+        "cost": ["lightning"],
+        "damage": "",
+        "local": { "name": "ちょうおんぱ", "text": "相手のバトルポケモンをこんらんにする。" },
+        "en": { "name": "Supersonic", "text": "Your opponent's Active Pokémon is now Confused." }
+      }
+    ]
+  },
+  "ja-sm10b-22": {
+    "kind": "stage1",
+    "artist": "Yumi",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 90,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "metal", "value": "-20" }],
+      "evolvesFrom": { "en": "Magnemite", "local": "コイル" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning"],
+        "damage": "20",
+        "local": { "name": "ピッカリだま", "text": "" },
+        "en": { "name": "Lightning Ball", "text": "" }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "40×",
+        "local": { "name": "トライアタック", "text": "コインを3回投げ、オモテの数×40ダメージ。" },
+        "en": {
+          "name": "Tri Attack",
+          "text": "Flip 3 coins. This attack does 40 damage for each heads."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-23": {
+    "kind": "stage2",
+    "artist": "Shin Nagasawa",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 160,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "metal", "value": "-20" }],
+      "evolvesFrom": { "en": "Magneton", "local": "ジバコイルex" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "colorless", "colorless"],
+        "damage": "120",
+        "local": {
+          "name": "マグネットボルト",
+          "text": "自分のトラッシュにあるトレーナーズを1枚、相手に見せてから、手札に加える。"
+        },
+        "en": {
+          "name": "Magnetic Bolt",
+          "text": "Put a Trainer card from your discard pile into your hand."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "ダブルタイプ",
+          "text": "このポケモンは、場にいるかぎりElectricの2つのタイプになる。"
+        },
+        "en": {
+          "name": "Double Type",
+          "text": "As long as this Pokémon is in play, it is Lightning and Metal type."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-24": {
+    "kind": "pokemon",
+    "artist": "Satoshi Shirai",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 120,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "metal", "value": "-20" }]
+    },
+    "attacks": [
+      {
+        "cost": ["lightning"],
+        "damage": "30+",
+        "local": {
+          "name": "スリーミラーズ",
+          "text": "相手のサイドの残り枚数が3枚なら、90ダメージ追加。"
+        },
+        "en": {
+          "name": "Three Mirrors",
+          "text": "If your opponent has exactly 3 Prize cards remaining, this attack does 90 more damage."
+        }
+      },
+      {
+        "cost": ["lightning", "lightning"],
+        "damage": "50",
+        "local": { "name": "シグナルビーム", "text": "相手のバトルポケモンをこんらんにする。" },
+        "en": { "name": "Signal Beam", "text": "Your opponent's Active Pokémon is now Confused." }
+      }
+    ]
+  },
+  "ja-sm10b-25": {
+    "kind": "pokemon",
+    "artist": "Masakazu Fukuda",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "30",
+        "local": { "name": "しっぽではたく", "text": "" },
+        "en": { "name": "Tail Whap", "text": "" }
+      }
+    ]
+  },
+  "ja-sm10b-26": {
+    "kind": "stage1",
+    "artist": "kirisAki",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 120,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Ekans", "local": "アーボ" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "colorless", "colorless"],
+        "damage": "50+",
+        "local": {
+          "name": "ロケットテール",
+          "text": "自分のトラッシュに「ムサシとコジロウ」があるなら、80ダメージ追加。"
+        },
+        "en": {
+          "name": "Rocket Tail",
+          "text": "If Jessie & James is in your discard pile, this attack does 80 more damage."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "いまわのもよう",
+          "text": "このポケモンが、相手のポケモンからワザのダメージを受けてきぜつしたとき、相手の手札からオモテを見ないで、2枚トラッシュする。"
+        },
+        "en": {
+          "name": "Last Pattern",
+          "text": "If this Pokémon is Knocked Out by damage from an opponent's attack, discard 2 random cards from your opponent's hand."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-27": {
+    "kind": "pokemon",
+    "artist": "Saya Tsuruta",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "20",
+        "local": { "name": "たいあたり", "text": "" },
+        "en": { "name": "Tackle", "text": "" }
+      }
+    ]
+  },
+  "ja-sm10b-28": {
+    "kind": "stage1",
+    "artist": "Hideki Ishikawa",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 120,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Koffing", "local": "ドガース" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "40",
+        "local": { "name": "たいあたり", "text": "" },
+        "en": { "name": "Tackle", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "ホワイトホール",
+          "text": "自分の番に、このカードが「ムサシとコジロウ」の効果でトラッシュされたとき、1回使える。相手は相手自身の手札を、1枚トラッシュする。（トラッシュするのは「ムサシとコジロウ」の効果のあと。）"
+        },
+        "en": {
+          "name": "Surrender Now",
+          "text": "Once during your turn, if this Pokémon is discarded with the effect of Jessie & James, you may have your opponent discard a card from their hand. (They discard that card after the effect of Jessie & James.)"
+        }
+      }
+    ]
+  },
+  "ja-sm10b-29": {
+    "kind": "pokemon",
+    "artist": "kodama",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "30",
+        "local": { "name": "サイコショット", "text": "" },
+        "en": { "name": "Psyshot", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "ひみつのテリトリー",
+          "text": "自分の場に「エムリット」「アグノム」がいるなら、おたがいのポケモン全員の弱点は、すべて「×4」としてダメージ計算をする。"
+        },
+        "en": {
+          "name": "Secret Territory",
+          "text": "If you have Mesprit and Azelf in play, apply Weakness for each Pokémon (both yours and your opponent's) as ×4 instead."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-30": {
+    "kind": "pokemon",
+    "artist": "Sekio",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": {
+          "name": "コンタクト",
+          "text": "自分の山札にあるたねポケモンを3枚まで、ベンチに出す。そして山札を切る。"
+        },
+        "en": {
+          "name": "First Contact",
+          "text": "Search your deck for up to 3 Basic Pokémon and put them onto your Bench. Then, shuffle your deck."
+        }
+      },
+      {
+        "cost": ["psychic"],
+        "damage": "20",
+        "local": { "name": "つぶやく", "text": "" },
+        "en": { "name": "Mumble", "text": "" }
+      }
+    ]
+  },
+  "ja-sm10b-31": {
+    "kind": "pokemon",
+    "artist": "Mizue",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "サイコパワー",
+          "text": "ダメカン3個を、相手のポケモンに好きなようにのせる。"
+        },
+        "en": {
+          "name": "Psypower",
+          "text": "Put 3 damage counters on your opponent's Pokémon in any way you like."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-32": {
+    "kind": "pokemon",
+    "artist": "Shin Nagasawa",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "とばす", "text": "" },
+        "en": { "name": "Belt", "text": "" }
+      },
+      {
+        "cost": ["psychic", "colorless", "colorless"],
+        "damage": "50+",
+        "local": {
+          "name": "ラストシーン",
+          "text": "おたがいのサイドの残り枚数が、それぞれ1枚なら、130ダメージ追加。"
+        },
+        "en": {
+          "name": "Last Scene",
+          "text": "If each player has exactly 1 Prize card remaining, this attack does 130 more damage."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-33": {
+    "kind": "pokemon",
+    "artist": "hatachu",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "dragon",
+      "types": ["dragon"],
+      "hp": 120,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fairy", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "ひきずりだす",
+          "text": "相手のベンチポケモンを1匹選び、バトルポケモンと入れ替える。その後、新しく出てきたポケモンに30ダメージ。"
+        },
+        "en": {
+          "name": "Drag Off",
+          "text": "Switch 1 of your opponent's Benched Pokémon with their Active Pokémon. This attack does 30 damage to the new Active Pokémon."
+        }
+      },
+      {
+        "cost": ["fire", "water", "colorless"],
+        "damage": "100×",
+        "local": { "name": "ドラゴンテール", "text": "コインを2回投げ、オモテの数×100ダメージ。" },
+        "en": {
+          "name": "Dragon Tail",
+          "text": "Flip 2 coins. This attack does 100 damage for each heads."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-34": {
+    "kind": "stage1",
+    "artist": "PLANETA Tsuji",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "dragon",
+      "types": ["dragon"],
+      "hp": 210,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fairy", "value": "×2" }],
+      "evolvesFrom": { "en": "Poipole", "local": "ベベノム" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "colorless", "colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "ベノムシュート",
+          "text": "このポケモンについているエネルギーを2個トラッシュし、相手のポケモン1匹に、170ダメージ。［ベンチは弱点・抵抗力を計算しない。］"
+        },
+        "en": {
+          "name": "Venom Shot",
+          "text": "Discard 2 Energy from this Pokémon. This attack does 170 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      },
+      {
+        "cost": ["lightning"],
+        "damage": "",
+        "local": {
+          "name": "インジェクションGX",
+          "text": "相手のトラッシュにある好きなカードを1枚、相手に見せてから、ウラにして相手のサイドとして置く。［対戦中、自分はGXワザを1回しか使えない。］"
+        },
+        "en": {
+          "name": "Injection-GX",
+          "text": "Add a card from your opponent's discard pile to their Prize cards face down. (You can't use more than 1 GX attack in a game.)"
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "ウルトラへんかん",
+          "text": "自分の番に1回使える。自分の手札にある「ウルトラビースト」を1枚トラッシュする。その後、山札を3枚引く。"
+        },
+        "en": {
+          "name": "Ultra Conversion",
+          "text": "Once during your turn (before your attack), you may discard an Ultra Beast card from your hand. If you do, draw 3 cards."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-35": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 300,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-20" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire", "water", "lightning", "colorless"],
+        "damage": "210",
+        "local": { "name": "トリニティバーン", "text": "" },
+        "en": { "name": "Trinity Burn", "text": "" }
+      },
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "スカイレジェンドGX",
+          "text": "このポケモンと、ついているすべてのカードを、自分の山札にもどして切る。追加でFireエネルギーが1個ずつついているなら、相手のポケモン3匹に、それぞれ110ダメージ。［ベンチは弱点・抵抗力を計算しない。］［対戦中、自分はGXワザを1回しか使えない。］"
+        },
+        "en": {
+          "name": "Sky Legends-GX",
+          "text": "Shuffle this Pokémon and all cards attached to it into your deck. If this Pokémon has at least 1 extra Fire, Water, and Lightning Energy attached to it (in addition to this attack's cost), this attack does 110 damage to 3 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.) (You can't use more than 1 GX attack in a game.)"
+        }
+      }
+    ]
+  },
+  "ja-sm10b-36": {
+    "kind": "pokemon",
+    "artist": "tetsuya koizumi",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 100,
+      "retreat": 4,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "どすこいドロー",
+          "text": "自分の場のにげるためのエネルギーが4個のポケモンの数ぶん、山札を引く。"
+        },
+        "en": {
+          "name": "Heavy Draw",
+          "text": "Draw a card for each of your Pokémon in play that has a Retreat Cost of exactly 4."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "40",
+        "local": { "name": "ベロではたく", "text": "" },
+        "en": { "name": "Tongue Slap", "text": "" }
+      }
+    ]
+  },
+  "ja-sm10b-37": {
+    "kind": "stage1",
+    "artist": "Suwama Chiaki",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 130,
+      "retreat": 4,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Lickitung", "local": "ベロリンガ" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "40",
+        "local": { "name": "ころがる", "text": "" },
+        "en": { "name": "Rollout", "text": "" }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "90",
+        "local": {
+          "name": "ベロベロらんぶ",
+          "text": "相手の手札からオモテを見ないで1枚トラッシュし、相手の山札を上から1枚トラッシュし、相手のバトルポケモンについているエネルギーを、1個トラッシュする。"
+        },
+        "en": {
+          "name": "Licks Go Crazy",
+          "text": "Discard a random card from your opponent's hand, discard the top card of your opponent's deck, and discard an Energy from your opponent's Active Pokémon."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-38": {
+    "kind": "pokemon",
+    "artist": "Misa Tsutsui",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-20" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "エアスラッシュ",
+          "text": "このポケモンについているエネルギーを、1個トラッシュする。"
+        },
+        "en": { "name": "Air Slash", "text": "Discard an Energy from this Pokémon." }
+      }
+    ]
+  },
+  "ja-sm10b-39": {
+    "kind": "stage1",
+    "artist": "Tomokazu Komiya",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 90,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-20" }],
+      "evolvesFrom": { "en": "Hoothoot", "local": "ホーホー" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "やみうち",
+          "text": "ダメカンがのっている相手のポケモン1匹に、60ダメージ。［ベンチは弱点・抵抗力を計算しない。］"
+        },
+        "en": {
+          "name": "Blindside",
+          "text": "This attack does 60 damage to 1 of your opponent's Pokémon that has any damage counters on it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "60",
+        "local": { "name": "スラッシュクロー", "text": "" },
+        "en": { "name": "Slashing Claw", "text": "" }
+      }
+    ]
+  },
+  "ja-sm10b-40": {
+    "kind": "pokemon",
+    "artist": "sui",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 90,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "30",
+        "local": { "name": "ドレインビンタ", "text": "このポケモンのHPを「30」回復する。" },
+        "en": { "name": "Drain Slap", "text": "Heal 30 damage from this Pokémon." }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "ヒヤリング",
+          "text": "このポケモンがバトル場にいるなら、自分の番に1回使える。自分の山札を1枚引く。"
+        },
+        "en": {
+          "name": "Hearing",
+          "text": "Once during your turn (before your attack), if this Pokémon is your Active Pokémon, you may draw a card."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-41": {
+    "kind": "pokemon",
+    "artist": "Saya Tsuruta",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-20" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "はばたく", "text": "" },
+        "en": { "name": "Flap", "text": "" }
+      }
+    ]
+  },
+  "ja-sm10b-42": {
+    "kind": "pokemon",
+    "artist": "tetsuya koizumi",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 100,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "20",
+        "local": { "name": "けとばす", "text": "" },
+        "en": { "name": "Smash Kick", "text": "" }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "30+",
+        "local": {
+          "name": "クイックアタック",
+          "text": "コインを1回投げオモテなら、30ダメージ追加。"
+        },
+        "en": {
+          "name": "Quick Blow",
+          "text": "Flip a coin. If heads, this attack does 30 more damage."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-43": {
+    "kind": "stage1",
+    "artist": "Eske Yoshinob",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 130,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Type: Null", "local": "タイプ：ヌル" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "30+",
+        "local": {
+          "name": "アベンジハート",
+          "text": "前の相手の番に、相手がとったサイドの枚数×50ダメージ追加。"
+        },
+        "en": {
+          "name": "Avenging Heart",
+          "text": "This attack does 50 more damage for each Prize card your opponent took on their last turn."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "120",
+        "local": {
+          "name": "エアスラッシュ",
+          "text": "このポケモンについているエネルギーを、1個トラッシュする。"
+        },
+        "en": { "name": "Air Slash", "text": "Discard an Energy from this Pokémon." }
+      }
+    ]
+  },
+  "ja-sm10b-44": {
+    "kind": "trainer",
+    "artist": "5ban Graphics",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "",
+      "local": "ポケモンのどうぐは、自分のポケモンにつけて使う。ポケモン1匹につき1枚だけつけられ、つけたままにする。"
+    }
+  },
+  "ja-sm10b-45": {
+    "kind": "trainer",
+    "artist": "aky CG Works",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "",
+      "local": "ポケモンのどうぐは、自分のポケモンにつけて使う。ポケモン1匹につき1枚だけつけられ、つけたままにする。"
+    }
+  },
+  "ja-sm10b-46": {
+    "kind": "trainer",
+    "artist": "sadaji",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.\nThe Retreat Cost of the Pokémon this card is attached to is Colorless less.\nIf this card is discarded from play, put it into your hand instead of the discard pile.\nYou may play as many Item cards as you like during your turn (before your attack).",
+      "local": "ポケモンのどうぐは、自分のポケモンにつけて使う。ポケモン1匹につき1枚だけつけられ、つけたままにする。\nこのカードは、場からトラッシュされるとき、トラッシュせず、手札にもどす。"
+    }
+  },
+  "ja-sm10b-47": {
+    "kind": "trainer",
+    "artist": "Hitoshi Ariga",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Search your deck for up to 3 Pokémon that have a Retreat Cost of exactly 4, reveal them, and put them into your hand. Then, shuffle your deck.\nYou may play only 1 Supporter card during your turn (before your attack).",
+      "local": "自分の山札にあるにげるためのエネルギーが4個のポケモンを3枚まで、相手に見せてから、手札に加える。そして山札を切る。\nサポートは、自分の番に1枚しか使えない。"
+    }
+  },
+  "ja-sm10b-48": {
+    "kind": "trainer",
+    "artist": "Megumi Mizutani",
+    "rarity": "rare",
+    "rules": {
+      "en": "Each player discards 2 cards from their hand. Your opponent discards first.\nYou may play only 1 Supporter card during your turn (before your attack).",
+      "local": "おたがいのプレイヤーは、それぞれ自分の手札を、2枚トラッシュする。（トラッシュは相手から行う。手札がないプレイヤーはトラッシュしない。）\nサポートは、自分の番に1枚しか使えない。"
+    }
+  },
+  "ja-sm10b-49": {
+    "kind": "trainer",
+    "artist": "Ryo Ueda",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Pokémon with 40 HP or less remaining (both yours and your opponent's) can't attack.\nThis card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card.",
+      "local": "おたがいの場の残りHPが「40」以下のポケモンは、ワザが使えない。\nスタジアムは、自分の番に1枚だけ、バトル場の横に出せる。別の名前のスタジアムが場に出たなら、このカードをトラッシュする。"
+    }
+  },
+  "ja-sm10b-50": {
+    "kind": "specialEnergy",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "This card provides Colorless Energy.\nIf this card is discarded from play, put it into your hand instead of the discard pile.",
+      "local": "このカードはColorlessエネルギー1個ぶんとしてはたらく。\nこのカードは、場からトラッシュされるとき、トラッシュせず、手札にもどす。"
+    }
+  },
+  "ja-sm10b-51": {
+    "kind": "trainer",
+    "artist": "Ryo Ueda",
+    "rarity": "rare",
+    "rules": {
+      "en": "Search your deck for a Basic Grass Pokémon or a Grass Energy card, reveal it, and put it into your hand. Then, shuffle your deck.\nYou may play as many Item cards as you like during your turn (before your attack).",
+      "local": "自分の山札にあるGrassエネルギーを1枚、相手に見せてから、手札に加える。そして山札を切る。\nグッズは、自分の番に何枚でも使える。"
+    }
+  },
+  "ja-sm10b-52": {
+    "kind": "trainer",
+    "artist": "Mana Ibe",
+    "rarity": "rare",
+    "rules": {
+      "en": "Look at your face-down Prize cards and put 1 of them into your hand. Then, shuffle this Gladion into your remaining Prize cards and put them back face down. If you didn't play this Gladion from your hand, it does nothing.\nYou may play only 1 Supporter card during your turn (before your attack).",
+      "local": "ウラになっている自分のサイドのオモテをすべて見て、その中にあるカードを1枚、この「グラジオ」と入れ替えて、手札に加える。その後、この「グラジオ」と残りのサイドをすべてウラにして切り、サイドとして置く。\nサポートは、自分の番に1枚しか使えない。"
+    }
+  },
+  "ja-sm10b-53": {
+    "kind": "trainer",
+    "artist": "Mana Ibe",
+    "rarity": "rare",
+    "rules": {
+      "en": "Draw cards until you have 6 cards in your hand. If it's your first turn, draw cards until you have 8 cards in your hand.\nYou may play only 1 Supporter card during your turn (before your attack).",
+      "local": "自分の手札が6枚になるように、山札を引く。最初の自分の番に使ったなら、8枚になるように引く。\nサポートは、自分の番に1枚しか使えない。"
+    }
+  },
+  "ja-sm10b-54": {
+    "kind": "trainer",
+    "artist": "Mana Ibe",
+    "rarity": "rare",
+    "rules": {
+      "en": "Put 2 in any combination of Supporter and Stadium cards from your discard pile into your hand.\nYou may play only 1 Supporter card during your turn (before your attack).",
+      "local": "自分のトラッシュにあるサポートとスタジアムを合計2枚、相手に見せてから、手札に加える。\nサポートは、自分の番に1枚しか使えない。"
+    }
+  },
+  "ja-sm10b-55": {
+    "kind": "pokemon",
+    "artist": "ConceptLab",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 270,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": [],
+        "damage": "",
+        "local": {
+          "name": "スーパーグロウ",
+          "text": "自分の場のGrassポケモン1匹から進化するカードを、自分の山札から1枚選び、そのポケモンにのせて進化させる。進化後が1進化なら、続けて2進化を1枚選び進化させる。そして山札を切る。"
+        },
+        "en": {
+          "name": "Super Growth",
+          "text": "Search your deck for a card that evolves from 1 of your Grass Pokémon and put it onto that Pokémon to evolve it. If that Pokémon is now a Stage 1 Pokémon, search your deck for a Stage 2 Pokémon that evolves from that Pokémon and put it onto that Pokémon to evolve it. Then, shuffle your deck."
+        }
+      },
+      {
+        "cost": ["grass", "grass", "colorless"],
+        "damage": "150",
+        "local": { "name": "やすらぎハリケーン", "text": "このポケモンのHPを「30」回復する。" },
+        "en": { "name": "Calming Hurricane", "text": "Heal 30 damage from this Pokémon." }
+      },
+      {
+        "cost": ["grass", "grass", "grass"],
+        "damage": "200",
+        "local": {
+          "name": "トロピカルアワーGX",
+          "text": "追加でエネルギーが3個ついているなら、相手の場のポケモンについているエネルギーを、すべて山札にもどして切る。［対戦中、自分はGXワザを1回しか使えない。］"
+        },
+        "en": {
+          "name": "Tropical Hour-GX",
+          "text": "If this Pokémon has at least 3 extra Energy attached to it (in addition to this attack's cost), your opponent shuffles all Energy from all of their Pokémon into their deck. (You can't use more than 1 GX attack in a game.)"
+        }
+      }
+    ]
+  },
+  "ja-sm10b-56": {
+    "kind": "pokemon",
+    "artist": "Naoyo Kimura",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 270,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": [],
+        "damage": "",
+        "local": {
+          "name": "スーパーグロウ",
+          "text": "自分の場のGrassポケモン1匹から進化するカードを、自分の山札から1枚選び、そのポケモンにのせて進化させる。進化後が1進化なら、続けて2進化を1枚選び進化させる。そして山札を切る。"
+        },
+        "en": {
+          "name": "Super Growth",
+          "text": "Search your deck for a card that evolves from 1 of your Grass Pokémon and put it onto that Pokémon to evolve it. If that Pokémon is now a Stage 1 Pokémon, search your deck for a Stage 2 Pokémon that evolves from that Pokémon and put it onto that Pokémon to evolve it. Then, shuffle your deck."
+        }
+      },
+      {
+        "cost": ["grass", "grass", "colorless"],
+        "damage": "150",
+        "local": { "name": "やすらぎハリケーン", "text": "このポケモンのHPを「30」回復する。" },
+        "en": { "name": "Calming Hurricane", "text": "Heal 30 damage from this Pokémon." }
+      },
+      {
+        "cost": ["grass", "grass", "grass"],
+        "damage": "200",
+        "local": {
+          "name": "トロピカルアワーGX",
+          "text": "追加でエネルギーが3個ついているなら、相手の場のポケモンについているエネルギーを、すべて山札にもどして切る。［対戦中、自分はGXワザを1回しか使えない。］"
+        },
+        "en": {
+          "name": "Tropical Hour-GX",
+          "text": "If this Pokémon has at least 3 extra Energy attached to it (in addition to this attack's cost), your opponent shuffles all Energy from all of their Pokémon into their deck. (You can't use more than 1 GX attack in a game.)"
+        }
+      }
+    ]
+  },
+  "ja-sm10b-57": {
+    "kind": "pokemon",
+    "artist": "ConceptLab",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 170,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water", "colorless"],
+        "damage": "110",
+        "local": {
+          "name": "ソニックエッジ",
+          "text": "このワザのダメージは、相手のバトルポケモンにかかっている効果を計算しない。"
+        },
+        "en": {
+          "name": "Sonic Edge",
+          "text": "This attack's damage isn't affected by any effects on your opponent's Active Pokémon."
+        }
+      },
+      {
+        "cost": ["water", "water", "colorless"],
+        "damage": "50×",
+        "local": {
+          "name": "かくごのつるぎGX",
+          "text": "相手のベンチポケモンの数×50ダメージ。［対戦中、自分はGXワザを1回しか使えない。］"
+        },
+        "en": {
+          "name": "Resolute Blade-GX",
+          "text": "This attack does 50 damage for each of your opponent's Benched Pokémon. (You can't use more than 1 GX attack in a game.)"
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "ホーリーハート",
+          "text": "このポケモンは、相手の「ポケモンGX・EX」からワザのダメージや効果を受けない。"
+        },
+        "en": {
+          "name": "Pure Heart",
+          "text": "Prevent all effects of attacks, including damage, done to this Pokémon by your opponent's Pokémon-GX or Pokémon-EX."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-58": {
+    "kind": "stage1",
+    "artist": "ConceptLab",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "dragon",
+      "types": ["dragon"],
+      "hp": 210,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fairy", "value": "×2" }],
+      "evolvesFrom": { "en": "Poipole", "local": "ベベノム" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "colorless", "colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "ベノムシュート",
+          "text": "このポケモンについているエネルギーを2個トラッシュし、相手のポケモン1匹に、170ダメージ。［ベンチは弱点・抵抗力を計算しない。］"
+        },
+        "en": {
+          "name": "Venom Shot",
+          "text": "Discard 2 Energy from this Pokémon. This attack does 170 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      },
+      {
+        "cost": ["lightning"],
+        "damage": "",
+        "local": {
+          "name": "インジェクションGX",
+          "text": "相手のトラッシュにある好きなカードを1枚、相手に見せてから、ウラにして相手のサイドとして置く。［対戦中、自分はGXワザを1回しか使えない。］"
+        },
+        "en": {
+          "name": "Injection-GX",
+          "text": "Add a card from your opponent's discard pile to their Prize cards face down. (You can't use more than 1 GX attack in a game.)"
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "ウルトラへんかん",
+          "text": "自分の番に1回使える。自分の手札にある「ウルトラビースト」を1枚トラッシュする。その後、山札を3枚引く。"
+        },
+        "en": {
+          "name": "Ultra Conversion",
+          "text": "Once during your turn (before your attack), you may discard an Ultra Beast card from your hand. If you do, draw 3 cards."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-59": {
+    "kind": "pokemon",
+    "artist": "5ban Graphics",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 300,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-20" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire", "water", "lightning", "colorless"],
+        "damage": "210",
+        "local": { "name": "トリニティバーン", "text": "" },
+        "en": { "name": "Trinity Burn", "text": "" }
+      },
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "スカイレジェンドGX",
+          "text": "このポケモンと、ついているすべてのカードを、自分の山札にもどして切る。追加でFireエネルギーが1個ずつついているなら、相手のポケモン3匹に、それぞれ110ダメージ。［ベンチは弱点・抵抗力を計算しない。］［対戦中、自分はGXワザを1回しか使えない。］"
+        },
+        "en": {
+          "name": "Sky Legends-GX",
+          "text": "Shuffle this Pokémon and all cards attached to it into your deck. If this Pokémon has at least 1 extra Fire, Water, and Lightning Energy attached to it (in addition to this attack's cost), this attack does 110 damage to 3 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.) (You can't use more than 1 GX attack in a game.)"
+        }
+      }
+    ]
+  },
+  "ja-sm10b-60": {
+    "kind": "pokemon",
+    "artist": "HYOGONOSUKE",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 300,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-20" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire", "water", "lightning", "colorless"],
+        "damage": "210",
+        "local": { "name": "トリニティバーン", "text": "" },
+        "en": { "name": "Trinity Burn", "text": "" }
+      },
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "スカイレジェンドGX",
+          "text": "このポケモンと、ついているすべてのカードを、自分の山札にもどして切る。追加でFireエネルギーが1個ずつついているなら、相手のポケモン3匹に、それぞれ110ダメージ。［ベンチは弱点・抵抗力を計算しない。］［対戦中、自分はGXワザを1回しか使えない。］"
+        },
+        "en": {
+          "name": "Sky Legends-GX",
+          "text": "Shuffle this Pokémon and all cards attached to it into your deck. If this Pokémon has at least 1 extra Fire, Water, and Lightning Energy attached to it (in addition to this attack's cost), this attack does 110 damage to 3 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.) (You can't use more than 1 GX attack in a game.)"
+        }
+      }
+    ]
+  },
+  "ja-sm10b-61": {
+    "kind": "trainer",
+    "artist": "Hitoshi Ariga",
+    "rarity": "secret",
+    "rules": {
+      "en": "Search your deck for up to 3 Pokémon that have a Retreat Cost of exactly 4, reveal them, and put them into your hand. Then, shuffle your deck.\nYou may play only 1 Supporter card during your turn (before your attack).",
+      "local": "自分の山札にあるにげるためのエネルギーが4個のポケモンを3枚まで、相手に見せてから、手札に加える。そして山札を切る。\nサポートは、自分の番に1枚しか使えない。"
+    }
+  },
+  "ja-sm10b-62": {
+    "kind": "trainer",
+    "artist": "Megumi Mizutani",
+    "rarity": "secret",
+    "rules": {
+      "en": "Each player discards 2 cards from their hand. Your opponent discards first.\nYou may play only 1 Supporter card during your turn (before your attack).",
+      "local": "おたがいのプレイヤーは、それぞれ自分の手札を、2枚トラッシュする。（トラッシュは相手から行う。手札がないプレイヤーはトラッシュしない。）\nサポートは、自分の番に1枚しか使えない。"
+    }
+  },
+  "ja-sm10b-63": {
+    "kind": "pokemon",
+    "artist": "ConceptLab",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 270,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": [],
+        "damage": "",
+        "local": {
+          "name": "スーパーグロウ",
+          "text": "自分の場のGrassポケモン1匹から進化するカードを、自分の山札から1枚選び、そのポケモンにのせて進化させる。進化後が1進化なら、続けて2進化を1枚選び進化させる。そして山札を切る。"
+        },
+        "en": {
+          "name": "Super Growth",
+          "text": "Search your deck for a card that evolves from 1 of your Grass Pokémon and put it onto that Pokémon to evolve it. If that Pokémon is now a Stage 1 Pokémon, search your deck for a Stage 2 Pokémon that evolves from that Pokémon and put it onto that Pokémon to evolve it. Then, shuffle your deck."
+        }
+      },
+      {
+        "cost": ["grass", "grass", "colorless"],
+        "damage": "150",
+        "local": { "name": "やすらぎハリケーン", "text": "このポケモンのHPを「30」回復する。" },
+        "en": { "name": "Calming Hurricane", "text": "Heal 30 damage from this Pokémon." }
+      },
+      {
+        "cost": ["grass", "grass", "grass"],
+        "damage": "200",
+        "local": {
+          "name": "トロピカルアワーGX",
+          "text": "追加でエネルギーが3個ついているなら、相手の場のポケモンについているエネルギーを、すべて山札にもどして切る。［対戦中、自分はGXワザを1回しか使えない。］"
+        },
+        "en": {
+          "name": "Tropical Hour-GX",
+          "text": "If this Pokémon has at least 3 extra Energy attached to it (in addition to this attack's cost), your opponent shuffles all Energy from all of their Pokémon into their deck. (You can't use more than 1 GX attack in a game.)"
+        }
+      }
+    ]
+  },
+  "ja-sm10b-64": {
+    "kind": "pokemon",
+    "artist": "ConceptLab",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 170,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "powers": [
+      {
+        "local": {
+          "name": "ホーリーハート",
+          "text": "このポケモンは、相手の「ポケモンGX・EX」からワザのダメージや効果を受けない。"
+        },
+        "en": {
+          "name": "Pure Heart",
+          "text": "Prevent all effects of attacks, including damage, done to this Pokémon by your opponent's Pokémon-GX or Pokémon-EX."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-65": {
+    "kind": "stage1",
+    "artist": "ConceptLab",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "dragon",
+      "types": ["dragon"],
+      "hp": 210,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fairy", "value": "×2" }],
+      "evolvesFrom": { "en": "", "local": "ベベノム" }
+    },
+    "powers": [
+      {
+        "local": {
+          "name": "ウルトラへんかん",
+          "text": "自分の番に1回使える。自分の手札にある「ウルトラビースト」を1枚トラッシュする。その後、山札を3枚引く。"
+        },
+        "en": {
+          "name": "Ultra Conversion",
+          "text": "Once during your turn (before your attack), you may discard an Ultra Beast card from your hand. If you do, draw 3 cards."
+        }
+      }
+    ]
+  },
+  "ja-sm10b-66": {
+    "kind": "pokemon",
+    "artist": "5ban Graphics",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 300,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-20" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire", "water", "lightning", "colorless"],
+        "damage": "210",
+        "local": { "name": "トリニティバーン", "text": "" },
+        "en": { "name": "Trinity Burn", "text": "" }
+      },
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "スカイレジェンドGX",
+          "text": "このポケモンと、ついているすべてのカードを、自分の山札にもどして切る。追加でFireエネルギーが1個ずつついているなら、相手のポケモン3匹に、それぞれ110ダメージ。［ベンチは弱点・抵抗力を計算しない。］［対戦中、自分はGXワザを1回しか使えない。］"
+        },
+        "en": {
+          "name": "Sky Legends-GX",
+          "text": "Shuffle this Pokémon and all cards attached to it into your deck. If this Pokémon has at least 1 extra Fire, Water, and Lightning Energy attached to it (in addition to this attack's cost), this attack does 110 damage to 3 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.) (You can't use more than 1 GX attack in a game.)"
+        }
+      }
+    ]
+  },
+  "ja-sm10b-67": {
+    "kind": "trainer",
+    "artist": "sadaji",
+    "rarity": "secret",
+    "rules": {
+      "en": "Attach a Pokémon Tool to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it.\nThe Retreat Cost of the Pokémon this card is attached to is Colorless less.\nIf this card is discarded from play, put it into your hand instead of the discard pile.\nYou may play as many Item cards as you like during your turn (before your attack).",
+      "local": "このカードをつけているポケモンは、にげるためのエネルギーが1個ぶん少なくなる。\nこのカードは、場からトラッシュされるとき、トラッシュせず、手札にもどす。"
+    }
+  },
+  "ja-sm10b-68": {
+    "kind": "trainer",
+    "artist": "5ban Graphics",
+    "rarity": "secret",
+    "rules": {
+      "en": "Once during each player's turn, that player may discard a card from their hand. If they do, that player searches their deck for a basic Energy card, reveals it, and puts it into their hand. Then, that player shuffles their deck.\nThis card stays in play when you play it. Discard this card if another Stadium card comes into play. If another card with the same name is in play, you can't play this card.",
+      "local": "おたがいのプレイヤーは、自分の番ごとに1回、自分の手札を1枚トラッシュしてよい。その場合、自分の山札にある基本エネルギーを1枚、相手に見せてから、手札に加える。そして山札を切る。"
+    }
+  },
+  "ja-sm10b-69": {
+    "kind": "specialEnergy",
+    "rarity": "secret",
+    "rules": {
+      "en": "This card provides Colorless Energy.\nIf this card is discarded from play, put it into your hand instead of the discard pile.",
+      "local": "このカードは[無]エネルギー1個ぶんとしてはたらく。\nこのカードは、場からトラッシュされるとき、トラッシュせず、手札にもどす。"
+    }
+  }
+}

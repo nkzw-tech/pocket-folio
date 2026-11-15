@@ -1,0 +1,3354 @@
+{
+  "en-me5-1": {
+    "kind": "pokemon",
+    "artist": "Akino Fukuji",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 110,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "Fruity Aroma",
+          "text": "Look at the top 6 cards of your deck, and you may reveal any number of Pokémon you find there and put them into your hand. Shuffle the other cards back into your deck."
+        },
+        "en": {
+          "name": "Fruity Aroma",
+          "text": "Look at the top 6 cards of your deck, and you may reveal any number of Pokémon you find there and put them into your hand. Shuffle the other cards back into your deck."
+        }
+      },
+      {
+        "cost": ["grass", "colorless"],
+        "damage": "60",
+        "local": { "name": "Solar Beam", "text": "" },
+        "en": { "name": "Solar Beam", "text": "" }
+      }
+    ]
+  },
+  "en-me5-2": {
+    "kind": "pokemon",
+    "artist": "Mina Nakai",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 70,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": {
+          "name": "String Shot",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        },
+        "en": {
+          "name": "String Shot",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        }
+      }
+    ]
+  },
+  "en-me5-3": {
+    "kind": "pokemon",
+    "artist": "nisimono",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "30",
+        "local": {
+          "name": "Reckless Charge",
+          "text": "This Pokémon also does 10 damage to itself."
+        },
+        "en": { "name": "Reckless Charge", "text": "This Pokémon also does 10 damage to itself." }
+      }
+    ]
+  },
+  "en-me5-4": {
+    "kind": "stage1",
+    "artist": "5ban Graphics",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 260,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Fomantis", "local": "Fomantis" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "60+",
+        "local": {
+          "name": "Lively Cutter",
+          "text": "If this Pokémon was healed during this turn, this attack does 200 more damage."
+        },
+        "en": {
+          "name": "Lively Cutter",
+          "text": "If this Pokémon was healed during this turn, this attack does 200 more damage."
+        }
+      },
+      {
+        "cost": ["grass", "colorless"],
+        "damage": "140",
+        "local": {
+          "name": "Leaf Guard",
+          "text": "During your opponent's next turn, this Pokémon takes 50 less damage from attacks (after applying Weakness and Resistance)."
+        },
+        "en": {
+          "name": "Leaf Guard",
+          "text": "During your opponent's next turn, this Pokémon takes 50 less damage from attacks (after applying Weakness and Resistance)."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-me5-5": {
+    "kind": "pokemon",
+    "artist": "Mousho",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 30,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "Furtive Drop",
+          "text": "Place 1 damage counter on your opponent's Active Pokémon."
+        },
+        "en": {
+          "name": "Furtive Drop",
+          "text": "Place 1 damage counter on your opponent's Active Pokémon."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Hide 'n' Sneak",
+          "text": "Prevent all effects of your opponent's Pokémon's attacks and Abilities done to this Pokémon. (Damage is not an effect.)"
+        },
+        "en": {
+          "name": "Hide 'n' Sneak",
+          "text": "Prevent all effects of your opponent's Pokémon's attacks and Abilities done to this Pokémon. (Damage is not an effect.)"
+        }
+      }
+    ]
+  },
+  "en-me5-6": {
+    "kind": "stage1",
+    "artist": "mingo",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Poltchageist", "local": "Poltchageist" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "Matcha Spin",
+          "text": "If you have 6 or more Pokémon that have the Hide 'n' Sneak Ability in your discard pile, place 4 damage counters on each of your opponent's Pokémon."
+        },
+        "en": {
+          "name": "Matcha Spin",
+          "text": "If you have 6 or more Pokémon that have the Hide 'n' Sneak Ability in your discard pile, place 4 damage counters on each of your opponent's Pokémon."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Hide 'n' Sneak",
+          "text": "Prevent all effects of your opponent's Pokémon's attacks and Abilities done to this Pokémon. (Damage is not an effect.)"
+        },
+        "en": {
+          "name": "Hide 'n' Sneak",
+          "text": "Prevent all effects of your opponent's Pokémon's attacks and Abilities done to this Pokémon. (Damage is not an effect.)"
+        }
+      }
+    ]
+  },
+  "en-me5-7": {
+    "kind": "pokemon",
+    "artist": "Takeshi Nakamura",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 140,
+      "retreat": 4,
+      "weaknesses": [{ "energy": "water", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire"],
+        "damage": "",
+        "local": { "name": "Singe", "text": "Your opponent's Active Pokémon is now Burned." },
+        "en": { "name": "Singe", "text": "Your opponent's Active Pokémon is now Burned." }
+      },
+      {
+        "cost": ["fire", "fire", "colorless"],
+        "damage": "120",
+        "local": {
+          "name": "Lava Wall",
+          "text": "During your opponent's next turn, prevent all damage done to this Pokémon by attacks from Burned Pokémon."
+        },
+        "en": {
+          "name": "Lava Wall",
+          "text": "During your opponent's next turn, prevent all damage done to this Pokémon by attacks from Burned Pokémon."
+        }
+      }
+    ]
+  },
+  "en-me5-8": {
+    "kind": "stage2",
+    "artist": "5ban Graphics",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 350,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Braixen", "local": "Braixen" }
+    },
+    "attacks": [
+      {
+        "cost": ["fire"],
+        "damage": "",
+        "local": {
+          "name": "Trick Portal",
+          "text": "Look at the top 9 cards of your deck, and you may put any number of Pokémon you find there onto your Bench. Shuffle the other cards back into your deck."
+        },
+        "en": {
+          "name": "Trick Portal",
+          "text": "Look at the top 9 cards of your deck, and you may put any number of Pokémon you find there onto your Bench. Shuffle the other cards back into your deck."
+        }
+      },
+      {
+        "cost": ["fire", "colorless", "colorless"],
+        "damage": "200",
+        "local": {
+          "name": "Eerie Glow",
+          "text": "Your opponent's Active Pokémon is now Burned and Confused."
+        },
+        "en": {
+          "name": "Eerie Glow",
+          "text": "Your opponent's Active Pokémon is now Burned and Confused."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  },
+  "en-me5-9": {
+    "kind": "pokemon",
+    "artist": "Yuya Oka",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 80,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "water", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire"],
+        "damage": "",
+        "local": {
+          "name": "Controlled Burn",
+          "text": "Discard the top card of your opponent's deck."
+        },
+        "en": { "name": "Controlled Burn", "text": "Discard the top card of your opponent's deck." }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "50×",
+        "local": {
+          "name": "Bug Out",
+          "text": "Reveal the bottom 7 cards of your deck, and this attack does 50 damage for each Pokémon you find there that has the Bug Out attack. Then, shuffle any revealed Pokémon back into your deck. Discard the other cards."
+        },
+        "en": {
+          "name": "Bug Out",
+          "text": "Reveal the bottom 7 cards of your deck, and this attack does 50 damage for each Pokémon you find there that has the Bug Out attack. Then, shuffle any revealed Pokémon back into your deck. Discard the other cards."
+        }
+      }
+    ]
+  },
+  "en-me5-10": {
+    "kind": "stage1",
+    "artist": "Kouki Saitou",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 140,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Sizzlipede", "local": "Sizzlipede" }
+    },
+    "attacks": [
+      {
+        "cost": ["fire"],
+        "damage": "",
+        "local": {
+          "name": "Controlled Burn",
+          "text": "Discard the top 2 cards of your opponent's deck."
+        },
+        "en": {
+          "name": "Controlled Burn",
+          "text": "Discard the top 2 cards of your opponent's deck."
+        }
+      },
+      {
+        "cost": ["fire", "colorless", "colorless", "colorless"],
+        "damage": "160",
+        "local": { "name": "Heat Tackle", "text": "This Pokémon also does 30 damage to itself." },
+        "en": { "name": "Heat Tackle", "text": "This Pokémon also does 30 damage to itself." }
+      }
+    ]
+  },
+  "en-me5-11": {
+    "kind": "pokemon",
+    "artist": "Ryuta Fuse",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 80,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "water", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire"],
+        "damage": "40",
+        "local": {
+          "name": "Best Punch",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        },
+        "en": { "name": "Best Punch", "text": "Flip a coin. If tails, this attack does nothing." }
+      }
+    ]
+  },
+  "en-me5-12": {
+    "kind": "stage1",
+    "artist": "Jiro Sasumo",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 140,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Charcadet", "local": "Charcadet" }
+    },
+    "attacks": [
+      {
+        "cost": ["fire"],
+        "damage": "40+",
+        "local": {
+          "name": "Flame Legion",
+          "text": "This attack does 40 more damage for each of your Benched Pokémon that has any Fire Energy attached."
+        },
+        "en": {
+          "name": "Flame Legion",
+          "text": "This attack does 40 more damage for each of your Benched Pokémon that has any Fire Energy attached."
+        }
+      }
+    ]
+  },
+  "en-me5-13": {
+    "kind": "pokemon",
+    "artist": "Shibuzoh.",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "30",
+        "local": { "name": "Pierce", "text": "" },
+        "en": { "name": "Pierce", "text": "" }
+      }
+    ]
+  },
+  "en-me5-14": {
+    "kind": "stage1",
+    "artist": "OKUBO",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 110,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Goldeen", "local": "Goldeen" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Hydro Jet",
+          "text": "This attack does 30 damage to 1 of your opponent's Pokémon for each Water Energy attached to this Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        "en": {
+          "name": "Hydro Jet",
+          "text": "This attack does 30 damage to 1 of your opponent's Pokémon for each Water Energy attached to this Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "en-me5-15": {
+    "kind": "pokemon",
+    "artist": "Asako Ito",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 130,
+      "retreat": 4,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water"],
+        "damage": "40",
+        "local": { "name": "Water Gun", "text": "" },
+        "en": { "name": "Water Gun", "text": "" }
+      },
+      {
+        "cost": ["water", "water", "water"],
+        "damage": "80",
+        "local": { "name": "Wave Splash", "text": "" },
+        "en": { "name": "Wave Splash", "text": "" }
+      }
+    ]
+  },
+  "en-me5-16": {
+    "kind": "stage1",
+    "artist": "5ban Graphics",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 380,
+      "retreat": 4,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Wailmer", "local": "Wailmer" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water", "water"],
+        "damage": "120",
+        "local": { "name": "Surf", "text": "" },
+        "en": { "name": "Surf", "text": "" }
+      },
+      {
+        "cost": ["water", "water", "water", "water", "water"],
+        "damage": "270",
+        "local": { "name": "Falling Down", "text": "This Pokémon is now Asleep." },
+        "en": { "name": "Falling Down", "text": "This Pokémon is now Asleep." }
+      }
+    ],
+    "rules": {
+      "en": "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-me5-17": {
+    "kind": "pokemon",
+    "artist": "Naoyo Kimura",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 100,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10+",
+        "local": {
+          "name": "Fossil Beatdown",
+          "text": "This attack does 30 more damage for each of your Benched Pokémon that has \"Antique\" in its name."
+        },
+        "en": {
+          "name": "Fossil Beatdown",
+          "text": "This attack does 30 more damage for each of your Benched Pokémon that has \"Antique\" in its name."
+        }
+      }
+    ]
+  },
+  "en-me5-18": {
+    "kind": "pokemon",
+    "artist": "Oswaldo KATO",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "20",
+        "local": { "name": "Pound", "text": "" },
+        "en": { "name": "Pound", "text": "" }
+      }
+    ]
+  },
+  "en-me5-19": {
+    "kind": "stage1",
+    "artist": "MINAMINAMI Take",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 90,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Popplio", "local": "Popplio" }
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "40",
+        "local": { "name": "Hyper Voice", "text": "" },
+        "en": { "name": "Hyper Voice", "text": "" }
+      }
+    ]
+  },
+  "en-me5-20": {
+    "kind": "stage2",
+    "artist": "Taira Akitsu",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 150,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Brionne", "local": "Brionne" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "colorless"],
+        "damage": "120",
+        "local": {
+          "name": "Aqua Return",
+          "text": "Shuffle this Pokémon and all attached cards into your deck."
+        },
+        "en": {
+          "name": "Aqua Return",
+          "text": "Shuffle this Pokémon and all attached cards into your deck."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Enriching Melody",
+          "text": "Once during your turn, when you play this Pokémon from your hand to evolve 1 of your Pokémon, you may use this Ability. Heal all damage from 1 of your Pokémon."
+        },
+        "en": {
+          "name": "Enriching Melody",
+          "text": "Once during your turn, when you play this Pokémon from your hand to evolve 1 of your Pokémon, you may use this Ability. Heal all damage from 1 of your Pokémon."
+        }
+      }
+    ]
+  },
+  "en-me5-21": {
+    "kind": "pokemon",
+    "artist": "Yukiko Baba",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 80,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water"],
+        "damage": "20",
+        "local": { "name": "Draining Fin", "text": "Heal 20 damage from this Pokémon." },
+        "en": { "name": "Draining Fin", "text": "Heal 20 damage from this Pokémon." }
+      }
+    ]
+  },
+  "en-me5-22": {
+    "kind": "stage1",
+    "artist": "satoma",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 150,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Finizen", "local": "Finizen" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water"],
+        "damage": "80+",
+        "local": {
+          "name": "Knuckle Justice",
+          "text": "If your opponent has exactly 1 Prize card remaining, this attack does 200 more damage."
+        },
+        "en": {
+          "name": "Knuckle Justice",
+          "text": "If your opponent has exactly 1 Prize card remaining, this attack does 200 more damage."
+        }
+      }
+    ]
+  },
+  "en-me5-23": {
+    "kind": "pokemon",
+    "artist": "Dsuke",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["lightning"],
+        "damage": "",
+        "local": { "name": "Collect", "text": "Draw a card." },
+        "en": { "name": "Collect", "text": "Draw a card." }
+      },
+      {
+        "cost": ["lightning", "lightning"],
+        "damage": "30",
+        "local": { "name": "Tackle", "text": "" },
+        "en": { "name": "Tackle", "text": "" }
+      }
+    ]
+  },
+  "en-me5-24": {
+    "kind": "stage1",
+    "artist": "Uninori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 120,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Electrike", "local": "Electrike" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "lightning"],
+        "damage": "50",
+        "local": {
+          "name": "Flashing Barrier",
+          "text": "During your opponent's next turn, prevent all damage done to this Pokémon by attacks from Evolution Pokémon."
+        },
+        "en": {
+          "name": "Flashing Barrier",
+          "text": "During your opponent's next turn, prevent all damage done to this Pokémon by attacks from Evolution Pokémon."
+        }
+      },
+      {
+        "cost": ["lightning", "lightning", "lightning"],
+        "damage": "110",
+        "local": {
+          "name": "Sonic Edge",
+          "text": "This attack's damage isn't affected by any effects on your opponent's Active Pokémon."
+        },
+        "en": {
+          "name": "Sonic Edge",
+          "text": "This attack's damage isn't affected by any effects on your opponent's Active Pokémon."
+        }
+      }
+    ]
+  },
+  "en-me5-25": {
+    "kind": "stage1",
+    "artist": "Kazuhisa Uragami",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 100,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Grubbin", "local": "Grubbin" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning"],
+        "damage": "30",
+        "local": { "name": "Vise Grip", "text": "" },
+        "en": { "name": "Vise Grip", "text": "" }
+      },
+      {
+        "cost": ["lightning", "lightning"],
+        "damage": "50",
+        "local": { "name": "Ram", "text": "" },
+        "en": { "name": "Ram", "text": "" }
+      }
+    ]
+  },
+  "en-me5-26": {
+    "kind": "stage2",
+    "artist": "KEIICHIRO ITO",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 160,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Charjabug", "local": "Charjabug" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning"],
+        "damage": "",
+        "local": {
+          "name": "Quick Dive",
+          "text": "This attack does 50 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        "en": {
+          "name": "Quick Dive",
+          "text": "This attack does 50 damage to 1 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      },
+      {
+        "cost": ["lightning", "lightning"],
+        "damage": "260",
+        "local": {
+          "name": "Giga Railgun",
+          "text": "If this Pokémon has no Voltaic Lightning Energy attached, this attack does nothing."
+        },
+        "en": {
+          "name": "Giga Railgun",
+          "text": "If this Pokémon has no Voltaic Lightning Energy attached, this attack does nothing."
+        }
+      }
+    ]
+  },
+  "en-me5-27": {
+    "kind": "pokemon",
+    "artist": "5ban Graphics",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 270,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["lightning"],
+        "damage": "60×",
+        "local": {
+          "name": "Thunderous Fist",
+          "text": "This attack does 60 damage for each Lightning Energy attached to this Pokémon."
+        },
+        "en": {
+          "name": "Thunderous Fist",
+          "text": "This attack does 60 damage for each Lightning Energy attached to this Pokémon."
+        }
+      },
+      {
+        "cost": ["lightning", "lightning", "lightning"],
+        "damage": "150",
+        "local": {
+          "name": "Zepto Turn",
+          "text": "Switch this Pokémon with 1 of your Benched Pokémon."
+        },
+        "en": {
+          "name": "Zepto Turn",
+          "text": "Switch this Pokémon with 1 of your Benched Pokémon."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  },
+  "en-me5-28": {
+    "kind": "pokemon",
+    "artist": "mashu",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 120,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "lightning"],
+        "damage": "90",
+        "local": { "name": "Thunder", "text": "This Pokémon also does 30 damage to itself." },
+        "en": { "name": "Thunder", "text": "This Pokémon also does 30 damage to itself." }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Photon Cord",
+          "text": "If this Pokémon is in the Active Spot and is Knocked Out by damage from an attack from your opponent's Pokémon, move up to 2 Basic Lightning Energy cards from this Pokémon to 1 of your Benched Pokémon."
+        },
+        "en": {
+          "name": "Photon Cord",
+          "text": "If this Pokémon is in the Active Spot and is Knocked Out by damage from an attack from your opponent's Pokémon, move up to 2 Basic Lightning Energy cards from this Pokémon to 1 of your Benched Pokémon."
+        }
+      }
+    ]
+  },
+  "en-me5-29": {
+    "kind": "pokemon",
+    "artist": "Nelnal",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 70,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": {
+          "name": "All-You-Can-Yeet",
+          "text": "You may discard any number of cards from your hand."
+        },
+        "en": {
+          "name": "All-You-Can-Yeet",
+          "text": "You may discard any number of cards from your hand."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "Headbutt", "text": "" },
+        "en": { "name": "Headbutt", "text": "" }
+      }
+    ]
+  },
+  "en-me5-30": {
+    "kind": "stage1",
+    "artist": "CHORISO",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 130,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Slowpoke", "local": "Slowpoke" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "50+",
+        "local": {
+          "name": "All Out",
+          "text": "If you have no cards in your hand, this attack does 160 more damage."
+        },
+        "en": {
+          "name": "All Out",
+          "text": "If you have no cards in your hand, this attack does 160 more damage."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "110",
+        "local": { "name": "Zen Headbutt", "text": "" },
+        "en": { "name": "Zen Headbutt", "text": "" }
+      }
+    ]
+  },
+  "en-me5-31": {
+    "kind": "stage1",
+    "artist": "5ban Graphics",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 330,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Slowpoke", "local": "Slowpoke" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "psychic", "psychic"],
+        "damage": "180",
+        "local": {
+          "name": "Shellnado Spin",
+          "text": "During your opponent's next turn, if this Pokémon is damaged by an attack (even if this Pokémon is Knocked Out), place 12 damage counters on the Attacking Pokémon."
+        },
+        "en": {
+          "name": "Shellnado Spin",
+          "text": "During your opponent's next turn, if this Pokémon is damaged by an attack (even if this Pokémon is Knocked Out), place 12 damage counters on the Attacking Pokémon."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  },
+  "en-me5-32": {
+    "kind": "pokemon",
+    "artist": "Yoshimoto Yoshimon",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 100,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": {
+          "name": "Intense Kiss",
+          "text": "At the end of your opponent's next turn, discard the Defending Pokémon and all attached cards."
+        },
+        "en": {
+          "name": "Intense Kiss",
+          "text": "At the end of your opponent's next turn, discard the Defending Pokémon and all attached cards."
+        }
+      },
+      {
+        "cost": ["psychic", "colorless"],
+        "damage": "50",
+        "local": {
+          "name": "Psy Bolt",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        },
+        "en": {
+          "name": "Psy Bolt",
+          "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Paralyzed."
+        }
+      }
+    ]
+  },
+  "en-me5-33": {
+    "kind": "pokemon",
+    "artist": "Bun Toujo",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "10",
+        "local": { "name": "Hang Down", "text": "" },
+        "en": { "name": "Hang Down", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Hide 'n' Sneak",
+          "text": "Prevent all effects of your opponent's Pokémon's attacks and Abilities done to this Pokémon. (Damage is not an effect.)"
+        },
+        "en": {
+          "name": "Hide 'n' Sneak",
+          "text": "Prevent all effects of your opponent's Pokémon's attacks and Abilities done to this Pokémon. (Damage is not an effect.)"
+        }
+      }
+    ]
+  },
+  "en-me5-34": {
+    "kind": "stage1",
+    "artist": "Mugi Hamada",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Shuppet", "local": "Shuppet" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "80",
+        "local": {
+          "name": "Puppet Pull",
+          "text": "You may search your deck for a card and put it into your hand. Then, shuffle your deck."
+        },
+        "en": {
+          "name": "Puppet Pull",
+          "text": "You may search your deck for a card and put it into your hand. Then, shuffle your deck."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Hide 'n' Sneak",
+          "text": "Prevent all effects of your opponent's Pokémon's attacks and Abilities done to this Pokémon. (Damage is not an effect.)"
+        },
+        "en": {
+          "name": "Hide 'n' Sneak",
+          "text": "Prevent all effects of your opponent's Pokémon's attacks and Abilities done to this Pokémon. (Damage is not an effect.)"
+        }
+      }
+    ]
+  },
+  "en-me5-35": {
+    "kind": "pokemon",
+    "artist": "danciao",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": {
+          "name": "Spiritual End",
+          "text": "If you have 13 or more Pokémon that have the Hide 'n' Sneak Ability in your discard pile, choose 2 of your opponent's Pokémon and quadruple the number of damage counters on each of them."
+        },
+        "en": {
+          "name": "Spiritual End",
+          "text": "If you have 13 or more Pokémon that have the Hide 'n' Sneak Ability in your discard pile, choose 2 of your opponent's Pokémon and quadruple the number of damage counters on each of them."
+        }
+      }
+    ]
+  },
+  "en-me5-36": {
+    "kind": "pokemon",
+    "artist": "HYOGONOSUKE",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "20",
+        "local": { "name": "Will-O-Wisp", "text": "" },
+        "en": { "name": "Will-O-Wisp", "text": "" }
+      }
+    ]
+  },
+  "en-me5-37": {
+    "kind": "stage1",
+    "artist": "sowsow",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 90,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Litwick", "local": "Litwick" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": {
+          "name": "Spreading Light",
+          "text": "Search your deck for up to 3 Lampent and put them onto your Bench. Then, shuffle your deck."
+        },
+        "en": {
+          "name": "Spreading Light",
+          "text": "Search your deck for up to 3 Lampent and put them onto your Bench. Then, shuffle your deck."
+        }
+      }
+    ]
+  },
+  "en-me5-38": {
+    "kind": "stage2",
+    "artist": "5ban Graphics",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 350,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Lampent", "local": "Lampent" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "psychic"],
+        "damage": "130+",
+        "local": {
+          "name": "Phantom Maze",
+          "text": "This attack does 50 more damage for each Colorless in your opponent's Active Pokémon's Retreat Cost."
+        },
+        "en": {
+          "name": "Phantom Maze",
+          "text": "This attack does 50 more damage for each Colorless in your opponent's Active Pokémon's Retreat Cost."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Binding Flame",
+          "text": "Your opponent's Active Pokémon's Retreat Cost is Colorless more."
+        },
+        "en": {
+          "name": "Binding Flame",
+          "text": "Your opponent's Active Pokémon's Retreat Cost is Colorless more."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  },
+  "en-me5-39": {
+    "kind": "pokemon",
+    "artist": "Oku",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 140,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "30+",
+        "local": {
+          "name": "Vengeful Anchor",
+          "text": "If you have 4 or more Pokémon that have the Hide 'n' Sneak Ability in your discard pile, this attack does 140 more damage."
+        },
+        "en": {
+          "name": "Vengeful Anchor",
+          "text": "If you have 4 or more Pokémon that have the Hide 'n' Sneak Ability in your discard pile, this attack does 140 more damage."
+        }
+      }
+    ]
+  },
+  "en-me5-40": {
+    "kind": "pokemon",
+    "artist": "Nakamura Ippan",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 90,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "30×",
+        "local": {
+          "name": "Shadowy Knot",
+          "text": "This attack does 30 damage for each Colorless in your opponent's Active Pokémon's Retreat Cost."
+        },
+        "en": {
+          "name": "Shadowy Knot",
+          "text": "This attack does 30 damage for each Colorless in your opponent's Active Pokémon's Retreat Cost."
+        }
+      }
+    ]
+  },
+  "en-me5-41": {
+    "kind": "stage2",
+    "artist": "Haru Akasaka",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 150,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Primeape", "local": "Primeape" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "psychic"],
+        "damage": "100",
+        "local": {
+          "name": "Ghostly Blow",
+          "text": "Place 5 damage counters on 1 of your opponent's Benched Pokémon."
+        },
+        "en": {
+          "name": "Ghostly Blow",
+          "text": "Place 5 damage counters on 1 of your opponent's Benched Pokémon."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Durable Body",
+          "text": "If this Pokémon would be Knocked Out by damage from an attack, flip a coin. If heads, this Pokémon is not Knocked Out, and its remaining HP becomes 10."
+        },
+        "en": {
+          "name": "Durable Body",
+          "text": "If this Pokémon would be Knocked Out by damage from an attack, flip a coin. If heads, this Pokémon is not Knocked Out, and its remaining HP becomes 10."
+        }
+      }
+    ]
+  },
+  "en-me5-42": {
+    "kind": "pokemon",
+    "artist": "Yuka Morii",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "20",
+        "local": { "name": "Low Kick", "text": "" },
+        "en": { "name": "Low Kick", "text": "" }
+      }
+    ]
+  },
+  "en-me5-43": {
+    "kind": "stage1",
+    "artist": "GOSSAN",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 110,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Mankey", "local": "Mankey" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "50",
+        "local": { "name": "Corkscrew Punch", "text": "" },
+        "en": { "name": "Corkscrew Punch", "text": "" }
+      }
+    ]
+  },
+  "en-me5-44": {
+    "kind": "stage1",
+    "artist": "Hideki Ishikawa",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 100,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Antique Skull Fossil", "local": "Antique Skull Fossil" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting"],
+        "damage": "70",
+        "local": {
+          "name": "Push Down",
+          "text": "Switch out your opponent's Active Pokémon to the Bench. (Your opponent chooses the new Active Pokémon.)"
+        },
+        "en": {
+          "name": "Push Down",
+          "text": "Switch out your opponent's Active Pokémon to the Bench. (Your opponent chooses the new Active Pokémon.)"
+        }
+      }
+    ]
+  },
+  "en-me5-45": {
+    "kind": "stage2",
+    "artist": "hncl",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 330,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Cranidos", "local": "Cranidos" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting"],
+        "damage": "150",
+        "local": {
+          "name": "Rowdy Hammer",
+          "text": "During your next turn, attacks used by this Pokémon do 150 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance)."
+        },
+        "en": {
+          "name": "Rowdy Hammer",
+          "text": "During your next turn, attacks used by this Pokémon do 150 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance)."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Destructive Headbutting",
+          "text": "Once during your turn, if this Pokémon is in the Active Spot, you may use this Ability. Flip a coin. If heads, discard an Energy from your opponent's Active Pokémon."
+        },
+        "en": {
+          "name": "Destructive Headbutting",
+          "text": "Once during your turn, if this Pokémon is in the Active Spot, you may use this Ability. Flip a coin. If heads, discard an Energy from your opponent's Active Pokémon."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-me5-46": {
+    "kind": "pokemon",
+    "artist": "Atsushi Furusawa",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 70,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "Call for Family",
+          "text": "Search your deck for up to 2 Basic Pokémon and put them onto your Bench. Then, shuffle your deck."
+        },
+        "en": {
+          "name": "Call for Family",
+          "text": "Search your deck for up to 2 Basic Pokémon and put them onto your Bench. Then, shuffle your deck."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "50",
+        "local": { "name": "Dig Claws", "text": "" },
+        "en": { "name": "Dig Claws", "text": "" }
+      }
+    ]
+  },
+  "en-me5-47": {
+    "kind": "pokemon",
+    "artist": "kodama",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 130,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting"],
+        "damage": "30+",
+        "local": {
+          "name": "Battle Claw",
+          "text": "If your opponent's Active Pokémon is an Evolution Pokémon, this attack does 30 more damage."
+        },
+        "en": {
+          "name": "Battle Claw",
+          "text": "If your opponent's Active Pokémon is an Evolution Pokémon, this attack does 30 more damage."
+        }
+      },
+      {
+        "cost": ["fighting", "fighting", "colorless"],
+        "damage": "190",
+        "local": { "name": "Gaia Impact", "text": "Discard all Energy from this Pokémon." },
+        "en": { "name": "Gaia Impact", "text": "Discard all Energy from this Pokémon." }
+      }
+    ]
+  },
+  "en-me5-48": {
+    "kind": "pokemon",
+    "artist": "5ban Graphics",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 280,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["darkness", "darkness"],
+        "damage": "110+",
+        "local": {
+          "name": "Dusk Raid",
+          "text": "If your Benched Pokémon have any damage counters on them, this attack does 110 more damage."
+        },
+        "en": {
+          "name": "Dusk Raid",
+          "text": "If your Benched Pokémon have any damage counters on them, this attack does 110 more damage."
+        }
+      },
+      {
+        "cost": ["darkness", "darkness", "darkness"],
+        "damage": "",
+        "local": {
+          "name": "Abyss Eye",
+          "text": "If your opponent's Active Pokémon is affected by a Special Condition, it is Knocked Out."
+        },
+        "en": {
+          "name": "Abyss Eye",
+          "text": "If your opponent's Active Pokémon is affected by a Special Condition, it is Knocked Out."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  },
+  "en-me5-49": {
+    "kind": "pokemon",
+    "artist": "Shiburingaru",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["darkness"],
+        "damage": "10",
+        "local": { "name": "Flap", "text": "" },
+        "en": { "name": "Flap", "text": "" }
+      },
+      {
+        "cost": ["darkness", "colorless"],
+        "damage": "20",
+        "local": { "name": "Gust", "text": "" },
+        "en": { "name": "Gust", "text": "" }
+      }
+    ]
+  },
+  "en-me5-50": {
+    "kind": "stage1",
+    "artist": "Nisota Niso",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 120,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Vullaby", "local": "Vullaby" }
+    },
+    "attacks": [
+      {
+        "cost": ["darkness"],
+        "damage": "",
+        "local": {
+          "name": "Bone Sniper",
+          "text": "This attack does 70 damage to 1 of your opponent's Pokémon that has any Special Energy attached. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        "en": {
+          "name": "Bone Sniper",
+          "text": "This attack does 70 damage to 1 of your opponent's Pokémon that has any Special Energy attached. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      },
+      {
+        "cost": ["darkness", "darkness", "colorless"],
+        "damage": "120",
+        "local": { "name": "Blasting Wind", "text": "" },
+        "en": { "name": "Blasting Wind", "text": "" }
+      }
+    ]
+  },
+  "en-me5-51": {
+    "kind": "pokemon",
+    "artist": "Yuriko Akase",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["darkness"],
+        "damage": "",
+        "local": {
+          "name": "Procurement",
+          "text": "Search your deck for an Item card, reveal it, and put it into your hand. Then, shuffle your deck."
+        },
+        "en": {
+          "name": "Procurement",
+          "text": "Search your deck for an Item card, reveal it, and put it into your hand. Then, shuffle your deck."
+        }
+      },
+      {
+        "cost": ["darkness", "darkness"],
+        "damage": "30",
+        "local": { "name": "Spinning Attack", "text": "" },
+        "en": { "name": "Spinning Attack", "text": "" }
+      }
+    ]
+  },
+  "en-me5-52": {
+    "kind": "stage1",
+    "artist": "Naoki Saito",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 120,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Inkay", "local": "Inkay" }
+    },
+    "attacks": [
+      {
+        "cost": ["darkness"],
+        "damage": "",
+        "local": { "name": "Perplex", "text": "Your opponent's Active Pokémon is now Confused." },
+        "en": { "name": "Perplex", "text": "Your opponent's Active Pokémon is now Confused." }
+      },
+      {
+        "cost": ["darkness"],
+        "damage": "130",
+        "local": {
+          "name": "Brain Crush",
+          "text": "If your opponent's Active Pokémon isn't Confused, this attack does nothing."
+        },
+        "en": {
+          "name": "Brain Crush",
+          "text": "If your opponent's Active Pokémon isn't Confused, this attack does nothing."
+        }
+      }
+    ]
+  },
+  "en-me5-53": {
+    "kind": "pokemon",
+    "artist": "Krgc",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["darkness"],
+        "damage": "10",
+        "local": { "name": "Gnaw", "text": "" },
+        "en": { "name": "Gnaw", "text": "" }
+      },
+      {
+        "cost": ["darkness", "colorless"],
+        "damage": "30",
+        "local": { "name": "Rear Kick", "text": "" },
+        "en": { "name": "Rear Kick", "text": "" }
+      }
+    ]
+  },
+  "en-me5-54": {
+    "kind": "stage1",
+    "artist": "GOTO minori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 100,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Nickit", "local": "Nickit" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Skill Thief",
+          "text": "If you have no cards in your hand, choose an attack from 1 of your opponent's Pokémon in play and use it as this attack."
+        },
+        "en": {
+          "name": "Skill Thief",
+          "text": "If you have no cards in your hand, choose an attack from 1 of your opponent's Pokémon in play and use it as this attack."
+        }
+      },
+      {
+        "cost": ["darkness", "colorless", "colorless"],
+        "damage": "80",
+        "local": { "name": "Sharp Fang", "text": "" },
+        "en": { "name": "Sharp Fang", "text": "" }
+      }
+    ]
+  },
+  "en-me5-55": {
+    "kind": "pokemon",
+    "artist": "aky GG Works",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 180,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["darkness"],
+        "damage": "",
+        "local": {
+          "name": "Wheely Draw",
+          "text": "Shuffle your hand into your deck. Then, draw 6 cards."
+        },
+        "en": {
+          "name": "Wheely Draw",
+          "text": "Shuffle your hand into your deck. Then, draw 6 cards."
+        }
+      },
+      {
+        "cost": ["darkness", "darkness"],
+        "damage": "40+",
+        "local": {
+          "name": "Hangry Blaster",
+          "text": "This attack does 40 more damage for each damage counter on this Pokémon."
+        },
+        "en": {
+          "name": "Hangry Blaster",
+          "text": "This attack does 40 more damage for each damage counter on this Pokémon."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-me5-56": {
+    "kind": "pokemon",
+    "artist": "matazo",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 130,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["darkness"],
+        "damage": "30",
+        "local": {
+          "name": "Overhead Throw",
+          "text": "This attack also does 30 damage to 1 of your Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        "en": {
+          "name": "Overhead Throw",
+          "text": "This attack also does 30 damage to 1 of your Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      },
+      {
+        "cost": ["darkness", "darkness", "darkness"],
+        "damage": "100+",
+        "local": {
+          "name": "Shadowy Whip",
+          "text": "If your Benched Pokémon have any Shadowy Darkness Energy attached, this attack does 70 more damage."
+        },
+        "en": {
+          "name": "Shadowy Whip",
+          "text": "If your Benched Pokémon have any Shadowy Darkness Energy attached, this attack does 70 more damage."
+        }
+      }
+    ]
+  },
+  "en-me5-57": {
+    "kind": "pokemon",
+    "artist": "ryoma uratsuka",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 70,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["darkness", "darkness"],
+        "damage": "40",
+        "local": { "name": "Bite", "text": "" },
+        "en": { "name": "Bite", "text": "" }
+      }
+    ]
+  },
+  "en-me5-58": {
+    "kind": "stage1",
+    "artist": "kawayoo",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 140,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Maschiff", "local": "Maschiff" }
+    },
+    "attacks": [
+      {
+        "cost": ["darkness", "darkness"],
+        "damage": "60",
+        "local": { "name": "Bite", "text": "" },
+        "en": { "name": "Bite", "text": "" }
+      },
+      {
+        "cost": ["darkness", "darkness", "darkness"],
+        "damage": "210",
+        "local": {
+          "name": "Plunging Headbutt",
+          "text": "During your opponent's next turn, this Pokémon takes 100 more damage from attacks (after applying Weakness and Resistance)."
+        },
+        "en": {
+          "name": "Plunging Headbutt",
+          "text": "During your opponent's next turn, this Pokémon takes 100 more damage from attacks (after applying Weakness and Resistance)."
+        }
+      }
+    ]
+  },
+  "en-me5-59": {
+    "kind": "pokemon",
+    "artist": "IKEDA Saki",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 90,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["darkness"],
+        "damage": "20+",
+        "local": {
+          "name": "Whirling Envy",
+          "text": "If this Pokémon has 2 or more damage counters on it, this attack does 90 more damage. This attack's damage isn't affected by Weakness."
+        },
+        "en": {
+          "name": "Whirling Envy",
+          "text": "If this Pokémon has 2 or more damage counters on it, this attack does 90 more damage. This attack's damage isn't affected by Weakness."
+        }
+      }
+    ]
+  },
+  "en-me5-60": {
+    "kind": "pokemon",
+    "artist": "Anesaki Dynamic",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "metal",
+      "types": ["metal"],
+      "hp": 120,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["metal"],
+        "damage": "40×",
+        "local": {
+          "name": "Steel Cutter",
+          "text": "Discard up to 2 Basic Metal Energy cards from your hand, and this attack does 40 damage for each card you discarded in this way."
+        },
+        "en": {
+          "name": "Steel Cutter",
+          "text": "Discard up to 2 Basic Metal Energy cards from your hand, and this attack does 40 damage for each card you discarded in this way."
+        }
+      }
+    ]
+  },
+  "en-me5-61": {
+    "kind": "stage1",
+    "artist": "Kurata So",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "metal",
+      "types": ["metal"],
+      "hp": 100,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "grass", "value": "-30" }],
+      "evolvesFrom": { "en": "Antique Armor Fossil", "local": "Antique Armor Fossil" }
+    },
+    "attacks": [
+      {
+        "cost": ["metal", "colorless"],
+        "damage": "50",
+        "local": {
+          "name": "Smithereen Smash",
+          "text": "Discard an Energy from your opponent's Active Pokémon."
+        },
+        "en": {
+          "name": "Smithereen Smash",
+          "text": "Discard an Energy from your opponent's Active Pokémon."
+        }
+      }
+    ]
+  },
+  "en-me5-62": {
+    "kind": "stage2",
+    "artist": "Kinu Nishimura",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "metal",
+      "types": ["metal"],
+      "hp": 160,
+      "retreat": 4,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "grass", "value": "-30" }],
+      "evolvesFrom": { "en": "Shieldon", "local": "Shieldon" }
+    },
+    "attacks": [
+      {
+        "cost": ["metal", "metal", "colorless"],
+        "damage": "160",
+        "local": { "name": "Hammer In", "text": "" },
+        "en": { "name": "Hammer In", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Ancient Bulwark",
+          "text": "As long as this Pokémon is on your Bench, prevent all damage done to each of your Pokémon by attacks from your opponent's Pokémon that have 2 or less Energy attached."
+        },
+        "en": {
+          "name": "Ancient Bulwark",
+          "text": "As long as this Pokémon is on your Bench, prevent all damage done to each of your Pokémon by attacks from your opponent's Pokémon that have 2 or less Energy attached."
+        }
+      }
+    ]
+  },
+  "en-me5-63": {
+    "kind": "pokemon",
+    "artist": "Saboteri",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "metal",
+      "types": ["metal"],
+      "hp": 80,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "grass", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["metal"],
+        "damage": "10+",
+        "local": {
+          "name": "Mirror Attack",
+          "text": "If your opponent's Active Pokémon is a Metal Pokémon, this attack does 30 more damage."
+        },
+        "en": {
+          "name": "Mirror Attack",
+          "text": "If your opponent's Active Pokémon is a Metal Pokémon, this attack does 30 more damage."
+        }
+      }
+    ]
+  },
+  "en-me5-64": {
+    "kind": "stage1",
+    "artist": "Uta",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "metal",
+      "types": ["metal"],
+      "hp": 130,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "grass", "value": "-30" }],
+      "evolvesFrom": { "en": "Bronzor", "local": "Bronzor" }
+    },
+    "attacks": [
+      {
+        "cost": ["metal"],
+        "damage": "40",
+        "local": { "name": "Gentle Slap", "text": "" },
+        "en": { "name": "Gentle Slap", "text": "" }
+      },
+      {
+        "cost": ["metal", "metal", "colorless"],
+        "damage": "120",
+        "local": {
+          "name": "Metal Block",
+          "text": "During your opponent's next turn, this Pokémon takes 100 less damage from attacks from Evolution Pokémon (after applying Weakness and Resistance)."
+        },
+        "en": {
+          "name": "Metal Block",
+          "text": "During your opponent's next turn, this Pokémon takes 100 less damage from attacks from Evolution Pokémon (after applying Weakness and Resistance)."
+        }
+      }
+    ]
+  },
+  "en-me5-65": {
+    "kind": "stage1",
+    "artist": "Keisuke Azuma",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "metal",
+      "types": ["metal"],
+      "hp": 340,
+      "retreat": 4,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "grass", "value": "-30" }],
+      "evolvesFrom": { "en": "Drilbur", "local": "Drilbur" }
+    },
+    "attacks": [
+      {
+        "cost": ["metal", "metal"],
+        "damage": "90",
+        "local": {
+          "name": "Undermine",
+          "text": "Discard the top 2 cards of your opponent's deck."
+        },
+        "en": { "name": "Undermine", "text": "Discard the top 2 cards of your opponent's deck." }
+      },
+      {
+        "cost": ["metal", "metal", "metal"],
+        "damage": "200+",
+        "local": {
+          "name": "Maximum Drilling",
+          "text": "If this Pokémon has at least 2 extra Energy attached (in addition to this attack's cost), this attack does 130 more damage."
+        },
+        "en": {
+          "name": "Maximum Drilling",
+          "text": "If this Pokémon has at least 2 extra Energy attached (in addition to this attack's cost), this attack does 130 more damage."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  },
+  "en-me5-66": {
+    "kind": "pokemon",
+    "artist": "Koji Nakata",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10×",
+        "local": {
+          "name": "Double Stab",
+          "text": "Flip 2 coins. This attack does 10 damage for each heads."
+        },
+        "en": {
+          "name": "Double Stab",
+          "text": "Flip 2 coins. This attack does 10 damage for each heads."
+        }
+      }
+    ]
+  },
+  "en-me5-67": {
+    "kind": "stage1",
+    "artist": "miki kudo",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 90,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Pikipek", "local": "Pikipek" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "30",
+        "local": {
+          "name": "Fly",
+          "text": "Flip a coin. If tails, this attack does nothing. If heads, during your opponent's next turn, prevent all damage from and effects of attacks done to this Pokémon."
+        },
+        "en": {
+          "name": "Fly",
+          "text": "Flip a coin. If tails, this attack does nothing. If heads, during your opponent's next turn, prevent all damage from and effects of attacks done to this Pokémon."
+        }
+      }
+    ]
+  },
+  "en-me5-68": {
+    "kind": "stage2",
+    "artist": "Masako Tomii",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 150,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Trumbeak", "local": "Trumbeak" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "60+",
+        "local": {
+          "name": "Feather Rondo",
+          "text": "This attack does 20 more damage for each Benched Pokémon (both yours and your opponent's)."
+        },
+        "en": {
+          "name": "Feather Rondo",
+          "text": "This attack does 20 more damage for each Benched Pokémon (both yours and your opponent's)."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Aerial Draw",
+          "text": "Once during your turn, you may use this Ability. Draw a card."
+        },
+        "en": {
+          "name": "Aerial Draw",
+          "text": "Once during your turn, you may use this Ability. Draw a card."
+        }
+      }
+    ]
+  },
+  "en-me5-69": {
+    "kind": "pokemon",
+    "artist": "Ligton",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 110,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "40",
+        "local": { "name": "Power Edge", "text": "" },
+        "en": { "name": "Power Edge", "text": "" }
+      }
+    ]
+  },
+  "en-me5-70": {
+    "kind": "stage1",
+    "artist": "Takumi Wada",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 140,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Type: Null", "local": "Type: Null" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "130",
+        "local": { "name": "Air Slash", "text": "Discard an Energy from this Pokémon." },
+        "en": { "name": "Air Slash", "text": "Discard an Energy from this Pokémon." }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Call a Buddy",
+          "text": "Once during your turn, if you have no cards in your hand, you may use this Ability. Search your deck for a Supporter card, reveal it, and put it into your hand. Then, shuffle your deck."
+        },
+        "en": {
+          "name": "Call a Buddy",
+          "text": "Once during your turn, if you have no cards in your hand, you may use this Ability. Search your deck for a Supporter card, reveal it, and put it into your hand. Then, shuffle your deck."
+        }
+      }
+    ]
+  },
+  "en-me5-71": {
+    "kind": "pokemon",
+    "artist": "Wintr Wandr",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 100,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Challenging Delivery",
+          "text": "Flip 2 coins. If both of them are heads, search your deck for a Pokémon and put it onto your Bench. Then, shuffle your deck."
+        },
+        "en": {
+          "name": "Challenging Delivery",
+          "text": "Flip 2 coins. If both of them are heads, search your deck for a Pokémon and put it onto your Bench. Then, shuffle your deck."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "100",
+        "local": { "name": "Speed Wing", "text": "" },
+        "en": { "name": "Speed Wing", "text": "" }
+      }
+    ]
+  },
+  "en-me5-72": {
+    "kind": "trainer",
+    "hp": 60,
+    "artist": "AYUMI ODASHIMA",
+    "rarity": "common",
+    "powers": [
+      {
+        "local": {
+          "name": "Protective Armor",
+          "text": "As long as this Pokémon is in the Active Spot, all of your Pokémon take 10 less damage from attacks from your opponent's Pokémon (after applying Weakness and Resistance)."
+        },
+        "en": {
+          "name": "Protective Armor",
+          "text": "As long as this Pokémon is in the Active Spot, all of your Pokémon take 10 less damage from attacks from your opponent's Pokémon (after applying Weakness and Resistance)."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Play this card as if it were a 60-HP Basic Colorless Pokémon. This card can't be affected by any Special Conditions and can't retreat.\n \nAt any time during your turn, you may discard this card from play.",
+      "local": "Play this card as if it were a 60-HP Basic Colorless Pokémon. This card can't be affected by any Special Conditions and can't retreat.\n \nAt any time during your turn, you may discard this card from play."
+    }
+  },
+  "en-me5-73": {
+    "kind": "trainer",
+    "hp": 60,
+    "artist": "AYUMI ODASHIMA",
+    "rarity": "common",
+    "powers": [
+      {
+        "local": {
+          "name": "Spiny Skull",
+          "text": "If this Pokémon is in the Active Spot and is damaged by an attack from your opponent's Pokémon (even if this Pokémon is Knocked Out), place 3 damage counters on the Attacking Pokémon."
+        },
+        "en": {
+          "name": "Spiny Skull",
+          "text": "If this Pokémon is in the Active Spot and is damaged by an attack from your opponent's Pokémon (even if this Pokémon is Knocked Out), place 3 damage counters on the Attacking Pokémon."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Play this card as if it were a 60-HP Basic Colorless Pokémon. This card can't be affected by any Special Conditions and can't retreat.\n \nAt any time during your turn, you may discard this card from play.",
+      "local": "Play this card as if it were a 60-HP Basic Colorless Pokémon. This card can't be affected by any Special Conditions and can't retreat.\n \nAt any time during your turn, you may discard this card from play."
+    }
+  },
+  "en-me5-74": {
+    "kind": "trainer",
+    "artist": "Toyste Beach",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Once during your turn, after you flip any coins for an attack of the Colorless Pokémon this card is attached to, you may ignore all results of those coin flips and begin flipping those coins again.",
+      "local": "Once during your turn, after you flip any coins for an attack of the Colorless Pokémon this card is attached to, you may ignore all results of those coin flips and begin flipping those coins again."
+    }
+  },
+  "en-me5-75": {
+    "kind": "trainer",
+    "artist": "Toyste Beach",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Both Active non-Darkness Pokémon are now Confused.",
+      "local": "Both Active non-Darkness Pokémon are now Confused."
+    }
+  },
+  "en-me5-76": {
+    "kind": "trainer",
+    "artist": "Oswaldo KATO",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Once during each player's turn, that player may search their deck for up to 2 Item cards that have \"Antique\" in their name and put them onto their Bench. Then, that player shuffles their deck.",
+      "local": "Once during each player's turn, that player may search their deck for up to 2 Item cards that have \"Antique\" in their name and put them onto their Bench. Then, that player shuffles their deck."
+    }
+  },
+  "en-me5-77": {
+    "kind": "trainer",
+    "artist": "akagi",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "You can use this card only when it is the last card in your hand.\nDuring this turn, attacks used by your Pokémon that don't have a Rule Box do 80 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance). (Pokémon ex, Pokémon V_atk, etc. have Rule Boxes.)",
+      "local": "You can use this card only when it is the last card in your hand.\nDuring this turn, attacks used by your Pokémon that don't have a Rule Box do 80 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance). (Pokémon ex, Pokémon V_atk, etc. have Rule Boxes.)"
+    }
+  },
+  "en-me5-78": {
+    "kind": "trainer",
+    "artist": "nagimiso",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Discard up to 2 Pokémon that don't have a Rule Box from your hand, and draw 3 cards for each card you discarded in this way. (Pokémon ex, Pokémon V_atk, etc. have Rule Boxes.)",
+      "local": "Discard up to 2 Pokémon that don't have a Rule Box from your hand, and draw 3 cards for each card you discarded in this way. (Pokémon ex, Pokémon V_atk, etc. have Rule Boxes.)"
+    }
+  },
+  "en-me5-79": {
+    "kind": "trainer",
+    "artist": "GIDORA",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Draw a card for each of your opponent's Mega Evolution Pokémon ex in play.",
+      "local": "Draw a card for each of your opponent's Mega Evolution Pokémon ex in play."
+    }
+  },
+  "en-me5-80": {
+    "kind": "trainer",
+    "artist": "En Morikura",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Search your deck for up to 4 Basic Water Energy cards and attach them to 1 of your Pokémon. Then, shuffle your deck. Your turn ends.",
+      "local": "Search your deck for up to 4 Basic Water Energy cards and attach them to 1 of your Pokémon. Then, shuffle your deck. Your turn ends."
+    }
+  },
+  "en-me5-81": {
+    "kind": "trainer",
+    "artist": "Teeziro",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "You can use this card only if any of your Pokémon were Knocked Out during your opponent's last turn.\n\nDiscard an Energy from 1 of your opponent's Pokémon.",
+      "local": "You can use this card only if any of your Pokémon were Knocked Out during your opponent's last turn.\n\nDiscard an Energy from 1 of your opponent's Pokémon."
+    }
+  },
+  "en-me5-82": {
+    "kind": "trainer",
+    "artist": "inose yukie",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "If the Pokémon this card is attached to isn't a Mega Evolution Pokémon ex, is in the Active Spot, and takes 240 or more damage from an attack from your opponent's Mega Evolution Pokémon ex (even if this Pokémon is Knocked Out), place 12 damage counters on the Attacking Pokémon. If you placed any damage counters in this way, discard this card.",
+      "local": "If the Pokémon this card is attached to isn't a Mega Evolution Pokémon ex, is in the Active Spot, and takes 240 or more damage from an attack from your opponent's Mega Evolution Pokémon ex (even if this Pokémon is Knocked Out), place 12 damage counters on the Attacking Pokémon. If you placed any damage counters in this way, discard this card."
+    }
+  },
+  "en-me5-83": {
+    "kind": "specialEnergy",
+    "rarity": "rare",
+    "rules": {
+      "en": "As long as this card is attached to a Pokémon, it provides Darkness Energy.\n \nAs long as the Darkness Pokémon this card is attached to is on your Bench, prevent all damage done to it by attacks from your opponent's Pokémon.",
+      "local": "As long as this card is attached to a Pokémon, it provides Darkness Energy.\n \nAs long as the Darkness Pokémon this card is attached to is on your Bench, prevent all damage done to it by attacks from your opponent's Pokémon."
+    }
+  },
+  "en-me5-84": {
+    "kind": "specialEnergy",
+    "rarity": "rare",
+    "rules": {
+      "en": "As long as this card is attached to a Pokémon, it provides Lightning Energy.\n \nAttacks used by the Lightning Pokémon this card is attached to do 20 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance).",
+      "local": "As long as this card is attached to a Pokémon, it provides Lightning Energy.\n \nAttacks used by the Lightning Pokémon this card is attached to do 20 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance)."
+    }
+  },
+  "en-me5-85": {
+    "kind": "pokemon",
+    "artist": "Jiro Sasumo",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "30",
+        "local": {
+          "name": "Reckless Charge",
+          "text": "This Pokémon also does 10 damage to itself."
+        },
+        "en": { "name": "Reckless Charge", "text": "This Pokémon also does 10 damage to itself." }
+      }
+    ]
+  },
+  "en-me5-86": {
+    "kind": "stage1",
+    "artist": "Iwamoto05",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 140,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Charcadet", "local": "Charcadet" }
+    },
+    "attacks": [
+      {
+        "cost": ["fire"],
+        "damage": "40+",
+        "local": {
+          "name": "Flame Legion",
+          "text": "This attack does 40 more damage for each of your Benched Pokémon that has any Fire Energy attached."
+        },
+        "en": {
+          "name": "Flame Legion",
+          "text": "This attack does 40 more damage for each of your Benched Pokémon that has any Fire Energy attached."
+        }
+      }
+    ]
+  },
+  "en-me5-87": {
+    "kind": "pokemon",
+    "artist": "Gemi",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "30",
+        "local": { "name": "Pierce", "text": "" },
+        "en": { "name": "Pierce", "text": "" }
+      }
+    ]
+  },
+  "en-me5-88": {
+    "kind": "stage2",
+    "artist": "satoma",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 150,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Brionne", "local": "Brionne" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "colorless"],
+        "damage": "120",
+        "local": {
+          "name": "Aqua Return",
+          "text": "Shuffle this Pokémon and all attached cards into your deck."
+        },
+        "en": {
+          "name": "Aqua Return",
+          "text": "Shuffle this Pokémon and all attached cards into your deck."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Enriching Melody",
+          "text": "Once during your turn, when you play this Pokémon from your hand to evolve 1 of your Pokémon, you may use this Ability. Heal all damage from 1 of your Pokémon."
+        },
+        "en": {
+          "name": "Enriching Melody",
+          "text": "Once during your turn, when you play this Pokémon from your hand to evolve 1 of your Pokémon, you may use this Ability. Heal all damage from 1 of your Pokémon."
+        }
+      }
+    ]
+  },
+  "en-me5-89": {
+    "kind": "stage1",
+    "artist": "HICO KIM",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 120,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Electrike", "local": "Electrike" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "lightning"],
+        "damage": "50",
+        "local": {
+          "name": "Flashing Barrier",
+          "text": "During your opponent's next turn, prevent all damage done to this Pokémon by attacks from Evolution Pokémon."
+        },
+        "en": {
+          "name": "Flashing Barrier",
+          "text": "During your opponent's next turn, prevent all damage done to this Pokémon by attacks from Evolution Pokémon."
+        }
+      },
+      {
+        "cost": ["lightning", "lightning", "lightning"],
+        "damage": "110",
+        "local": {
+          "name": "Sonic Edge",
+          "text": "This attack's damage isn't affected by any effects on your opponent's Active Pokémon."
+        },
+        "en": {
+          "name": "Sonic Edge",
+          "text": "This attack's damage isn't affected by any effects on your opponent's Active Pokémon."
+        }
+      }
+    ]
+  },
+  "en-me5-90": {
+    "kind": "stage1",
+    "artist": "Mékayu",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 130,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Slowpoke", "local": "Slowpoke" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "50+",
+        "local": {
+          "name": "All Out",
+          "text": "If you have no cards in your hand, this attack does 160 more damage."
+        },
+        "en": {
+          "name": "All Out",
+          "text": "If you have no cards in your hand, this attack does 160 more damage."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "110",
+        "local": { "name": "Zen Headbutt", "text": "" },
+        "en": { "name": "Zen Headbutt", "text": "" }
+      }
+    ]
+  },
+  "en-me5-91": {
+    "kind": "pokemon",
+    "artist": "Nakamura Ippan",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 140,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "30+",
+        "local": {
+          "name": "Vengeful Anchor",
+          "text": "If you have 4 or more Pokémon that have the Hide 'n' Sneak Ability in your discard pile, this attack does 140 more damage."
+        },
+        "en": {
+          "name": "Vengeful Anchor",
+          "text": "If you have 4 or more Pokémon that have the Hide 'n' Sneak Ability in your discard pile, this attack does 140 more damage."
+        }
+      }
+    ]
+  },
+  "en-me5-92": {
+    "kind": "stage1",
+    "artist": "Jerky",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 100,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Nickit", "local": "Nickit" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Skill Thief",
+          "text": "If you have no cards in your hand, choose an attack from 1 of your opponent's Pokémon in play and use it as this attack."
+        },
+        "en": {
+          "name": "Skill Thief",
+          "text": "If you have no cards in your hand, choose an attack from 1 of your opponent's Pokémon in play and use it as this attack."
+        }
+      },
+      {
+        "cost": ["darkness", "colorless", "colorless"],
+        "damage": "80",
+        "local": { "name": "Sharp Fang", "text": "" },
+        "en": { "name": "Sharp Fang", "text": "" }
+      }
+    ]
+  },
+  "en-me5-93": {
+    "kind": "stage2",
+    "artist": "Yoriyuki Ikegami",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "metal",
+      "types": ["metal"],
+      "hp": 160,
+      "retreat": 4,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "grass", "value": "-30" }],
+      "evolvesFrom": { "en": "Shieldon", "local": "Shieldon" }
+    },
+    "attacks": [
+      {
+        "cost": ["metal", "metal", "colorless"],
+        "damage": "160",
+        "local": { "name": "Hammer In", "text": "" },
+        "en": { "name": "Hammer In", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Ancient Bulwark",
+          "text": "As long as this Pokémon is on your Bench, prevent all damage done to each of your Pokémon by attacks from your opponent's Pokémon that have 2 or less Energy attached."
+        },
+        "en": {
+          "name": "Ancient Bulwark",
+          "text": "As long as this Pokémon is on your Bench, prevent all damage done to each of your Pokémon by attacks from your opponent's Pokémon that have 2 or less Energy attached."
+        }
+      }
+    ]
+  },
+  "en-me5-94": {
+    "kind": "stage2",
+    "artist": "miki kudo",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 150,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Trumbeak", "local": "Trumbeak" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "60+",
+        "local": {
+          "name": "Feather Rondo",
+          "text": "This attack does 20 more damage for each Benched Pokémon (both yours and your opponent's)."
+        },
+        "en": {
+          "name": "Feather Rondo",
+          "text": "This attack does 20 more damage for each Benched Pokémon (both yours and your opponent's)."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Aerial Draw",
+          "text": "Once during your turn, you may use this Ability. Draw a card."
+        },
+        "en": {
+          "name": "Aerial Draw",
+          "text": "Once during your turn, you may use this Ability. Draw a card."
+        }
+      }
+    ]
+  },
+  "en-me5-95": {
+    "kind": "stage1",
+    "artist": "DOM",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 140,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Type: Null", "local": "Type: Null" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "130",
+        "local": { "name": "Air Slash", "text": "Discard an Energy from this Pokémon." },
+        "en": { "name": "Air Slash", "text": "Discard an Energy from this Pokémon." }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Call a Buddy",
+          "text": "Once during your turn, if you have no cards in your hand, you may use this Ability. Search your deck for a Supporter card, reveal it, and put it into your hand. Then, shuffle your deck."
+        },
+        "en": {
+          "name": "Call a Buddy",
+          "text": "Once during your turn, if you have no cards in your hand, you may use this Ability. Search your deck for a Supporter card, reveal it, and put it into your hand. Then, shuffle your deck."
+        }
+      }
+    ]
+  },
+  "en-me5-96": {
+    "kind": "stage1",
+    "artist": "5ban Graphics",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 260,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Fomantis", "local": "Fomantis" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "60+",
+        "local": {
+          "name": "Lively Cutter",
+          "text": "If this Pokémon was healed during this turn, this attack does 200 more damage."
+        },
+        "en": {
+          "name": "Lively Cutter",
+          "text": "If this Pokémon was healed during this turn, this attack does 200 more damage."
+        }
+      },
+      {
+        "cost": ["grass", "colorless"],
+        "damage": "140",
+        "local": {
+          "name": "Leaf Guard",
+          "text": "During your opponent's next turn, this Pokémon takes 50 less damage from attacks (after applying Weakness and Resistance)."
+        },
+        "en": {
+          "name": "Leaf Guard",
+          "text": "During your opponent's next turn, this Pokémon takes 50 less damage from attacks (after applying Weakness and Resistance)."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-me5-97": {
+    "kind": "stage1",
+    "artist": "5ban Graphics",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 380,
+      "retreat": 4,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Wailmer", "local": "Wailmer" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water", "water"],
+        "damage": "120",
+        "local": { "name": "Surf", "text": "" },
+        "en": { "name": "Surf", "text": "" }
+      },
+      {
+        "cost": ["water", "water", "water", "water", "water"],
+        "damage": "270",
+        "local": { "name": "Falling Down", "text": "This Pokémon is now Asleep." },
+        "en": { "name": "Falling Down", "text": "This Pokémon is now Asleep." }
+      }
+    ],
+    "rules": {
+      "en": "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-me5-98": {
+    "kind": "pokemon",
+    "artist": "5ban Graphics",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 270,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["lightning"],
+        "damage": "60×",
+        "local": {
+          "name": "Thunderous Fist",
+          "text": "This attack does 60 damage for each Lightning Energy attached to this Pokémon."
+        },
+        "en": {
+          "name": "Thunderous Fist",
+          "text": "This attack does 60 damage for each Lightning Energy attached to this Pokémon."
+        }
+      },
+      {
+        "cost": ["lightning", "lightning", "lightning"],
+        "damage": "150",
+        "local": {
+          "name": "Zepto Turn",
+          "text": "Switch this Pokémon with 1 of your Benched Pokémon."
+        },
+        "en": {
+          "name": "Zepto Turn",
+          "text": "Switch this Pokémon with 1 of your Benched Pokémon."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  },
+  "en-me5-99": {
+    "kind": "stage2",
+    "artist": "5ban Graphics",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 350,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Lampent", "local": "Lampent" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "psychic"],
+        "damage": "130+",
+        "local": {
+          "name": "Phantom Maze",
+          "text": "This attack does 50 more damage for each Colorless in your opponent's Active Pokémon's Retreat Cost."
+        },
+        "en": {
+          "name": "Phantom Maze",
+          "text": "This attack does 50 more damage for each Colorless in your opponent's Active Pokémon's Retreat Cost."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Binding Flame",
+          "text": "Your opponent's Active Pokémon's Retreat Cost is Colorless more."
+        },
+        "en": {
+          "name": "Binding Flame",
+          "text": "Your opponent's Active Pokémon's Retreat Cost is Colorless more."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  },
+  "en-me5-100": {
+    "kind": "stage2",
+    "artist": "5ban Graphics",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 330,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Cranidos", "local": "Cranidos" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting"],
+        "damage": "150",
+        "local": {
+          "name": "Rowdy Hammer",
+          "text": "During your next turn, attacks used by this Pokémon do 150 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance)."
+        },
+        "en": {
+          "name": "Rowdy Hammer",
+          "text": "During your next turn, attacks used by this Pokémon do 150 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance)."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Destructive Headbutting",
+          "text": "Once during your turn, if this Pokémon is in the Active Spot, you may use this Ability. Flip a coin. If heads, discard an Energy from your opponent's Active Pokémon."
+        },
+        "en": {
+          "name": "Destructive Headbutting",
+          "text": "Once during your turn, if this Pokémon is in the Active Spot, you may use this Ability. Flip a coin. If heads, discard an Energy from your opponent's Active Pokémon."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-me5-101": {
+    "kind": "pokemon",
+    "artist": "5ban Graphics",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 280,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["darkness", "darkness"],
+        "damage": "110+",
+        "local": {
+          "name": "Dusk Raid",
+          "text": "If your Benched Pokémon have any damage counters on them, this attack does 110 more damage."
+        },
+        "en": {
+          "name": "Dusk Raid",
+          "text": "If your Benched Pokémon have any damage counters on them, this attack does 110 more damage."
+        }
+      },
+      {
+        "cost": ["darkness", "darkness", "darkness"],
+        "damage": "",
+        "local": {
+          "name": "Abyss Eye",
+          "text": "If your opponent's Active Pokémon is affected by a Special Condition, it is Knocked Out."
+        },
+        "en": {
+          "name": "Abyss Eye",
+          "text": "If your opponent's Active Pokémon is affected by a Special Condition, it is Knocked Out."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  },
+  "en-me5-102": {
+    "kind": "pokemon",
+    "artist": "5ban Graphics",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 180,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["darkness"],
+        "damage": "",
+        "local": {
+          "name": "Wheely Draw",
+          "text": "Shuffle your hand into your deck. Then, draw 6 cards."
+        },
+        "en": {
+          "name": "Wheely Draw",
+          "text": "Shuffle your hand into your deck. Then, draw 6 cards."
+        }
+      },
+      {
+        "cost": ["darkness", "darkness"],
+        "damage": "40+",
+        "local": {
+          "name": "Hangry Blaster",
+          "text": "This attack does 40 more damage for each damage counter on this Pokémon."
+        },
+        "en": {
+          "name": "Hangry Blaster",
+          "text": "This attack does 40 more damage for each damage counter on this Pokémon."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-me5-103": {
+    "kind": "stage1",
+    "artist": "Keisuke Azuma",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "metal",
+      "types": ["metal"],
+      "hp": 340,
+      "retreat": 4,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "grass", "value": "-30" }],
+      "evolvesFrom": { "en": "Drilbur", "local": "Drilbur" }
+    },
+    "attacks": [
+      {
+        "cost": ["metal", "metal"],
+        "damage": "90",
+        "local": {
+          "name": "Undermine",
+          "text": "Discard the top 2 cards of your opponent's deck."
+        },
+        "en": { "name": "Undermine", "text": "Discard the top 2 cards of your opponent's deck." }
+      },
+      {
+        "cost": ["metal", "metal", "metal"],
+        "damage": "200+",
+        "local": {
+          "name": "Maximum Drilling",
+          "text": "If this Pokémon has at least 2 extra Energy attached (in addition to this attack's cost), this attack does 130 more damage."
+        },
+        "en": {
+          "name": "Maximum Drilling",
+          "text": "If this Pokémon has at least 2 extra Energy attached (in addition to this attack's cost), this attack does 130 more damage."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  },
+  "en-me5-104": {
+    "kind": "trainer",
+    "artist": "Toyste Beach",
+    "rarity": "secret",
+    "rules": {
+      "en": "If the Pokémon this card is attached to doesn't have a Rule Box, the attacks it uses do 30 more damage to your opponent's Active Pokémon ex (before applying Weakness and Resistance). (Pokémon ex, Pokémon V_atk, etc. have Rule Boxes.)",
+      "local": "If the Pokémon this card is attached to doesn't have a Rule Box, the attacks it uses do 30 more damage to your opponent's Active Pokémon ex (before applying Weakness and Resistance). (Pokémon ex, Pokémon V_atk, etc. have Rule Boxes.)"
+    }
+  },
+  "en-me5-105": {
+    "kind": "trainer",
+    "artist": "Ayaka Yoshida",
+    "rarity": "secret",
+    "rules": {
+      "en": "Flip a coin. If heads, discard an Energy from 1 of your opponent's Pokémon.",
+      "local": "Flip a coin. If heads, discard an Energy from 1 of your opponent's Pokémon."
+    }
+  },
+  "en-me5-106": {
+    "kind": "trainer",
+    "artist": "Toyste Beach",
+    "rarity": "secret",
+    "rules": {
+      "en": "Both Active non-Darkness Pokémon are now Confused.",
+      "local": "Both Active non-Darkness Pokémon are now Confused."
+    }
+  },
+  "en-me5-107": {
+    "kind": "trainer",
+    "artist": "Studio Bora Inc.",
+    "rarity": "secret",
+    "rules": {
+      "en": "Move a Basic Energy from 1 of your Pokémon to another of your Pokémon.",
+      "local": "Move a Basic Energy from 1 of your Pokémon to another of your Pokémon."
+    }
+  },
+  "en-me5-108": {
+    "kind": "trainer",
+    "artist": "akagi",
+    "rarity": "secret",
+    "rules": {
+      "en": "You can use this card only when it is the last card in your hand.\nDuring this turn, attacks used by your Pokémon that don't have a Rule Box do 80 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance). (Pokémon ex, Pokémon V_atk, etc. have Rule Boxes.)",
+      "local": "You can use this card only when it is the last card in your hand.\nDuring this turn, attacks used by your Pokémon that don't have a Rule Box do 80 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance). (Pokémon ex, Pokémon V_atk, etc. have Rule Boxes.)"
+    }
+  },
+  "en-me5-109": {
+    "kind": "trainer",
+    "artist": "nagimiso",
+    "rarity": "secret",
+    "rules": {
+      "en": "Discard up to 2 Pokémon that don't have a Rule Box from your hand, and draw 3 cards for each card you discarded in this way. (Pokémon ex, Pokémon V_atk, etc. have Rule Boxes.)",
+      "local": "Discard up to 2 Pokémon that don't have a Rule Box from your hand, and draw 3 cards for each card you discarded in this way. (Pokémon ex, Pokémon V_atk, etc. have Rule Boxes.)"
+    }
+  },
+  "en-me5-110": {
+    "kind": "trainer",
+    "artist": "Studio Bora Inc.",
+    "rarity": "secret",
+    "rules": {
+      "en": "During your opponent's next turn, all of your Metal Pokémon take 30 less damage from attacks from your opponent's Pokémon (after applying Weakness and Resistance). (This includes new Pokémon that come into play.)",
+      "local": "During your opponent's next turn, all of your Metal Pokémon take 30 less damage from attacks from your opponent's Pokémon (after applying Weakness and Resistance). (This includes new Pokémon that come into play.)"
+    }
+  },
+  "en-me5-111": {
+    "kind": "trainer",
+    "artist": "En Morikura",
+    "rarity": "secret",
+    "rules": {
+      "en": "Search your deck for up to 4 Basic Water Energy cards and attach them to 1 of your Pokémon. Then, shuffle your deck. Your turn ends.",
+      "local": "Search your deck for up to 4 Basic Water Energy cards and attach them to 1 of your Pokémon. Then, shuffle your deck. Your turn ends."
+    }
+  },
+  "en-me5-112": {
+    "kind": "trainer",
+    "artist": "Teeziro",
+    "rarity": "secret",
+    "rules": {
+      "en": "You can use this card only if any of your Pokémon were Knocked Out during your opponent's last turn.\n\nDiscard an Energy from 1 of your opponent's Pokémon.",
+      "local": "You can use this card only if any of your Pokémon were Knocked Out during your opponent's last turn.\n\nDiscard an Energy from 1 of your opponent's Pokémon."
+    }
+  },
+  "en-me5-113": {
+    "kind": "trainer",
+    "artist": "inose yukie",
+    "rarity": "secret",
+    "rules": {
+      "en": "If the Pokémon this card is attached to isn't a Mega Evolution Pokémon ex, is in the Active Spot, and takes 240 or more damage from an attack from your opponent's Mega Evolution Pokémon ex (even if this Pokémon is Knocked Out), place 12 damage counters on the Attacking Pokémon. If you placed any damage counters in this way, discard this card.",
+      "local": "If the Pokémon this card is attached to isn't a Mega Evolution Pokémon ex, is in the Active Spot, and takes 240 or more damage from an attack from your opponent's Mega Evolution Pokémon ex (even if this Pokémon is Knocked Out), place 12 damage counters on the Attacking Pokémon. If you placed any damage counters in this way, discard this card."
+    }
+  },
+  "en-me5-114": {
+    "kind": "pokemon",
+    "artist": "GIDORA",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 270,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["lightning"],
+        "damage": "60×",
+        "local": {
+          "name": "Thunderous Fist",
+          "text": "This attack does 60 damage for each Lightning Energy attached to this Pokémon."
+        },
+        "en": {
+          "name": "Thunderous Fist",
+          "text": "This attack does 60 damage for each Lightning Energy attached to this Pokémon."
+        }
+      },
+      {
+        "cost": ["lightning", "lightning", "lightning"],
+        "damage": "150",
+        "local": {
+          "name": "Zepto Turn",
+          "text": "Switch this Pokémon with 1 of your Benched Pokémon."
+        },
+        "en": {
+          "name": "Zepto Turn",
+          "text": "Switch this Pokémon with 1 of your Benched Pokémon."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  },
+  "en-me5-115": {
+    "kind": "stage2",
+    "artist": "REND",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 350,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "darkness", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Lampent", "local": "Lampent" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "psychic"],
+        "damage": "130+",
+        "local": {
+          "name": "Phantom Maze",
+          "text": "This attack does 50 more damage for each Colorless in your opponent's Active Pokémon's Retreat Cost."
+        },
+        "en": {
+          "name": "Phantom Maze",
+          "text": "This attack does 50 more damage for each Colorless in your opponent's Active Pokémon's Retreat Cost."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Binding Flame",
+          "text": "Your opponent's Active Pokémon's Retreat Cost is Colorless more."
+        },
+        "en": {
+          "name": "Binding Flame",
+          "text": "Your opponent's Active Pokémon's Retreat Cost is Colorless more."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  },
+  "en-me5-116": {
+    "kind": "pokemon",
+    "artist": "AKIRA EGAWA",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 280,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["darkness", "darkness"],
+        "damage": "110+",
+        "local": {
+          "name": "Dusk Raid",
+          "text": "If your Benched Pokémon have any damage counters on them, this attack does 110 more damage."
+        },
+        "en": {
+          "name": "Dusk Raid",
+          "text": "If your Benched Pokémon have any damage counters on them, this attack does 110 more damage."
+        }
+      },
+      {
+        "cost": ["darkness", "darkness", "darkness"],
+        "damage": "",
+        "local": {
+          "name": "Abyss Eye",
+          "text": "If your opponent's Active Pokémon is affected by a Special Condition, it is Knocked Out."
+        },
+        "en": {
+          "name": "Abyss Eye",
+          "text": "If your opponent's Active Pokémon is affected by a Special Condition, it is Knocked Out."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  },
+  "en-me5-117": {
+    "kind": "pokemon",
+    "artist": "NC Empire",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 180,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["darkness"],
+        "damage": "",
+        "local": {
+          "name": "Wheely Draw",
+          "text": "Shuffle your hand into your deck. Then, draw 6 cards."
+        },
+        "en": {
+          "name": "Wheely Draw",
+          "text": "Shuffle your hand into your deck. Then, draw 6 cards."
+        }
+      },
+      {
+        "cost": ["darkness", "darkness"],
+        "damage": "40+",
+        "local": {
+          "name": "Hangry Blaster",
+          "text": "This attack does 40 more damage for each damage counter on this Pokémon."
+        },
+        "en": {
+          "name": "Hangry Blaster",
+          "text": "This attack does 40 more damage for each damage counter on this Pokémon."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards.",
+      "local": "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+    }
+  },
+  "en-me5-118": {
+    "kind": "trainer",
+    "artist": "DOM",
+    "rarity": "secret",
+    "rules": {
+      "en": "You can use this card only when it is the last card in your hand.\nDuring this turn, attacks used by your Pokémon that don't have a Rule Box do 80 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance). (Pokémon ex, Pokémon V_atk, etc. have Rule Boxes.)",
+      "local": "You can use this card only when it is the last card in your hand.\nDuring this turn, attacks used by your Pokémon that don't have a Rule Box do 80 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance). (Pokémon ex, Pokémon V_atk, etc. have Rule Boxes.)"
+    }
+  },
+  "en-me5-119": {
+    "kind": "trainer",
+    "artist": "Naoki Saito",
+    "rarity": "secret",
+    "rules": {
+      "en": "Discard up to 2 Pokémon that don't have a Rule Box from your hand, and draw 3 cards for each card you discarded in this way. (Pokémon ex, Pokémon V_atk, etc. have Rule Boxes.)",
+      "local": "Discard up to 2 Pokémon that don't have a Rule Box from your hand, and draw 3 cards for each card you discarded in this way. (Pokémon ex, Pokémon V_atk, etc. have Rule Boxes.)"
+    }
+  },
+  "en-me5-120": {
+    "kind": "pokemon",
+    "artist": "5ban Graphics",
+    "rarity": "secret",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 280,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["darkness", "darkness"],
+        "damage": "110+",
+        "local": {
+          "name": "Dusk Raid",
+          "text": "If your Benched Pokémon have any damage counters on them, this attack does 110 more damage."
+        },
+        "en": {
+          "name": "Dusk Raid",
+          "text": "If your Benched Pokémon have any damage counters on them, this attack does 110 more damage."
+        }
+      },
+      {
+        "cost": ["darkness", "darkness", "darkness"],
+        "damage": "",
+        "local": {
+          "name": "Abyss Eye",
+          "text": "If your opponent's Active Pokémon is affected by a Special Condition, it is Knocked Out."
+        },
+        "en": {
+          "name": "Abyss Eye",
+          "text": "If your opponent's Active Pokémon is affected by a Special Condition, it is Knocked Out."
+        }
+      }
+    ],
+    "rules": {
+      "en": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards.",
+      "local": "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+    }
+  }
+}

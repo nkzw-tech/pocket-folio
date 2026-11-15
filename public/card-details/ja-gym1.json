@@ -1,0 +1,2516 @@
+{
+  "ja-gym1-1": {
+    "kind": "pokemon",
+    "artist": "Atsuko Nishida",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 40,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "つばさでうつ", "text": "" },
+        "en": { "name": "Wing Attack", "text": "" }
+      },
+      {
+        "cost": ["grass", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "どくのキバ",
+          "text": "コインを投げて「おもて」なら、相手を「どく」状態にする。"
+        },
+        "en": {
+          "name": "Poison Fang",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+        }
+      }
+    ]
+  },
+  "ja-gym1-2": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "10",
+        "local": {
+          "name": "へんなこな",
+          "text": "コインを投げ、「おもて」なら相手を「こんらん」状態に、「うら」なら「ねむり」状態にする。"
+        },
+        "en": {
+          "name": "Strange Powder",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused; if tails, the Defending Pokémon is now Asleep."
+        }
+      }
+    ]
+  },
+  "ja-gym1-3": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "10",
+        "local": {
+          "name": "ちょっとすいとる",
+          "text": "自分にのっているダメージカウンターを、1つとりのぞく。"
+        },
+        "en": {
+          "name": "Blot",
+          "text": "If there are any damage counters on Erika's Oddish, remove 1 of them."
+        }
+      },
+      {
+        "cost": ["grass", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "たまにすいとる",
+          "text": "コインを投げて「おもて」なら、自分にのっているダメージカウンターを、1つとりのぞく。"
+        },
+        "en": {
+          "name": "Sporadic Sponging",
+          "text": "If Erika's Oddish has any damage counters on it, flip a coin. If heads, remove 1 of those damage counters."
+        }
+      }
+    ]
+  },
+  "ja-gym1-4": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "はさむ", "text": "" },
+        "en": { "name": "Irongrip", "text": "" }
+      },
+      {
+        "cost": ["grass", "grass"],
+        "damage": "",
+        "local": {
+          "name": "きけんなほうし",
+          "text": "コインを投げて「おもて」なら、相手を「どく」状態にして、相手の控えポケモン全員に、「弱点・抵抗力」に関係なく、それぞれ10ダメージ。"
+        },
+        "en": {
+          "name": "Poison Spore",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned and this attack does 10 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "ja-gym1-5": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "20",
+        "local": { "name": "へなへなタックル", "text": "自分にも10ダメージ。" },
+        "en": { "name": "Careless Tackle", "text": "Erika's Bellsprout does 10 damage to itself." }
+      }
+    ]
+  },
+  "ja-gym1-6": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "10",
+        "local": { "name": "つるでうつ", "text": "" },
+        "en": { "name": "Vine Slap", "text": "" }
+      },
+      {
+        "cost": ["grass", "grass", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "のびるつる",
+          "text": "相手の控えポケモンから1匹を選び、「弱点・抵抗力」に関係なく 20ダメージ。"
+        },
+        "en": {
+          "name": "Stretch Vine",
+          "text": "If your opponent has any Benched Pokémon, choose 1 of them and this attack does 20 damage to it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "ja-gym1-7": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "10",
+        "local": { "name": "ねむりのたね", "text": "相手を「ねむり」状態にする。" },
+        "en": { "name": "Sleep Seed", "text": "The Defending Pokémon is now Asleep." }
+      },
+      {
+        "cost": ["grass", "grass"],
+        "damage": "",
+        "local": {
+          "name": "おつかい",
+          "text": "コインを投げて「おもて」なら、自分の山札から「トレーナーカード」1枚を選び出し、相手に見せてから、手札に加えてよい。その後、その山札をよく切る。"
+        },
+        "en": {
+          "name": "Errand-Running",
+          "text": "Flip a coin. If heads, you may search your deck for a Trainer card. Show it to your opponent and put it into your hand. Shuffle your deck afterward."
+        }
+      }
+    ]
+  },
+  "ja-gym1-8": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Brock's Zubat", "local": "タケシのズバット" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "20",
+        "local": { "name": "スピードひこう", "text": "" },
+        "en": { "name": "Dive", "text": "" }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "かいてんひこう",
+          "text": "相手と相手の控えポケモン全員に、「弱点・抵抗力」に関係なく、それぞれ10ダメージ。"
+        },
+        "en": {
+          "name": "Spiral Dive",
+          "text": "Does 10 damage to each of your opponent's Pokémon. Don't apply Weakness and Resistance."
+        }
+      }
+    ]
+  },
+  "ja-gym1-9": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Erika's Oddish", "local": "エリカのナゾノクサ" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "",
+        "local": {
+          "name": "かいふくりんぷん",
+          "text": "コインを投げて「おもて」なら、自分にのっているダメージカウンターを、4つとりのぞく。"
+        },
+        "en": {
+          "name": "Healing Pollen",
+          "text": "Flip a coin. If heads, remove 4 damage counters from Erika's Gloom. If Erika's Gloom has fewer damage counters than that, remove all of them."
+        }
+      },
+      {
+        "cost": ["grass", "grass", "grass"],
+        "damage": "30",
+        "local": {
+          "name": "ミラクルかふん",
+          "text": "コインを投げて「おもて」なら、「ねむり・マヒ・こんらん・どく」の中から1つを選び、相手をその状態にする。"
+        },
+        "en": {
+          "name": "Magic Pollen",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Asleep, Confused, Paralyzed, or Poisoned (your choice)."
+        }
+      }
+    ]
+  },
+  "ja-gym1-10": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "",
+        "local": {
+          "name": "のびるつる",
+          "text": "相手の控えポケモンを1匹選び、そのポケモンに、「弱点・抵抗力」に関係なく、10ダメージ。"
+        },
+        "en": {
+          "name": "Stretch Vine",
+          "text": "Choose 1 of your opponent's Benched Pokémon, and this attack does 10 damage to it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "ようぶんきゅうしゅう",
+          "text": "この力は、自分の番ごとに1回使える。自分の場のポケモンについている「草」エネルギーカードを最大2枚選び、はがしてこのカードにつける。このカードが「ねむり・マヒ・こんらん」状態の時、この力は使えない。"
+        },
+        "en": {
+          "name": "Soak Up",
+          "text": "Once during your turn (before your attack), you may take up to 2 Grass Energy cards attached to your other Pokémon and attach them to Erika's Bellsprout. This power can't be used if Erika's Bellsprout is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-gym1-11": {
+    "kind": "stage1",
+    "artist": "Atsuko Nishida",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Erika's Bellsprout", "local": "エリカのマダツボミ" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "10",
+        "local": { "name": "よだれ", "text": "" },
+        "en": { "name": "Drool", "text": "" }
+      },
+      {
+        "cost": ["grass", "grass"],
+        "damage": "20",
+        "local": {
+          "name": "さそってとかす",
+          "text": "ダメージを与える前に、相手の控えポケモンを1匹選び、相手の対戦ポケモンと入れ替える。（ダメージは新しい対戦ポケモンに与える。相手に控えがない時、このワザは使えない）"
+        },
+        "en": {
+          "name": "Flytrap",
+          "text": "Before doing damage, choose 1 of your opponent's Benched Pokémon and switch it with his or her Active Pokémon. This attack can't be used if your opponent has no Benched Pokémon."
+        }
+      }
+    ]
+  },
+  "ja-gym1-12": {
+    "kind": "pokemon",
+    "artist": "Atsuko Nishida",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": {
+          "name": "リフレクター",
+          "text": "次の相手の番、このカードが受けるダメージは半分（切りすて）になる。（ダメージ以外の効果はそのまま）"
+        },
+        "en": {
+          "name": "Deflector",
+          "text": "During your opponent's next turn, whenever Erika's Exeggcute takes damage, divide that damage in half (rounded down to the nearest 10). (Any other effects still happen.)"
+        }
+      },
+      {
+        "cost": ["grass", "colorless"],
+        "damage": "40",
+        "local": {
+          "name": "タマゴばくだん",
+          "text": "コインを投げて「うら」なら、相手へのダメージはなくなり、自分に20ダメージ。"
+        },
+        "en": {
+          "name": "Egg Bomb",
+          "text": "Flip a coin. If tails, this attack does nothing to the Defending Pokémon and Erika's Exeggcute does 20 damage to itself."
+        }
+      }
+    ]
+  },
+  "ja-gym1-13": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Erika's Exeggcute", "local": "エリカのタマタマ" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": {
+          "name": "サイコエクスチェンジ",
+          "text": "自分の手札をすべて山札にもどし、山札をよく切る。その後、カードを5枚引いて、手札にする。"
+        },
+        "en": {
+          "name": "Psychic Exchange",
+          "text": "Shuffle your hand into your deck, then draw 5 cards."
+        }
+      },
+      {
+        "cost": ["grass", "colorless", "colorless"],
+        "damage": "30+",
+        "local": {
+          "name": "ふみつけ",
+          "text": "コインを投げて「おもて」なら、10ダメージを追加する。"
+        },
+        "en": {
+          "name": "Stomp",
+          "text": "Flip a coin. If heads, this attack does 30 damage plus 10 more damage; if tails, this attack does 30 damage."
+        }
+      }
+    ]
+  },
+  "ja-gym1-14": {
+    "kind": "stage2",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Erika's Gloom", "local": "エリカのクサイハナ" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "grass", "grass"],
+        "damage": "30",
+        "local": {
+          "name": "メガドレイン",
+          "text": "相手にダメージを与えたら、与えたダメージの半分(切り上げ)のダメージカウンターを、自分からとりのぞく。"
+        },
+        "en": {
+          "name": "Mega Drain",
+          "text": "If Erika's Vileplume does damage to the Defending Pokémon (after applying Weakness and Resistance), remove a number of damage counters from Erika's Vileplume equal to half the damage done to the Defending Pokémon (rounded up to the nearest 10). If Erika's Vileplume has fewer damage counters than that, remove all of them."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "ぼうぎょかふん",
+          "text": "このカードがバトル場でワザによるダメージを受けた時、（このカードが「きぜつ」するかしないにかかわらず）コインを投げ、「おもて」なら、ダメージを与えたポケモンを「こんらん」状態にする。この力は、このカードが「ねむり・マヒ・こんらん」状態でも、必ずはたらく。"
+        },
+        "en": {
+          "name": "Pollen Defense",
+          "text": "If an attack does damage to Erika's Vileplume while it's your Active Pokémon (even if it's Knocked Out), flip a coin. If heads, your opponent's Active Pokémon is now Confused. This power works even while Erika's Vileplume is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-gym1-15": {
+    "kind": "stage2",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Erika's Weepinbell", "local": "エリカのウツドン" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "grass", "grass"],
+        "damage": "50",
+        "local": { "name": "はっぱカッター", "text": "" },
+        "en": { "name": "Razor Leaf", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "かおりのわな",
+          "text": "この力は、自分の番ごとに1回使える。コインを投げて「おもて」なら、相手の控えポケモンから1匹を選び、相手の対戦ポケモンと入れ替える。このカードが「ねむり・マヒ・こんらん」状態の時、この力は使えない。"
+        },
+        "en": {
+          "name": "Fragrance Trap",
+          "text": "Once during your turn (before your attack), you may flip a coin. If heads, and if your opponent has any Benched Pokémon, choose 1 of them and switch it with his or her Active Pokémon. This power can't be used if Erika's Victreebel is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-gym1-16": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "",
+        "local": {
+          "name": "かげぶんしん",
+          "text": "これ以後、このカードが相手のワザによるダメージを受ける時、相手プレイヤーはコインを投げる。「うら」なら、このカードはそのダメージを受けない。（ダメージ以外の効果は、そのまま）このカードがダメージを受けるか、バトル場をはなれた時、この効果は消える。"
+        },
+        "en": {
+          "name": "Shadow Images",
+          "text": "Whenever Rocket's Scyther is attacked, your opponent flips a coin. If tails, that attack does no damage to Rocket's Scyther. (Any other effects of the attack still happen.) This effect lasts until Rocket's Scyther takes damage (or is Benched or is evolved)."
+        }
+      },
+      {
+        "cost": ["grass", "colorless", "colorless"],
+        "damage": "40",
+        "local": { "name": "こうそくカマ", "text": "" },
+        "en": { "name": "Blinding Scythe", "text": "" }
+      }
+    ]
+  },
+  "ja-gym1-17": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire"],
+        "damage": "20",
+        "local": { "name": "ほのお", "text": "" },
+        "en": { "name": "Flame", "text": "" }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "10+",
+        "local": {
+          "name": "でんこうせっか",
+          "text": "コインを投げて「おもて」なら、20ダメージを追加する。"
+        },
+        "en": {
+          "name": "Quick Attack",
+          "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+        }
+      }
+    ]
+  },
+  "ja-gym1-18": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": { "name": "みつめる", "text": "相手を「ねむり」状態にする。" },
+        "en": { "name": "Hypnotic Gaze", "text": "The Defending Pokémon is now Asleep." }
+      },
+      {
+        "cost": ["fire", "fire"],
+        "damage": "20",
+        "local": {
+          "name": "ほのおのわ",
+          "text": "相手のベンチポケモン1匹にも、「弱点・抵抗力」に関係なく、10ダメージ。"
+        },
+        "en": {
+          "name": "Fire Ring",
+          "text": "If your opponent has any Benched Pokémon, choose 1 of them and this attack does 10 damage to it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "ja-gym1-19": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Brock's Vulpix", "local": "タケシのロコン" }
+    },
+    "attacks": [
+      {
+        "cost": ["fire", "fire"],
+        "damage": "30",
+        "local": { "name": "おにび", "text": "" },
+        "en": { "name": "Will-o'-the-wisp", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "ばける",
+          "text": "この力は、自分の番ごとに1回だけ使える。手札から「進化カード」を1枚選び、このカードの上にのせる。それ以後、このカードを、のせた「進化カード」のポケモンとしてあつかう。（ただし「進化・退化」はできない）。自分の番に、このカードの上にのっている「進化カード」をトラッシュして、このカードを「タケシのキュウコン」にもどしてもよい。このカードが「ねむり・マヒ・こんらん」状態の時、この「ばける」の力は使えず、このカードは「タケシのキュウコン」にもどる。（のせてあった「進化カード」はトラッシュされる）"
+        },
+        "en": {
+          "name": "Shapeshift",
+          "text": "Once during your turn (before your attack), you may attach an Evolution card from your hand to Brock's Ninetales. (This doesn't count as evolving Brock's Ninetales.) Treat Brock's Ninetales as if it were that Pokémon instead. It can't evolve, devolve, or use the Pokémon Power of that Pokémon. During your turn, you may discard the Evolution card attached to Brock's Ninetales. This power can't be used if Brock's Ninetales is Asleep, Confused, or Paralyzed. If Brock's Ninetales becomes Asleep, Confused, or Paralyzed, discard all Evolution cards attached to it."
+        }
+      }
+    ]
+  },
+  "ja-gym1-20": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 60,
+      "retreat": 1,
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire", "fire", "fire"],
+        "damage": "40",
+        "local": {
+          "name": "ほのおのかべ",
+          "text": "次の相手の番、このカードが相手のワザによるダメージを受けた時、（このカードが「きぜつ」するしないにかかわらず）相手にも10ダメージ。"
+        },
+        "en": {
+          "name": "Fire Wall",
+          "text": "If an attack does damage to Rocket's Moltres during your opponent's next turn (even if Rocket's Moltres is Knocked Out), Rocket's Moltres attacks your opponent's Active Pokémon for 10 damage. (Apply Weakness and Resistance.)"
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "ふしちょう",
+          "text": "この力は、このカードが「きぜつ」した時だけ、使える。このカードをトラッシュからとり出し、手札に加える。このカードが「ねむり・マヒ・こんらん」状態のまま「きぜつ」する時、この力は使えない。"
+        },
+        "en": {
+          "name": "Rebirth",
+          "text": "When Rocket's Moltres is Knocked Out, you may return it to your hand after discarding it. This power can't be used if Rocket's Moltres is Asleep, Confused, or Paralyzed when it is Knocked Out."
+        }
+      }
+    ]
+  },
+  "ja-gym1-21": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": {
+          "name": "ちょうのうりょく",
+          "text": "コインを3枚投げる。「おもて」が1枚なら、山札の上からカードを1枚引いて、手札に加える。「おもて」が2枚なら、相手に20ダメージ。「おもて」が3枚なら相手のワザを1つ選び、それを、自分が持っているワザとして使う。（そのワザに必要なエネルギーがついていなくても、かまわない）"
+        },
+        "en": {
+          "name": "ESP",
+          "text": "Flip 3 coins. If exactly 1 is heads, draw a card. If exactly 2 are heads, this attack does 20 damage. If all 3 are heads, choose 1 of the Defending Pokémon's attacks. Misty's Psyduck copies that attack except for its Energy costs. (No matter what type the Defending Pokémon is, Misty's Psyduck's type is still Water.)"
+        }
+      }
+    ]
+  },
+  "ja-gym1-22": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "20",
+        "local": {
+          "name": "あわあわ",
+          "text": "コインを投げて「うら」なら、次の自分の番、このカードは「あわあわ」を使えない。"
+        },
+        "en": {
+          "name": "Bubbles",
+          "text": "Flip a coin. If tails, you can't use this attack during your next turn."
+        }
+      },
+      {
+        "cost": ["water", "water"],
+        "damage": "",
+        "local": {
+          "name": "ドわすれ",
+          "text": "相手の対戦ポケモンの「ワザ」を1つ選ぶ。次の相手の番でその「ワザ」はつかえない。"
+        },
+        "en": {
+          "name": "Amnesia",
+          "text": "Choose 1 of the Defending Pokémon's attacks. That Pokémon can't use that attack during your opponent's next turn."
+        }
+      }
+    ]
+  },
+  "ja-gym1-23": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "10",
+        "local": {
+          "name": "アイスバーン",
+          "text": "次の相手の番、このワザを受けた相手のバトルポケモンは、にげられない。"
+        },
+        "en": {
+          "name": "Frostbite",
+          "text": "The Defending Pokémon can't retreat during your opponent's next turn."
+        }
+      },
+      {
+        "cost": ["water", "colorless"],
+        "damage": "10",
+        "local": {
+          "name": "しんきろう",
+          "text": "次の相手の番、このワザを受けた相手のバトルポケモンがワザを使うとき、相手はコインを1回投げる。ウラならそのワザは失敗。"
+        },
+        "en": {
+          "name": "Mirage",
+          "text": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing."
+        }
+      }
+    ]
+  },
+  "ja-gym1-24": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 50,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water"],
+        "damage": "20",
+        "local": {
+          "name": "スミをかける",
+          "text": "コインを投げて「おもて」なら、このワザを受けた相手は、それ以後ワザを使うたびにコインを投げ、「うら」ならワザは失敗する。バトル場をはなれたポケモンからは、このワザの効果は消える。"
+        },
+        "en": {
+          "name": "Ink Spurt",
+          "text": "Flip a coin. If heads, whenever the Defending Pokémon tries to attack, your opponent flips a coin. If tails, that attack does nothing. (This effect lasts until the Defending Pokémon evolves or is Benched.)"
+        }
+      }
+    ]
+  },
+  "ja-gym1-25": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 40,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "10",
+        "local": { "name": "たいあたり", "text": "" },
+        "en": { "name": "Tackle", "text": "" }
+      },
+      {
+        "cost": ["water", "water"],
+        "damage": "20",
+        "local": {
+          "name": "えんまく",
+          "text": "次の相手の番、このワザを受けた相手のバトルポケモンがワザを使うとき、相手はコインを1回投げる。ウラならそのワザは失敗。"
+        },
+        "en": {
+          "name": "Smokescreen",
+          "text": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing."
+        }
+      }
+    ]
+  },
+  "ja-gym1-26": {
+    "kind": "pokemon",
+    "artist": "Atsuko Nishida",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10×",
+        "local": {
+          "name": "みだれづき",
+          "text": "コインを2枚投げて「おもて」の出た数×10のダメージをあたえる。"
+        },
+        "en": {
+          "name": "Fury Attack",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        }
+      },
+      {
+        "cost": ["water"],
+        "damage": "",
+        "local": {
+          "name": "ちょうおんぱ",
+          "text": "コインを投げて「おもて」なら、相手を「こんらん」状態にする。"
+        },
+        "en": {
+          "name": "Supersonic",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        }
+      }
+    ]
+  },
+  "ja-gym1-27": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "20",
+        "local": {
+          "name": "スターブーメラン",
+          "text": "コインを投げて「おもて」なら、このカードと、このカードについている全てのカードを、持ち主の手札にもどす。"
+        },
+        "en": {
+          "name": "Star Boomerang",
+          "text": "Flip a coin. If heads, return Misty's Staryu and all cards attached to it to your hand. (Either way, this attack does its damage.)"
+        }
+      }
+    ]
+  },
+  "ja-gym1-28": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 30,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "しんだふり",
+          "text": "コインを投げて「おもて」なら、次の相手の番、このカードはワザによるダメージや効果を受けない。"
+        },
+        "en": {
+          "name": "Play Dead",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Misty's Magikarp."
+        }
+      },
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "はねる", "text": "" },
+        "en": { "name": "Leap", "text": "" }
+      }
+    ]
+  },
+  "ja-gym1-29": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Misty's Poliwag", "local": "カスミのニョロモ" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "はかいのうず",
+          "text": "コインを1回投げ、「おもて」なら、相手についている「エネルギーカード」を1枚トラッシュする。"
+        },
+        "en": {
+          "name": "Rapids",
+          "text": "If the Defending Pokémon has any Energy cards attached to it, flip a coin. If heads, choose 1 of those Energy cards and discard it."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "30+",
+        "local": {
+          "name": "ウォーターパンチ",
+          "text": "このカードについている「水」エネルギーの数ぶんコインを投げ、「おもて」の数×10のダメージを追加する。"
+        },
+        "en": {
+          "name": "Water Punch",
+          "text": "Flip a number of coins equal to the number of Water Energy attached to Misty's Poliwhirl. This attack does 30 damage plus 10 damage for each heads."
+        }
+      }
+    ]
+  },
+  "ja-gym1-30": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "クリスタルビーム",
+          "text": "コインを投げて「おもて」なら、次の相手の番、このワザを受けた相手には、「エネルギーカード」をつけることができない。"
+        },
+        "en": {
+          "name": "Crystal Beam",
+          "text": "Flip a coin. If heads, your opponent can't attach Energy cards to the Defending Pokémon during his or her next turn."
+        }
+      }
+    ]
+  },
+  "ja-gym1-31": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Misty's Seel", "local": "カスミのパウワウ" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water"],
+        "damage": "20",
+        "local": {
+          "name": "こおりのつぶて",
+          "text": "このワザを受ける相手が「闘」ポケモンなら、このワザのダメージは2倍になる。"
+        },
+        "en": {
+          "name": "Ice Throw",
+          "text": "If the Defending Pokémon is Fighting, this attack's base damage is doubled."
+        }
+      },
+      {
+        "cost": ["water", "colorless", "colorless", "colorless"],
+        "damage": "60",
+        "local": { "name": "とっしん", "text": "自分にも20ダメージ。" },
+        "en": { "name": "Take Down", "text": "Misty's Dewgong does 20 damage to itself." }
+      }
+    ]
+  },
+  "ja-gym1-32": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Misty's Psyduck", "local": "カスミのコダック" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "colorless"],
+        "damage": "40",
+        "local": {
+          "name": "エクストラビーム",
+          "text": "コインを投げて「うら」なら、自分についているエネルギーカードを、すべてトラッシュする。"
+        },
+        "en": {
+          "name": "Electro Beam",
+          "text": "Flip a coin. If tails, discard all Energy cards attached to Misty's Golduck."
+        }
+      },
+      {
+        "cost": ["psychic", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "スーパーデストロイ",
+          "text": "コインを投げて「おもて」なら、相手と相手の控えポケモン全員から、それぞれエネルギーカードを1枚ずつ選び、トラッシュする。"
+        },
+        "en": {
+          "name": "Super Removal",
+          "text": "Flip a coin. If heads, choose 1 Energy card attached to each of your opponent's Pokémon that has any Energy cards and discard those Energy cards."
+        }
+      }
+    ]
+  },
+  "ja-gym1-33": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 70,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Misty's Tentacool", "local": "カスミのメノクラゲ" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water", "colorless", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "クラゲどく",
+          "text": "コインを1回投げ、「おもて」なら、相手を「どく」状態にする。「うら」なら、相手を「こんらん」状態にする。"
+        },
+        "en": {
+          "name": "Jellyfish Poison",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned. If tails, the Defending Pokémon is now Confused."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "にげこむ",
+          "text": "この力は、このカードがバトル場でワザによるダメージを受けた時、使える。自分の控えポケモンから1匹を選び、このカードと入れ替える。この時、このカードは、そのワザによる「ダメージ以外の効果」を受けない。ダメージを受ける時、このカードがすでに「ねむり・マヒ・こんらん」状態だったなら、この力は使えない。"
+        },
+        "en": {
+          "name": "Flee",
+          "text": "If an attack does damage to Misty's Tentacruel while it's your Active Pokémon, you may switch it with 1 of your Benched Pokémon, which prevents all other effects of that attack on Misty's Tentacruel. This power can't be used if Misty's Tentacruel is already Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-gym1-34": {
+    "kind": "stage1",
+    "artist": "Atsuko Nishida",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Misty's Horsea", "local": "カスミのタッツー" }
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "20",
+        "local": { "name": "しっぽのムチ", "text": "" },
+        "en": { "name": "Tail Snap", "text": "" }
+      },
+      {
+        "cost": ["water", "water", "water"],
+        "damage": "30+",
+        "local": {
+          "name": "きぜつばり",
+          "text": "コインを2枚投げ、すべて「おもて」なら、60ダメージを追加する。"
+        },
+        "en": {
+          "name": "Knockout Needle",
+          "text": "Flip 2 coins. If both of them are heads, this attack does 30 damage plus 60 more damage. If 1 or both of them are tails, this attack does 30 damage."
+        }
+      }
+    ]
+  },
+  "ja-gym1-35": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 100,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Misty's Magikarp", "local": "カスミのコイキング" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water", "water", "water"],
+        "damage": "70",
+        "local": { "name": "ハイドロクラッシュ", "text": "" },
+        "en": { "name": "Tidal Wave", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "はんこう",
+          "text": "このカードがワザを使う時、コインを2枚投げる。コインがすべて「うら」なら、そのワザは失敗となり、このカードと、これについているすべてのカードを山札にもどし、その山札をよく切る。この力は、このカードが「こんらん」状態でも、必ずはたらく。"
+        },
+        "en": {
+          "name": "Rebellion",
+          "text": "Whenever Misty's Gyarados attacks, flip 2 coins. If both of them are tails, that attack does nothing. Instead, shuffle Misty's Gyarados and all cards attached to it into your deck. (This power works even if Misty's Gyarados is Confused.)"
+        }
+      }
+    ]
+  },
+  "ja-gym1-36": {
+    "kind": "pokemon",
+    "artist": "Atsuko Nishida",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 40,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "10+",
+        "local": {
+          "name": "でんこうせっか",
+          "text": "コインを投げて「おもて」なら、20ダメージを追加する。"
+        },
+        "en": {
+          "name": "Quick Attack",
+          "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+        }
+      }
+    ]
+  },
+  "ja-gym1-37": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["lightning"],
+        "damage": "10",
+        "local": {
+          "name": "でんきショック",
+          "text": "コインを投げて「おもて」なら、相手を「マヒ」状態にする。"
+        },
+        "en": {
+          "name": "Thundershock",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "たいあたり", "text": "" },
+        "en": { "name": "Tackle", "text": "" }
+      }
+    ]
+  },
+  "ja-gym1-38": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["lightning"],
+        "damage": "20×",
+        "local": {
+          "name": "スピンボール",
+          "text": "コインを1枚投げ、「おもて」の数×20のダメージ。"
+        },
+        "en": {
+          "name": "Spin Ball",
+          "text": "Flip 1 coin. This attack does 20 damage times the number of heads."
+        }
+      },
+      {
+        "cost": ["lightning", "colorless"],
+        "damage": "20×",
+        "local": { "name": "ダブルスピン", "text": "コインを2回投げ、オモテの数×20ダメージ。" },
+        "en": {
+          "name": "Double Spin",
+          "text": "Flip 2 coins. This attack does 20 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "ja-gym1-39": {
+    "kind": "pokemon",
+    "artist": "Atsuko Nishida",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 30,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["lightning"],
+        "damage": "10",
+        "local": {
+          "name": "はかいでんぱ",
+          "text": "コインを1回投げ、「おもて」なら、相手についている「エネルギーカード」を1枚トラッシュする。"
+        },
+        "en": {
+          "name": "Removal Pulse",
+          "text": "If the Defending Pokémon has any Energy cards attached to it, flip a coin. If heads, choose 1 of those Energy cards and discard it."
+        }
+      },
+      {
+        "cost": ["lightning", "lightning"],
+        "damage": "20",
+        "local": {
+          "name": "こんらんでんぱ",
+          "text": "コインを投げて「おもて」なら、相手を「こんらん」状態にする。"
+        },
+        "en": {
+          "name": "Confusion Pulse",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        }
+      }
+    ]
+  },
+  "ja-gym1-40": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Lt. Surge's Magnemite", "local": "マチスのコイル" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "lightning", "lightning", "colorless"],
+        "damage": "50",
+        "local": {
+          "name": "メガショック",
+          "text": "コインを投げて「うら」なら、自分にも20ダメージ。"
+        },
+        "en": {
+          "name": "Mega Shock",
+          "text": "Flip a coin. If tails, Lt. Surge's Magneton does 20 damage to itself."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "エナジーチャージ",
+          "text": "この力は、このカードがバトル場にいる時だけ、使える。自分の控えポケモンについている「雷」エネルギーカードを好きなだけはがし、このカードにつける。このカードが「ねむり・マヒ・こんらん」状態の時、この力は使えない。"
+        },
+        "en": {
+          "name": "Energy Charge",
+          "text": "As often as you like during your turn (before your attack), if Lt. Surge's Magneton is your Active Pokémon, you may take 1 Lightning Energy card attached to 1 of your Pokémon and attach it to Lt. Surge's Magneton. This power can't be used if Lt. Surge's Magneton is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-gym1-41": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["lightning"],
+        "damage": "",
+        "local": {
+          "name": "じゅうでん",
+          "text": "自分のトラッシュに「雷」エネルギーカードがあれば、最大2枚を取り出して、自分につける。"
+        },
+        "en": {
+          "name": "Charge",
+          "text": "Take up to 2 Lightning Energy cards from your discard pile and attach them to Lt. Surge's Electabuzz."
+        }
+      },
+      {
+        "cost": ["lightning"],
+        "damage": "30×",
+        "local": {
+          "name": "ほうでん",
+          "text": "自分についている「雷」エネルギーカードを、すべてトラッシュする。その後、トラッシュした「雷」エネルギーカードの数だけコインを投げ、「おもて」の数×30のダメージ。"
+        },
+        "en": {
+          "name": "Discharge",
+          "text": "Discard all Lightning Energy cards attached to Lt. Surge's Electabuzz in order to use this attack. Flip a number of coins equal to the number of Lightning Energy cards you discarded. This attack does 30 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "ja-gym1-42": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Lt. Surge's Eevee", "local": "マチスのイーブイ" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "こうしゅうは",
+          "text": "コインを投げて「おもて」なら、次の相手の番、相手プレイヤーは手札から「トレーナーカード」を出して使うことができない。"
+        },
+        "en": {
+          "name": "High Voltage",
+          "text": "Flip a coin. If heads, your opponent can't play Trainer cards during his or her next turn."
+        }
+      },
+      {
+        "cost": ["lightning", "lightning", "lightning"],
+        "damage": "30+",
+        "local": {
+          "name": "いかりのサンダー",
+          "text": "自分にのっているダメージカウンターの数×10のダメージを追加する。その後、コインを投げて「うら」なら、自分にも30ダメージ。"
+        },
+        "en": {
+          "name": "Thunder Flare",
+          "text": "Does 30 damage plus 10 damage times the number of damage counters on Lt. Surge's Jolteon, then flip a coin. If tails, Lt. Surge's Jolteon does 30 damage to itself."
+        }
+      }
+    ]
+  },
+  "ja-gym1-43": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting"],
+        "damage": "20",
+        "local": {
+          "name": "すなじごく",
+          "text": "次の相手の番、このワザを受けた相手のバトルポケモンは、にげられない。"
+        },
+        "en": {
+          "name": "Sand Pit",
+          "text": "The Defending Pokémon can't retreat during your opponent's next turn."
+        }
+      }
+    ]
+  },
+  "ja-gym1-44": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting"],
+        "damage": "20",
+        "local": {
+          "name": "ふいをつく",
+          "text": "コインを投げて「うら」なら、相手にダメージをあたえることができない。"
+        },
+        "en": {
+          "name": "Surprise Attack",
+          "text": "Flip a coin. If tails, this attack does nothing."
+        }
+      },
+      {
+        "cost": ["fighting", "colorless"],
+        "damage": "40",
+        "local": { "name": "ミニじしん", "text": "自分の控えポケモン全員にも、10ダメージ。" },
+        "en": {
+          "name": "Tremor",
+          "text": "Does 10 damage to each of your own Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "ja-gym1-45": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 40,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": { "name": "ひまつぶし", "text": "自分の山札をよく切る。" },
+        "en": { "name": "Fidget", "text": "Shuffle your deck." }
+      },
+      {
+        "cost": ["fighting", "colorless"],
+        "damage": "40-",
+        "local": {
+          "name": "からてチョップ",
+          "text": "このワザのダメージは、自分にのっているダメージカウンターの数×10だけ、小さくなる。"
+        },
+        "en": {
+          "name": "Karate Chop",
+          "text": "Does 40 damage minus 10 damage for each damage counter on Brock's Mankey."
+        }
+      }
+    ]
+  },
+  "ja-gym1-46": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting"],
+        "damage": "10×",
+        "local": { "name": "いしなげ", "text": "コインを3回投げ、オモテの数×10ダメージ。" },
+        "en": {
+          "name": "Rock Toss",
+          "text": "Flip 3 coins. This attack does 10 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "ja-gym1-47": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting"],
+        "damage": "",
+        "local": {
+          "name": "たすけをよぶ",
+          "text": "コインを投げて「おもて」なら、「タケシのポケモン」（進化カード以外）を自分の山札から1枚選び出し、自分のベンチに出してよい。その後、その山札をよく切る。（自分のベンチに空きがない時、このワザは使えない）"
+        },
+        "en": {
+          "name": "Call for Friend",
+          "text": "Flip a coin. If heads, you may search your deck for a Basic Pokémon card with Brock in its name and put it onto your Bench. Shuffle your deck afterward. (You can't use this attack if your Bench is full.)"
+        }
+      },
+      {
+        "cost": ["fighting", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "スパイラルショット",
+          "text": "このワザのダメージは、「抵抗力」の影響を受けない。"
+        },
+        "en": {
+          "name": "Hook Shot",
+          "text": "Don't apply Resistance for this attack. (Any other effects that would happen after applying Resistance still happen.)"
+        }
+      }
+    ]
+  },
+  "ja-gym1-48": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 100,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "うなりごえ",
+          "text": "コインを投げて「おもて」なら、相手を「マヒ」状態にする。"
+        },
+        "en": {
+          "name": "Bellow",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      },
+      {
+        "cost": ["fighting", "fighting", "colorless"],
+        "damage": "30",
+        "local": { "name": "いわおとし", "text": "" },
+        "en": { "name": "Rock Throw", "text": "" }
+      }
+    ]
+  },
+  "ja-gym1-49": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "colorless"],
+        "damage": "70",
+        "local": {
+          "name": "ドリルタックル",
+          "text": "コインを2枚投げ、1つでも「うら」なら、このワザは失敗する。"
+        },
+        "en": {
+          "name": "Drill Tackle",
+          "text": "Flip 2 coins. If 1 or both of them are tails, this attack does nothing."
+        }
+      }
+    ]
+  },
+  "ja-gym1-50": {
+    "kind": "stage1",
+    "artist": "Atsuko Nishida",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }],
+      "evolvesFrom": { "en": "Brock's Sandshrew", "local": "タケシのサンド" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "スピードスター",
+          "text": "このワザは、相手の「弱点・抵抗力・特殊能力・その他の効果」に関係なく、ダメージを与える。"
+        },
+        "en": {
+          "name": "Swift",
+          "text": "This attack's damage isn't affected by Weakness, Resistance, Pokémon Powers, or any other effects on the Defending Pokémon."
+        }
+      },
+      {
+        "cost": ["fighting", "fighting"],
+        "damage": "30",
+        "local": {
+          "name": "とげボール",
+          "text": "コインを投げて「おもて」なら、相手を「どく」状態にする。"
+        },
+        "en": {
+          "name": "Needle Ball",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+        }
+      }
+    ]
+  },
+  "ja-gym1-51": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Brock's Mankey", "local": "タケシのマンキー" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting", "fighting"],
+        "damage": "60",
+        "local": {
+          "name": "おおあばれ",
+          "text": "自分にも20ダメージ。場に「スタジアムカード」があれば、それをトラッシュする。"
+        },
+        "en": {
+          "name": "Mega Thrash",
+          "text": "Brock's Primeape does 20 damage to itself. If there is a Stadium card in play, discard it."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "ずらかる",
+          "text": "この力は、このカードの残りHPが「10」になった時、必ずはたらく。このカードと、これについているすべてのカードを山札にもどし、その山札をよく切る。ただし、このカードが「ねむり・マヒ・こんらん」状態の時には、この力ははたらかない。"
+        },
+        "en": {
+          "name": "Scram",
+          "text": "If Brock's Primeape ever has exactly 10 HP left, shuffle it and all cards attached to it into your deck. This power stops working while Brock's Primeape is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-gym1-52": {
+    "kind": "stage1",
+    "artist": "Atsuko Nishida",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Brock's Geodude", "local": "タケシのイシツブテ" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "たいあたり", "text": "" },
+        "en": { "name": "Tackle", "text": "" }
+      },
+      {
+        "cost": ["fighting", "fighting", "fighting"],
+        "damage": "50",
+        "local": {
+          "name": "ばくれつ",
+          "text": "自分にも50ダメージ。お互いの控えポケモン全員にも、「弱点・抵抗力」に関係なく、それぞれ10ダメージ。場に「スタジアムカード」があれば、それをトラッシュする。"
+        },
+        "en": {
+          "name": "Detonate",
+          "text": "Does 10 damage to each Pokémon on each player's bench. (Don't apply Weakness and Resistance for Benched Pokémon.) Brock's Graveler does 50 damage to itself. If there is a Stadium card in play, discard it."
+        }
+      }
+    ]
+  },
+  "ja-gym1-53": {
+    "kind": "stage2",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 90,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Brock's Graveler", "local": "タケシのゴローン" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "いわなだれ",
+          "text": "相手の控えポケモンから最大3匹を選び、それぞれに「弱点・抵抗力」に関係なく10ダメージ。"
+        },
+        "en": {
+          "name": "Rock Slide",
+          "text": "If your opponent has any Benched Pokémon, choose up to 3 of them. This attack does 10 damage to each of them. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      },
+      {
+        "cost": ["fighting", "fighting", "colorless", "colorless"],
+        "damage": "50",
+        "local": { "name": "ランドクラッシュ", "text": "" },
+        "en": { "name": "Fissure", "text": "" }
+      }
+    ]
+  },
+  "ja-gym1-54": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting"],
+        "damage": "",
+        "local": {
+          "name": "クロスカウンター",
+          "text": "次の相手の番、このカードが相手のワザによるダメージを受けた時、（このカードが「きぜつ」するしないにかかわらず、）コインを投げる。「おもて」なら、相手に、このカードが受けた2倍のダメージを与える。"
+        },
+        "en": {
+          "name": "Crosscounter",
+          "text": "If an attack does damage to Rocket's Hitmonchan during your opponent's next turn (even if Rocket's Hitmonchan is Knocked Out), flip a coin. If heads, Rocket's Hitmonchan attacks your opponent's Active Pokémon for double that amount of damage. (If Rocket's Hitmonchan takes 20 damage, it does 40 damage to that Pokémon.)"
+        }
+      },
+      {
+        "cost": ["fighting", "fighting", "colorless"],
+        "damage": "50",
+        "local": { "name": "マグナムパンチ", "text": "" },
+        "en": { "name": "Magnum Punch", "text": "" }
+      }
+    ]
+  },
+  "ja-gym1-55": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }],
+      "evolvesFrom": { "en": "Brock's Rhyhorn", "local": "タケシのサイホーン" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting", "colorless", "colorless"],
+        "damage": "70",
+        "local": {
+          "name": "ラリアット",
+          "text": "コインを投げて「うら」なら、相手にダメージをあたえることができない。"
+        },
+        "en": { "name": "Lariat", "text": "Flip a coin. If tails, this attack does nothing." }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "ベンチガード",
+          "text": "この力は、このカードがベンチにいて、自分の控えポケモンがダメージを受けるたびに、1回使える。そのダメージのうちの10ダメージを、このカードがかわりに受ける。(2匹以上がダメージを受けた時は、それぞれのダメージに対して1回ずつ使える)"
+        },
+        "en": {
+          "name": "Bench Guard",
+          "text": "As long as Brock's Rhydon is Benched, whenever 1 of your Benched Pokémon is damaged, you may do 10 of that damage to Brock's Rhydon instead. (If more than 1 of your Benched Pokémon is damaged at the same time, you may use this power once for each of them.)"
+        }
+      }
+    ]
+  },
+  "ja-gym1-56": {
+    "kind": "pokemon",
+    "artist": "Atsuko Nishida",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 30,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "きあいだめ",
+          "text": "次の自分の番、この「マチスのコラッタ」が使う「でんこうせっか」のダメージは2倍になる。"
+        },
+        "en": {
+          "name": "Focus Energy",
+          "text": "During your next turn, Lt. Surge's Rattata's Quick Attack's base damage is doubled."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "10+",
+        "local": {
+          "name": "でんこうせっか",
+          "text": "コインを投げて「おもて」なら、20ダメージを追加する。"
+        },
+        "en": {
+          "name": "Quick Attack",
+          "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+        }
+      }
+    ]
+  },
+  "ja-gym1-57": {
+    "kind": "pokemon",
+    "artist": "Atsuko Nishida",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 50,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": {
+          "name": "ふきとばし",
+          "text": "相手の対戦ポケモンを控えポケモンと入れ替える。入れ替えは相手が行う。相手の控えポケモンがいないときには、ダメージだけをあたえる。"
+        },
+        "en": {
+          "name": "Whirlwind",
+          "text": "If your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon. (Do the damage before switching the Pokémon.)"
+        }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "40",
+        "local": {
+          "name": "かまいたち",
+          "text": "コインを投げて「うら」なら、相手にダメージをあたえることができない。"
+        },
+        "en": { "name": "Razor Wind", "text": "Flip a coin. If tails, this attack does nothing." }
+      }
+    ]
+  },
+  "ja-gym1-58": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "みんなでかいふく",
+          "text": "お互いの場にいるポケモン全員から、それぞれダメージカウンターを1つずつ、とりのぞく。"
+        },
+        "en": {
+          "name": "Group Therapy",
+          "text": "You and your opponent remove 1 damage counter from each of your Pokémon with damage counters on them."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "40-",
+        "local": {
+          "name": "やさしいパンチ",
+          "text": "相手にダメージカウンターがのっている時、このワザのダメージは「-30」される。"
+        },
+        "en": {
+          "name": "Pulled Punch",
+          "text": "If the Defending Pokémon has no damage counters on it, this attack does 40 damage. If it has any damage counters on it, this attack does 10 damage."
+        }
+      }
+    ]
+  },
+  "ja-gym1-59": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }],
+      "evolvesFrom": { "en": "Lt. Surge's Rattata", "local": "マチスのコラッタ" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "きあいだめ",
+          "text": "次の自分の番、この「マチスのラッタ」が使う「すてみタックル」のダメージは2倍になる。（自分へのダメージも2倍）"
+        },
+        "en": {
+          "name": "Focus Energy",
+          "text": "During your next turn, Lt. Surge's Raticate's Double-edge attack's damage (base damage and damage to itself) is doubled."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "40",
+        "local": { "name": "すてみタックル", "text": "自分にも20ダメージ。" },
+        "en": { "name": "Double-edge", "text": "Lt. Surge's Raticate does 20 damage to itself." }
+      }
+    ]
+  },
+  "ja-gym1-60": {
+    "kind": "pokemon",
+    "artist": "Atsuko Nishida",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "つきのちから",
+          "text": "コインを投げて「おもて」なら、自分の山札から、自分または自分の控えポケモンを進化させる「進化カード」を1枚選び出し、そのポケモンの上にのせる。その後、その山札をよく切る。"
+        },
+        "en": {
+          "name": "Lunar Power",
+          "text": "Flip a coin. If heads, search your deck for a card that evolves from 1 of your Benched Pokémon and put that card on that Pokémon. (This counts as evolving that Pokémon.) Shuffle your deck afterward."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "ムーンキック", "text": "" },
+        "en": { "name": "Moon Kick", "text": "" }
+      }
+    ]
+  },
+  "ja-gym1-61": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "ベロではたく", "text": "" },
+        "en": { "name": "Tongue Slap", "text": "" }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "30×",
+        "local": {
+          "name": "たたきつける",
+          "text": "コインを2枚投げて「おもて」のでた数×30のダメージをあたえる。"
+        },
+        "en": {
+          "name": "Slam",
+          "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "ja-gym1-62": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "おどろかす",
+          "text": "相手の手札から、おもてを見ないで1枚を選び、そのカードを見る。その後、そのカードを相手の山札にもどさせ、その山札をよく切る。"
+        },
+        "en": {
+          "name": "Surprise",
+          "text": "Look at a random card from your opponent's hand. Your opponent shuffles that card into his or her deck."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "ひっかく", "text": "" },
+        "en": { "name": "Scratch", "text": "" }
+      }
+    ]
+  },
+  "ja-gym1-63": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 40,
+      "retreat": 1,
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "10+",
+        "local": {
+          "name": "しっぽでつく",
+          "text": "コインを投げて「おもて」なら、20ダメージを追加する。"
+        },
+        "en": {
+          "name": "Tail Strike",
+          "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "ふしぎなバリアー",
+          "text": "このカードが「たねポケモン」から受ける20以上のダメージは、「10」になる。（ダメージ以外の効果は、そのまま）。ダメージを受ける時、すでにこのカードが「ねむり・マヒ・こんらん」状態だったなら、この力は使えない。"
+        },
+        "en": {
+          "name": "Strange Barrier",
+          "text": "Whenever an attack by a Basic Pokémon (including your own) does 20 or more damage to Erika's Dratini (after applying Weakness and Resistance), reduce that damage to 10. (Any other effects of attacks still happen.) This power stops working while Erika's Dratini is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-gym1-64": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 70,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Lt. Surge's Spearow", "local": "マチスのオニスズメ" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "10×",
+        "local": { "name": "マシンガンドリル", "text": "コインを5回投げ、オモテの数×10ダメージ。" },
+        "en": {
+          "name": "Repeating Drill",
+          "text": "Flip 5 coins. This attack does 10 damage times the number of heads."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "わしづかみ",
+          "text": "次の相手の番、このワザを受けた相手のバトルポケモンは、にげられない。"
+        },
+        "en": {
+          "name": "Clutch",
+          "text": "The Defending Pokémon can't retreat during your opponent's next turn."
+        }
+      }
+    ]
+  },
+  "ja-gym1-65": {
+    "kind": "stage1",
+    "artist": "Atsuko Nishida",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }],
+      "evolvesFrom": { "en": "Erika's Clefairy", "local": "エリカのピッピ" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "ようせいのきせき",
+          "text": "コインを投げて「おもて」なら、自分の場にいるポケモンを好きなだけ選び、そのポケモンと、それらについているすべてのカードを手札にもどす。"
+        },
+        "en": {
+          "name": "Fairy Power",
+          "text": "Flip a coin. If heads, you may return any number of your Pokémon in play and all cards attached to them to your hand."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "30",
+        "local": { "name": "ムーンインパクト", "text": "" },
+        "en": { "name": "Moon Impact", "text": "" }
+      }
+    ]
+  },
+  "ja-gym1-66": {
+    "kind": "stage1",
+    "artist": "Atsuko Nishida",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 80,
+      "retreat": 1,
+      "resistances": [{ "energy": "psychic", "value": "-30" }],
+      "evolvesFrom": { "en": "Erika's Dratini", "local": "エリカのミニリュウ" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "ふぶき",
+          "text": "コインを投げて、「おもて」なら相手の控えポケモン全員に、「うら」なら自分の控えポケモン全員に、「弱点・抵抗力」に関係なく、それぞれ10ダメージ。"
+        },
+        "en": {
+          "name": "Blizzard",
+          "text": "Flip a coin. If heads, this attack does 10 damage to each of your opponent's Benched Pokémon. If tails, this attack does 10 damage to each of your own Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "つれさる",
+          "text": "自分と相手、そしてそれらについているすべてのカードをそれぞれの山札にもどし、それぞれの山札をよく切る。"
+        },
+        "en": {
+          "name": "Take Away",
+          "text": "Shuffle Erika's Dragonair and all cards attached to it into your deck. Then, your opponent shuffles his or her Active Pokémon and all cards attached to it into his or her deck."
+        }
+      }
+    ]
+  },
+  "ja-gym1-67": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "common",
+    "rules": {
+      "en": "For each of your Pokémon, you may return any number of Energy cards attached to it to your hand.",
+      "local": "自分の場のポケモン全員についている「基本エネルギーカード」を、好きなだけ選び、自分の手札にもどす。"
+    }
+  },
+  "ja-gym1-68": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "rules": {
+      "en": "You and your opponent play a game of Rock-Paper-Scissors. The winner shuffles his or her hand into his or her deck and draws a new hand of 5 cards. (If you don't know how to play Rock-Paper-Scissors, flip a coin to decide who's the winner.)",
+      "local": "相手プレイヤーと「じゃんけん」をする。勝ったプレイヤーは手札をすべて山札にもどし、その山札をよく切ってから、カードを5枚引いて、手札にする。"
+    }
+  },
+  "ja-gym1-69": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "rules": {
+      "en": "Discard 1 of the other cards in your hand in order to search your deck for up to 2 Water Energy cards. Show those cards to your opponent, then put them into your hand. Shuffle your deck afterward.",
+      "local": "このカードは、自分の手札を1枚トラッシュしなければ使えない。自分の山札から「水」エネルギーカードを2枚まで選び出し、相手に見せてから、手札に加える。その後、その山札をよく切る。"
+    }
+  },
+  "ja-gym1-70": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "common",
+    "rules": {
+      "en": "This card stays in play when you play it. Discard this card if another Stadium card comes into play.\nNo player may have more than 4 Pokémon on his or her Bench. When this card is played, if a player has 5 Pokémon on his or her Bench, that player chooses 1 of them and returns it and all cards attached to it to his or her hand. (If both players have to return a Pokémon, your opponent returns a Pokémon first.)",
+      "local": "お互いのプレイヤーの「ベンチに出しておける控えポケモンの数」は、「4匹まで」となる。このカードが場に出た時、ベンチにポケモンが5匹いるプレイヤーは、その中から1匹を選び、そのカードと、それについているすべてのカードを手札にもどす。(このスタジアムカードは、バトル場の横に出して使う。別のスタジアムカードが場に出た時、このカードをトラッシュする)"
+    }
+  },
+  "ja-gym1-71": {
+    "kind": "trainer",
+    "artist": "Sumiyoshi Kizuki",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "For your attack this turn, your Active Pokémon can use any attack from its Basic Pokémon card or any Evolution card attached to it. (You still have to pay for that attack's Energy cost.)",
+      "local": "あなたの対戦ポケモンが進化カードなら、この番だけ、進化前に持っていたワザを自分のワザとして使ってよい。"
+    }
+  },
+  "ja-gym1-72": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Trade 2 of the other cards in your hand for up to 2 Basic Pokémon and/or Evolution cards with Erika in their names from your deck. Show those cards to your opponent, then put them into your hand. Shuffle your deck afterward.",
+      "local": "手札からカードを2枚選んで、山札にもどす。それができない時、このカードは使えない。あなたの山札から「エリカのポケモン」を最大2枚選び出し、相手プレイヤーに見せてから、手札に加えてよい。その後、その山札をよく切る。"
+    }
+  },
+  "ja-gym1-73": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Look at your opponent's hand. If he or she has any Basic Pokémon cards there, you may put any number of them onto your opponent's Bench (as long as there's room).",
+      "local": "相手プレイヤーの手札を見る。相手のベンチに空きがあれば、相手の手札から「たねポケモン」を好きなだけ選び、相手のベンチに出させてよい。"
+    }
+  },
+  "ja-gym1-74": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "rules": {
+      "en": "Attach Charity to your Active Pokémon. Unless that Pokémon gets Knocked Out, return Charity to your hand at the end of your turn. If that Pokémon attacks and does damage to the Defending Pokémon, you may reduce that damage by any amount (rounded to the nearest 10).",
+      "local": "このカードはあなたの対戦ポケモンにつけて使い、相手の番が終わったら、手札にもどす。(そのポケモンが「きぜつ」した時は、このカードもトラッシュする)このカードをつけているポケモンのワザが、相手の対戦ポケモンにダメージを与える時、のぞむなら、そのダメージを好きなだけ小さくしてよい。"
+    }
+  },
+  "ja-gym1-75": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Look at the top 7 cards of your deck. Choose 2 of those cards and put them into your hand. Discard the rest.",
+      "local": "あなたの山札の上から7枚のカードを見て、その中から2枚を選んで手札に加え、残りをトラッシュする。"
+    }
+  },
+  "ja-gym1-76": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "This card stays in play when you play it. Discard this card if another Stadium card comes into play.\nWhenever a player attacks with a Pokémon with Lt. Surge in its name, he or she may flip a coin. If heads, and if that Pokémon's attack does damage to the Defending Pokémon (after applying Weakness and Resistance), that attack does 10 more damage to the Defending Pokémon. If tails, the attacking Pokémon does 10 damage to itself in addition to whatever its attack usually does.",
+      "local": "お互いのプレイヤーは、のぞむなら、自分の番で「マチスのポケモン」がワザを使う時、コインを投げてもよい。コインが「おもて」なら、そのワザによって相手の対戦ポケモンに与えるダメージは「+10」される。（控えポケモンへのダメージは、そのまま）「うら」なら、ワザを使ったポケモン自身にも、そのワザのダメージとして、10ダメージ。（このスタジアムカードは、バトル場の横に出して使う。別のスタジアムカードが場に出た時、このカードをトラッシュする。）"
+    }
+  },
+  "ja-gym1-77": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Search your deck for a Basic Pokémon or Evolution card with Brock in its name. Show that card to your opponent, then put it into your hand. Shuffle your deck afterward.",
+      "local": "あなたの山札から「タケシのポケモン」（たねポケモンカードまたは進化カード）を1枚選び出し、相手プレイヤーに見せてから、手札に加える。その後、その山札をよく切る。"
+    }
+  },
+  "ja-gym1-78": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "This card stays in play when you play it. Discard this card if another Stadium card comes into play.\nDuring each player's turn, that player may choose to discard an Energy card attached to 1 of his or her Pokémon with Erika in its name. If that player does so, that Pokémon is no longer Asleep, Confused, Paralyzed, or Poisoned.",
+      "local": "お互いのプレイヤーは、のぞむなら、自分の番の中で、自分の「エリカのポケモン」についているエネルギーカードを1枚トラッシュして、そのポケモンの「どく・ねむり・マヒ・こんらん」状態を、すべて回復させてもよい。"
+    }
+  },
+  "ja-gym1-79": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "This card stays in play when you play it. Discard this card if another Stadium card comes into play.\nDon't apply Resistance to any attacks made by Pokémon with Brock in their names.",
+      "local": "このスタジアムカードが場にあるかぎり、「タケシのポケモン」が使うワザのダメージは「抵抗力」の影響を受けない。"
+    }
+  },
+  "ja-gym1-80": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "This card stays in play when you play it. Discard this card if another Stadium card comes into play.\nEach player pays Colorless less to retreat his or her Pokémon if it has Misty in its name.",
+      "local": "このスタジアムカードが場にあるかぎり、「カスミのポケモン」の「にげる時トラッシュするエネルギーの数」は「-1」される。(0より小さくなることはない)"
+    }
+  },
+  "ja-gym1-81": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Your opponent chooses 1 of the following: everyone chooses 1 of his or her own Prizes and put it into his or her hand, or you draw a card.",
+      "local": "お互いにサイドカードを1枚ずつ取るかどうか、相手プレイヤーにたずねる。オーケーなら、お互いのプレイヤーは、それぞれ自分のサイドカードから1枚を選び、取って手札に加える。オーケーでないなら、あなたは山札からカードを1枚引く。"
+    }
+  },
+  "ja-gym1-82": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "In order to play this card, you can't have any Basic Pokémon cards in your hand. Show your hand to your opponent, then search your deck for a Basic Pokémon card, show it to your opponent, and put it into your hand. Shuffle your deck afterward.",
+      "local": "このカードは、あなたの手札に「たねポケモン」が1枚もない時だけ、使える。相手プレイヤーにあなたの手札を見せる。その後、あなたの山札から「たねポケモン」を1枚選び出し、相手プレイヤーに見せてから、手札に加えてよい。その後、その山札をよく切る。"
+    }
+  },
+  "ja-gym1-83": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "rules": {
+      "en": "You may draw up to 3 cards, then your opponent may draw up to 3 cards.",
+      "local": "あなたと相手プレイヤーは、それぞれ、のぞむなら最大3枚まで、山札からカードを引いてよい。(あなたがカードを引き終わってから、相手プレイヤーが引く)"
+    }
+  },
+  "ja-gym1-84": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "rules": {
+      "en": "Remove 2 damage counters from each Pokémon (yours and your opponent's) with any damage counters on it. If a Pokémon has just 1 damage counter, remove it.",
+      "local": "お互いの場にいるポケモン全員から、それぞれ、ダメージカウンターを2つずつとりのぞく。"
+    }
+  },
+  "ja-gym1-85": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "rules": {
+      "en": "Discard 2 of the other cards in your hand in order to play this card. If this turn's attack does damage to the Defending Pokémon (after applying Weakness and Resistance), and if the attacking Pokémon has Misty in its name, the attack does 20 more damage to the Defending Pokémon.",
+      "local": "手札からカードを2枚選んでトラッシュしなければ、このカードは使えない。「カスミのポケモン」が使うワザが対戦ポケモンにダメージを与える時、この番だけ、そのダメージは「+20」される。(控えポケモンへのダメージは、そのまま)"
+    }
+  },
+  "ja-gym1-86": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "rules": {
+      "en": "Look at 1 of your Prize cards. Then, ask your opponent if you may switch that card with 1 of the cards in your hand. If your opponent accepts and if you have any other cards in your hand, switch those cards. If your opponent declines, return the Prize card face down and draw a card.",
+      "local": "あなたのサイドカードから1枚を選び、おもてを見る。その後、そのカードを、あなたの手札の中の1枚と交換してもよいかどうか、相手プレイヤーにたずねる。オーケーなら、あなたの手札からカードを1枚選び、見たカードと交換する。オーケーでないなら、あなたは山札からカードを1枚引く。"
+    }
+  },
+  "ja-gym1-87": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "rare",
+    "rules": {
+      "en": "This card stays in play after being played. Discard this card if another Stadium card comes into play.\nWhenever a player plays a Trainer card other than a Stadium card, he or she flips a coin. If heads, that player plays that card normally. If tails, the player can't play that card. If the card isn't put into play, the player's opponent may use that card instead, if he or she does everything required in order to play that card (like discarding cards). Either way, the card goes to its owner's discard pile.",
+      "local": "このスタジアムカードは、バトル場の横に出して使う。別のスタジアムカードが場に出た時、このカードをトラッシュする。どちらかのプレイヤーが「トレーナーカード」（スタジアムカード以外）を使う時、そのプレイヤーはコインを投げる。コインが「うら」なら、そのプレイヤーは、そのカードを使うことができず、相手プレイヤーは、のぞむなら、そのカードを使ってもよい。相手プレイヤーが使う場合、ポケモンにつけて使うカード（「プラスパワー」など）や、場に出して使うカード（「ピッピ人形」など）は、使うことができない。また、そのカードの「使うための条件」（「手札からカードを1枚トラッシュする」など）を満たせない時も、使うことができない。使ったトレーナーカードは、持ち主のトラッシュにすてる。使えなかったり、使わなかったカードも、持ち主のトラッシュにすてる。"
+    }
+  },
+  "ja-gym1-88": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Look at your opponent's hand. Then, you may discard as many other cards as you want from your hand and draw that many cards.",
+      "local": "相手プレイヤーの手札を見る。その後、のぞむなら、あなたの手札からカードを好きなだけトラッシュして、トラッシュしたのと同じ数のカードを、山札から引いてよい。"
+    }
+  },
+  "ja-gym1-89": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "rules": {
+      "en": "Remove 1 damage counter from each of your Pokémon that has any damage counters on it.",
+      "local": "自分の場のすべてのポケモンから、それぞれ1つずつダメージカウンターをとりのぞく。"
+    }
+  },
+  "ja-gym1-90": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "rules": {
+      "en": "Attach Brock's Protection to 1 of your Pokémon with Brock in its name. Energy cards attached to that Pokémon can't be removed by your opponent's attacks or Trainer cards. (This doesn't stop the rest of the attack or Trainer card from working normally.)",
+      "local": "このカードは、あなたの場の「タケシのポケモン」につけて使う。(そのポケモンが場をはなれるまで、このカードはついたまま)このカードをつけているポケモンのエネルギーカードは、相手の使うワザや、相手の使うトレーナーカードによっては、はがされない。"
+    }
+  },
+  "ja-gym1-91": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "rare",
+    "rules": {
+      "en": "This card stays in play after being played. Discard this card if another Stadium card comes into play.\nEach Pokémon's Resistance is reduced by 20. (If a Pokémon's Resistance is -30, it becomes -10.)",
+      "local": "すべてのポケモンの「抵抗力」は、２０へる。(「抵抗力」が「-30」なら、「-10」になる)"
+    }
+  },
+  "ja-gym1-92": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "rules": {
+      "en": "You can play this card only if you have at least 1 Basic Pokémon card in your hand. Put a Basic Pokémon card from your hand into play as your Active Pokémon. Put your old Active Pokémon onto your Bench. (You can't play this card if your Bench is full.)",
+      "local": "あなたのバトル場にいるポケモンをベンチにもどし、手札から「たねポケモン」を直接バトル場に出す。(あなたのベンチに空きがない時、このカードは使えない)"
+    }
+  },
+  "ja-gym1-93": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "rules": {
+      "en": "",
+      "local": "あなたは、手札からカードを1枚選び、うらにしてベンチに出してよい。そのカードは「たねポケモン」でなくてもよく、うらになっている限り、「たねポケモン」としてあつかわれる。のぞむなら、あなたの番の中で、あなたはいつでもそのカードをおもてにしてよい。そのカードが「ワザ・特殊能力」を使う時や、「進化・にげる」をする時、また、そのカードが「ダメージや効果」を受ける時も、そのカードをおもてにする。(おもてにしたカードが「たねポケモン」でなかったなら、そのカードと、それについているすべてのカードをトラッシュする)"
+    }
+  },
+  "ja-gym1-94": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "rare",
+    "rules": {
+      "en": "This card stays in play when you play it. Discard this card if another Stadium card comes into play.\nA player must discard 2 cards from his or her hand in order to play an Energy Removal or Super Energy Removal card.",
+      "local": "お互いのプレイヤーは、「エネルギーリムーブ」「超エネルギーリムーブ」を使うことができない。ただし、それらを使う時に、自分の手札からカードを2枚選んでトラッシュするなら、使うことができる。"
+    }
+  },
+  "ja-gym1-95": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "rare",
+    "rules": {
+      "en": "This card stays in play when you play it. Discard this card if another Stadium card comes into play.\nEach player pays Colorless more to retreat his or her Active Pokémon.",
+      "local": "お互いの対戦ポケモンは、「にげる」時、トラッシュするエネルギーが1つぶん多く必要になる。"
+    }
+  },
+  "ja-gym1-96": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "rules": {
+      "en": "Flip a coin. If heads, choose up to 3 cards at random from your opponent's hand (don't look at them). Your opponent shuffles those cards into his or her deck.",
+      "local": "コインを投げて「おもて」なら、相手の手札から、おもてを見ないで最大3枚を選び、相手の山札にもどす。その後、その山札をよく切る。"
+    }
+  }
+}

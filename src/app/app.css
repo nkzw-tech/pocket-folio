@@ -1,0 +1,864 @@
+/* Defaults belong to the new app controls, not the card/sleeve components.
+   Keep their specificity below the original component styles. */
+:where(.picker-card, .grid-add, .new-binder-card) {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 16px;
+  corner-shape: squircle;
+  padding: 8px 12px;
+}
+:where(.picker-card, .grid-add, .new-binder-card):where(:hover) {
+  background: var(--surface-raised);
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+.library,
+.binder-editor {
+  padding-block: 24px 64px;
+}
+.catalog {
+  padding-bottom: 60px;
+}
+.catalog-actions:has(button) {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+.library-heading,
+.editor-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-block: 4px 16px;
+}
+.library-heading h1,
+.editor-heading h1 {
+  font: 600 clamp(32px, 4vw, 42px)/1.15 var(--heading);
+  margin-block: 4px 8px;
+  letter-spacing: 0.01em;
+}
+.back-link {
+  font-size: 12px;
+  color: var(--muted);
+}
+.sync-status {
+  font-size: 11px;
+  color: #8f8f9c;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.workspace-retry {
+  display: grid;
+  place-items: center;
+  min-height: calc(100dvh - 160px);
+}
+.binder-shelf {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+  gap: 32px;
+  padding-block: 24px 48px;
+}
+.binder-book {
+  color: var(--text);
+  min-width: 0;
+}
+.binder-book:hover {
+  text-decoration: none;
+}
+.binder-book-cover {
+  position: relative;
+  height: 290px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 32px 24px 88px 32px;
+  border: 1px solid #50505b;
+  border-radius: 8px 24px 24px 8px;
+  corner-shape: squircle;
+  background:
+    radial-gradient(ellipse at 80% 0, #62627144, transparent 80%),
+    repeating-linear-gradient(45deg, #ffffff03 0 1px, transparent 1px 4px),
+    var(--binder-cover, #25252c);
+  box-shadow:
+    7px 12px 30px #0006,
+    inset -5px 0 #ffffff05;
+  transition:
+    transform 170ms,
+    box-shadow 170ms;
+}
+.binder-book:hover .binder-book-cover {
+  transform: translateY(-6px) rotate(-1deg);
+  box-shadow: 7px 20px 35px #0007;
+}
+.binder-book-spine {
+  position: absolute;
+  inset: 0 auto 0 13px;
+  width: 6px;
+  background: linear-gradient(90deg, #0006, #ffffff12);
+}
+.binder-book-cover > img {
+  height: 138px;
+  border-radius: 8px;
+  box-shadow: 0 5px 16px #0006;
+}
+.binder-book-cover:has(img) > svg {
+  display: none;
+}
+.binder-book-caption {
+  position: absolute;
+  z-index: 4;
+  inset: auto 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 24px 16px 12px 28px;
+  color: var(--binder-caption-ink, #f3f3f3);
+  background: linear-gradient(
+    transparent,
+    color-mix(in srgb, var(--binder-cover, #25252c) 88%, transparent) 45%,
+    var(--binder-cover, #25252c)
+  );
+  text-shadow: 0 1px 4px var(--binder-caption-shadow, #0006);
+}
+.binder-book-caption strong {
+  font: 600 18px / 1.25 var(--heading);
+  overflow-wrap: anywhere;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.binder-book-caption small {
+  color: inherit;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.new-binder-card {
+  height: 290px;
+  background: transparent;
+  border: 1px dashed #44444e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  color: #aaaab7;
+  border-radius: 24px;
+  corner-shape: squircle;
+}
+.binder-bottom-actions button,
+.editor-actions > button {
+  display: inline-flex;
+  align-items: center;
+}
+.binder-bottom-actions {
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.binder-bottom-actions .form-error {
+  color: #f0a8a8;
+  font-size: 13px;
+}
+.auth-card {
+  width: min(420px, calc(100% - 36px));
+  margin: 40px auto 80px;
+  padding: 32px;
+  border: 1px solid var(--border);
+  border-radius: 40px;
+  corner-shape: squircle;
+  background: var(--surface);
+}
+.auth-card h1 {
+  font: 600 36px/1.2 var(--heading);
+  letter-spacing: 0;
+  margin: 0;
+}
+.auth-card > p {
+  color: #aaaab8;
+  line-height: 1.6;
+  font-size: 14px;
+}
+.auth-card form,
+.app-dialog form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auth-card form {
+  margin-top: 28px;
+}
+
+.app-dialog h2 {
+  margin: 0;
+  font: 600 28px/1.2 var(--heading);
+  letter-spacing: 0;
+}
+
+.app-dialog p {
+  line-height: 1.6;
+  font-size: 13px;
+  color: #aaaab9;
+}
+
+.picker-toolbar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.picker-toolbar .search {
+  flex: 1 1 250px;
+}
+.picker-toolbar select {
+  font-size: 12px;
+}
+
+.picker-cards {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+.picker-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4px;
+  padding: 8px;
+  border-color: var(--border);
+  border-radius: 32px;
+  corner-shape: squircle;
+  text-align: left;
+}
+.picker-card .card-scan {
+  --scan-radius: 8px;
+  margin-bottom: 8px;
+}
+.picker-card strong {
+  font-size: 12px;
+}
+.picker-card span,
+.picker-card small {
+  color: #a4a4b4;
+  font-size: 10px;
+}
+.personal-grid {
+  list-style: none;
+  padding: 0;
+}
+.grid-add {
+  width: 100%;
+  aspect-ratio: 245/342;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  color: #777787;
+  border: 1px dashed #3c3c48;
+  margin-top: 8px;
+}
+.binder-card:not(.binder-card-full-color):not(.binder-card-owned):not(.binder-card-purchased)
+  .card-scan
+  img {
+  filter: grayscale(1);
+}
+.binder-card-names small {
+  display: block;
+  color: #8d8d9e;
+  font-size: 10px;
+  margin-top: 8px;
+}
+.card-management {
+  min-width: 0;
+  font-size: 12px;
+}
+.card-management > span:not(.card-status) {
+  color: var(--muted);
+}
+
+.card-management-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.move-card {
+  min-width: 0;
+}
+
+.welcome {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 64px;
+  min-height: 560px;
+  padding-block: 40px 100px;
+}
+.welcome-copy {
+  min-width: 0;
+}
+.welcome-copy h1 {
+  font: 600 clamp(42px, 5.2vw, 64px)/1.12 var(--heading);
+  color: var(--text);
+  letter-spacing: 0.01em;
+  margin: 0;
+  max-width: 14ch;
+  text-wrap: balance;
+}
+.welcome-copy p {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 34ch;
+  margin-top: 20px;
+}
+.welcome-actions {
+  margin-top: 32px;
+}
+.welcome-cards {
+  position: relative;
+  width: min(100%, 460px);
+  aspect-ratio: 1.2;
+  justify-self: center;
+}
+.welcome-card {
+  position: absolute;
+  top: 10%;
+  left: 28%;
+  width: 43%;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  transform: rotate(12deg);
+  -webkit-tap-highlight-color: transparent;
+}
+.welcome-card .card-scan {
+  --scan-radius: 9px;
+}
+.welcome-card .card-scan:has(> img[data-loaded]) {
+  box-shadow: 0 20px 45px #0009;
+}
+.welcome-card:first-child {
+  left: 6%;
+  top: 14%;
+  transform: rotate(-15deg);
+}
+.welcome-card:last-child {
+  left: 50%;
+  top: 23%;
+  transform: rotate(28deg);
+}
+.welcome-card:focus-visible {
+  --foil-opacity: 0.45;
+  z-index: 2;
+}
+@media (hover: hover) and (pointer: fine) {
+  .welcome-card:hover {
+    --foil-opacity: 0.86;
+    z-index: 2;
+  }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .welcome-card {
+    transition: translate 155ms ease-out;
+  }
+  .welcome-card:hover {
+    translate: 0 -8px;
+  }
+}
+@media (max-width: 800px) {
+  .welcome {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    min-height: 0;
+    padding-block: 24px 64px;
+  }
+  .welcome-copy h1 {
+    max-width: 16ch;
+  }
+  .welcome-cards {
+    width: min(90%, 420px);
+  }
+  .editor-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+  .picker-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .binder-shelf {
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+  .binder-book-cover,
+  .new-binder-card {
+    height: 250px;
+  }
+  .binder-book-cover > img {
+    height: 110px;
+  }
+}
+@media (max-width: 480px) {
+  .library-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+  .picker-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .library {
+    padding-top: 16px;
+  }
+  .app-dialog {
+    padding: 16px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.editor-actions .segments button {
+  display: inline-flex;
+  align-items: center;
+}
+
+.card-status {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 32px;
+  padding: 8px 8px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  corner-shape: squircle;
+  background: #25252b;
+  color: var(--muted);
+  font-size: 11px;
+}
+.card-status:not(.card-status-compact)[data-status='purchased'] {
+  color: #e7c69a;
+  background: #b88c4b18;
+  border-color: #b88c4b50;
+}
+.card-status:not(.card-status-compact)[data-status='owned'] {
+  color: #92929b;
+  background: transparent;
+  border-color: transparent;
+}
+.card-status:has(select):hover {
+  border-color: #777780;
+}
+.card-status:not(.card-status-compact)[data-status='owned']:has(select):is(:hover, :focus-within) {
+  color: var(--text);
+  background: #ffffff08;
+  border-color: var(--border);
+}
+.card-status:has(select:focus-visible) {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.card-status select {
+  appearance: none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.card-status:has(select:disabled) {
+  opacity: 0.5;
+}
+.card-status-compact {
+  min-height: 24px;
+  width: 28px;
+  padding: 0;
+  border-radius: 8px;
+  flex-shrink: 0;
+  color: #92929b;
+  background: transparent;
+  border-color: transparent;
+}
+.card-status-compact:has(select):is(:hover, :focus-within) {
+  color: var(--text);
+  border-color: var(--border);
+}
+.card-status-compact .card-status-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.card-status-error {
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  right: 0;
+  width: 150px;
+  padding: 4px;
+  background: #27272d;
+  color: #f0a8a8;
+  font-size: 10px;
+}
+.binder-card-purchased {
+  border-color: #b88c4b40;
+}
+.binder-card-purchased:not(.binder-card-full-color):not(.binder-card-owned) .card-scan,
+.folio-insert.is-purchased .card-scan {
+  opacity: 0.55;
+  filter: saturate(0.45);
+}
+.folio-pocket.is-purchased {
+  box-shadow: inset 0 0 0 1px #b88c4b70;
+}
+
+.site-header {
+  view-transition-name: app-header;
+}
+.route-surface {
+  view-transition-name: app-page;
+}
+.route-surface[data-pending] > .route-content {
+  animation: route-depart 100ms ease-out both;
+  pointer-events: none;
+}
+.route-loading {
+  /* Cached visits can commit within a frame without flashing a loading label. */
+  animation: route-loading 0s 100ms both;
+}
+@keyframes route-depart {
+  to {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+@keyframes route-loading {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+::view-transition-group(root),
+::view-transition-new(root),
+::view-transition-group(app-header),
+::view-transition-new(app-header),
+::view-transition-group(app-page) {
+  animation: none;
+}
+::view-transition-old(root),
+::view-transition-old(app-header) {
+  display: none;
+}
+::view-transition-group(app-header) {
+  z-index: 2;
+}
+::view-transition-old(app-page) {
+  animation: page-depart 100ms ease-in both;
+}
+::view-transition-new(app-page) {
+  animation: page-arrive 180ms cubic-bezier(0.18, 0.8, 0.18, 1) both;
+}
+html[data-navigation='back']::view-transition-new(app-page) {
+  animation-name: page-arrive-back;
+}
+html[data-catalog-navigation='true']::view-transition-old(app-page) {
+  display: none;
+}
+/* Catalog grids keep their scale and vertical position. A short horizontal
+   arrival gives navigation feedback without fading headings or doubling cards. */
+@media (prefers-reduced-motion: no-preference) {
+  html[data-catalog-navigation='true']::view-transition-new(app-page) {
+    animation: catalog-arrive 180ms cubic-bezier(0.18, 0.8, 0.18, 1) both;
+  }
+  html[data-catalog-navigation='true'][data-navigation='back']::view-transition-new(app-page) {
+    animation-name: catalog-arrive-back;
+  }
+}
+@keyframes catalog-arrive {
+  from {
+    transform: translateX(14px);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes catalog-arrive-back {
+  from {
+    transform: translateX(-14px);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes page-depart {
+  to {
+    opacity: 0;
+    transform: scale(0.985) translateY(-6px);
+    filter: blur(3px);
+  }
+}
+@keyframes page-arrive {
+  from {
+    opacity: 0;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    transform: translate(12px, 8px) scale(0.99);
+  }
+  42% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    clip-path: polygon(-15% 0, 100% 0, 100% 100%, 0 100%);
+    transform: none;
+  }
+}
+@keyframes page-arrive-back {
+  from {
+    opacity: 0;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    transform: translate(-12px, 8px) scale(0.99);
+  }
+  42% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    clip-path: polygon(0 0, 115% 0, 100% 100%, 0 100%);
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .route-surface[data-pending] > .route-content {
+    animation: none;
+    visibility: hidden;
+  }
+  ::view-transition-old(app-page),
+  ::view-transition-new(app-page) {
+    animation: none;
+  }
+}
+
+/* Transition snapshots must not swallow another click on the real navigation. */
+::view-transition {
+  pointer-events: none;
+}
+
+.binder-card-names .binder-card-set {
+  margin-top: 0;
+}
+
+.binder-book-set-cover {
+  padding: 0;
+  gap: 0;
+}
+.binder-book-set-cover .set-cover {
+  width: 100%;
+  height: 100%;
+}
+.binder-book-set-cover .binder-book-spine {
+  z-index: 5;
+}
+.binder-book-set-cover .set-cover-fan img {
+  top: 48px;
+}
+.binder-book-set-cover .set-cover-logo {
+  top: 20%;
+  height: 48%;
+}
+
+.binder-page-actions {
+  flex-shrink: 0;
+}
+.binder-pages-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.binder-page-menu {
+  border-radius: 20px;
+  corner-shape: squircle;
+}
+
+.binder-settings-footer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 16px;
+  margin-top: 4px;
+  padding-top: 20px;
+}
+.app-dialog .binder-settings-footer > button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  margin: 0;
+}
+.binder-settings-footer svg {
+  flex-shrink: 0;
+}
+
+.account-control {
+  justify-self: end;
+  min-width: 0;
+}
+.account-menu-trigger {
+  display: inline-flex;
+  align-items: center;
+  max-width: 240px;
+}
+.account-avatar {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  corner-shape: squircle;
+  background: #2a2a35;
+  color: #dedeee;
+  font-size: 11px;
+  font-weight: 600;
+}
+.account-avatar img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  corner-shape: inherit;
+  object-fit: cover;
+  visibility: hidden;
+}
+.account-avatar img.is-loaded {
+  visibility: visible;
+}
+.account-menu-name {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.account-menu-chevron {
+  flex-shrink: 0;
+  color: var(--muted);
+  transition: transform 120ms ease;
+}
+.account-menu-trigger[aria-expanded='true'] .account-menu-chevron {
+  transform: rotate(180deg);
+}
+.account-menu {
+  border-radius: 24px;
+  corner-shape: squircle;
+  overflow-wrap: anywhere;
+}
+.account-menu [role='menuitem'] {
+  min-height: 44px;
+  border-radius: 16px;
+  corner-shape: squircle;
+}
+.account-menu-error {
+  max-width: 220px;
+  margin: 8px 8px;
+  color: #e5a1a1;
+  font-size: 12px;
+  line-height: 1.5;
+}
+@media (max-width: 700px) {
+  .account-menu-name {
+    display: none;
+  }
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+.app-shell > .route-surface {
+  flex: 1;
+  min-width: 0;
+}
+.route-error {
+  padding-block: 32px 64px;
+  text-align: center;
+}
+.route-error p {
+  max-width: 60ch;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+.app-footer {
+  padding-block: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+}
+.app-footer a {
+  color: var(--muted);
+}
+.app-footer a:hover {
+  color: var(--text);
+}
+.app-shell:has(.folio-immersive) > .app-footer {
+  display: none;
+}
+.attribution-page {
+  padding-block: 24px 64px;
+}
+.attribution-page h1 {
+  margin-top: 4px;
+}
+.attribution-page p {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.attribution-sources {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.attribution-sources a {
+  font-weight: 600;
+}
+
+.binder-share-actions > button {
+  flex: 1;
+  min-width: 0;
+}
+.binder-share-label {
+  display: grid;
+}
+.binder-share-label > span {
+  grid-area: 1 / 1;
+  visibility: hidden;
+}
+.binder-share-label > [data-visible='true'] {
+  visibility: visible;
+}

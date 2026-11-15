@@ -1,0 +1,2690 @@
+{
+  "ja-neo1-1": {
+    "kind": "pokemon",
+    "artist": "Sumiyoshi Kizuki",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "かくれる",
+          "text": "コインを投げて「おもて」なら、次の相手の番、このカードはワザによるダメージや効果を受けない。"
+        },
+        "en": {
+          "name": "Hide",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Oddish."
+        }
+      },
+      {
+        "cost": ["grass", "grass"],
+        "damage": "20",
+        "local": {
+          "name": "すいとる",
+          "text": "相手にダメージを与えたら、その半分(切り上げ)のダメージカウンターを、自分からとりのぞく。"
+        },
+        "en": {
+          "name": "Absorb",
+          "text": "Remove a number of damage counters from Oddish equal to half the damage done to the Defending Pokémon (after applying Weakness and Resistance) (rounded up to the nearest 10). If Oddish has fewer damage counters than that, remove all of them."
+        }
+      }
+    ]
+  },
+  "ja-neo1-2": {
+    "kind": "pokemon",
+    "artist": "Naoyo Kimura",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "たいあたり", "text": "" },
+        "en": { "name": "Tackle", "text": "" }
+      },
+      {
+        "cost": ["grass"],
+        "damage": "",
+        "local": {
+          "name": "リフレクター",
+          "text": "次の相手の番、このカードが受けるダメージは半分（切りすて）になる。（ダメージ以外の効果はそのまま）"
+        },
+        "en": {
+          "name": "Deflector",
+          "text": "During your opponent's next turn, whenever Chikorita takes damage, divide that damage in half (rounded down to the nearest 10). (Any other effects still happen.)"
+        }
+      }
+    ]
+  },
+  "ja-neo1-3": {
+    "kind": "pokemon",
+    "artist": "Sumiyoshi Kizuki",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 40,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "",
+        "local": {
+          "name": "ちょうおんぱ",
+          "text": "コインを投げて「おもて」なら、相手を「こんらん」状態にする。"
+        },
+        "en": {
+          "name": "Supersonic",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        }
+      },
+      {
+        "cost": ["grass", "grass"],
+        "damage": "10×",
+        "local": { "name": "れんぞくパンチ", "text": "コインを4回投げ、オモテの数×10ダメージ。" },
+        "en": {
+          "name": "Comet Punch",
+          "text": "Flip 4 coins. This attack does 10 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "ja-neo1-4": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "こわいかお",
+          "text": "コインを1回投げ、「おもて」なら、次の相手の番、このワザを受けた相手は、ワザを使うことができず、「にげる」こともできない。"
+        },
+        "en": {
+          "name": "Scary Face",
+          "text": "Flip a coin. If heads, until the end of your opponent's next turn the Defending Pokémon can't attack or retreat."
+        }
+      },
+      {
+        "cost": ["grass"],
+        "damage": "10",
+        "local": {
+          "name": "いとをはく",
+          "text": "コインを投げて「おもて」なら、相手を「マヒ」状態にする。"
+        },
+        "en": {
+          "name": "String Shot",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-neo1-5": {
+    "kind": "pokemon",
+    "artist": "Atsuko Nishida",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 50,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "はねる", "text": "" },
+        "en": { "name": "Hop", "text": "" }
+      },
+      {
+        "cost": ["grass"],
+        "damage": "",
+        "local": {
+          "name": "ふえる",
+          "text": "自分の山札から「ハネッコ」を1枚選び出し、自分のベンチに出す。その後、その山札をよく切る。(ベンチに空きがないとき、このワザは失敗する)"
+        },
+        "en": {
+          "name": "Sprout",
+          "text": "Search your deck for a Basic Pokémon named Hoppip and put it onto your Bench. Shuffle your deck afterward. (You can't use this attack if your Bench is full.)"
+        }
+      }
+    ]
+  },
+  "ja-neo1-6": {
+    "kind": "pokemon",
+    "artist": "Kagemaru Himeno",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "",
+        "local": {
+          "name": "せいちょう",
+          "text": "コインを投げて「おもて」なら、自分の手札にある「草」エネルギーカードを最大2枚、自分につける。"
+        },
+        "en": {
+          "name": "Growth",
+          "text": "Flip a coin. If heads, you may attach up to 2 Grass Energy cards from your hand to Sunkern."
+        }
+      },
+      {
+        "cost": ["grass", "grass", "grass"],
+        "damage": "30",
+        "local": {
+          "name": "メガドレイン",
+          "text": "相手にダメージを与えたら、与えたダメージの半分（切り上げ）のダメージカウンターを、自分からとりのぞく。"
+        },
+        "en": {
+          "name": "Mega Drain",
+          "text": "Remove a number of damage counters from Sunkern equal to half the damage done to the Defending Pokémon (after applying Weakness and Resistance) (rounded up to the nearest 10). If Sunkern has fewer damage counters than that, remove all of them."
+        }
+      }
+    ]
+  },
+  "ja-neo1-7": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "",
+        "local": {
+          "name": "からにこもる",
+          "text": "コインを投げて「おもて」なら、次の相手の番、このカードはダメージを受けない。（ダメージ以外の効果は受ける）"
+        },
+        "en": {
+          "name": "Withdraw",
+          "text": "Flip a coin. If heads, prevent all damage done to Shuckle during your opponent's next turn. (Any other effects of attacks still happen.)"
+        }
+      },
+      {
+        "cost": ["grass", "grass"],
+        "damage": "20",
+        "local": {
+          "name": "まきつく",
+          "text": "コインを投げて「おもて」なら、相手を「マヒ」状態にする。"
+        },
+        "en": {
+          "name": "Wrap",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-neo1-8": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Oddish", "local": "ナゾノクサ" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "へんなこな",
+          "text": "コインを投げ、「おもて」なら相手を「こんらん」状態に、「うら」なら「ねむり」状態にする。"
+        },
+        "en": {
+          "name": "Strange Powder",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused; if tails, the Defending Pokémon is now Asleep."
+        }
+      },
+      {
+        "cost": ["grass", "grass", "colorless"],
+        "damage": "20+",
+        "local": {
+          "name": "ねばるみつ",
+          "text": "コインを投げて「おもて」なら、10ダメージを追加する。その場合、次の相手の番が終わるまで、このワザを受けた相手は、バトル場をはなれられない。"
+        },
+        "en": {
+          "name": "Sticky Nectar",
+          "text": "Flip a coin. If heads, this attack does 20 damage plus 10 more damage and, until the end of your opponent's next turn, as long as Gloom is your Active Pokémon, the Defending Pokémon can't retreat, and if the effect of an attack, Pokémon Power, or Trainer card would change that player's Active Pokémon, that part of the effect does nothing. If tails, this attack does 20 damage."
+        }
+      }
+    ]
+  },
+  "ja-neo1-9": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Chikorita", "local": "チコリータ" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "",
+        "local": {
+          "name": "あまいかおり",
+          "text": "コインを投げ、「おもて」なら自分の場から、「うら」なら相手の場から、ダメージカウンターののっているポケモンを1匹選ぶ。選んだポケモンから、ダメージカウンターを2個、とりのぞく。"
+        },
+        "en": {
+          "name": "Sweet Scent",
+          "text": "Flip a coin. If heads and if any of your Pokémon have any damage counters on them, then remove 2 damage counters from 1 of them (or 1 if it only has 1). If tails and if any of your opponent's Pokémon have any damage counters on them, choose 1 of them and remove 2 damage counters from it (or 1 if it only has 1)."
+        }
+      },
+      {
+        "cost": ["grass", "grass", "grass"],
+        "damage": "40×",
+        "local": {
+          "name": "ダブルはっぱカッター",
+          "text": "コインを2回投げ、オモテの数×40ダメージ。"
+        },
+        "en": {
+          "name": "Double Razor Leaf",
+          "text": "Flip 2 coins. This attack does 40 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "ja-neo1-10": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 60,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Ledyba", "local": "レディバ" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "grass"],
+        "damage": "30",
+        "local": {
+          "name": "バトンタッチ",
+          "text": "自分のベンチにいる「草」ポケモンを1匹選ぶ。自分についている「草エネルギーカード」をすべてはがし、選んだポケモンにつけ替えてから、選んだポケモンを自分と入れ替える。"
+        },
+        "en": {
+          "name": "Baton Pass",
+          "text": "If you have any Grass Pokémon on your Bench, remove all Grass Energy cards from Ledian and attach them to 1 of those Pokémon, then switch Ledian with that Pokémon."
+        }
+      }
+    ]
+  },
+  "ja-neo1-11": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Spinarak", "local": "イトマル" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "",
+        "local": {
+          "name": "クモのす",
+          "text": "コインを投げて「おもて」なら、以後、このワザを受けた相手は、「にげる」ことができない。(相手がバトル場をはなれたとき、この効果は消える)"
+        },
+        "en": {
+          "name": "Spider Web",
+          "text": "Flip a coin. If heads, the Defending Pokémon can't retreat. (Benching or evolving that Pokémon ends this effect.)"
+        }
+      },
+      {
+        "cost": ["grass", "grass", "grass"],
+        "damage": "20",
+        "local": {
+          "name": "きゅうけつどく",
+          "text": "相手にダメージを与えたら、その半分（切り上げ）のダメージカウンターを、自分からとりのぞく。その後、相手を「どく」状態にする。"
+        },
+        "en": {
+          "name": "Poison Bite",
+          "text": "If this attack damages the Defending Pokémon, the Defending Pokémon is now Poisoned and you remove a number of damage counters from Ariados equal to half that damage (rounded up to the nearest 10). If Ariados has fewer damage counters than that, remove all of them."
+        }
+      }
+    ]
+  },
+  "ja-neo1-12": {
+    "kind": "stage1",
+    "artist": "Atsuko Nishida",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 60,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Hoppip", "local": "ハネッコ" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "10",
+        "local": { "name": "どくのこな", "text": "相手を「どく」状態にする。" },
+        "en": { "name": "Poisonpowder", "text": "The Defending Pokémon is now Poisoned." }
+      },
+      {
+        "cost": ["grass"],
+        "damage": "10",
+        "local": {
+          "name": "しびれごな",
+          "text": "コインを投げて「おもて」なら、相手を「マヒ」状態にする。"
+        },
+        "en": {
+          "name": "Stun Spore",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-neo1-13": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Sunkern", "local": "ヒマナッツ" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "grass", "grass"],
+        "damage": "30×",
+        "local": {
+          "name": "はなびらのまい",
+          "text": "コインを3枚投げ、「おもて」の数×30のダメージ。その後、自分を「こんらん」状態にする。"
+        },
+        "en": {
+          "name": "Petal Dance",
+          "text": "Flip 3 coins. This attack does 30 damage times the number of heads. Sunflora is now Confused (after doing damage)."
+        }
+      }
+    ]
+  },
+  "ja-neo1-14": {
+    "kind": "stage2",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 100,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Bayleef", "local": "ベイリーフ" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "grass", "grass", "grass"],
+        "damage": "40",
+        "local": { "name": "アロマスリープ", "text": "相手を「ねむり」状態にする。" },
+        "en": { "name": "Soothing Scent", "text": "The Defending Pokémon is now Asleep." }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "おいしげる",
+          "text": "このカードが場にいるかぎり、自分の場の「草」ポケモンについている「草」エネルギーカードは、「草」エネルギー2個ぶんとしてはたらく。このカードが「ねむり・マヒ・こんらん」状態のとき、この力は使えない。"
+        },
+        "en": {
+          "name": "Wild Growth",
+          "text": "As long as Meganium is in play each Grass Energy card attached to your Grass Pokémon instead provides GrassGrass. This power stops working while Meganium is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-neo1-15": {
+    "kind": "stage2",
+    "artist": "Atsuko Nishida",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Gloom", "local": "クサイハナ" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "",
+        "local": {
+          "name": "あまいみつ",
+          "text": "コインを投げて「おもて」なら、自分の場にいるポケモンを1匹選び、そのポケモンにのっているダメージカウンターを、すべてとりのぞく。"
+        },
+        "en": {
+          "name": "Sweet Nectar",
+          "text": "Flip a coin. If heads, remove all damage counters from 1 of your Pokémon."
+        }
+      },
+      {
+        "cost": ["grass", "grass", "colorless"],
+        "damage": "30×",
+        "local": {
+          "name": "フラワーダンス",
+          "text": "自分の場にいる「キレイハナ」の数×30のダメージ。"
+        },
+        "en": {
+          "name": "Flower Dance",
+          "text": "Does 30 damage times the number of cards with Bellossom in their names that you have in play (including this one)."
+        }
+      }
+    ]
+  },
+  "ja-neo1-16": {
+    "kind": "stage2",
+    "artist": "Atsuko Nishida",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 70,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Skiploom", "local": "ポポッコ" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "20",
+        "local": { "name": "ねむりごな", "text": "相手を「ねむり」状態にする。" },
+        "en": { "name": "Sleep Powder", "text": "The Defending Pokémon is now Asleep." }
+      },
+      {
+        "cost": ["grass"],
+        "damage": "20",
+        "local": {
+          "name": "やどりぎのたね",
+          "text": "相手にダメージを与えたら、自分にのっているダメージカウンターを、1個とりのぞく。"
+        },
+        "en": {
+          "name": "Leech Seed",
+          "text": "If this attack damages the Defending Pokémon (after applying Weakness and Resistance), remove 1 damage counter from Jumpluff, if it has any."
+        }
+      }
+    ]
+  },
+  "ja-neo1-17": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "grass", "grass"],
+        "damage": "60",
+        "local": {
+          "name": "メガホーン",
+          "text": "コインを投げて「うら」なら、相手にダメージをあたえることができない。"
+        },
+        "en": { "name": "Megahorn", "text": "Flip a coin. If tails, this attack does nothing." }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "きしかいせい",
+          "text": "この力は、このカードの残りHPが「20」以下のとき、使える。このカードが使う「メガホーン」のダメージは、「120」になる。このカードが「ねむり・マヒ・こんらん」状態のとき、この力は使えない。"
+        },
+        "en": {
+          "name": "Final Blow",
+          "text": "If Heracross's remaining HP are 20 or less, you may make its Megahorn attack's base damage 120 instead of 60. This power can't be used if Heracross is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-neo1-18": {
+    "kind": "pokemon",
+    "artist": "Shin-ichi Yoshida",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire"],
+        "damage": "20",
+        "local": {
+          "name": "ひばな",
+          "text": "コインを投げて「うら」なら、自分についている「エネルギーカード」を1枚選び、トラッシュする。トラッシュできないとき、このワザのダメージはなくなる。"
+        },
+        "en": {
+          "name": "Fireworks",
+          "text": "Flip a coin. If tails, discard 1 Energy card attached to Cyndaquil."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "10+",
+        "local": {
+          "name": "でんこうせっか",
+          "text": "コインを投げて「おもて」なら、20ダメージを追加する。"
+        },
+        "en": {
+          "name": "Quick Attack",
+          "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+        }
+      }
+    ]
+  },
+  "ja-neo1-19": {
+    "kind": "pokemon",
+    "artist": "Naoyo Kimura",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "スイープビンタ", "text": "" },
+        "en": { "name": "Tail Slap", "text": "" }
+      },
+      {
+        "cost": ["fire", "fire", "colorless"],
+        "damage": "40",
+        "local": { "name": "マグマパンチ", "text": "" },
+        "en": { "name": "Magma Punch", "text": "" }
+      }
+    ]
+  },
+  "ja-neo1-20": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Cyndaquil", "local": "ヒノアラシ" }
+    },
+    "attacks": [
+      {
+        "cost": ["fire", "fire"],
+        "damage": "20",
+        "local": {
+          "name": "えんまく",
+          "text": "次の相手の番、このワザを受けた相手のバトルポケモンがワザを使うとき、相手はコインを1回投げる。ウラならそのワザは失敗。"
+        },
+        "en": {
+          "name": "Smokescreen",
+          "text": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing."
+        }
+      },
+      {
+        "cost": ["fire", "fire", "fire"],
+        "damage": "30",
+        "local": {
+          "name": "やきこがす",
+          "text": "相手に「くろこげマーカー」がのっていなければ、コインを投げ、「おもて」なら、相手に「くろこげマーカー」を1つのせる。おたがいのプレイヤーは、ポケモンチェックのたび、自分の場の「くろこげマーカー」をのせているポケモンそれぞれに対してコインを投げ、「うら」なら、そのポケモンに「弱点・抵抗力・特殊能力・その他の効果」に関係なく、20ダメージ。"
+        },
+        "en": {
+          "name": "Char",
+          "text": "If the Defending Pokémon doesn't have a Char counter on it, flip a coin. If heads, put a Char counter on it. A Char counter requires your opponent to flip a coin after every turn. If tails, put 2 damage counters on the Pokémon with that Char counter. (Char counters stay on the Pokémon as long as it's in play.)"
+        }
+      }
+    ]
+  },
+  "ja-neo1-21": {
+    "kind": "stage2",
+    "artist": "Shin-ichi Yoshida",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 100,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Quilava", "local": "マグマラシ" }
+    },
+    "attacks": [
+      {
+        "cost": ["fire", "fire", "fire", "fire"],
+        "damage": "60+",
+        "local": {
+          "name": "はじけるほのお",
+          "text": "コインを投げて「おもて」なら、20ダメージを追加し、自分にも20ダメージ。"
+        },
+        "en": {
+          "name": "Flame Burst",
+          "text": "Flip a coin. If heads, this attack does 60 damage plus 20 more damage and does 20 damage to Typhlosion. If tails, this attack does 60 damage."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "ファイヤーリチャージ",
+          "text": "この力は、自分の番ごとに1回使える。コインを投げて「おもて」なら、自分のトラッシュから「炎」エネルギーカードを1枚選び出し、自分の場の「炎」ポケモンにつける。このカードが「ねむり・マヒ・こんらん」状態のとき、この力は使えない。"
+        },
+        "en": {
+          "name": "Fire Recharge",
+          "text": "Once during your turn (before your attack), you may flip a coin. If heads, attach a Fire Energy card from your discard pile to 1 of your Fire Pokémon. This power can't be used if Typhlosion is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-neo1-22": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 30,
+      "retreat": 0,
+      "evolvesFrom": { "en": "", "local": "ブーバー" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": {
+          "name": "モクモク",
+          "text": "次の自分の番の終わりまで、おたがいの場にいるすべてのポケモンは「特殊能力」を使うことができず、その力も消える。"
+        },
+        "en": {
+          "name": "Sputter",
+          "text": "All Pokémon Powers stop working until the end of your next turn."
+        }
+      }
+    ]
+  },
+  "ja-neo1-23": {
+    "kind": "pokemon",
+    "artist": "Miki Tanaka",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 50,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water"],
+        "damage": "20+",
+        "local": {
+          "name": "ひれがえし",
+          "text": "前の相手の番、このカードがワザによるダメージを受けていたなら、10ダメージを追加する。"
+        },
+        "en": {
+          "name": "Fin Slap",
+          "text": "If an attack damaged Horsea during your opponent's last turn, this attack does 20 damage plus 10 more damage. If not, this attack does 20 damage."
+        }
+      }
+    ]
+  },
+  "ja-neo1-24": {
+    "kind": "pokemon",
+    "artist": "Hironobu Yoshida",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "にらみつける",
+          "text": "コインを投げて「おもて」なら、次の相手の番、このカードがバトル場にいるかぎり、このワザを受けた相手は、ワザを使えない。"
+        },
+        "en": {
+          "name": "Leer",
+          "text": "Flip a coin. If heads, the Defending Pokémon can't attack Totodile during your opponent's next turn. (Benching or evolving either Pokémon ends this effect.)"
+        }
+      },
+      {
+        "cost": ["water"],
+        "damage": "10×",
+        "local": { "name": "みだれひっかき", "text": "コインを3回投げ、オモテの数×10ダメージ。" },
+        "en": {
+          "name": "Fury Swipes",
+          "text": "Flip 3 coins. This attack does 10 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "ja-neo1-25": {
+    "kind": "pokemon",
+    "artist": "Atsuko Nishida",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "まるくなる",
+          "text": "コインを投げて「おもて」なら、次の相手の番、このカードはダメージを受けない。（ダメージ以外の効果は受ける）"
+        },
+        "en": {
+          "name": "Defense Curl",
+          "text": "Flip a coin. If heads, prevent all damage done to Marill during your opponent's next turn. (Any other effects of attacks still happen.)"
+        }
+      },
+      {
+        "cost": ["water", "water"],
+        "damage": "30",
+        "local": {
+          "name": "バブルボム",
+          "text": "コインを投げて「おもて」なら、相手を「マヒ」状態にする。「うら」なら、自分にも10ダメージ。"
+        },
+        "en": {
+          "name": "Bubble Bomb",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed. If tails, Marill does 10 damage to itself."
+        }
+      }
+    ]
+  },
+  "ja-neo1-26": {
+    "kind": "pokemon",
+    "artist": "Miki Tanaka",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "",
+        "local": {
+          "name": "ドわすれ",
+          "text": "相手の対戦ポケモンの「ワザ」を1つ選ぶ。次の相手の番でその「ワザ」はつかえない。"
+        },
+        "en": {
+          "name": "Amnesia",
+          "text": "Choose 1 of the Defending Pokémon's attacks. That Pokémon can't use that attack during your opponent's next turn."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20×",
+        "local": { "name": "たたきつける", "text": "コインを2回投げ、オモテの数×20ダメージ。" },
+        "en": {
+          "name": "Slam",
+          "text": "Flip 2 coins. This attack does 20 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "ja-neo1-27": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "10",
+        "local": { "name": "こなゆき", "text": "相手を「ねむり」状態にする。" },
+        "en": { "name": "Powder Snow", "text": "The Defending Pokémon is now Asleep." }
+      }
+    ]
+  },
+  "ja-neo1-28": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water"],
+        "damage": "20",
+        "local": {
+          "name": "ゆらゆらおよぐ",
+          "text": "コインを投げて「おもて」なら、次の相手の番、このカードはワザによるダメージや効果を受けない。"
+        },
+        "en": {
+          "name": "Undulate",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Mantine."
+        }
+      }
+    ]
+  },
+  "ja-neo1-29": {
+    "kind": "stage1",
+    "artist": "Shin-ichi Yoshida",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Horsea", "local": "タッツー" }
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "10",
+        "local": {
+          "name": "あわ",
+          "text": "コインを投げて「おもて」なら、相手を「マヒ」状態にする。"
+        },
+        "en": {
+          "name": "Bubble",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      },
+      {
+        "cost": ["water", "water"],
+        "damage": "30",
+        "local": {
+          "name": "みずかけ",
+          "text": "コインを投げて「おもて」なら、相手の控えポケモンを1匹選び、そのポケモンにも、「弱点・抵抗力」に関係なく、10ダメージ。"
+        },
+        "en": {
+          "name": "Mud Splash",
+          "text": "If your opponent has any Benched Pokémon, choose 1 of them and flip a coin. If heads, this attack does 10 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "ja-neo1-30": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Totodile", "local": "ワニノコ" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "いやなおと",
+          "text": "次の自分の番が終わるまで、このワザを受けた相手がワザによるダメージを受けるたび、そのダメージは「+20」される。"
+        },
+        "en": {
+          "name": "Screech",
+          "text": "Until the end of your next turn, if an attack damages the Defending Pokémon (after applying Weakness and Resistance), that attack does 20 more damage to the Defending Pokémon."
+        }
+      },
+      {
+        "cost": ["water", "water", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "くいつく",
+          "text": "次の相手の番、このワザを受けた相手は、このカードがバトル場にいるかぎり、バトル場をはなれられない。（「きぜつ」した場合をのぞく）"
+        },
+        "en": {
+          "name": "Jaw Clamp",
+          "text": "Until the end of your opponent's next turn, as long as Croconaw is your Active Pokémon, the Defending Pokémon can't retreat, and if the effect of an attack, Pokémon Power, or Trainer card would change that player's Active Pokémon, that part of the effect does nothing."
+        }
+      }
+    ]
+  },
+  "ja-neo1-31": {
+    "kind": "stage1",
+    "artist": "Atsuko Nishida",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }],
+      "evolvesFrom": { "en": "Wooper", "local": "ウパー" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water"],
+        "damage": "30",
+        "local": { "name": "なみのり", "text": "" },
+        "en": { "name": "Surf", "text": "" }
+      },
+      {
+        "cost": ["fighting", "fighting", "colorless", "colorless"],
+        "damage": "60",
+        "local": { "name": "じしん", "text": "自分の控えポケモン全員にも、10ダメージ。" },
+        "en": {
+          "name": "Earthquake",
+          "text": "Does 10 damage to each of your own Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "ja-neo1-32": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }],
+      "evolvesFrom": { "en": "Swinub", "local": "ウリムー" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water"],
+        "damage": "10",
+        "local": {
+          "name": "こおりつかせる",
+          "text": "コインを投げ、「おもて」なら、以後、このワザを受けた相手は、「ワザ」を使うことができない。（相手がバトル場をはなれたとき、この効果は消える）"
+        },
+        "en": {
+          "name": "Freeze",
+          "text": "Flip a coin. If heads, the Defending Pokémon can't attack. (Benching or evolving the Defending Pokémon ends this effect.)"
+        }
+      },
+      {
+        "cost": ["water", "water", "water"],
+        "damage": "30",
+        "local": {
+          "name": "ふぶき",
+          "text": "コインを投げて、「おもて」なら相手の控えポケモン全員に、「うら」なら自分の控えポケモン全員に、「弱点・抵抗力」に関係なく、それぞれ10ダメージ。"
+        },
+        "en": {
+          "name": "Blizzard",
+          "text": "Flip a coin. If heads, this attack does 10 damage to each of your opponent's Benched Pokémon. If tails, this attack does 10 damage to each of your own Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "ja-neo1-33": {
+    "kind": "stage2",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 100,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Croconaw", "local": "アリゲイツ" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water", "water", "water"],
+        "damage": "50+",
+        "local": {
+          "name": "いかりのキバ",
+          "text": "自分にのっているダメージカウンターの数ぶんコインを投げ、「おもて」の数×10ダメージを追加する。"
+        },
+        "en": {
+          "name": "Chomp",
+          "text": "Flip a number of coins equal to the number of damage counters on Feraligatr. This attack does 50 damage plus 10 more damage for each heads."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "あばれんぼう",
+          "text": "この力は、このカードを手札から場に出してポケモンを進化させたとき、かならずはたらく。コインを投げ、「おもて」なら相手の山札の上から、「うら」なら自分の山札の上から、5枚のカードをトラッシュする。"
+        },
+        "en": {
+          "name": "Berserk",
+          "text": "When you play Feraligatr from your hand, flip a coin. If heads, discard the top 5 cards from your opponent's deck. If tails, discard the top 5 cards from your deck."
+        }
+      }
+    ]
+  },
+  "ja-neo1-34": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Marill", "local": "マリル" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "たいあたり", "text": "" },
+        "en": { "name": "Tackle", "text": "" }
+      },
+      {
+        "cost": ["water", "water", "water"],
+        "damage": "30",
+        "local": {
+          "name": "バブルシャワー",
+          "text": "コインを投げて「おもて」なら、相手を「マヒ」状態にし、相手の控えポケモン全員にも、「弱点・抵抗力」に関係なく、それぞれ10ダメージ。"
+        },
+        "en": {
+          "name": "Bubble Shower",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed and this attack does 10 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "ja-neo1-35": {
+    "kind": "stage2",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 90,
+      "retreat": 1,
+      "evolvesFrom": { "en": "Seadra", "local": "シードラ" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "こうそくいどう",
+          "text": "コインを投げて「おもて」なら、次の相手の番、このカードはワザによるダメージや効果を受けない。"
+        },
+        "en": {
+          "name": "Agility",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Kingdra."
+        }
+      },
+      {
+        "cost": ["water", "water", "water", "water"],
+        "damage": "50",
+        "local": {
+          "name": "りゅうのたつまき",
+          "text": "相手が「きぜつ」しなければ、相手の控えポケモンを1匹選び、相手と入れ替える。"
+        },
+        "en": {
+          "name": "Dragon Tornado",
+          "text": "If this attack doesn't Knock Out the Defending Pokémon, and if there are any Pokémon on your opponent's Bench, choose 1 of them and switch it with the Defending Pokémon."
+        }
+      }
+    ]
+  },
+  "ja-neo1-36": {
+    "kind": "pokemon",
+    "artist": "Naoyo Kimura",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10+",
+        "local": {
+          "name": "でんこうせっか",
+          "text": "コインを投げて「おもて」なら、20ダメージを追加する。"
+        },
+        "en": {
+          "name": "Quick Attack",
+          "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+        }
+      },
+      {
+        "cost": ["lightning", "lightning", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "こうそくいどう",
+          "text": "コインを投げて「おもて」なら、次の相手の番、このカードはワザによるダメージや効果を受けない。"
+        },
+        "en": {
+          "name": "Agility",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Pikachu."
+        }
+      }
+    ]
+  },
+  "ja-neo1-37": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["lightning"],
+        "damage": "",
+        "local": {
+          "name": "ちょうおんぱ",
+          "text": "コインを投げて「おもて」なら、相手を「こんらん」状態にする。"
+        },
+        "en": {
+          "name": "Supersonic",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        }
+      },
+      {
+        "cost": ["water"],
+        "damage": "10×",
+        "local": {
+          "name": "じたばた",
+          "text": "自分にのっているダメージカウンターの数×10のダメージ。"
+        },
+        "en": {
+          "name": "Flail",
+          "text": "Does 10 damage times the number of damage counters on Chinchou."
+        }
+      }
+    ]
+  },
+  "ja-neo1-38": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["lightning"],
+        "damage": "",
+        "local": {
+          "name": "せいでんき",
+          "text": "おたがいの場にいる「メリープ」の数以下の「雷」エネルギーカードを自分の山札から選び出し、自分につける。その後、その山札をよく切る。"
+        },
+        "en": {
+          "name": "Static Electricity",
+          "text": "For each Mareep in play, you may search your deck for a Lightning Energy card and attach it to Mareep. Shuffle your deck afterward."
+        }
+      },
+      {
+        "cost": ["lightning", "lightning"],
+        "damage": "20",
+        "local": {
+          "name": "でんきショック",
+          "text": "コインを投げて「おもて」なら、相手を「マヒ」状態にする。"
+        },
+        "en": {
+          "name": "Thundershock",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-neo1-39": {
+    "kind": "pokemon",
+    "artist": "Shin-ichi Yoshida",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "パンチ", "text": "" },
+        "en": { "name": "Punch", "text": "" }
+      },
+      {
+        "cost": ["lightning", "lightning", "lightning"],
+        "damage": "30",
+        "local": {
+          "name": "スピードスター",
+          "text": "このワザは、相手の「弱点・抵抗力・特殊能力・その他の効果」に関係なく、ダメージを与える。"
+        },
+        "en": {
+          "name": "Swift",
+          "text": "This attack's damage isn't affected by Weakness, Resistance, Pokémon Powers, or any other effects on the Defending Pokémon."
+        }
+      }
+    ]
+  },
+  "ja-neo1-40": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Chinchou", "local": "チョンチー" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "lightning"],
+        "damage": "20",
+        "local": {
+          "name": "まぶしいひかり",
+          "text": "コインを投げて「おもて」なら、相手を「マヒ」状態にする。"
+        },
+        "en": {
+          "name": "Floodlight",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "すいりょくはつでん",
+          "text": "この力は、このカードが「まぶしいひかり」を使うとき、使える。このカードに、「まぶしいひかり」に必要なエネルギーよりも多く「水」エネルギーがついているとき、多い「水」エネルギー1個につき10ダメージが、このカードの「まぶしいひかり」のダメージに追加される。このカードが「ねむり・マヒ・こんらん」状態のとき、この力は使えない。"
+        },
+        "en": {
+          "name": "Hydroelectric Power",
+          "text": "You may make Floodlight do 10 more damage for each Water Energy attached to Lanturn, but not used to pay for Floodlight's Energy cost. This power can't be used if Lanturn is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-neo1-41": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Mareep", "local": "メリープ" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning"],
+        "damage": "30×",
+        "local": {
+          "name": "ほうでん",
+          "text": "自分についている「雷」エネルギーカードを、すべてトラッシュする。トラッシュした「雷」エネルギーカードの数だけコインを投げ、「おもて」の数×30のダメージ。"
+        },
+        "en": {
+          "name": "Discharge",
+          "text": "Discard all Lightning Energy cards attached to Flaaffy in order to use this attack. Flip a number of coins equal to the number of Lightning Energy cards you discarded. This attack does 30 damage times the number of heads."
+        }
+      },
+      {
+        "cost": ["lightning", "lightning"],
+        "damage": "20",
+        "local": {
+          "name": "デンキとばし",
+          "text": "自分についている「雷」エネルギーカードを1枚選んではがす。自分の控えポケモンを1匹選び、はがしたカードをそれにつける。(自分に控えがないとき、はがしたカードはトラッシュする)"
+        },
+        "en": {
+          "name": "Electric Current",
+          "text": "Take 1 Lightning Energy card attached to Flaaffy and attach it to 1 of your Benched Pokémon. If you have no Benched Pokémon, discard that Energy card."
+        }
+      }
+    ]
+  },
+  "ja-neo1-42": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 30,
+      "retreat": 0,
+      "evolvesFrom": { "en": "", "local": "ピカチュウ" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "パチパチ",
+          "text": "おたがいの場の「特殊能力」を持っているポケモン全員に、「弱点・抵抗力」に関係なく、それぞれ20ダメージ。"
+        },
+        "en": {
+          "name": "Zzzap",
+          "text": "Does 20 damage to each Pokémon in play that has a Pokémon Power. Don't apply Weakness and Resistance."
+        }
+      }
+    ]
+  },
+  "ja-neo1-43": {
+    "kind": "stage2",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Flaaffy", "local": "モココ" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "lightning", "lightning"],
+        "damage": "40",
+        "local": {
+          "name": "ギガショック",
+          "text": "コインを投げて「おもて」なら、相手を「マヒ」状態にし、相手の控えポケモン全員にも、「弱点・抵抗力」に関係なく、それぞれ10ダメージ。"
+        },
+        "en": {
+          "name": "Gigaspark",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed and this attack does 10 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "ja-neo1-44": {
+    "kind": "pokemon",
+    "artist": "Miki Tanaka",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 30,
+      "retreat": 0,
+      "evolvesFrom": { "en": "", "local": "エレブー" }
+    },
+    "powers": [
+      {
+        "local": {
+          "name": "わんぱくパンチ",
+          "text": "この力は、自分の番ごとに1回使え、使ったら、自分の番は終わる。コインを投げて「おもて」なら、相手の対戦ポケモンに20ダメージ。このカードが「ねむり・マヒ・こんらん」状態のとき、この力は使えない。"
+        },
+        "en": {
+          "name": "Playful Punch",
+          "text": "Once during your turn (before your attack), you may flip a coin. If heads, do 20 damage to your opponent's Active Pokémon. (Apply Weakness and Resistance.) Either way, this ends your turn. This power can't be used if Elekid is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-neo1-45": {
+    "kind": "pokemon",
+    "artist": "Tomokazu Komiya",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "10",
+        "local": {
+          "name": "ねんりき",
+          "text": "コインを投げて「おもて」なら、相手を「マヒ」状態にする。"
+        },
+        "en": {
+          "name": "Psyshock",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      },
+      {
+        "cost": ["water"],
+        "damage": "10+",
+        "local": {
+          "name": "みずでっぽう",
+          "text": "ワザに必要なエネルギーよりも多く「水」エネルギーがついているとき、多い「水」エネルギー1個につき、10ダメージを追加する。ダメージ追加は2個ぶんまで。"
+        },
+        "en": {
+          "name": "Water Gun",
+          "text": "Does 10 damage plus 10 more damage for each Water Energy attached to Slowpoke but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way."
+        }
+      }
+    ]
+  },
+  "ja-neo1-46": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 30,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "つつく", "text": "" },
+        "en": { "name": "Peck", "text": "" }
+      },
+      {
+        "cost": ["psychic", "psychic"],
+        "damage": "",
+        "local": {
+          "name": "テレキネシス",
+          "text": "相手の場のポケモンを1匹選び、「弱点・抵抗力」に関係なく、20ダメージ。"
+        },
+        "en": {
+          "name": "Telekinesis",
+          "text": "Choose 1 of your opponent's Pokémon. This attack does 20 damage to that Pokémon. Don't apply Weakness and Resistance for this attack. (Any other effects that would happen after applying Weakness and Resistance still happen.)"
+        }
+      }
+    ]
+  },
+  "ja-neo1-47": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": { "energy": "psychic", "types": ["psychic"], "hp": 60, "retreat": 1 },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "10",
+        "local": {
+          "name": "こうそくいどう",
+          "text": "コインを投げて「おもて」なら、次の相手の番、このカードはワザによるダメージや効果を受けない。"
+        },
+        "en": {
+          "name": "Agility",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Girafarig."
+        }
+      },
+      {
+        "cost": ["psychic", "psychic"],
+        "damage": "20",
+        "local": {
+          "name": "サイケこうせん",
+          "text": "コインを投げて「おもて」なら、相手を「こんらん」状態にする。"
+        },
+        "en": {
+          "name": "Psybeam",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        }
+      }
+    ]
+  },
+  "ja-neo1-48": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Natu", "local": "ネイティ" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": {
+          "name": "みらいよち",
+          "text": "自分または相手の山札の上からカードを3枚見て、好きな順番に入れ替えて、その山札の上にもどす。"
+        },
+        "en": {
+          "name": "Prophecy",
+          "text": "Look at the top 3 cards of either player's deck and rearrange them as you like."
+        }
+      },
+      {
+        "cost": ["psychic", "psychic", "psychic"],
+        "damage": "30",
+        "local": {
+          "name": "あやしいひかり",
+          "text": "コインを投げて「おもて」なら、相手を「こんらん」状態にする。"
+        },
+        "en": {
+          "name": "Confuse Ray",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        }
+      }
+    ]
+  },
+  "ja-neo1-49": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Slowpoke", "local": "ヤドン" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "psychic", "psychic"],
+        "damage": "20+",
+        "local": {
+          "name": "マッドインパクト",
+          "text": "コインを投げて「おもて」なら、10ダメージを追加して、相手を「こんらん」状態にする。"
+        },
+        "en": {
+          "name": "Mind Blast",
+          "text": "Flip a coin. If heads, this attack does 20 damage plus 10 more damage and the Defending Pokémon is now Confused. If tails, this attack does 20 damage."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "ちえくらべ",
+          "text": "この力は、このカードがバトル場にいるとき、使える。相手プレイヤーが「トレーナーカード」を手札から出して使うとき、このカードの持ち主は、コインを投げる。「おもて」なら、相手プレイヤーは、その「トレーナーカード」を使えず、その「トレーナーカード」を相手の山札の上におく。このカードが「ねむり・マヒ・こんらん」状態のとき、この力は使えない。"
+        },
+        "en": {
+          "name": "Mind Games",
+          "text": "Whenever your opponent plays a Trainer card, you may flip a coin. If heads, that card does nothing. Put it on top of your opponent's deck. This power can't be used if Slowking is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-neo1-50": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "いやなおと",
+          "text": "次の自分の番が終わるまで、このワザを受けた相手がワザによるダメージを受けるたび、そのダメージは「+20」される。"
+        },
+        "en": {
+          "name": "Screech",
+          "text": "Until the end of your next turn, if an attack damages the Defending Pokémon (after applying Weakness and Resistance), that attack does 20 more damage to the Defending Pokémon."
+        }
+      },
+      {
+        "cost": ["fighting", "fighting"],
+        "damage": "10+",
+        "local": { "name": "いかり", "text": "自分のダメージカウンター×10ダメージを追加する。" },
+        "en": {
+          "name": "Rage",
+          "text": "Does 10 damage plus 10 more damage for each damage counter on Onix."
+        }
+      }
+    ]
+  },
+  "ja-neo1-51": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting"],
+        "damage": "10×",
+        "local": {
+          "name": "じたばた",
+          "text": "自分にのっているダメージカウンターの数×10のダメージ。"
+        },
+        "en": {
+          "name": "Flail",
+          "text": "Does 10 damage times the number of damage counters on Sudowoodo."
+        }
+      },
+      {
+        "cost": ["fighting", "colorless"],
+        "damage": "30",
+        "local": { "name": "いわおとし", "text": "" },
+        "en": { "name": "Rock Throw", "text": "" }
+      }
+    ]
+  },
+  "ja-neo1-52": {
+    "kind": "pokemon",
+    "artist": "Hironobu Yoshida",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 60,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting"],
+        "damage": "10",
+        "local": {
+          "name": "どくばり",
+          "text": "コインを投げて「おもて」なら、相手を「どく」状態にする。"
+        },
+        "en": {
+          "name": "Poison Sting",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Poisoned."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "きりさく", "text": "" },
+        "en": { "name": "Slash", "text": "" }
+      }
+    ]
+  },
+  "ja-neo1-53": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "たいあたり", "text": "" },
+        "en": { "name": "Tackle", "text": "" }
+      },
+      {
+        "cost": ["fighting"],
+        "damage": "",
+        "local": {
+          "name": "こらえる",
+          "text": "コインを投げて「おもて」なら、次の相手の番、相手のワザによるダメージで、このカードの残りHPがなくなっても、このカードは「きぜつ」しない。その場合、このカードの残りHPは「10」になる。"
+        },
+        "en": {
+          "name": "Endure",
+          "text": "Flip a coin. If heads, then if, during your opponent's next turn, Phanpy would be Knocked Out by an attack, Phanpy isn't Knocked Out and its remaining HP become 10 instead."
+        }
+      }
+    ]
+  },
+  "ja-neo1-54": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }],
+      "evolvesFrom": { "en": "Phanpy", "local": "ゴマゾウ" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting"],
+        "damage": "10×",
+        "local": {
+          "name": "じたばた",
+          "text": "自分にのっているダメージカウンターの数×10のダメージ。"
+        },
+        "en": {
+          "name": "Flail",
+          "text": "Does 10 damage times the number of damage counters on Donphan."
+        }
+      },
+      {
+        "cost": ["fighting", "fighting", "fighting"],
+        "damage": "50",
+        "local": {
+          "name": "こうそくスピン",
+          "text": "相手を相手の控えポケモンと入れ替える。その後、自分を自分の控えポケモンと入れ替える。入れ替えるときは、それぞれのプレイヤーが、それぞれ自分の控えポケモンを選ぶ。（控えがいない側は、入れ替えをしない。）"
+        },
+        "en": {
+          "name": "Rapid Spin",
+          "text": "If your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with his or her Active Pokémon, then, if you have any Benched Pokémon, you switch 1 of them with your Active Pokémon. (Do the damage before switching the Pokémon.)"
+        }
+      }
+    ]
+  },
+  "ja-neo1-55": {
+    "kind": "pokemon",
+    "artist": "Shin-ichi Yoshida",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 50,
+      "retreat": 0,
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["darkness"],
+        "damage": "",
+        "local": {
+          "name": "くろいまなざし",
+          "text": "以後、このワザを受けた相手は、このカードがバトル場にいるかぎり、「にげる」ことができない。(自分か相手がバトル場をはなれたとき、この効果は消える)"
+        },
+        "en": {
+          "name": "Mean Look",
+          "text": "The Defending Pokémon can't retreat as long as Murkrow remains your Active Pokémon. (Benching or evolving either Pokémon ends this effect.)"
+        }
+      },
+      {
+        "cost": ["darkness", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "だましうち",
+          "text": "相手の場のポケモンを1匹選び、そのポケモンの持っている「弱点・抵抗力・特殊能力・その他の効果」に関係なく、20ダメージ。"
+        },
+        "en": {
+          "name": "Feint Attack",
+          "text": "Choose 1 of your opponent's Pokémon. This attack does 20 damage to that Pokémon. This attack's damage isn't affected by Weakness, Resistance, Pokémon Powers, or any other effects on the Defending Pokémon."
+        }
+      }
+    ]
+  },
+  "ja-neo1-56": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 60,
+      "retreat": 0,
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10×",
+        "local": { "name": "みだれひっかき", "text": "コインを3回投げ、オモテの数×10ダメージ。" },
+        "en": {
+          "name": "Fury Swipes",
+          "text": "Flip 3 coins. This attack does 10 damage times the number of heads."
+        }
+      },
+      {
+        "cost": ["darkness", "darkness"],
+        "damage": "20×",
+        "local": {
+          "name": "ふくろだたき",
+          "text": "自分の場にいるポケモンの数ぶんコインを投げ、「おもて」の数×20のダメージ。"
+        },
+        "en": {
+          "name": "Beat Up",
+          "text": "Flip a coin for each of your Pokémon in play (including this one). This attack does 20 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "ja-neo1-57": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "metal",
+      "types": ["metal"],
+      "hp": 110,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "grass", "value": "-30" }],
+      "evolvesFrom": { "en": "Onix", "local": "イワーク" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "たいあたり", "text": "" },
+        "en": { "name": "Tackle", "text": "" }
+      },
+      {
+        "cost": ["metal", "colorless", "colorless"],
+        "damage": "30+",
+        "local": {
+          "name": "テールクラッシュ",
+          "text": "コインを投げて「おもて」なら、20ダメージを追加する。"
+        },
+        "en": {
+          "name": "Tail Crush",
+          "text": "Flip a coin. If heads, this attack does 30 damage plus 20 more damage; if tails, this attack does 30 damage."
+        }
+      }
+    ]
+  },
+  "ja-neo1-58": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "metal",
+      "types": ["metal"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "grass", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "20",
+        "local": {
+          "name": "かぎづめ",
+          "text": "コインを投げて「うら」なら、相手にダメージをあたえることができない。"
+        },
+        "en": { "name": "Claw", "text": "Flip a coin. If tails, this attack does nothing." }
+      },
+      {
+        "cost": ["metal", "colorless", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "はがねのつばさ",
+          "text": "コインを投げて「おもて」なら、次の相手の番、このカードが、ワザによって受けるダメージは「-20」される。"
+        },
+        "en": {
+          "name": "Steel Wing",
+          "text": "Flip a coin. If heads, all damage done by attacks to Skarmory during your opponent's next turn is reduced by 20 (after applying Weakness and Resistance)."
+        }
+      }
+    ]
+  },
+  "ja-neo1-59": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10×",
+        "local": { "name": "みだれひっかき", "text": "コインを3回投げ、オモテの数×10ダメージ。" },
+        "en": {
+          "name": "Fury Swipes",
+          "text": "Flip 3 coins. This attack does 10 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "ja-neo1-60": {
+    "kind": "pokemon",
+    "artist": "Sumiyoshi Kizuki",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": { "name": "さいみんじゅつ", "text": "相手を「ねむり」状態にする。" },
+        "en": { "name": "Hypnosis", "text": "The Defending Pokémon is now Asleep." }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "つつく", "text": "" },
+        "en": { "name": "Peck", "text": "" }
+      }
+    ]
+  },
+  "ja-neo1-61": {
+    "kind": "pokemon",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "ほえる",
+          "text": "コインを投げて「おもて」なら、相手を控えポケモンと入れ替える。入れ替わるポケモンは、相手が選ぶ。（相手に控えがいないとき、入れ替えはおこらない）"
+        },
+        "en": {
+          "name": "Roar",
+          "text": "Flip a coin. If heads and if your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon. (Do the damage before switching the Pokémon.)"
+        }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "10",
+        "local": {
+          "name": "したでなめる",
+          "text": "コインを投げて「おもて」なら、相手を「マヒ」状態にする。"
+        },
+        "en": {
+          "name": "Lick",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-neo1-62": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20+",
+        "local": {
+          "name": "ふみつけ",
+          "text": "コインを投げて「おもて」なら、10ダメージを追加する。"
+        },
+        "en": {
+          "name": "Stomp",
+          "text": "Flip a coin. If heads, this attack does 20 damage plus 10 more damage; if tails, this attack does 20 damage."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "つのでまどわす",
+          "text": "コインを投げて「おもて」なら、相手を「こんらん」状態にする。"
+        },
+        "en": {
+          "name": "Mystifying Horns",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused."
+        }
+      }
+    ]
+  },
+  "ja-neo1-63": {
+    "kind": "pokemon",
+    "artist": "Sumiyoshi Kizuki",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "10×",
+        "local": {
+          "name": "おうふくびんた",
+          "text": "コインを2枚投げて「おもて」の出た数×10のダメージをあたえる。"
+        },
+        "en": {
+          "name": "Doubleslap",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "みんなでおどる",
+          "text": "おたがいの場にいるポケモンの数ぶんコインを投げ、「おもて」の数以下の枚数の「基本エネルギーカード」を自分の山札から選び出し、相手プレイヤーに見せてから、手札に加える。その後、その山札をよく切る。"
+        },
+        "en": {
+          "name": "Squaredance",
+          "text": "Flip a number of coins equal to the total number of Pokémon in play. For each heads, you may search your deck for a basic Energy card, show it to your opponent, and put it into your hand. Shuffle your deck afterward."
+        }
+      }
+    ]
+  },
+  "ja-neo1-64": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }],
+      "evolvesFrom": { "en": "Sentret", "local": "オタチ" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20+",
+        "local": {
+          "name": "でんこうせっか",
+          "text": "コインを投げて「おもて」なら、10ダメージを追加する。"
+        },
+        "en": {
+          "name": "Quick Attack",
+          "text": "Flip a coin. If heads, this attack does 20 damage plus 10 more damage; if tails, this attack does 20 damage."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "30×",
+        "local": {
+          "name": "たたきつける",
+          "text": "コインを2枚投げて「おもて」のでた数×30のダメージをあたえる。"
+        },
+        "en": {
+          "name": "Slam",
+          "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "ja-neo1-65": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 60,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Hoothoot", "local": "ホーホー" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "30",
+        "local": { "name": "つばさでうつ", "text": "" },
+        "en": { "name": "Wing Attack", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "みやぶる",
+          "text": "この力は、自分の番ごとに1回使える。コインを投げて「おもて」なら、相手の手札を見る。その中に「トレーナーカード」があれば、1枚を選び、それを山札にもどして、よく切る。このカードが「ねむり・マヒ・こんらん」状態のとき、この力は使えない。"
+        },
+        "en": {
+          "name": "Glaring Gaze",
+          "text": "Once during your turn (before your attack), you may flip a coin. If heads, look at your opponent's hand. If your opponent has any Trainer cards there, choose 1 of them. Your opponent shuffles that card into his or her deck. This power can't be used if Noctowl is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-neo1-66": {
+    "kind": "pokemon",
+    "artist": "Naoyo Kimura",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 40,
+      "retreat": 1,
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "10",
+        "local": { "name": "どくのトゲ", "text": "相手を「どく」状態にする。" },
+        "en": { "name": "Poison Barb", "text": "The Defending Pokémon is now Poisoned." }
+      }
+    ]
+  },
+  "ja-neo1-67": {
+    "kind": "pokemon",
+    "artist": "Hironobu Yoshida",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 40,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "もちさる",
+          "text": "自分と、自分についているすべてのカードを山札にもどす。コインを投げて「おもて」なら、自分のトラッシュからカードを1枚選び出し、山札にもどす。その後、その山札をよく切る。"
+        },
+        "en": {
+          "name": "Pilfer",
+          "text": "Shuffle Aipom and all cards attached to it into your deck. Flip a coin. If heads, shuffle a card from your discard pile into your deck."
+        }
+      },
+      {
+        "cost": ["colorless"],
+        "damage": "10×",
+        "local": {
+          "name": "しっぽビンタ",
+          "text": "コインを2枚投げて「おもて」の出た数×10のダメージをあたえる。"
+        },
+        "en": {
+          "name": "Tail Rap",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "ja-neo1-68": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }],
+      "evolvesFrom": { "en": "Snubbull", "local": "ブルー" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "たいあたり", "text": "" },
+        "en": { "name": "Tackle", "text": "" }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "10+",
+        "local": {
+          "name": "いかりのとっしん",
+          "text": "自分にのっているダメージカウンターの数×10ダメージを追加する。その後、自分にも20ダメージ。"
+        },
+        "en": {
+          "name": "Raging Charge",
+          "text": "This attack does 10 damage plus 10 damage for each damage counter on Granbull. Then, Granbull does 20 damage to itself."
+        }
+      }
+    ]
+  },
+  "ja-neo1-69": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "ミルクのみ",
+          "text": "コインを2枚投げ、「おもて」の数×2個のダメージカウンターを、自分からとりのぞく。"
+        },
+        "en": {
+          "name": "Milk Drink",
+          "text": "Flip 2 coins. Remove 2 damage counters times the number of heads from Miltank. If it has fewer damage counters than that, remove all of them."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "のしかかり",
+          "text": "コインを投げて「おもて」なら、相手を「マヒ」状態にする。"
+        },
+        "en": {
+          "name": "Body Slam",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      }
+    ]
+  },
+  "ja-neo1-70": {
+    "kind": "pokemon",
+    "artist": "Kagemaru Himeno",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 30,
+      "retreat": 0,
+      "evolvesFrom": { "en": "", "local": "ピッピ" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "ピピピ",
+          "text": "自分の手札をすべて山札にもどし、その山札をよく切る。その後、山札からカードを7枚引いて、手札にする。"
+        },
+        "en": { "name": "Eeeeeeek", "text": "Shuffle your hand into your deck, then draw 7 cards." }
+      }
+    ]
+  },
+  "ja-neo1-71": {
+    "kind": "stage1",
+    "artist": "Ken Sugimori",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 60,
+      "retreat": 0,
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Togepi", "local": "トゲピー" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "おおきくゆびをふる",
+          "text": "コインを投げて「おもて」なら、相手の場にいるポケモンのワザを1つ選び、それを自分が持っているワザとして使う。(そのワザに必要なエネルギーがついていなくても、かまわない)"
+        },
+        "en": {
+          "name": "Super Metronome",
+          "text": "Flip a coin. If heads, choose an attack of 1 of your opponent's Pokémon. Super Metronome copies that attack except for its Energy cost. (You must still do anything else in order to use that attack.) (No matter what type the Defending Pokémon is, Togetic's type is still Colorless.) Togetic performs that attack. (Togetic can make that attack even if it does not have the appropriate number or type of Energy attached to it necessary to make the attack.)"
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "そらをとぶ",
+          "text": "コインを投げて「うら」なら、このワザは失敗する。「おもて」なら、次の相手の番、このカードは相手のワザによるダメージや効果を受けない。"
+        },
+        "en": {
+          "name": "Fly",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Togetic; if tails, this attack does nothing (not even damage)."
+        }
+      }
+    ]
+  },
+  "ja-neo1-72": {
+    "kind": "pokemon",
+    "artist": "Hironobu Yoshida",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 90,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire", "water", "lightning"],
+        "damage": "90",
+        "local": {
+          "name": "エレメンタルブラスト",
+          "text": "自分についている「炎」「水」「雷」の「エネルギーカード」を、それぞれ1枚ずつトラッシュする。トラッシュできないとき、このワザのダメージはなくなる。"
+        },
+        "en": {
+          "name": "Elemental Blast",
+          "text": "Discard a Fire Energy card, a Water Energy card, and a Lightning Energy card attached to Lugia in order to use this attack."
+        }
+      }
+    ]
+  },
+  "ja-neo1-73": {
+    "kind": "trainer",
+    "artist": "Yousuke Hirata",
+    "rarity": "common",
+    "rules": {
+      "en": "Attach Berry to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.\nAt any time between turns, if there are at least 2 damage counters on the Pokémon Berry is attached to, you may remove 2 of them and discard Berry. At the start of each turn, if there are at least 2 damage counters on the Pokémon Berry is attached to, remove 2 of them and discard Berry.",
+      "local": "「ポケモンのどうぐ」は、あなたの場にいるポケモンにつけて使い、そのポケモンが「きぜつ」したとき、トラッシュする。すでに「ポケモンのどうぐ」をつけているポケモンには、つけることができない。ポケモンチェックのとき、このカードをつけているポケモンにダメージカウンターが2個のっているなら、それを2個とりのぞき、このカードをトラッシュする。"
+    }
+  },
+  "ja-neo1-74": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "common",
+    "rules": {
+      "en": "Flip a coin. If heads, put an Evolution card from your discard pile, if any, into your hand. If tails, put a Basic Pokémon card from your discard pile, if any, into your hand.",
+      "local": "コインを投げて「おもて」なら「進化カード」を、「うら」なら「たねポケモン」を1枚、あなたのトラッシュから選び出し、手札に加える。"
+    }
+  },
+  "ja-neo1-75": {
+    "kind": "trainer",
+    "artist": "Tomokazu Komiya",
+    "rarity": "common",
+    "rules": {
+      "en": "If you have any Benched Pokémon, your opponent chooses 1 of them and switches it with your Active Pokémon. Then, if your opponent has any Benched Pokémon, choose 1 of them and switch it with his or her Active Pokémon.",
+      "local": "相手プレイヤーに、あなたの控えポケモンを1匹選ばせ、あなたの対戦ポケモンと入れ替える。その後、相手の控えポケモンを1匹選び、相手の対戦ポケモンと入れ替える。(控えがない側は、入れ替えをしない)"
+    }
+  },
+  "ja-neo1-76": {
+    "kind": "trainer",
+    "artist": "Tomokazu Komiya",
+    "rarity": "common",
+    "rules": {
+      "en": "Your opponent may search his or her deck for 1 Basic Pokémon card and put it onto his or her Bench. Then, you may search your deck for 1 Basic Pokémon card and put it onto your Bench. Then, each player shuffles his or her deck. (A player can't do any of this if his or her Bench is full.)",
+      "local": "おたがいのプレイヤーは、それぞれ、のぞむなら、自分の山札から「ベイビィポケモン」または「たねポケモン」を1枚選び出し、ベンチに出してよい。その後、それぞれの山札をよく切る。(ベンチに空きがないプレイヤーは、なにもしない)"
+    }
+  },
+  "ja-neo1-77": {
+    "kind": "trainer",
+    "artist": "Tomokazu Komiya",
+    "rarity": "common",
+    "rules": {
+      "en": "Choose 1 of your Pokémon. Flip 2 coins. Remove 2 damage counters times the number of heads from that Pokémon. If the Pokémon has fewer damage counters than that, remove all of them.",
+      "local": "自分の場のポケモンを1匹選ぶ。コインを2回投げ、「おもて」の数×2個のダメージカウンターを、そのポケモンからとりのぞく。"
+    }
+  },
+  "ja-neo1-78": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Shuffle your hand into your deck. Then, draw 7 cards. You can't play any more Trainer cards this turn.",
+      "local": "あなたの手札をすべて山札にもどし、その山札をよく切る。その後、山札からカードを7枚引いて、手札にする。次の相手の番が終わるまで、あなたは手札から「トレーナーカード」を出して使うことができない。"
+    }
+  },
+  "ja-neo1-79": {
+    "kind": "trainer",
+    "artist": "Ryuta Kusumi",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Attach Gold Berry to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.\nAt any time between turns, if there are at least 4 damage counters on the Pokémon Gold Berry is attached to, you may remove 4 of them and discard Gold Berry. At the start of each turn, if there are at least 4 damage counters on the Pokémon Gold Berry is attached to, remove 4 of them and discard Gold Berry.",
+      "local": "ポケモンの番が終わるたび、このカードがついているポケモンにダメージカウンターが4個以上ポケモンの上にのっていたら、そのポケモンからダメージカウンターを4個とりのぞき、このカードをトラッシュする。"
+    }
+  },
+  "ja-neo1-80": {
+    "kind": "trainer",
+    "artist": "K. Hoshiba",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Choose 1 of your opponent's face-down Prizes. Guess whether it is an Energy card, a Trainer card, or a Pokémon (Basic or Evolution) card. Flip the card face up (and leave it face up). If you guessed right, draw 2 cards.",
+      "local": "うらになっている相手の「サイドカード」を1枚選び、そのカードが「ポケモン（ベイビィポケモン・たねポケモン・進化カード）」か「トレーナーカード」か「エネルギーカード」かを答える。その後、そのカードをおもてにして、正解なら、あなたは山札からカードを2枚引いて、手札に加える。おもてにした「サイドカード」は、そのままにしておく。"
+    }
+  },
+  "ja-neo1-81": {
+    "kind": "trainer",
+    "artist": "Yousuke Hirata",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Attach Miracle Berry to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.\nAt any time between turns, if the Pokémon Miracle Berry is attached to is Asleep, Confused, Paralyzed, or Poisoned, you may remove all those effects from that Pokémon and discard Miracle Berry. At the start of each turn, if the Pokémon Miracle Berry is attached to is Asleep, Confused, Paralyzed, or Poisoned, remove all of those effects from that Pokémon and discard Miracle Berry.",
+      "local": "「ポケモンのどうぐ」は、あなたの場にいるポケモンにつけて使い、そのポケモンが「きぜつ」したとき、トラッシュする。すでに「ポケモンのどうぐ」をつけているポケモンには、つけることができない。ポケモンチェックのとき、このカードをつけているポケモンが「どく・ねむり・マヒ・こんらん」状態なら、それらをすべて回復し、このカードをトラッシュする。"
+    }
+  },
+  "ja-neo1-82": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Shuffle your deck. Then, look at up to 5 cards from the top of your deck and rearrange them as you like.",
+      "local": "自分の山札をよく切る。その後、その山札の上からカードを5枚見て、好きな順番に入れ替えて、その山札の上にもどす。"
+    }
+  },
+  "ja-neo1-83": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "",
+      "local": "自分の場のポケモンを1匹選ぶ。コインを1回投げ、「おもて」なら、そのポケモンとそのポケモンについているすべてのカードを、自分の手札にもどす。"
+    }
+  },
+  "ja-neo1-84": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Flip a coin. If heads, draw 4 cards.",
+      "local": "コインを1回投げ、「おもて」なら、自分の山札からカードを4枚引く。"
+    }
+  },
+  "ja-neo1-85": {
+    "kind": "trainer",
+    "artist": "Hiromichi Sugiyama",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "This card stays in play when you play it. Discard this card if another Stadium card comes into play.\nAll damage done by Colorless Pokémon's attacks is reduced by 30 (after applying Weakness and Resistance).",
+      "local": "「無色」ポケモンの使ったワザが、ポケモンにダメージを与えるとき、そのダメージは、それぞれ「-30」される。"
+    }
+  },
+  "ja-neo1-86": {
+    "kind": "trainer",
+    "artist": "Shin-ichi Yoshikawa",
+    "rarity": "rare",
+    "rules": {
+      "en": "This card stays in play when you play it. Discard this card if another Stadium card comes into play.\nWhenever an attack, Pokémon Power, or Trainer card discards another player's non-Colorless Energy card from a Pokémon, return that Energy card to its owner's hand. (Energy cards that are discarded when that Pokémon is Knocked Out don't count.)",
+      "local": "ポケモンについている、「無色」以外の「エネルギーカード」が、相手の「ワザ・特殊能力」や「トレーナーカード」によってトラッシュされたとき、その「エネルギーカード」を持ち主の手札にもどす。"
+    }
+  },
+  "ja-neo1-87": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "rare",
+    "rules": {
+      "en": "Flip a coin. If heads, shuffle up to 2 Energy cards from your discard pile into your deck.",
+      "local": "コインを1回投げ、「おもて」なら、自分のトラッシュから「エネルギーカード」を2枚選び出し、相手プレイヤーに見せてから、山札にもどす。その後、その山札をよく切る。"
+    }
+  },
+  "ja-neo1-88": {
+    "kind": "trainer",
+    "artist": "Tomokazu Komiya",
+    "rarity": "rare",
+    "rules": {
+      "en": "Attach Focus Band to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.\nIf the Pokémon Focus Band is attached to would be Knocked Out by your opponent's attack, flip a coin. If heads, that Pokémon is not Knocked Out and its remaining HP become 10 instead. Then, discard Focus Band.",
+      "local": "相手のワザによるダメージで、このカードをつけているポケモンの残りHPがなくなったとき、コインを投げる。「おもて」なら、このカードをつけているポケモンは「きぜつ」せず、このカードをつけているポケモンの残りHPは「10」になる。その後、このカードをトラッシュする。"
+    }
+  },
+  "ja-neo1-89": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "rules": {
+      "en": "Draw 2 cards. Then, shuffle 2 cards from your hand into your deck.",
+      "local": "山札からカードを2枚引いて、手札に加える。その後、手札からカードを2枚選び、山札にもどして、よく切る。"
+    }
+  },
+  "ja-neo1-90": {
+    "kind": "trainer",
+    "artist": "K. Hoshiba",
+    "rarity": "rare",
+    "rules": {
+      "en": "Shuffle your deck, then reveal the top 3 cards of it. If at least 2 of those cards share the same name, put all the ones with that name into your hand and shuffle the rest into your deck. If none of them do, shuffle all 3 into your deck.",
+      "local": "あなたの山札をよく切り、その上から3枚のカードを見て、相手プレイヤーにも見せる。その中に2枚以上「同じ名前のカード」があったら、それらをあなたの手札に加える。その後、「同じ名前のカード」でなかったカードを山札にもどし、その山札をよく切る。"
+    }
+  },
+  "ja-neo1-91": {
+    "kind": "trainer",
+    "artist": "\"Big Mama\" Tagawa",
+    "rarity": "rare",
+    "rules": {
+      "en": "Your opponent may choose 5 Basic Pokémon, Evolution, and/or basic Energy cards in his or her discard pile. (If your opponent doesn't have that many, he or she chooses all or none of them.) If your opponent chooses any cards, he or she shuffles them into his or her deck. Either way, you may do the same, and you can't play any more Trainer cards this turn.",
+      "local": "おたがいのプレイヤーは、それぞれ、のぞむなら、自分のトラッシュにある「ベイビィポケモン」「たねポケモン」「進化カード」「基本エネルギーカード」から最大5枚を選び出し、相手プレイヤーに見せてから、山札にもどしてよい。その後、それぞれの山札をよく切る。次の相手の番が終わるまで、あなたは手札から「トレーナーカード」を出して使うことができない。"
+    }
+  },
+  "ja-neo1-92": {
+    "kind": "specialEnergy",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "rare",
+    "rules": {
+      "en": "Trade 2 of the other cards in your hand for 4 basic Energy cards from your discard pile. If you have fewer than 4 basic Energy cards there, take all of them.",
+      "local": "手札からカードを2枚選んでトラッシュしなければ、このカードは使えない。\nあなたのトラッシュから「基本エネルギーカード」を最大4枚選び出し、手札に加える。\nただし、このカードを使うためにトラッシュしたカードを選ぶことはできない。"
+    }
+  },
+  "ja-neo1-93": {
+    "kind": "trainer",
+    "artist": "Katsura Tabata",
+    "rarity": "rare",
+    "rules": {
+      "en": "Look at the top 7 cards of your deck. If any of them are Trainer cards, you may show 1 of them to your opponent and put it into your hand. Shuffle your deck afterward. You can't play any more Trainer cards this turn.",
+      "local": "あなたの山札の上から7枚のカードを見る。その中に「トレーナーカード」があれば1枚を選び、相手プレイヤーに見せてから、手札に加える。その後、その山札をよく切る。次の相手の番が終わるまで、あなたは手札から「トレーナーカード」を出して使うことができない。"
+    }
+  },
+  "ja-neo1-94": {
+    "kind": "specialEnergy",
+    "artist": "Milky Isobe",
+    "rarity": "rare",
+    "rules": {
+      "en": "",
+      "local": "このカードは、「悪」エネルギー1個ぶんとしてはたらく。このカードをつけているポケモンが、バトルポケモンに、ワザによるダメージを与えるとき、そのダメージは「+10」される。このカードをつけているポケモンが「悪」または「わるい」ポケモンでないなら、ポケモンチェックのたび、このカードをつけているポケモンに、ダメージカウンターを1個のせる。"
+    }
+  },
+  "ja-neo1-95": {
+    "kind": "specialEnergy",
+    "artist": "Milky Isobe",
+    "rarity": "holo-rare",
+    "rules": {
+      "en": "",
+      "local": "このカードは、「鋼」エネルギー1個ぶんとしてはたらく。このカードをつけているポケモンが、ワザによるダメージを受けるとき、そのダメージは「-10」される。このカードをつけているポケモンが「鋼」ポケモンでないなら、このカードをつけているポケモンがワザによって与えるダメージも、「-10」される。"
+    }
+  },
+  "ja-neo1-96": {
+    "kind": "specialEnergy",
+    "artist": "Hideki Kazama",
+    "rarity": "rare",
+    "rules": {
+      "en": "Recycle Energy provides Colorless Energy. (Doesn't count as a basic Energy card.)\nIf this card is put into your discard pile from play, return it to your hand.",
+      "local": "このカードは[無]エネルギー1個ぶんとしてはたらく。\nこのカードは、場からトラッシュされるとき、トラッシュせず、手札にもどす。"
+    }
+  }
+}

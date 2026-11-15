@@ -1,0 +1,3407 @@
+{
+  "de-neo4-1": {
+    "kind": "stage2",
+    "artist": "Kagemaru Himeno",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 70,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Dark Flaaffy", "local": "Dunkles Waaty" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "colorless", "colorless"],
+        "damage": "50",
+        "local": {
+          "name": "Schock-Blitz",
+          "text": "Lege alle an Dunkles Ampharos angelegten {L}-Energiekarten auf deinen Ablagestapel, oder dieser Angriff hat keine Auswirkungen."
+        },
+        "en": {
+          "name": "Shock Bolt",
+          "text": "Discard all Lightning Energy cards attached to Dark Ampharos or this attack does nothing."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Leitfähigkeit",
+          "text": "Immer wenn dein Gegner eine Energiekarte aus seiner Hand an ein Pokémon anlegt, fügt diese Power diesem Pokémon 10 Schadenspunkte zu. (Wende Schwäche und Resistenz nicht an.) Diese Fähigkeit verliert ihre Wirkung, solange du mehr als 1 Dunkles Ampharos im Spiel hast oder während Dunkles Ampharos schläft, verwirrt oder gelähmt ist."
+        },
+        "en": {
+          "name": "Conductivity",
+          "text": "Whenever your opponent attaches an Energy card from his or her hand to a Pokémon, this power does 10 damage to that Pokémon. (Don't apply Weakness and Resistance.) This power stops working if you have more than 1 Dark Ampharos in play or while Dark Ampharos is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "de-neo4-2": {
+    "kind": "stage2",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 70,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Dark Golbat", "local": "Dunkles Golbat" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "grass"],
+        "damage": "",
+        "local": {
+          "name": "Finsteres Aussaugen",
+          "text": "Wirf für jedes Pokémon deines Gegners eine Münze. Immer wenn „Kopf“ fällt, fügt dieser Angriff dem entsprechenden Pokémon 10 Schadenspunkte zu. Wende Schwäche und Resistenz nicht an. Zähle, wie oft du insgesamt „Kopf“ geworfen hast, und entferne so viele Schadensmarken von Dunkles Iksbat. Falls Dunkles Iksbat weniger Schadensmarken hat, entferne alle."
+        },
+        "en": {
+          "name": "Dark Drain",
+          "text": "Flip a coin for each of your opponent's Pokémon. For each heads, this attack does 10 damage to that Pokémon. Don't apply Weakness and Resistance. Remove a number of damage counters from Dark Crobat equal to the damage dealt. If Dark Crobat has fewer damage counters than that, remove all of them."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Überraschungsbiss",
+          "text": "Wenn du Dunkles Iksbat aus deiner Hand spielst, kannst du 1 der Pokémon deines Gegners wählen. Diese Power fügt diesem Pokémon 20 Schadenspunkte zu. (Wende Schwäche und Resistenz nicht an.)"
+        },
+        "en": {
+          "name": "Surprise Bite",
+          "text": "When you play Dark Crobat from your hand, you may choose 1 of your opponent's Pokémon. This power does 20 damage to that Pokémon. (Don't apply Weakness and Resistance.)"
+        }
+      }
+    ]
+  },
+  "de-neo4-3": {
+    "kind": "stage1",
+    "artist": "Shin-ichi Yoshida",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 60,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }],
+      "evolvesFrom": { "en": "Phanpy", "local": "Phanpy" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting"],
+        "damage": "",
+        "local": {
+          "name": "Stoßzahnstoß",
+          "text": "Falls dein Gegner mindestens ein Pokémon auf der Bank hat, wirf eine Münze. Bringe bei „Kopf“ das verteidigende Pokémon und alle daran angelegten Karten auf die Hand deines Gegners zurück. Bei „Zahl“ wählt dein Gegner eins seiner Pokémon auf der Bank und tauscht es mit dem verteidigenden Pokémon aus."
+        },
+        "en": {
+          "name": "Tusk Toss",
+          "text": "If your opponent has any Benched Pokémon, flip a coin. If heads, return the Defending Pokémon and all cards attached to it to your opponent's hand. If tails, your opponent chooses 1 of his or her Benched Pokémon and switches it with the Defending Pokémon."
+        }
+      },
+      {
+        "cost": ["fighting", "fighting", "colorless"],
+        "damage": "50",
+        "local": { "name": "Riesenstoßzahn", "text": "" },
+        "en": { "name": "Giant Tusk", "text": "" }
+      }
+    ]
+  },
+  "de-neo4-4": {
+    "kind": "stage1",
+    "artist": "Atsuko Nishida",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 60,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Eevee", "local": "Evoli" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10+",
+        "local": {
+          "name": "Klauen ausfahren",
+          "text": "Wirf eine Münze. Bei „Kopf“ fügt dieser Angriff 10 Schadenspunkte plus 10 weitere Schadenspunkte zu; bei „Zahl“ fügt dieser Angriff 10 Schadenspunkte zu."
+        },
+        "en": {
+          "name": "Gouge",
+          "text": "Flip a coin. If heads, this attack does 10 damage plus 10 more damage; if tails, this attack does 10 damage."
+        }
+      },
+      {
+        "cost": ["psychic", "colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Psyspritzer",
+          "text": "Fügt jedem der Pokémon deines Gegners 10 Schadenspunkte für jede an dieses Pokémon angelegte Energiekarte zu. Wende Schwäche und Resistenz nicht an."
+        },
+        "en": {
+          "name": "Psysplash",
+          "text": "Does 10 damage to each of your opponent's Pokémon for each Energy card attached to that Pokémon. Don't apply Weakness and Resistance."
+        }
+      }
+    ]
+  },
+  "de-neo4-5": {
+    "kind": "stage2",
+    "artist": "Atsuko Nishida",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 80,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Dark Croconaw", "local": "Tyracroc" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water", "water"],
+        "damage": "50",
+        "local": {
+          "name": "Brechschlag",
+          "text": "Wirf eine Münze, falls an das verteidigende Pokémon mindestens eine Energiekarte angelegt ist. Wähle bei „Kopf“ eine dieser Karten und lege sie auf den Ablagestapel deines Gegners."
+        },
+        "en": {
+          "name": "Crushing Blow",
+          "text": "If the Defending Pokémon has any Energy cards attached to it, flip a coin. If heads, choose 1 of those cards and discard it."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Angst einjagen",
+          "text": "Solange Dunkles Impergator dein aktives Pokémon ist, funktioniert keine Power eines Baby Pokémon deines Gegners und die Baby-Pokémon deines Gegners können nicht angreifen. Diese Fähigkeit verliert ihre Wirkung, solange Dunkles Impergator schläft, verwirrt oder gelähmt ist."
+        },
+        "en": {
+          "name": "Scare",
+          "text": "As long as Dark Feraligatr is your Active Pokémon, all of your opponent's Baby Pokémon Powers stop working and your opponent's Baby Pokémon can't attack. This power stops working while Dark Feraligatr is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "de-neo4-6": {
+    "kind": "stage2",
+    "artist": "Aya Kusube",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 70,
+      "retreat": 2,
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Dark Haunter", "local": "Alpollo" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "psychic", "psychic"],
+        "damage": "30",
+        "local": {
+          "name": "Hereinziehen",
+          "text": "Falls dein Gegner mindestens ein Pokémon auf der Bank hat, darfst du eins davon wählen und mit dem verteidigenden Pokémon austauschen (bevor der Schaden und andere Effekte dieses Angriffs zugefügt werden). Auf jeden Fall schläft das verteidigende Pokémon jetzt."
+        },
+        "en": {
+          "name": "Pull In",
+          "text": "If your opponent has any Benched Pokémon, you may choose 1 of them and switch it with the Defending Pokémon (before doing damage or other effects of this attack). Either way, the Defending Pokémon is now Asleep."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Tiefer Schlaf",
+          "text": "Solange mindestens ein Dunkles Gengar im Spiel ist, wirft jeder Spieler für jedes seiner Pokémon, das schläft, am Ende jedes Zuges zwei Münzen. Wenn mindestens eine davon „Zahl“ zeigt, schläft das betroffene Pokémon weiter. Diese Fähigkeit verliert ihre Wirkung, solange Dunkles Gengar schläft, verwirrt oder gelähmt ist."
+        },
+        "en": {
+          "name": "Deep Sleep",
+          "text": "As long as any Dark Gengar are in play, a player flips 2 coins for each of his or her Pokémon that is Asleep at the end of each turn. If either of them is tails, that Pokémon is still Asleep. This power stops working if Dark Gengar is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "de-neo4-7": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Houndour", "local": "Hunduster" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "Schauriges Heulen",
+          "text": "Wenn die Bank deines Gegners nicht voll ist, schaue dir die Karten auf seiner Hand an. Falls dein Gegner mindestens ein Baby-Pokémon oder Basis-Pokémon auf der Hand hat, wähle eines davon und lege es auf seine Bank. Tausche dieses Pokémon dann mit dem verteidigenden Pokémon aus."
+        },
+        "en": {
+          "name": "Eerie Howl",
+          "text": "If your opponent's Bench isn't full, look at his or her hand. If your opponent has any Baby Pokémon or Basic Pokémon there, choose 1 of them and put it on his or her Bench. Then, switch it with the Defending Pokémon."
+        }
+      },
+      {
+        "cost": ["fire", "colorless"],
+        "damage": "30+",
+        "local": {
+          "name": "Finsteres Feuer",
+          "text": "Falls mindestens eine {D}-Energiekarte an Dunkles Hundemon angelegt ist, lege eine davon auf deinen Ablagestapel, und dieser Angriff fügt 30 Schadenspunkte plus 20 weitere Schadenspunkte zu (plus 10 weitere für die abgelegte {D}-Energiekarte). Sonst fügt dieser Angriff 30 Schadenspunkte zu."
+        },
+        "en": {
+          "name": "Dark Fire",
+          "text": "If there are any Darkness Energy cards attached to Dark Houndoom, discard 1 of them and this attack does 30 damage plus 20 more damage (plus 10 more damage for the Darkness Energy you discarded). If there aren't any, this attack does 30 damage."
+        }
+      }
+    ]
+  },
+  "de-neo4-8": {
+    "kind": "stage1",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }],
+      "evolvesFrom": { "en": "Porygon", "local": "Porygon" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "Krümmungsangriff",
+          "text": "Wirf eine Münze. Verhindere bei „Kopf“ allen Schaden, der Dunkles Porygon2 während des nächsten Zugs deines Gegners durch Angriffe zugefügt wird. (Alle anderen Auswirkungen von Angriffen finden immer noch statt.)"
+        },
+        "en": {
+          "name": "Curve Attack",
+          "text": "Flip a coin. If heads, prevent all damage done by attacks to Dark Porygon2 during your opponent's next turn. (Any other effects of attacks still happen.)"
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Räumliche Abweichung",
+          "text": "Du kannst immer einmal in deinem Zug (vor deinem Angriff) eine Münze werfen. Wähle bei „Kopf“ eine Stadion-Karte aus deinem Ablagestapel und bringe sie ins Spiel. (Wenn bereits eine Stadion-Karte im Spiel ist, lege diese auf den Ablagestapel ihres Besitzers.) Diese Fähigkeit kann nicht verwendet werden, wenn Dunkles Porygon2 schläft, verwirrt oder gelähmt ist."
+        },
+        "en": {
+          "name": "Spatial Distortion",
+          "text": "Once during your turn (before your attack), you may flip a coin. If heads, choose a Stadium card from your discard pile and put it into play. (If there's already a Stadium card in play, discard it.) This power can't be used if Dark Porygon2 is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "de-neo4-9": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "metal",
+      "types": ["metal"],
+      "hp": 70,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "grass", "value": "-30" }],
+      "evolvesFrom": { "en": "Scyther", "local": "Sichlor" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Bedrohen",
+          "text": "Wirf eine Münze. Schaue dir bei „Kopf“ die Karten auf der Hand deines Gegners an. Wenn er darunter mindestens eine Trainerkarte hat, wähle eine davon. Dein Gegner mischt diese Karte in sein Deck."
+        },
+        "en": {
+          "name": "Threaten",
+          "text": "Flip a coin. If heads, look at your opponent's hand. If he or she has any Trainer cards there, choose 1 of them. Your opponent shuffles that card into his or her deck."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "30",
+        "local": { "name": "Schlitzer", "text": "" },
+        "en": { "name": "Slash", "text": "" }
+      }
+    ]
+  },
+  "de-neo4-10": {
+    "kind": "stage2",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Dark Quilava", "local": "Igelavar" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "20",
+        "local": { "name": "Klauenschlag", "text": "" },
+        "en": { "name": "Claw Swipe", "text": "" }
+      },
+      {
+        "cost": ["fire"],
+        "damage": "40x",
+        "local": {
+          "name": "Brausende Flammen",
+          "text": "Du kannst eine beliebige Anzahl an dein Pokémon angelegte {R}-Energiekarten auf deinen Ablagestapel legen. Wirf für jede {R}-Energiekarte, die du auf diese Weise auf deinen Ablagestapel gelegt hast, eine Münze. Dieser Angriff fügt 40 Schadenspunkte mal der Anzahl „Kopf“ zu."
+        },
+        "en": {
+          "name": "Rushing Flames",
+          "text": "You may discard any number of Fire Energy cards attached to your Pokémon. Flip a coin for each Fire Energy card discarded in this way. This attack does 40 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "de-neo4-11": {
+    "kind": "stage2",
+    "artist": "Shin-ichi Yoshida",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 90,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }],
+      "evolvesFrom": { "en": "Dark Pupitar", "local": "Pupitar" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting"],
+        "damage": "20x",
+        "local": {
+          "name": "Bergzertrümmerer",
+          "text": "Wirf so viele Münzen, wie an Dunkles Despotar {F}-Energiekarten angelegt sind. Dieser Angriff fügt 20 Schadenspunkte mal der Anzahl „Kopf“ zu. Lege dann für jedes Mal „Kopf“ die oberste Karte vom Deck deines Gegners auf den Ablagestapel."
+        },
+        "en": {
+          "name": "Mountain Smasher",
+          "text": "Flip a number of coins equal to the number of Fighting Energy cards attached to Dark Tyranitar. This attack does 20 damage times the number of heads. Then, for each heads, discard the top card from your opponent's deck."
+        }
+      },
+      {
+        "cost": ["fighting", "fighting", "fighting", "colorless"],
+        "damage": "50",
+        "local": {
+          "name": "Wegschleudern",
+          "text": "Falls dein Gegner mindestens ein Pokémon auf der Bank hat, fügt dieser Angriff 30 Schadenspunkte statt 50 zu und du bestimmst ein Pokémon auf der Bank deines Gegners. Dieser Angriff fügt diesem Pokémon 30 Schadenspunkte zu. (Wende Schwäche und Resistenz bei Pokémon auf der Bank nicht an.)"
+        },
+        "en": {
+          "name": "Fling Away",
+          "text": "If your opponent has any Benched Pokémon, this attack does 30 damage instead of 50 and choose 1 of those Benched Pokémon. This attack does 30 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "de-neo4-12": {
+    "kind": "stage1",
+    "artist": "Atsuko Nishida",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 100,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Growlithe", "local": "Fukano" }
+    },
+    "attacks": [
+      {
+        "cost": ["fire", "fire", "colorless"],
+        "damage": "50",
+        "local": {
+          "name": "Sanfte Flammen",
+          "text": "Wenn das verteidigende Pokémon ein Baby-Pokémon ist, fügt dieser Angriff 10 Schadenspunkte statt 50 zu. Wenn das verteidigende Pokémon ein Basis-Pokémon ist, fügt dieser Angriff 30 Schadenspunkte statt 50 zu."
+        },
+        "en": {
+          "name": "Gentle Flames",
+          "text": "If the Defending Pokémon is a Baby Pokémon, this attack does 10 damage instead of 50. If the Defending Pokémon is a Basic Pokémon, this attack does 30 damage instead of 50."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Wegtreiben",
+          "text": "Solange Helles Arkani dein aktives Pokémon ist, und falls dein Gegner mindestens ein Pokémon auf der Bank hat, wählt dein Gegner einmal in deinem Zug (vor deinem Angriff) eines von ihnen und tauscht es mit dem verteidigenden Pokémon. Diese Fähigkeit kann nicht verwendet werden, falls Helles Arkani schläft, verwirrt oder gelähmt ist."
+        },
+        "en": {
+          "name": "Drive Off",
+          "text": "As long as Light Arcanine is your Active Pokémon, once during your turn (before your attack), if your opponent has any Benched Pokémon, he or she chooses 1 of them and switches it with the Defending Pokémon. This power can't be used while Light Arcanine is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "de-neo4-13": {
+    "kind": "stage1",
+    "artist": "Yuka Morii",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Marill", "local": "Marill" }
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "10",
+        "local": {
+          "name": "Blubber",
+          "text": "Wirf eine Münze. Bei „Kopf“ ist das verteidigende Pokémon jetzt gelähmt."
+        },
+        "en": {
+          "name": "Bubble",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      },
+      {
+        "cost": ["water", "colorless", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "Blubbsprung",
+          "text": "Wirf eine Münze, wenn du mindestens ein Pokémon auf der Bank hast. Nimm bei „Kopf“ zwei an Helles Azumarill angelegte Energiekarten und lege sie an eines deiner Pokémon auf der Bank an. Bringe dann Helles Azumarill und alle darin angelegten Karten auf deine Hand zurück."
+        },
+        "en": {
+          "name": "Bubble Jump",
+          "text": "If you have any Benched Pokémon, flip a coin. If heads, take 2 Energy cards attached to Light Azumarill and attach them to 1 of your Benched Pokémon. Then return Light Azumarill and all cards attached to it to your hand."
+        }
+      }
+    ]
+  },
+  "de-neo4-14": {
+    "kind": "stage2",
+    "artist": "Atsuko Nishida",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 100,
+      "retreat": 2,
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Light Dragonair", "local": "Dragonir" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "40",
+        "local": {
+          "name": "Leichte Wellen",
+          "text": "Verhindere alle Auswirkungen von Angriffen (außer Schaden), der Helles Dragoran während des nächsten Zuges deines Gegners zugefügt wird."
+        },
+        "en": {
+          "name": "Light Wave",
+          "text": "Prevent all effects of attacks, other than damage, done to Light Dragonite during your opponent's next turn."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Wundersamer Wind",
+          "text": "Solange Helles Dragoran dein aktives Pokémon ist, erzeugt jede Spezialenergiekarte {C}-Energie statt ihres normalen Typs, und alle ihre anderen Effekte funktionieren nicht. Diese Fähigkeit verliert ihre Wirkung, solange Helles Dragoran schläft, verwirrt oder gelähmt ist."
+        },
+        "en": {
+          "name": "Miraculous Wind",
+          "text": "As long as Light Dragonite is your Active Pokémon, each Special Energy card provides Colorless Energy instead of its usual type and its other effects stop working. This power stops working while Light Dragonite is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "de-neo4-15": {
+    "kind": "stage1",
+    "artist": "Naoyo Kimura",
+    "rarity": "holo-rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 60,
+      "retreat": 0,
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Togepi", "local": "Togepi" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "30",
+        "local": { "name": "Bitterkuss", "text": "Dein Gegner kann eine Karte ziehen." },
+        "en": { "name": "Sweet Kiss", "text": "Your opponent may draw a card." }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Gabe",
+          "text": "Wenn du Helles Togetic aus deiner Hand spielst, darf dein Gegner sein Deck nach einer Pokémon-Ausrüstungskarte durchsuchen, dir diese Karte zeigen und auf seine Hand nehmen. Unabhängig davon darfst du das selbe tun. Danach mischt jeder Spieler, der sein Deck durchsucht hat, sein Deck."
+        },
+        "en": {
+          "name": "Gift",
+          "text": "When you play Light Togetic from your hand, your opponent may search his or her deck for a Pokémon Tool card, show that card to you, and put it into his or her hand. Either way, you may do the same, and then each player who searched shuffles his or her deck."
+        }
+      }
+    ]
+  },
+  "de-neo4-16": {
+    "kind": "specialEnergy",
+    "artist": "Milky Isobe",
+    "rarity": "holo-rare",
+    "rules": {
+      "en": "You can't have more than 1 Miracle Energy in your deck. Attach Miracle Energy to 1 of your Shining or Light Pokémon. At the end of your turn, discard Miracle Energy.\nWhile in play, Miracle Energy counts as every type of Energy but provides only 2 Energy at a time.",
+      "local": "Du kannst maximal 1 Wunder-Energie in deinem Deck haben. Lege Wunder-Energie an eines deiner Schimmernden oder Hellen Pokémon an. Lege am Ende deines Zuges Wunder-Energie auf deinen Ablagestapel. Solange Wunder-Energie im Spiel ist, zählt Wunder-Energie als jeder Energietyp, erzeugt aber 2 Energie gleichzeitig."
+    }
+  },
+  "de-neo4-17": {
+    "kind": "stage1",
+    "artist": "Toshinao Aoki",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 60,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Spinarak", "local": "Webarak" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "",
+        "local": {
+          "name": "Falle stellen",
+          "text": "Falls dein Gegner mindestens ein Pokémon auf der Bank hat, wähle eines von diesen und tausche es mit dem verteidigenden Pokémon aus. Wirf dann eine Münze. Bei „Kopf“ ist das neue verteidigende Pokémon jetzt gelähmt."
+        },
+        "en": {
+          "name": "Entangle",
+          "text": "If your opponent has any Benched Pokémon, choose 1 of them and switch it with the Defending Pokémon, then flip a coin. If heads, the new Defending Pokémon is now Paralyzed."
+        }
+      },
+      {
+        "cost": ["grass", "grass", "grass"],
+        "damage": "30",
+        "local": {
+          "name": "Giftfesselung",
+          "text": "Das verteidigende Pokémon ist jetzt vergiftet. Wirf eine Münze. Bei „Kopf“ kann sich das verteidigende Pokémon bis zum Ende des nächsten Zuges deines Gegners nicht zurückziehen, und wenn der Effekt eines Angriffs, einer Pokémon-Power oder Trainerkarte das aktive Pokémon dieses Spielers ändern würde, hat dieser Teil des Effekts dann keine Wirkung."
+        },
+        "en": {
+          "name": "Poison Bind",
+          "text": "The Defending Pokémon is now Poisoned. Flip a coin. If heads, the Defending Pokémon can't retreat until the end of your opponent's next turn and if the effect of an attack, Pokémon Power, or Trainer card would change that player's Active Pokémon, that part of the effect does nothing."
+        }
+      }
+    ]
+  },
+  "de-neo4-18": {
+    "kind": "stage1",
+    "artist": "Toshinao Aoki",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 60,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Slugma", "local": "Schneckmag" }
+    },
+    "attacks": [
+      {
+        "cost": ["fire", "fire"],
+        "damage": "20",
+        "local": {
+          "name": "Flammenball",
+          "text": "Du kannst eine an Dunkles Magcargo angelegte {R}-Energiekarte auf deinen Ablagestapel legen, wenn du diesen Angriff verwendest. Falls du dies tust und falls dein Gegner mindestens ein Pokémon auf der Bank hat, bestimmme eines von diesen. Dieser Angriff fügt diesem Pokémon 20 Schadenspunkte zu. (Wende Schwäche und Resistenz bei Pokémon auf der Bank nicht an.)"
+        },
+        "en": {
+          "name": "Ball of Flame",
+          "text": "You may discard a Fire Energy card attached to Dark Magcargo when you use this attack. If you do and if your opponent has any Benched Pokémon, choose 1 of them and this attack does 20 damage to it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Heißer Boden",
+          "text": "Solange Dunkles Magcargo dein aktives Pokémon ist, fügt diese Fähigkeit immer, wenn ein Spieler ein Baby-Pokémon oder ein Basis-Pokémon aus seiner Hand auf seine Bank legt, diesem Pokémon 10 Schadenspunkte zu. (Wende Schwäche und Resistenz nicht an.) Diese Fähigkeit verliert ihre Wirkung, solange Dunkles Magcargo schläft, verwirrt oder gelähmt ist."
+        },
+        "en": {
+          "name": "Hot Plate",
+          "text": "As long as Dark Magcargo is your Active Pokémon, whenever a player puts a Baby Pokémon or Basic Pokémon onto his or her Bench from his or her hand, this power does 10 damage to that Pokémon. (Don't apply Weakness and Resistance.) This power stops working if Dark Magcargo is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "de-neo4-19": {
+    "kind": "stage2",
+    "artist": "Tomokazu Komiya",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 70,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Dark Omanyte", "local": "Amonitas" }
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "",
+        "local": {
+          "name": "Urzeitwasser",
+          "text": "Wenn dein Gegner mindestens ein entwickeltes Pokémon im Spiel hat, wähle eines von diesen und wirf eine Münze. Bei „Kopf“ nimmt dein Gegner die Entwicklungskarte der höchsten Phase von diesem Pokémon und mischt sie in sein Deck."
+        },
+        "en": {
+          "name": "Prehistoric Water",
+          "text": "If your opponent has any evolved Pokémon in play, choose 1 of them and flip a coin. If heads, your opponent takes the highest Stage Evolution card on that Pokémon and shuffles it into his or her deck."
+        }
+      },
+      {
+        "cost": ["water", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "Finsteres Tentakel",
+          "text": "Während des nächsten Zuges deines Gegners kann sich das verteidigende Pokémon nicht entwickeln, außer durch Effekte von Angriffen und Pokémon-Powers. (Wenn das Pokémon auf die Bank kommt, endet dadurch dieser Effekt.)"
+        },
+        "en": {
+          "name": "Dark Tentacle",
+          "text": "During your opponent's next turn, the Defending Pokémon can't evolve except from effects of attacks or Pokémon Powers. (Benching that Pokémon ends this effect.)"
+        }
+      }
+    ]
+  },
+  "de-neo4-20": {
+    "kind": "stage1",
+    "artist": "Tomokazu Komiya",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 60,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Slowpoke", "local": "Flegmon" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "psychic"],
+        "damage": "30",
+        "local": {
+          "name": "Verstandesschock",
+          "text": "Wende Schwäche und Resistenz bei diesem Angriff nicht an."
+        },
+        "en": {
+          "name": "Mind Shock",
+          "text": "Don't apply Weakness or Resistance for this attack."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Gerissenheit",
+          "text": "Du kannst immer einmal in deinem Zug (vor deinem Angriff) eine Münze werfen. Schaue dir bei 'Kopf' die oberste Karte des Decks deines Gegners an. Du kannst dann bestimmen, dass dein Gegner sein Deck mischen muss. Diese Fähigkeit kann nicht verwendet werden, wenn Dunkles Laschoking schläft, verwirrt oder gelähmt ist."
+        },
+        "en": {
+          "name": "Cunning",
+          "text": "Once during your turn (before your attack), you may flip a coin. If heads, look at the top card of your opponent's deck. Then, you may have your opponent shuffle his or her deck. This power can't be used if Dark Slowking is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "de-neo4-21": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 60,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }],
+      "evolvesFrom": { "en": "Teddiursa", "local": "Teddiursa" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "Provozieren",
+          "text": "Schau dir die Karten auf der Hand deines Gegners an. Wenn er mindestens ein Baby-Pokémon und/oder Basis-Pokémon darunter hat, kannst du eine beliebige Anzahl davon auf die Bank deines Gegners legen (solange dort Platz ist). Dann schaut sich dein Gegner die Karten auf deiner Hand an. Wenn du mindestens ein Baby-Pokémon und/oder Basis-Pokémon auf der Hand hast, kann dein Gegner eine beliebige Anzahl davon auf deine Bank legen (solange dort Platz ist)."
+        },
+        "en": {
+          "name": "Provoke",
+          "text": "Look at your opponent's hand. If he or she has any Baby Pokémon and/or Basic Pokémon there, you may put any number of them onto your opponent's Bench (as long as there's room). Then, your opponent looks at your hand. If you have any Baby Pokémon and/or Basic Pokémon there, your opponent may put any number of them onto your Bench (as long as there's room)."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Kampfrausch",
+          "text": "Wirf für jedes Pokémon im Spiel (deine und die deines Gegners) eine Münze. Für jedes Mal „Kopf“ fügt dieser Angriff dem entsprechenden Pokémon 20 Schadenspunkte zu. Wende Schwäche und Resistenz bei diesem Angriff nicht an."
+        },
+        "en": {
+          "name": "Battle Frenzy",
+          "text": "For each Pokémon in play (yours and your opponent's), flip a coin. For each heads, this attack does 20 damage to that Pokémon. Don't apply Weakness and Resistance for this attack."
+        }
+      }
+    ]
+  },
+  "de-neo4-22": {
+    "kind": "stage1",
+    "artist": "Atsuko Nishida",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 80,
+      "retreat": 2,
+      "resistances": [{ "energy": "psychic", "value": "-30" }],
+      "evolvesFrom": { "en": "Dratini", "local": "Dratini" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Heilendes Licht",
+          "text": "Entferne von jedem deiner Pokémon, auf dem Schadensmarken liegen, eine der Schadensmarken."
+        },
+        "en": {
+          "name": "Healing Light",
+          "text": "Remove 1 damage counter from each of your Pokémon that has any damage counters on it."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "Schützende Welle",
+          "text": "Wirf eine Münze. Verhindere bei „Kopf“ während des nächsten Zuges deines Gegners alle Effekte von Angriffen, einschließlich Schaden, die Helles Dragonir zugefügt werden."
+        },
+        "en": {
+          "name": "Protective Wave",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Light Dragonair."
+        }
+      }
+    ]
+  },
+  "de-neo4-23": {
+    "kind": "stage1",
+    "artist": "Miki Tanaka",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 80,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Chinchou", "local": "Lampi" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning"],
+        "damage": "",
+        "local": {
+          "name": "Scheinwerfer",
+          "text": "Wirf eine Münze. Bei „Kopf“ darf jeder Spieler eine Karte von seinem Ablagestapel auswählen und auf seine Hand nehmen."
+        },
+        "en": {
+          "name": "Searchlight",
+          "text": "Flip a coin. If heads, each player may choose a card from his or her discard pile and put it into his or her hand."
+        }
+      },
+      {
+        "cost": ["lightning", "lightning"],
+        "damage": "30",
+        "local": {
+          "name": "Funkensprung",
+          "text": "Falls dein Gegner mindestens ein Pokémon auf der Bank hat, wähle eines von diesen, und dieser Angriff fügt ihm 10 Schadenspunkte zu. (Wende Schwäche und Resistenz bei Pokémon auf der Bank nicht an.)"
+        },
+        "en": {
+          "name": "Spark",
+          "text": "If your opponent has any Benched Pokémon, choose 1 of them and this attack does 10 damage to it. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "de-neo4-24": {
+    "kind": "stage1",
+    "artist": "Tomokazu Komiya",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 70,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Ledyba", "local": "Ledyba" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "",
+        "local": {
+          "name": "Blitzberührung",
+          "text": "Falls du mindestens ein Pokémon auf deiner Bank hast, tausche eines von diesen mit Helles Ledian. Solange dieses Pokémon dein aktives Pokémon ist, kann es nicht schlafen, verwirrt, gelähmt oder vergiftet sein. (Alle anderen Effekte von Angriffen, Pokémon-Powers und Trainerkarten finden immer noch statt.)"
+        },
+        "en": {
+          "name": "Flash Touch",
+          "text": "If you have any Benched Pokémon, switch 1 of them with Light Ledian. As long as that Pokémon is your Active Pokémon, it can't become Asleep, Confused, Paralyzed, or Poisoned. (All other effects of attacks, Pokémon Powers, and Trainer cards still happen.)"
+        }
+      },
+      {
+        "cost": ["grass", "colorless", "colorless"],
+        "damage": "20x",
+        "local": {
+          "name": "Kometenhieb",
+          "text": "Wirf 4 Münzen. Dieser Angriff fügt 20 Schadenspunkte mal der Anzahl „Kopf“ zu."
+        },
+        "en": {
+          "name": "Comet Punch",
+          "text": "Flip 4 coins. This attack does 20 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "de-neo4-25": {
+    "kind": "stage2",
+    "artist": "Miki Tanaka",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 100,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Light Machoke", "local": "Maschock" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting", "fighting"],
+        "damage": "50",
+        "local": {
+          "name": "Niederprügler",
+          "text": "Wirf eine Münze, wenn das verteidigende Pokémon „Dunkles“ in seinem Namen hat oder ein {D}-Pokémon ist. Bei „Kopf“ fügt dieser Angriff 100 Schadenspunkte statt 50 zu."
+        },
+        "en": {
+          "name": "Beatdown",
+          "text": "If the Defending Pokémon has Dark in its name or is a Darkness Pokémon, flip a coin. If heads, this attack does 100 damage instead of 50."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Kampfpartner",
+          "text": "Wenn du Helles Machomei aus deiner Hand spielst und es auf deine Bank legst, entferne 3 Schadensmarken von deinem aktiven Pokémon. Wenn es weniger Schadensmarken hat, entferne alle. Tausche dann Helles Machomei mit deinem aktiven Pokémon."
+        },
+        "en": {
+          "name": "Tag Team",
+          "text": "When you play Light Machamp from your hand, if it is on your Bench, remove 3 damage counters from your Active Pokémon. If it has fewer damage counters than that, remove all of them. Then, switch Light Machamp with your Active Pokémon."
+        }
+      }
+    ]
+  },
+  "de-neo4-26": {
+    "kind": "stage1",
+    "artist": "Yukiko Baba",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 90,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }],
+      "evolvesFrom": { "en": "Swinub", "local": "Quiekel" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "Umwerfen",
+          "text": "Falls eine Stadion-Karte im Spiel ist, darfst du sie auf den Ablagestapel ihres Besitzers legen."
+        },
+        "en": {
+          "name": "Knock Over",
+          "text": "If there is a Stadium card in play, you may discard it."
+        }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Wuschelwolle",
+          "text": "Wirf eine Münze, wenn Helles Keifel dein aktives Pokémon ist und im Zug deines Gegners von einem Angriff deines Gegners Schaden nimmt (selbst wenn es kampfunfähig ist). Bei „Kopf“ schläft das verteidigende Pokémon jetzt. Diese Fähigkeit verliert ihre Wirkung, falls Helles Keifel bereits schläft, verwirrt oder gelähmt ist, wenn dein Gegner angreift."
+        },
+        "en": {
+          "name": "Fluffy Wool",
+          "text": "During your opponent's turn, if Light Piloswine is your Active Pokémon and is damaged by your opponent's attack (even if it's Knocked Out), flip a coin. If heads, the attacking Pokémon is now Asleep. This power stops working if Light Piloswine is already Asleep, Confused, or Paralyzed when your opponent attacks."
+        }
+      }
+    ]
+  },
+  "de-neo4-27": {
+    "kind": "pokemon",
+    "artist": "CR CG gangs",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "10",
+        "local": { "name": "Kraftreserve", "text": "" },
+        "en": { "name": "Hidden Power", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Give [Give]",
+          "text": "Einmal in deinem Zug (vor deinem Angriff), wenn du Icognito {G}, Icognito [I], Icognito [V] und Icognito [E] auf deiner Bank hast, kannst du eine Münze werfen. Durchsuche bei „Kopf“ dein Deck nach einer Basis-Energiekarte und lege sie an eines deiner Pokémon an. Mische dein Deck danach."
+        },
+        "en": {
+          "name": "[Give]",
+          "text": "Once during your turn (before your attack), if you have Unown {G}, Unown [I], Unown [V], and Unown [E] on your Bench, you may flip a coin. If heads, search your deck for a basic Energy card and attach it to 1 of your Pokémon. Shuffle your deck afterward."
+        }
+      }
+    ]
+  },
+  "de-neo4-28": {
+    "kind": "pokemon",
+    "artist": "CR CG gangs",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "10",
+        "local": { "name": "Kraftreserve", "text": "" },
+        "en": { "name": "Hidden Power", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Help [Help]",
+          "text": "Du kannst immer einmal in deinem Zug (vor deinem Angriff), wenn du Icognito [H], Icognito [E], Icognito {L} und Icognito {P} auf deiner Bank hast, die Karten auf deiner Hand in dein Deck mischen und danach genauso viele Karten neu ziehen."
+        },
+        "en": {
+          "name": "[Help]",
+          "text": "Once during your turn (before your attack), if you have Unown [H], Unown [E], Unown {L}, and Unown {P} on your Bench, you may shuffle your hand into your deck, then draw a new hand of the same number of cards."
+        }
+      }
+    ]
+  },
+  "de-neo4-29": {
+    "kind": "pokemon",
+    "artist": "CR CG gangs",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "10",
+        "local": { "name": "Kraftreserve", "text": "" },
+        "en": { "name": "Hidden Power", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Want [Want]",
+          "text": "Du kannst immer einmal in deinem Zug (vor deinem Angriff), wenn du Icognito {W}, Icognito [A], Icognito {N}, und Icognito [T] auf deiner Bank hast, eine Münze werfen. Nimm bei „Kopf“ eine Trainerkarte von deinem Ablagestapel auf deine Hand."
+        },
+        "en": {
+          "name": "[Want]",
+          "text": "Once during your turn (before your attack), if you have Unown {W}, Unown [A], Unown {N}, and Unown [T] on your Bench, you may flip a coin. If heads, put a Trainer card from your discard pile into your hand."
+        }
+      }
+    ]
+  },
+  "de-neo4-30": {
+    "kind": "pokemon",
+    "artist": "CR CG gangs",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "10",
+        "local": { "name": "Kraftreserve", "text": "" },
+        "en": { "name": "Hidden Power", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "XXXXX [XXXXX]",
+          "text": "Immer wenn eines deiner Pokémon, die „Icognito“ in ihrem Namen haben, seinen Kraftreserve-Angriff verwendet, wirf so lange eine Münze, bis „Zahl“ kommt. Dieser Angriff fügt pro geworfenem „Kopf“ 10 Schadenspunkte mehr zu. Wenn du mehr als ein 1 Icognito [X] im Spiel hast, verwende [XXXXX] in jedem Zug nur einmal."
+        },
+        "en": {
+          "name": "[XXXXX]",
+          "text": "Whenever 1 of your Pokémon with Unown in its name uses its Hidden Power attack, flip a coin until you get tails. That attack does 10 more damage for each heads. If you have more than 1 Unown [X] in play, use only 1 [XXXXX] each turn."
+        }
+      }
+    ]
+  },
+  "de-neo4-31": {
+    "kind": "pokemon",
+    "artist": "Yuka Morii",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 90,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20x",
+        "local": {
+          "name": "Duplexhieb",
+          "text": "Wirf zwei Münzen. Dieser Angriff fügt 20 Schadenspunkte mal der Anzahl „Kopf“ zu."
+        },
+        "en": {
+          "name": "Doubleslap",
+          "text": "Flip 2 coins. This attack does 20 damage times the number of heads."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "80",
+        "local": {
+          "name": "Eierwurf",
+          "text": "Wirf zwei Münzen. Wenn mindestens eine von beiden „Zahl“ zeigt, hat dieser Angriff keine Auswirkungen."
+        },
+        "en": {
+          "name": "Egg Toss",
+          "text": "Flip 2 coins. If either of them is tails, this attack does nothing."
+        }
+      }
+    ]
+  },
+  "de-neo4-32": {
+    "kind": "stage1",
+    "artist": "Shin-ichi Yoshida",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 60,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "evolvesFrom": { "en": "Totodile", "local": "Karnimani" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water"],
+        "damage": "20",
+        "local": {
+          "name": "Verschlingen",
+          "text": "Das verteidigende Pokémon kann sich nicht während des nächsten Zuges deines Gegners zurückziehen. Wenn das verteidigende Pokémon während des nächsten Zuges deines Gegners versucht, anzugreifen, wirft dein Gegner eine Münze. Bei „Zahl“ hat dieser Angriff keine Auswirkungen. (Kommt eins der beiden Pokémon auf die Bank, endet dieser Effekt.)"
+        },
+        "en": {
+          "name": "Clamping Jaw",
+          "text": "The Defending Pokémon can't retreat during your opponent's next turn. If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing. (Benching either Pokémon ends this effect.)"
+        }
+      }
+    ]
+  },
+  "de-neo4-33": {
+    "kind": "stage1",
+    "artist": "Toshinao Aoki",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 60,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Exeggcute", "local": "Owei" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10x",
+        "local": {
+          "name": "Dreifache Kopfnuss",
+          "text": "Wirf drei Münzen. Dieser Angriff fügt 10 Schadenspunkte mal der Anzahl „Kopf“ zu."
+        },
+        "en": {
+          "name": "Triple Headbutt",
+          "text": "Flip 3 coins. This attack does 10 damage times the number of heads."
+        }
+      },
+      {
+        "cost": ["psychic", "colorless"],
+        "damage": "20x",
+        "local": {
+          "name": "Maxi-Explosion",
+          "text": "Wirf so viele Münzen, wie Energiekarten an das aktive Pokémon deines Gegners angelegt sind. Dieser Angriff fügt 20 Schadenspunkte mal der Anzahl „Kopf“ zu."
+        },
+        "en": {
+          "name": "MAX Burst",
+          "text": "Flip a number of coins equal to the number of Energy cards attached to your opponent's Pokémon. This attack does 20 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "de-neo4-34": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Mareep", "local": "Voltilamm" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning"],
+        "damage": "10",
+        "local": {
+          "name": "Starkstrom",
+          "text": "Wirf eine Münze. Bei „Kopf“ kann der Gegner während seines nächsten Zuges keine Trainer-Karten spielen."
+        },
+        "en": {
+          "name": "High Voltage",
+          "text": "Flip a coin. If heads, your opponent can't play Trainer cards during his or her next turn."
+        }
+      },
+      {
+        "cost": ["lightning", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "Betäubungswelle",
+          "text": "Wenn das verteidigende Pokémon eine Pokémon-Power hat, funktioniert diese Power bis zum Ende deines nächsten Zuges nicht."
+        },
+        "en": {
+          "name": "Stun Wave",
+          "text": "If the Defending Pokémon has a Pokémon Power, that power stops working until the end of your next turn."
+        }
+      }
+    ]
+  },
+  "de-neo4-35": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 60,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Pineco", "local": "Tannza" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "Aufrüsten",
+          "text": "Falls Dunkles Forstellka bis zum Ende deines nächsten Zuges durch Schaden eines Angriffs kampfunfähig würde, wirf eine Münze. Bei „Kopf“ ist Dunkles Forstellka nicht kampfunfähig, und seine verbleibenden KP sind stattdessen 10."
+        },
+        "en": {
+          "name": "Armor Up",
+          "text": "Until the end of your next turn, if Dark Forretress would be Knocked Out by damage from an attack, flip a coin. If heads, Dark Forretress is not Knocked Out and its remaining HP become 10 instead."
+        }
+      },
+      {
+        "cost": ["grass", "grass"],
+        "damage": "60",
+        "local": {
+          "name": "Explosion",
+          "text": "Dunkles Forstellka fügt sich selbst 60 Schadenspunkte zu."
+        },
+        "en": { "name": "Explosion", "text": "Dark Forretress does 60 damage to itself." }
+      }
+    ]
+  },
+  "de-neo4-36": {
+    "kind": "stage1",
+    "artist": "Aya Kusube",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 50,
+      "retreat": 0,
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Gastly", "local": "Nebulak" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": {
+          "name": "Rückruf",
+          "text": "Lege eine Baby-Pokémon- oder Basis-Pokémonkarte vom Ablagestapel deines Gegners auf seine Bank. Lege eine Schadensmarke auf dieses Pokémon. (Du kannst diesen Angriff nicht verwenden, solange deine Bank voll ist.)"
+        },
+        "en": {
+          "name": "Call Back",
+          "text": "Put a Baby Pokémon or Basic Pokémon card from your opponent's discard pile onto his or her Bench. Put 1 damage counter on that Pokémon. (You can't use this attack if your Bench is full.)"
+        }
+      },
+      {
+        "cost": ["psychic", "psychic"],
+        "damage": "20",
+        "local": {
+          "name": "Umzingeln",
+          "text": "Wirf eine Münze. Bei „Kopf“ schläft das verteidigende Pokémon jetzt. Bei „Zahl“ kann sich das verteidigende Pokémon während des nächsten Zuges deines Gegners nicht zurückziehen."
+        },
+        "en": {
+          "name": "Surround",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Asleep. If tails, the Defending Pokémon can't retreat during your opponent's next turn."
+        }
+      }
+    ]
+  },
+  "de-neo4-37": {
+    "kind": "stage1",
+    "artist": "Tomokazu Komiya",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "",
+        "local": {
+          "name": "Aquakanone",
+          "text": "Wähle eines der Pokémon deines Gegners. Dieser Angriff fügt für jede an Dunkles Amonitas angelegte {W}-Energiekarte 10 Schadenspunkte zu. Wende Schwäche und Resistenz nicht an. Du kannst auf diese Weise nicht mehr als 30 Schadenspunkte verursachen."
+        },
+        "en": {
+          "name": "Water Cannon",
+          "text": "Choose 1 of your opponent's Pokémon. This attack does 10 damage for each Water Energy card attached to Dark Omanyte. Don't apply Weakness and Resistance. You can't do more than 30 damage in this way."
+        }
+      }
+    ]
+  },
+  "de-neo4-38": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }],
+      "evolvesFrom": { "en": "Larvitar", "local": "Larvitar" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting"],
+        "damage": "40",
+        "local": {
+          "name": "Steintackle",
+          "text": "Dunkles Pupitar fügt sich selber 10 Schadenspunkte zu. Dunkles Pupitar kann in deinem nächsten Zug diesen Angriff nicht verwenden."
+        },
+        "en": {
+          "name": "Rock Tackle",
+          "text": "Dark Pupitar does 10 damage to itself. Dark Pupitar can't use this attack during your next turn."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Explosive Entwicklung",
+          "text": "Wirf eine Münze. Bei „Kopf“ fügt dieser Angriff jedem Pokémon deines Gegners 10 Schadenspunkte zu. Wende Schwäche und Resistenz nicht an. Durchsuche dann dein Deck nach einer Entwicklungskarte „Dunkles Despotar“ und lege diese auf Dunkles Pupitar. (Dies zählt als Entwickeln von Dunkles Pupitar.) Mische dein Deck nach."
+        },
+        "en": {
+          "name": "Explosive Evolution",
+          "text": "Flip a coin. If heads, this attack does 10 damage to each of your opponent's Pokémon. Don't apply Weakness and Resistance. Then, search your deck for an Evolution card named Dark Tyranitar and put it on Dark Pupitar. (This counts as evolving Dark Pupitar.) Shuffle your deck afterward."
+        }
+      }
+    ]
+  },
+  "de-neo4-39": {
+    "kind": "stage1",
+    "artist": "Mitsuhiro Arita",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Cyndaquil", "local": "Feurigel" }
+    },
+    "attacks": [
+      {
+        "cost": ["fire"],
+        "damage": "",
+        "local": {
+          "name": "Einäschern",
+          "text": "Zeige die oberste Karte des Decks deines Gegners allen Spielern. Wenn es eine Trainer-Karte ist, lege diese auf seinen Ablagestapel."
+        },
+        "en": {
+          "name": "Incinerate",
+          "text": "Show the top card of your opponent's deck to all players. If it's a Trainer card, discard it."
+        }
+      },
+      {
+        "cost": ["fire", "fire"],
+        "damage": "20x",
+        "local": {
+          "name": "Fließendes Magma",
+          "text": "Lege die obersten 5 Karten deines Decks auf deinen Ablagestapel. (Wenn weniger als 5 Karten in deinem Deck sind, lege sie alle ab.) Dieser Angriff fügt für jede so abgeworfene {R}-Energiekarte 20 Schadenspunkte zu."
+        },
+        "en": {
+          "name": "Rushing Magma",
+          "text": "Discard the top 5 cards of your deck. (If there are fewer than 5 cards in your deck, discard all of them.) This attack does 20 damage for each Fire Energy card you discarded in this way."
+        }
+      }
+    ]
+  },
+  "de-neo4-40": {
+    "kind": "stage1",
+    "artist": "Miki Tanaka",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 60,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }],
+      "evolvesFrom": { "en": "Jigglypuff", "local": "Pummeluff" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Finsteres Lied",
+          "text": "Wirf eine Münze. Bei „Kopf“ schläft das verteidigende Pokémon jetzt. Bei „Zahl“ ist das verteidigende Pokémon jetzt verwirrt."
+        },
+        "en": {
+          "name": "Dark Song",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Asleep. If tails, the Defending Pokémon is now Confused."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "20+",
+        "local": {
+          "name": "Wachrütteln",
+          "text": "Wenn das verteidigende Pokémon schläft oder verwirrt ist, fügt dieser Angriff 20 Schadenspunkte plus 20 weitere Schadenspunkte zu. Danach schläft das verteidigende Pokémon nicht mehr bzw. ist nicht länger verwirrt."
+        },
+        "en": {
+          "name": "Slap Awake",
+          "text": "If the Defending Pokémon is Asleep or Confused, this attack does 20 damage plus 20 more damage. Then, the Defending Pokémon is no longer Asleep or Confused."
+        }
+      }
+    ]
+  },
+  "de-neo4-41": {
+    "kind": "pokemon",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 60,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "colorless"],
+        "damage": "20",
+        "local": { "name": "Tackle", "text": "" },
+        "en": { "name": "Tackle", "text": "" }
+      },
+      {
+        "cost": ["grass", "grass", "grass"],
+        "damage": "30+",
+        "local": {
+          "name": "Rempelhorn",
+          "text": "Wirf eine Münze. Bei „Kopf“ fügt dieser Angriff 30 Schadenspunkte plus 30 weitere Schadenspunkte zu. Bei „Zahl“ fügt dieser Angriff 30 Schadenspunkte zu."
+        },
+        "en": {
+          "name": "Charging Horn",
+          "text": "Flip a coin. If heads, this attack does 30 damage plus 30 more damage. If tails, this attack does 30 damage."
+        }
+      }
+    ]
+  },
+  "de-neo4-42": {
+    "kind": "pokemon",
+    "artist": "Yukiko Baba",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting"],
+        "damage": "20x",
+        "local": {
+          "name": "Tritt-Kombination",
+          "text": "Wirf zwei Münzen. Dieser Angriff fügt 20 Schadenspunkte mal der Anzahl „Kopf“ zu."
+        },
+        "en": {
+          "name": "One-Two Kick",
+          "text": "Flip 2 coins. This attack does 20 damage times the number of heads."
+        }
+      },
+      {
+        "cost": ["fighting", "fighting", "fighting"],
+        "damage": "60",
+        "local": {
+          "name": "Hackentrick",
+          "text": "Wirf eine Münze. Bei „Zahl“ hat dieser Angriff keine Auswirkungen."
+        },
+        "en": { "name": "Heel Drop", "text": "Flip a coin. If tails, this attack does nothing." }
+      }
+    ]
+  },
+  "de-neo4-43": {
+    "kind": "pokemon",
+    "artist": "Yukiko Baba",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 40,
+      "retreat": 1,
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["darkness"],
+        "damage": "",
+        "local": {
+          "name": "Falle",
+          "text": "Das verteidigende Pokémon kann sich im nächsten Zug deines Gegners nicht zurückziehen."
+        },
+        "en": {
+          "name": "Corner",
+          "text": "The Defending Pokémon can't retreat during your opponent's next turn."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "Ausfall",
+          "text": "Wirf eine Münze. Bei „Zahl“ hat dieser Angriff keine Auswirkungen."
+        },
+        "en": { "name": "Lunge", "text": "Flip a coin. If tails, this attack does nothing." }
+      }
+    ]
+  },
+  "de-neo4-44": {
+    "kind": "pokemon",
+    "artist": "Yuka Morii",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "10",
+        "local": {
+          "name": "Ausdehnen",
+          "text": "Aller Schaden, der Pummeluff im nächsten Zug deines Gegners zugefügt wird, wird um 10 reduziert (nach Verrechnung von Schwäche und Resistenz)."
+        },
+        "en": {
+          "name": "Expand",
+          "text": "All damage done to Jigglypuff during your opponent's next turn is reduced by 10 (after applying Weakness and Resistance)."
+        }
+      }
+    ]
+  },
+  "de-neo4-45": {
+    "kind": "stage1",
+    "artist": "Masako Yamashita",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 80,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Seel", "local": "Jurob" }
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water"],
+        "damage": "10",
+        "local": {
+          "name": "Eisiger Atem",
+          "text": "Wirf eine Münze. Bei „Kopf“ ist das verteidigende Pokémon jetzt gelähmt. Bei „Zahl“ schläft das verteidigende Pokémon jetzt."
+        },
+        "en": {
+          "name": "Freezing Breath",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed. If tails, the Defending Pokémon is now Asleep."
+        }
+      },
+      {
+        "cost": ["water", "water", "water"],
+        "damage": "40",
+        "local": {
+          "name": "Eissäule",
+          "text": "Verhindere bis zum Ende des nächsten Zuges deines Gegners, solange Helles Jugong dein aktives Pokémon ist, allen Schaden, den Angriffe den Pokémon auf deiner Bank zufügen. (Alle anderen Auswirkungen von Angriffen finden immer noch statt.)"
+        },
+        "en": {
+          "name": "Ice Pillar",
+          "text": "Until the end of your opponent's next turn, as long as Light Dewgong is your Active Pokémon, prevent all damage done by attacks to your Benched Pokémon. (Any other effects of attacks still happen.)"
+        }
+      }
+    ]
+  },
+  "de-neo4-46": {
+    "kind": "stage1",
+    "artist": "Atsuko Nishida",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Eevee", "local": "Evoli" }
+    },
+    "attacks": [
+      {
+        "cost": ["fire"],
+        "damage": "",
+        "local": {
+          "name": "Aufwärmen",
+          "text": "Falls du mindestens ein Pokémon auf deiner Bank hast, durchsuche dein Deck nach einer {R}-Energiekarte und lege diese an eines dieser Pokémon an. Mische dein Deck danach."
+        },
+        "en": {
+          "name": "Warm Up",
+          "text": "If you have any benched Pokémon, search your deck for a Fire Energy card and attach it to 1 of them. Then shuffle your deck."
+        }
+      },
+      {
+        "cost": ["fire", "fire", "colorless"],
+        "damage": "30+",
+        "local": {
+          "name": "Brennende Flamme",
+          "text": "Wirf zwei Münzen. Lege pro „Kopf“ eine an Helles Flamara angelegte {R}-Energiekarte auf deinen Ablagestapel oder dieser Angriff hat keine Auswirkungen. Dieser Angriff fügt 30 Schadenspunkte plus 20 Schadenspunkte für jeden „Kopf“ zu."
+        },
+        "en": {
+          "name": "Burning Flame",
+          "text": "Flip 2 coins. For each heads, discard a Fire Energy card attached to Light Flareon or this attack does nothing. This attack does 30 damage plus 20 damage for each heads."
+        }
+      }
+    ]
+  },
+  "de-neo4-47": {
+    "kind": "stage1",
+    "artist": "Atsuko Nishida",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Psyduck", "local": "Enton" }
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "",
+        "local": {
+          "name": "Flossenschlag",
+          "text": "Dein Gegner schaut sich die obersten 3 Karten seines Decks an. Wenn darunter Basis-Energiekarten sind, darf er eine beliebige Anzahl davon dir zeigen und auf seine Hand nehmen. Du machst dasselbe. Unabhängig davon mischen danach alle Spieler ihr Deck."
+        },
+        "en": {
+          "name": "Flipper Stroke",
+          "text": "Your opponent looks at the top 3 cards of his or her deck. If any of them are basic Energy cards, he or she may show any number of them to you and put them into his or her hand. You do the same. Either way, each player shuffles his or her deck."
+        }
+      },
+      {
+        "cost": ["psychic", "colorless", "colorless"],
+        "damage": "30+",
+        "local": {
+          "name": "Kernexplosion",
+          "text": "Dieser Angriff fügt 30 Schadenspunkte plus 20 Schadenspunkte für jede an das verteidigende Pokémon angelegte Spezial-Energiekarte zu."
+        },
+        "en": {
+          "name": "Core Blast",
+          "text": "This attack does 30 damage plus 20 more damage for each Special Energy card attached to the Defending Pokémon."
+        }
+      }
+    ]
+  },
+  "de-neo4-48": {
+    "kind": "stage1",
+    "artist": "Naoyo Kimura",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 70,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "evolvesFrom": { "en": "Eevee", "local": "Evoli" }
+    },
+    "attacks": [
+      {
+        "cost": ["lightning"],
+        "damage": "",
+        "local": {
+          "name": "Aufpassimpuls",
+          "text": "Immer wenn im nächsten Zug deines Gegners Helles Blitza (nach der Verrechnung von Schwäche und Resistenz) 30 oder mehr Schadenspunkte zugefügt werden, verhindere diesen Schaden. (Alle anderen Auswirkungen von Angriffen finden immer noch statt.)"
+        },
+        "en": {
+          "name": "Pulse Guard",
+          "text": "During your opponent's next turn, whenever 30 or more damage is done to Light Jolteon (after applying Weakness and Resistance), prevent that damage. (Any other effects of attacks still happen.)"
+        }
+      },
+      {
+        "cost": ["lightning", "lightning", "colorless"],
+        "damage": "20x",
+        "local": {
+          "name": "Donnernadel",
+          "text": "Wirf drei Münzen. Dieser Angriff fügt 20 Schadenspunkte mal der Anzahl „Kopf“ zu. Wenn du zweimal oder öfter „Kopf“ wirfst, ist das verteidigende Pokémon jetzt gelähmt."
+        },
+        "en": {
+          "name": "Thunder Needle",
+          "text": "Flip 3 coins. This attack does 20 damage times the number of heads. If you get 2 or more heads, the Defending Pokémon is now Paralyzed."
+        }
+      }
+    ]
+  },
+  "de-neo4-49": {
+    "kind": "stage1",
+    "artist": "Miki Tanaka",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 80,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Machop", "local": "Machollo" }
+    },
+    "attacks": [
+      {
+        "cost": ["fighting"],
+        "damage": "",
+        "local": {
+          "name": "Heimkehr",
+          "text": "Falls du mindestens ein Pokémon auf deiner Bank hast, mische eines davon und alle daran angelegten Karten in dein Deck zurück."
+        },
+        "en": {
+          "name": "Return Home",
+          "text": "If you have any Benched Pokémon, shuffle 1 of them and all cards attached to it into your deck."
+        }
+      },
+      {
+        "cost": ["fighting", "fighting"],
+        "damage": "40",
+        "local": {
+          "name": "Sanfter Tritt",
+          "text": "Wenn auf dem verteidigenden Pokémon keine Schadensmarke liegt, fügt dieser Angriff 40 Schadenspunkte zu. Hat es welche, fügt dieser Angriff 20 Schadenspunkte zu."
+        },
+        "en": {
+          "name": "Gentle Kick",
+          "text": "If the Defending Pokémon has no damage counters on it, this attack does 40 damage. If it has any, this attack does 20 damage."
+        }
+      }
+    ]
+  },
+  "de-neo4-50": {
+    "kind": "stage1",
+    "artist": "Masako Yamashita",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 90,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "evolvesFrom": { "en": "Vulpix", "local": "Vulpix" }
+    },
+    "attacks": [
+      {
+        "cost": ["fire"],
+        "damage": "",
+        "local": { "name": "", "text": "" },
+        "en": {
+          "name": "Guiding Flame",
+          "text": "Put a Baby Pokémon or a Basic Pokémon card from your discard pile onto your Bench. (You can't use this attack if your Bench is full.)"
+        }
+      },
+      {
+        "cost": ["fire", "fire", "fire"],
+        "damage": "50",
+        "local": {
+          "name": "Leitende Flamme",
+          "text": "Lege eine Baby-Pokémon- oder eine Basis-Pokémon-Karte aus deinem Ablagestapel auf deine Bank. (Du kannst diesen Angriff nicht verwenden, wenn deine Bank voll ist.)"
+        },
+        "en": {
+          "name": "Fire Blast",
+          "text": "Discard a Fire Energy card attached to Light Ninetales in order to use this attack."
+        }
+      }
+    ]
+  },
+  "de-neo4-51": {
+    "kind": "stage1",
+    "artist": "Tomokazu Komiya",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 80,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }],
+      "evolvesFrom": { "en": "Slowpoke", "local": "Flegmon" }
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "",
+        "local": {
+          "name": "Herausfischen",
+          "text": "Dein Gegner darf bis zu drei Baby-Pokémon, Basis-Pokémon- und/oder Evolutionskarten aus seinem Ablagestapel wählen und in sein Deck mischen. Unabhängig davon darfst du dasselbe tun."
+        },
+        "en": {
+          "name": "Fish Out",
+          "text": "Your opponent may choose up to 3 Baby Pokémon, Basic Pokémon, and/or Evolution cards from his or her discard pile and shuffle them into his or her deck. Either way, you may do the same."
+        }
+      },
+      {
+        "cost": ["water", "colorless"],
+        "damage": "20+",
+        "local": {
+          "name": "Herumspritzen",
+          "text": "Wenn an das verteidigende Pokémon mehr Energie angelegt ist, als an Helles Lahmus, fügt dieser Angriff 20 Schadenspunkte plus 20 weitere Schadenspunkte zu. Sonst fügt dieser Angriff 20 Schadenspunkte zu."
+        },
+        "en": {
+          "name": "Splash About",
+          "text": "If there are more Energy attached to the Defending Pokémon than to Light Slowbro, this attack does 20 damage plus 20 more damage. If not, this attack does 20 damage."
+        }
+      }
+    ]
+  },
+  "de-neo4-52": {
+    "kind": "stage1",
+    "artist": "Kagemaru Himeno",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Eevee", "local": "Evoli" }
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "",
+        "local": {
+          "name": "Wegwaschen",
+          "text": "Wirf eine Münze, wenn du mindestens ein Pokémon auf deiner Bank hast. Entferne bei „Kopf“ alle Schadensmarken von einem Pokémon auf deiner Bank und lege alle an es angelegten Energiekarten auf deinen Ablagestapel."
+        },
+        "en": {
+          "name": "Wash Away",
+          "text": "If you have any Benched Pokémon, flip a coin. If heads, remove all damage counters from 1 of your Benched Pokémon and discard all Energy cards attached to it."
+        }
+      },
+      {
+        "cost": ["water", "water", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "Hypnodusche",
+          "text": "Das verteidigende Pokémon schläft jetzt. Entferne eine Schadensmarke von allen Pokémon auf der Bank (deinen und denen deines Gegners), auf denen Schadensmarken liegen."
+        },
+        "en": {
+          "name": "Hypnoshower",
+          "text": "The Defending Pokémon is now Asleep. Remove 1 damage counter from each Benched Pokémon (yours and your opponent's) with any damage counters on it."
+        }
+      }
+    ]
+  },
+  "de-neo4-53": {
+    "kind": "stage1",
+    "artist": "Masako Yamashita",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 80,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }],
+      "evolvesFrom": { "en": "Venonat", "local": "Bluzuk" }
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "",
+        "local": {
+          "name": "Seltsame Flügel",
+          "text": "Dein Gegner darf eine Baby-Pokémon-,Basis-Pokémon- oder Evolutionskarte aus seinem Ablagestapel wählen und auf seine Hand nehmen. Unabhängig davon darfst du dasselbe tun."
+        },
+        "en": {
+          "name": "Mysterious Wing",
+          "text": "Your opponent may choose a Baby Pokémon, Basic Pokémon, or Evolution card from his or her discard pile and put it into his or her hand. Either way, you may do the same."
+        }
+      },
+      {
+        "cost": ["psychic", "colorless"],
+        "damage": "40",
+        "local": {
+          "name": "Übereinstimmen",
+          "text": "Wenn an Helles Omot und das verteidigende Pokémon eine unterschiedliche Anzahl Energiekarten angelegt sind, hat dieser Angriff keine Auswirkungen."
+        },
+        "en": {
+          "name": "Synchronize",
+          "text": "If Light Venomoth and the Defending Pokémon have a different number of Energy cards attached to them, this attack does nothing."
+        }
+      }
+    ]
+  },
+  "de-neo4-54": {
+    "kind": "stage1",
+    "artist": "Naoyo Kimura",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }],
+      "evolvesFrom": { "en": "Jigglypuff", "local": "Pummeluff" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "Entwicklungslied",
+          "text": "Dein Gegner darf eines seiner Pokémon wählen und sein Deck nach einer Karte durchsuchen, die aus diesem Pokémon entsteht. Dein Gegner legt diese Karte an dieses Pokémon an. Dies zählt als Entwickeln dieses Pokémons. Unabhängig davon darfst du dasselbe tun, und jeder Spieler, der sein Deck durchsucht hat, mischt sein Deck danach."
+        },
+        "en": {
+          "name": "Evolution Song",
+          "text": "Your opponent may choose 1 of his or her Pokémon and search his or her deck for a card that evolves from that Pokémon. Your opponent attaches that card to that Pokémon. This counts as evolving that Pokémon. Either way, you may do the same, and then each player who searched shuffles his or her deck."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "Bodyslam",
+          "text": "Wirf eine Münze. Bei „Kopf“ ist das verteidigende Pokémon jetzt gelähmt."
+        },
+        "en": {
+          "name": "Body Slam",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      }
+    ]
+  },
+  "de-neo4-55": {
+    "kind": "pokemon",
+    "artist": "Shin-ichi Yoshida",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "colorless"],
+        "damage": "10",
+        "local": {
+          "name": "Agilität",
+          "text": "Wirf eine Münze. Verhindere bei 'Kopf' während des nächsten Zuges deines Gegners alle Effekte von Angriffen (einschließlich Schaden), die Sichlor zugefügt werden."
+        },
+        "en": {
+          "name": "Agility",
+          "text": "Flip a coin. If heads, during your opponent's next turn, prevent all effects of attacks, including damage, done to Scyther."
+        }
+      },
+      {
+        "cost": ["grass", "grass", "grass"],
+        "damage": "40",
+        "local": { "name": "Scharfe Sichel", "text": "" },
+        "en": { "name": "Sharp Sickle", "text": "" }
+      }
+    ]
+  },
+  "de-neo4-56": {
+    "kind": "pokemon",
+    "artist": "Yuka Morii",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 40,
+      "retreat": 1,
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "Charme",
+          "text": "Wenn das verteidigende Pokémon während des nächsten Zuges deines Gegners angreift, wird aller Schaden, den es zufügt, um 10 reduziert (vor der Verrechnung von Schwäche und Resistenz)."
+        },
+        "en": {
+          "name": "Charm",
+          "text": "If the Defending Pokémon attacks during your opponent's next turn, any damage it does is reduced by 10 (before applying Weakness and Resistance)."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "Zackenballtackle",
+          "text": "Togepi fügt sich selber 10 Schadenspunkte zu."
+        },
+        "en": { "name": "Spike Ball Tackle", "text": "Togepi does 10 damage to itself." }
+      }
+    ]
+  },
+  "de-neo4-57": {
+    "kind": "pokemon",
+    "artist": "CR CG gangs",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "10",
+        "local": { "name": "Kraftreserve", "text": "" },
+        "en": { "name": "Hidden Power", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Chase [Chase]",
+          "text": "Solange Icognito {C} dein aktives Pokémon ist, wirf immer ,wenn das aktive Pokémon deines Gegners versucht sich zurückzuziehen, eine Münze. Lege bei „Kopf“ 1 Schadensmarke auf dieses Pokémon. Wende Schwäche und Resistenz an."
+        },
+        "en": {
+          "name": "[Chase]",
+          "text": "As long as Unown {C} is your Active Pokémon, whenever your opponent's Active Pokémon tries to retreat, flip a coin. If heads, put 1 damage counter on that Pokémon. Apply Weakness and Resistance."
+        }
+      }
+    ]
+  },
+  "de-neo4-58": {
+    "kind": "pokemon",
+    "artist": "CR CG gangs",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "10",
+        "local": { "name": "Kraftreserve", "text": "" },
+        "en": { "name": "Hidden Power", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Perform [Perform]",
+          "text": "Wenn ein Angriff im letzten Zug deines Gegners Icognito P Schaden zugefügt hat und icognito P dein Aktives Pokémon war, fügt Icognito Ps Angriff Kraftreserve dem verteidigenden Pokémon entsprechend viel zusätzlichen Schaden zu. Diese Power kann selbst dann verwendet werden, wenn Icognito P verwirrt ist."
+        },
+        "en": {
+          "name": "[Perform]",
+          "text": "If an attack damaged Unown {P} during your opponent's last turn and Unown {P} was your Active Pokémon, Unown {P}'s Hidden Power attack does that much more damage to the Defending Pokémon. This power can be used even if Unown {P} is Confused."
+        }
+      }
+    ]
+  },
+  "de-neo4-59": {
+    "kind": "pokemon",
+    "artist": "CR CG gangs",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "10",
+        "local": { "name": "Kraftreserve", "text": "" },
+        "en": { "name": "Hidden Power", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Quicken [Quicken]",
+          "text": "Du kannst immer einmal in deinem Zug (vor deinem Angriff) eine Münze werfen. Verhindere bei „Kopf“ alle Auswirkungen von Angriffen (einschließlich Schaden), die allen deinen Pokémon mit „Icognito“ in ihrem Namen im nächsten Zug deines Gegners zugefügt werden. Wenn du mehr als ein Icognito [Q] im Spiel hast, verwende nur ein [Quicken] pro Zug. Diese Power kann selbst dann verwendet werden, wenn Icognito [Q] schläft, verwirrt oder gelähmt ist."
+        },
+        "en": {
+          "name": "[Quicken]",
+          "text": "Once during your turn (before your attack), you may flip a coin. If heads, prevent all effects of attacks, including damage, done to any of your Pokémon with Unown in its name during your opponent's next turn. If you have more than 1 Unown [Q] in play, use only 1 [Quicken] each turn. This power can be used even if Unown [Q] is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "de-neo4-60": {
+    "kind": "pokemon",
+    "artist": "CR CG gangs",
+    "rarity": "uncommon",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "10",
+        "local": { "name": "Kraftreserve", "text": "" },
+        "en": { "name": "Hidden Power", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Zoom [Zoom]",
+          "text": "Solange Icognito [Z] auf deiner Bank ist, bezahlst du keine Energiekosten, um ein Pokémon mit Icognito im Namen zurückzuziehen."
+        },
+        "en": {
+          "name": "[Zoom]",
+          "text": "As long as Unown [Z] is Benched, you pay no Energy cost to retreat a Pokémon with Unown in its name."
+        }
+      }
+    ]
+  },
+  "de-neo4-61": {
+    "kind": "pokemon",
+    "artist": "Yukiko Baba",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire"],
+        "damage": "10",
+        "local": {
+          "name": "Rauchwolke",
+          "text": "Wenn das verteidigende Pokémon versucht, während des nächsten Zuges deines Gegners anzugreifen, wirft dein Gegner eine Münze. Bei „Zahl“ hat dieser Angriff keine Auswirkungen."
+        },
+        "en": {
+          "name": "Smokescreen",
+          "text": "If the Defending Pokémon tries to attack during your opponent's next turn, your opponent flips a coin. If tails, that attack does nothing."
+        }
+      }
+    ]
+  },
+  "de-neo4-62": {
+    "kind": "stage1",
+    "artist": "Shin-ichi Yoshida",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 60,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "evolvesFrom": { "en": "Remoraid", "local": "Remoraid" }
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "20+",
+        "local": {
+          "name": "Tintenstrahl",
+          "text": "Dieser Angriff fügt 20 Schadenspunkte plus 10 weitere Schadenspunkte für jede an Dunkles Octillery angelegte Energiekarte, die nicht verwendet wurde, um für die Energiekosten dieses Angriffs zu bezahlen, zu. Du kannst auf diese Weise höchstens 20 weitere Schadenspunkte zufügen."
+        },
+        "en": {
+          "name": "Ink Blast",
+          "text": "This attack does 20 damage plus 10 more damage for each Energy attached to Dark Octillery but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way."
+        }
+      },
+      {
+        "cost": ["water", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "Tentakelumarmung",
+          "text": "Wirf eine Münze. Bei „Kopf“ ist das verteidigende Pokémon jetzt gelähmt. Bei „Zahl“ bezahlt dein Gegner während seines nächsten Zuges {C} mehr, wenn er das verteidigende Pokémon zurückziehen will."
+        },
+        "en": {
+          "name": "Tentacle Wrap",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed. If tails, during your opponent's next turn, your opponent pays Colorless more to retreat the Defending Pokémon."
+        }
+      }
+    ]
+  },
+  "de-neo4-63": {
+    "kind": "pokemon",
+    "artist": "Yuka Morii",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 40,
+      "retreat": 1,
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": { "name": "Häuten", "text": "Entferne eine Schadensmarke von Dratini." },
+        "en": { "name": "Shed", "text": "Remove 1 damage counter from Dratini." }
+      },
+      {
+        "cost": ["colorless"],
+        "damage": "10x",
+        "local": {
+          "name": "Furienschlag",
+          "text": "Wirf zwei Münzen. Dieser Angriff fügt 10 Schadenspunkte mal der Anzahl „Kopf“ zu."
+        },
+        "en": {
+          "name": "Fury Attack",
+          "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "de-neo4-64": {
+    "kind": "pokemon",
+    "artist": "Toshinao Aoki",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass"],
+        "damage": "10",
+        "local": { "name": "Schlafpuder", "text": "Das verteidigende Pokémon schläft jetzt." },
+        "en": { "name": "Sleep Powder", "text": "The Defending Pokémon is now Asleep." }
+      },
+      {
+        "cost": ["psychic"],
+        "damage": "10",
+        "local": {
+          "name": "Psyschock",
+          "text": "Wirf eine Münze. Bei „Kopf“ ist das verteidigende Pokémon jetzt gelähmt."
+        },
+        "en": {
+          "name": "Psyshock",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      }
+    ]
+  },
+  "de-neo4-65": {
+    "kind": "pokemon",
+    "artist": "Aya Kusube",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 40,
+      "retreat": 0,
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "10",
+        "local": { "name": "Nachtmahr", "text": "Das verteidigende Pokémon schläft jetzt." },
+        "en": { "name": "Nightmare", "text": "The Defending Pokémon is now Asleep." }
+      }
+    ]
+  },
+  "de-neo4-66": {
+    "kind": "pokemon",
+    "artist": "Yuka Morii",
+    "rarity": "common",
+    "pokemon": { "energy": "colorless", "types": ["colorless"], "hp": 60, "retreat": 1 },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "10+",
+        "local": {
+          "name": "Schwanzbiss",
+          "text": "Wirf eine Münze. Bei „Kopf“ fügt dieser Angriff 10 Schadenspunkte plus 20 weitere Schadenspunkte zu; bei „Zahl“ fügt dieser Angriff 10 Schadenspunkte zu."
+        },
+        "en": {
+          "name": "Tail Bite",
+          "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage; if tails, this attack does 10 damage."
+        }
+      },
+      {
+        "cost": ["psychic", "psychic"],
+        "damage": "10+",
+        "local": {
+          "name": "Psychokinese",
+          "text": "Fügt 10 Schadenspunkte plus 10 weitere Schadenspunkte für jede an das verteidigende Pokémon angelegte Energiekarte zu."
+        },
+        "en": {
+          "name": "Psychic",
+          "text": "Does 10 damage plus 10 more damage for each Energy card attached to the Defending Pokémon."
+        }
+      }
+    ]
+  },
+  "de-neo4-67": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 50,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "colorless"],
+        "damage": "10",
+        "local": {
+          "name": "Nervengift",
+          "text": "Wirf eine Münze. Bei „Kopf“ ist das verteidigende Pokémon jetzt gelähmt und vergiftet."
+        },
+        "en": {
+          "name": "Stun Poison",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed and Poisoned."
+        }
+      }
+    ]
+  },
+  "de-neo4-68": {
+    "kind": "pokemon",
+    "artist": "Atsuko Nishida",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "Biss", "text": "" },
+        "en": { "name": "Bite", "text": "" }
+      }
+    ]
+  },
+  "de-neo4-69": {
+    "kind": "pokemon",
+    "artist": "Shin-ichi Yoshida",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting"],
+        "damage": "",
+        "local": {
+          "name": "Ausweichen",
+          "text": "Wirf eine Münze, wenn Nockchan durch einen Angriff im nächsten Zug deines Gegners Schaden zugefügt würde. Verhindere bei „Kopf“ den Schaden, den dieser Angriff Nockchan zufügen würde. (Alle anderen Auswirkungen von Angriffen finden immer noch statt.)"
+        },
+        "en": {
+          "name": "Dodge",
+          "text": "If Hitmonchan would be damaged by an attack during your opponent's next turn, flip a coin. If heads, prevent that attack's damage done to Hitmonchan. (Any other effects of attacks still happen.)"
+        }
+      },
+      {
+        "cost": ["fighting", "fighting", "fighting"],
+        "damage": "40",
+        "local": { "name": "Superschall-Kinnhaken", "text": "" },
+        "en": { "name": "Supersonic Jab", "text": "" }
+      }
+    ]
+  },
+  "de-neo4-70": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "Silberblick",
+          "text": "Wirf eine Münze. Bei „Kopf“ kann das verteidigende Pokémon während des nächsten Zuges deines Gegners nicht angreifen. (Kommt eins der beiden Pokémon auf die Bank oder entwickelt sich, endet dieser Effekt.)"
+        },
+        "en": {
+          "name": "Leer",
+          "text": "Flip a coin. If heads, the Defending Pokémon can't attack during your opponent's next turn. (Benching or evolving either Pokémon ends this effect.)"
+        }
+      },
+      {
+        "cost": ["fighting", "colorless"],
+        "damage": "20",
+        "local": { "name": "Steinwurf", "text": "" },
+        "en": { "name": "Rock Throw", "text": "" }
+      }
+    ]
+  },
+  "de-neo4-71": {
+    "kind": "pokemon",
+    "artist": "Tomokazu Komiya",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 40,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["grass", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "Sternschauer",
+          "text": "Die Schadenspunkte dieses Angriffs werden nicht durch Schwäche, Resistenz, Pokémon-Powers oder andere das verteidigende Pokémon betreffende Effekte beeinflusst."
+        },
+        "en": {
+          "name": "Swift",
+          "text": "This attack's damage isn't affected by Weakness, Resistance, Pokémon Powers, or any other effects on the Defending Pokémon."
+        }
+      }
+    ]
+  },
+  "de-neo4-72": {
+    "kind": "stage1",
+    "artist": "Toshinao Aoki",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 80,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "evolvesFrom": { "en": "Sunkern", "local": "Sonnkern" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "",
+        "local": {
+          "name": "Reflektiertes Sonnenlicht",
+          "text": "Lege bis zu zwei 2 {G}-Energiekarten aus deiner Hand an eines deiner {G}-Pokémon an."
+        },
+        "en": {
+          "name": "Reflected Sunlight",
+          "text": "Attach up to 2 Grass Energy cards from your hand to 1 of your Grass Pokémon."
+        }
+      },
+      {
+        "cost": ["grass", "grass", "grass"],
+        "damage": "40",
+        "local": { "name": "Solarstrahl", "text": "" },
+        "en": { "name": "Solarbeam", "text": "" }
+      }
+    ]
+  },
+  "de-neo4-73": {
+    "kind": "pokemon",
+    "artist": "Toshinao Aoki",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "Spaltschlag", "text": "" },
+        "en": { "name": "Chop", "text": "" }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "Boxhieb", "text": "" },
+        "en": { "name": "Punch", "text": "" }
+      }
+    ]
+  },
+  "de-neo4-74": {
+    "kind": "pokemon",
+    "artist": "Yukiko Baba",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 60,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water", "water"],
+        "damage": "40",
+        "local": {
+          "name": "Riesenwelle",
+          "text": "Mantax kann während deines nächsten Zuges nicht angreifen."
+        },
+        "en": { "name": "Giant Wave", "text": "Mantine can't attack during your next turn." }
+      }
+    ]
+  },
+  "de-neo4-75": {
+    "kind": "pokemon",
+    "artist": "Kagemaru Himeno",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "Kopfnuss", "text": "" },
+        "en": { "name": "Headbutt", "text": "" }
+      }
+    ]
+  },
+  "de-neo4-76": {
+    "kind": "pokemon",
+    "artist": "Miki Tanaka",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting"],
+        "damage": "10+",
+        "local": {
+          "name": "Zertreten",
+          "text": "Wirf eine Münze. Bei „Kopf“ fügt dieser Angriff 10 Schadenspunkte plus 10 weitere Schadenspunkte zu; bei „Zahl“ fügt dieser Angriff 10 Schadenspunkte zu."
+        },
+        "en": {
+          "name": "Crushing Step",
+          "text": "Flip a coin. If heads, this attack does 10 damage plus 10 more damage; if tails, this attack does 10 damage."
+        }
+      }
+    ]
+  },
+  "de-neo4-77": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 40,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "Tackle", "text": "" },
+        "en": { "name": "Tackle", "text": "" }
+      }
+    ]
+  },
+  "de-neo4-78": {
+    "kind": "pokemon",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }],
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "20",
+        "local": { "name": "Schärfer", "text": "" },
+        "en": { "name": "Sharpen", "text": "" }
+      }
+    ]
+  },
+  "de-neo4-79": {
+    "kind": "pokemon",
+    "artist": "Yuka Morii",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "10",
+        "local": { "name": "Flossenplatscher", "text": "" },
+        "en": { "name": "Flipper Splash", "text": "" }
+      },
+      {
+        "cost": ["psychic", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "Migräne",
+          "text": "Wirf eine Münze. Bei „Kopf“ ist das verteidigende Pokémon jetzt verwirrt. Bei „Zahl“ ist Enton jetzt verwirrt."
+        },
+        "en": {
+          "name": "Migraine",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Confused. If tails, Psyduck is now Confused."
+        }
+      }
+    ]
+  },
+  "de-neo4-80": {
+    "kind": "pokemon",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 40,
+      "retreat": 0,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "10x",
+        "local": {
+          "name": "Zornschläge",
+          "text": "Wirf drei Münzen. Dieser Angriff fügt 10 Schadenspunkte mal der Anzahl „Kopf“ zu."
+        },
+        "en": {
+          "name": "Fury Strikes",
+          "text": "Flip 3 coins. This attack does 10 damage times the number of heads."
+        }
+      }
+    ]
+  },
+  "de-neo4-81": {
+    "kind": "pokemon",
+    "artist": "Masako Yamashita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water", "colorless"],
+        "damage": "30",
+        "local": { "name": "Bodycheck", "text": "Jurob fügt sich selber 10 Schadenspunkte zu." },
+        "en": { "name": "Take Down", "text": "Seel does 10 damage to itself." }
+      }
+    ]
+  },
+  "de-neo4-82": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 50,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "water", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire", "fire"],
+        "damage": "30",
+        "local": { "name": "Glühen", "text": "" },
+        "en": { "name": "Combustion", "text": "" }
+      }
+    ]
+  },
+  "de-neo4-83": {
+    "kind": "pokemon",
+    "artist": "Etsuya Hattori",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 40,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "Walzer", "text": "" },
+        "en": { "name": "Rollout", "text": "" }
+      },
+      {
+        "cost": ["grass", "grass"],
+        "damage": "",
+        "local": {
+          "name": "Sonnenbad",
+          "text": "Wirf eine Münze. Entferne bei 'Kopf' alle Schadensmarken von Sonnkern. Durchsuche dein Deck nach einer Karte die aus Sonnkern entsteht und lege diese an Sonnkern an. Dies zählt als Entwickeln von Sonnkern. Mische dein Deck danach."
+        },
+        "en": {
+          "name": "Sunbathe",
+          "text": "Flip a coin. If heads, remove all damage counters from Sunkern. Search your deck for a card that evolves from Sunkern and attach that card to Sunkern. This counts as evolving Sunkern. Shuffle your deck afterward."
+        }
+      }
+    ]
+  },
+  "de-neo4-84": {
+    "kind": "pokemon",
+    "artist": "Kagemaru Himeno",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }],
+      "resistances": [{ "energy": "lightning", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "Kälte erzeugen",
+          "text": "Wirf eine Münze. Bei „Kopf“ ist das verteidigende Pokémon jetzt gelähmt."
+        },
+        "en": {
+          "name": "Generate Cold",
+          "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+        }
+      }
+    ]
+  },
+  "de-neo4-85": {
+    "kind": "pokemon",
+    "artist": "Miki Tanaka",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "water",
+      "types": ["water"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "10+",
+        "local": {
+          "name": "Aquaknarre",
+          "text": "Fügt 10 Schadenspunkte plus 10 weitere Schadenspunkte für jede an Karnimani angelegte {W}-Energie, die nicht zum Zahlen der Energiekosten für diesen Angriff verwendet wird, zu. Du kannst auf diese Weise höchstens 20 weitere Schadenspunkte zufügen."
+        },
+        "en": {
+          "name": "Water Gun",
+          "text": "Does 10 damage plus 10 more damage for each Water Energy attached to Totodile but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way."
+        }
+      }
+    ]
+  },
+  "de-neo4-86": {
+    "kind": "pokemon",
+    "artist": "CR CG gangs",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "10",
+        "local": { "name": "Kraftreserve", "text": "" },
+        "en": { "name": "Hidden Power", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Laugh [Laugh]",
+          "text": "Du kannst immer einmal in deinem Zug (vor deinem Angriff) eine Münze werfen. Bei „Kopf“ mischt jeder Spieler sein Deck. Diese Fähigkeit kann selbst dann verwendet werden, wenn Icognito {L} schläft, verwirrt oder gelähmt ist."
+        },
+        "en": {
+          "name": "[Laugh]",
+          "text": "Once during your turn (before your attack), you may flip a coin. If heads, each player shuffles his or her deck. This power can be used even if Unown {L} is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "de-neo4-87": {
+    "kind": "pokemon",
+    "artist": "CR CG gangs",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "colorless"],
+        "damage": "20",
+        "local": { "name": "Kraftreserve", "text": "" },
+        "en": { "name": "Hidden Power", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Search [Search]",
+          "text": "Du kannst immer einmal in deinem Zug (vor deinem Angriff) dir eine deiner Preiskarten ansehen. Lege die Preiskarte verdeckt wieder hin. Diese Fähigkeit kann selbst dann verwendet werden, wenn Icognito [S] schläft, verwirrt oder gelähmt ist."
+        },
+        "en": {
+          "name": "[Search]",
+          "text": "Once during your turn (before your attack), you may look at 1 of your Prize cards. Return that Prize card face down. This power can be used even if Unown [S] is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "de-neo4-88": {
+    "kind": "pokemon",
+    "artist": "CR CG gangs",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "colorless"],
+        "damage": "20",
+        "local": { "name": "Kraftreserve", "text": "" },
+        "en": { "name": "Hidden Power", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Tell [Tell]",
+          "text": "Du kannst immer einmal in deinem Zug (vor deinem Angriff) eine Münze werfen. Schaue dir bei „Kopf“ die Karten auf der Hand deines Gegners an und zeige die Karten auf deiner Hand deinem Gegner. Diese Fähigkeit kann selbst dann verwendet werden, wenn Icognito [T] schläft, verwirrt oder gelähmt ist."
+        },
+        "en": {
+          "name": "[Tell]",
+          "text": "Once during your turn (before your attack), you may flip a coin. If heads, look at your opponent's hand and show your hand to your opponent. This power can be used even if Unown [T] is Asleep, Confused, or Paralyzed."
+        }
+      }
+    ]
+  },
+  "de-neo4-89": {
+    "kind": "pokemon",
+    "artist": "CR CG gangs",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic"],
+        "damage": "10",
+        "local": { "name": "Kraftreserve", "text": "" },
+        "en": { "name": "Hidden Power", "text": "" }
+      }
+    ],
+    "powers": [
+      {
+        "local": {
+          "name": "Vanish [Vanish]",
+          "text": "Wenn du Icognito [V] aus deiner Hand ausspielst, kannst du eine Münze werfen. Bringe bei „Kopf“ eines deiner Pokémon, das „Icognito“ in seinem Namen hat (außer Icognito [V]) auf deine Hand zurück. (Lege alle an diese Karte angelegten Karten auf deinen Ablagestapel.)"
+        },
+        "en": {
+          "name": "[Vanish]",
+          "text": "When you play Unown [V] from your hand, you may flip a coin. If heads, return 1 of your Pokémon with Unown in its name (other than Unown [V]) to your hand. (Discard all cards attached to that card.)"
+        }
+      }
+    ]
+  },
+  "de-neo4-90": {
+    "kind": "pokemon",
+    "artist": "Masako Yamashita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 40,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "10",
+        "local": { "name": "Nagen", "text": "" },
+        "en": { "name": "Gnaw", "text": "" }
+      },
+      {
+        "cost": ["grass", "colorless"],
+        "damage": "10",
+        "local": { "name": "", "text": "" },
+        "en": { "name": "Poisonpowder", "text": "The Defending Pokémon is now Poisoned." }
+      }
+    ]
+  },
+  "de-neo4-91": {
+    "kind": "pokemon",
+    "artist": "Masako Yamashita",
+    "rarity": "common",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "water", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "Glut",
+          "text": "Lege eine an Vulpix angelegte {R}-Energiekarte auf deinen Ablagestapel, um diesen Angriff zu verwenden."
+        },
+        "en": {
+          "name": "Ember",
+          "text": "Discard 1 Fire Energy card attached to Vulpix in order to use this attack."
+        }
+      }
+    ]
+  },
+  "de-neo4-92": {
+    "kind": "trainer",
+    "artist": "Tomokazu Komiya",
+    "rarity": "rare",
+    "rules": {
+      "en": "This card stays in play when you play it. Discard this card if another Stadium card comes into play.\nEach player pays Colorless more to retreat a Baby Pokémon or Basic Pokémon.",
+      "local": "Diese Karte bleibt im Spiel, wenn du sie spielst. Lege diese Karte ab, sobald eine weitere Stadion-Karte ins Spiel kommt. Jeder Spieler bezahlt {C} mehr, um ein Baby-Pokémon oder ein Basis-Pokémon zurückzuziehen."
+    }
+  },
+  "de-neo4-93": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "rare",
+    "rules": {
+      "en": "Attach EXP.ALL to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.\nDuring your opponent's turn, if your Active Pokémon would be Knocked Out by your opponent's attack, you may take 1 of the basic Energy cards attached to your Active Pokémon and attach it to the Pokémon with EXP.ALL attached to it. If you do, discard EXP.ALL.",
+      "local": "Lege den EP-Teiler an eines deiner Pokémon an, das keine Pokémon-Ausrüstung hat. Falls im Zug deines Gegners dein aktives Pokémon durch den Angriff deines Gegners kampfunfähig wurde, kannst du eine der an dein aktives Pokémon angelegten Basisenergiekarten nehmen und an das Pokémon mit dem EP-Teiler anlegen. Wenn du dies tust, lege den EP-Teiler auf deinen Ablagestapel."
+    }
+  },
+  "de-neo4-94": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "rules": {
+      "en": "Look at your opponent's Prize cards. You may have your opponent shuffle them into his or her deck. If you do, your opponent takes that many cards from the top of his or her deck and sets them aside as his or her new Prize cards (without looking at them).",
+      "local": "Schaue dir die Preiskarten deines Gegners an. Du kannst entscheiden, ob dein Gegner sie in sein Deck zurückmischt. Wenn du dies tust, nimmt dein Gegner hinterher ebenso viele Karten oben von seinem Deck und legt sie als neue Preiskarten beiseite (ohne sie anzuschauen)."
+    }
+  },
+  "de-neo4-95": {
+    "kind": "trainer",
+    "rarity": "rare",
+    "rules": {
+      "en": "This card stays in play when you play it. Discard this card if another Stadium card comes into play.\nOnce during each player's turn (before attacking), that player may look at the top 2 cards of his or her deck and put them back in the same order.",
+      "local": "Diese Karte bleibt im Spiel, wenn du sie spielst. Lege diese Karte ab, sobald eine weitere Stadion-Karte ins Spiel kommt. Einmal in jedem eigenen Zug (vor dem Angriff) darf jeder Spieler sich die obersten beiden Karten seines Decks ansehen und sie in derselben Reihenfolge zurücklegen."
+    }
+  },
+  "de-neo4-96": {
+    "kind": "trainer",
+    "artist": "Sumiyoshi Kizuki",
+    "rarity": "rare",
+    "rules": {
+      "en": "Flip a coin until you get tails. For each heads, return an Energy card attached to your opponent's Active Pokémon to your opponent's hand. If the Pokémon has fewer attached Energy cards than that, return all of them to your opponent's hand. Your turn is over now (you don't get to attack).",
+      "local": "Wirf eine Münze, bis „Zahl“ fällt. Bringe für jedes Mal „Kopf“ eine an das aktive Pokémon deines Gegners angelegte Energiekarte auf dessen Hand zurück. Wenn an dieses Pokémon weniger Energiekarten angelegt sind, bringe sie alle auf die Hand deines Gegners zurück. Dein Zug ist damit vorbei (du erhältst in diesem Zug keinen Angriff)."
+    }
+  },
+  "de-neo4-97": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Attach Counterattack Claws to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.\nDuring your opponent's turn, if the Pokémon Counterattack Claws is attached to is your Active Pokémon and an opponent's attack damages it (even if it is Knocked Out), flip a coin. If heads, put 2 damage counters on the Defending Pokémon. Then, discard Counterattack Claws.",
+      "local": "Lege Gegenangriffs-Klauen an eines deiner Pokémon an, das keine Pokémon-Ausrüstung hat. Wenn im Zug deines Gegners das Pokémon, an das die Gegenangriffs-Klauen angelegt ist und der Angriff deines Gegners ihm Schaden zufügt (auch, wenn es dadurch kampfunfähig wurde), wirf eine Münze. Legen bei „Kopf“ 2 Schadensmarken auf das Pokémon deines Gegners, das dich gerade angegriffen hat. Lege dann die Gegenangriffs-Klauen auf deinen Ablagestapel."
+    }
+  },
+  "de-neo4-98": {
+    "kind": "trainer",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Choose an Energy card in your hand, show it to your opponent, and shuffle it into your deck. Then flip a coin. If heads, search your deck for up to 3 basic Energy cards. Show them to your opponent, and put them into your hand. Shuffle your deck afterward.",
+      "local": "Wähle eine Energiekarte auf deiner Hand, zeige sie deinem Gegner und mische sie in dein Deck. Wirf dann eine Münze. Durchsuche bei „Kopf“ dein Deck nach bis zu drei Basis-Energiekarten. Zeige diese deinem Gegner und nimm sie auf deine Hand. Mische dein Deck danach."
+    }
+  },
+  "de-neo4-99": {
+    "kind": "trainer",
+    "artist": "Hideki Kazama",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "This card stays in play when you play it. Discard this card if another Stadium card comes into play.\nOnce during each player's turn (before attacking), that player may flip a coin. If heads, that player puts a basic Energy card from his or her discard pile into his or her hand.",
+      "local": "Diese Karte bleibt im Spiel, wenn du sie spielst. Lege diese Karte ab, sobald eine weitere Stadion-Karte ins Spiel kommt. Einmal in jedem eigenen Zug (vor dem Angriff) darf jeder Spieler eine Münze werfen. Bei „Kopf“ nimmt dieser Spieler eine Basis-Energiekarte aus seinem Ablagestapel auf seine Hand."
+    }
+  },
+  "de-neo4-100": {
+    "kind": "trainer",
+    "artist": "Imakuni?",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "This card stays in play when you play it. Discard this card if another Stadium card comes into play.\nOnce during each player's turn (before attacking), that player may flip a coin. If heads, that player draws a card.",
+      "local": "Diese Karte bleibt im Spiel, wenn du sie spielst. Lege diese Karte ab, sobald eine weitere Stadion-Karte ins Spiel kommt. Einmal in jedem eigenen Zug (vor dem Angriff) darf jeder Spieler eine Münze werfen. Bei „Kopf“ zieht dieser Spieler eine Karte."
+    }
+  },
+  "de-neo4-101": {
+    "kind": "trainer",
+    "artist": "Keiji Kinebuchi",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Attach Magnifier to 1 of your Pokémon. At the end of your turn, discard Magnifier. If the Pokémon Magnifier is attached to attacks, don't apply Resistance for that attack.",
+      "local": "Lege Vergrößerungsglas an eines deiner Pokémon an. Lege am Ende deines Zuges auf deinen Ablagestapel. Wenn das Pokémon, an das das Vergrößerungsglas angelegt ist, angreift, wende Resistenz für diesen Angriff nicht an."
+    }
+  },
+  "de-neo4-102": {
+    "kind": "trainer",
+    "artist": "Tomokazu Komiya",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Put an Evolution card from your hand face down in front of you. Your opponent guesses whether it is a Pokémon card with Light in its name, a Pokémon card with Dark in its name, or neither one. Flip the card over. If your opponent guessed right, he or she draws 3 cards. If your opponent guessed wrong, you draw 3 cards. Either way, return the card to your hand.",
+      "local": "Lege eine Entwicklungskarte aus deiner Hand verdeckt vor dich hin. Dein Gegner muss raten, ob es eine Pokémonkarte mit „Helles“ im Namen, eine Pokémonkarte mit „Dunkles“ im Namen oder weder noch ist. Deck die Karte dann auf. Wenn dein Gegner richtig geraten hat, zieht er drei Karten. Wenn dein Gegner falsch geraten hat, ziehst du drei Karten. Nimm auf jeden Fall die Karte zurück auf deine Hand."
+    }
+  },
+  "de-neo4-103": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "uncommon",
+    "rules": {
+      "en": "Look at your opponent's hand and choose a card there. Your opponent shuffles that card into his or her deck. Then, your opponent may draw up to 2 cards.",
+      "local": "Schaue dir die Karten auf der Hand deines Gegners an und wähle eine Karte davon. Dein Gegner mischt diese Karte in sein Deck. Dann darf er bis zu zwei Karten ziehen."
+    }
+  },
+  "de-neo4-104": {
+    "kind": "trainer",
+    "rarity": "common",
+    "rules": {
+      "en": "Flip a coin. If heads, your Active Pokémon is no longer Asleep, Confused, Paralyzed, or Poisoned and remove 2 damage counters from it. If your Active Pokémon has fewer damage counters than that, remove all of them.",
+      "local": "Wirf eine Münze. Bei „Kopf“ schläft dein aktives Pokémon nicht mehr und ist nicht länger verwirrt, gelähmt oder vergiftet. Entferne zwei Schadensmarken von deinem aktiven Pokémon. Hat es weniger als zwei Schadensmarken, entferne alle."
+    }
+  },
+  "de-neo4-105": {
+    "kind": "trainer",
+    "artist": "Ken Sugimori",
+    "rarity": "common",
+    "rules": {
+      "en": "You can't play this card if you have 5 or more cards in your hand (including this one). Draw cards until you have exactly 4 cards in your hand.",
+      "local": "Du kannst diese Karte nicht spielen, wenn du fünf oder mehr Karten auf deiner Hand hast (einschließlich dieser hier). Ziehe so viele Karten, bis du genau vier Karten auf deiner Hand hast."
+    }
+  },
+  "de-neo4-106": {
+    "kind": "pokemon",
+    "artist": "Hironobu Yoshida",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "grass",
+      "types": ["grass"],
+      "hp": 50,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["water"],
+        "damage": "",
+        "local": {
+          "name": "Heilendes Wasser",
+          "text": "Entferne so viele Schadensmarken von einem deiner Pokémon, wie {W}-Energie an Schimmerndes Celebi angelegt sind. Wenn dieses Pokémon weniger Schadensmarken hat, entferne alle."
+        },
+        "en": {
+          "name": "Healing Water",
+          "text": "Remove a number of damage counters from 1 of your Benched Pokémon equal to the number of Water Energy cards attached to Shining Celebi. If the Pokémon has fewer damage counters than that, remove all of them."
+        }
+      },
+      {
+        "cost": ["grass", "psychic"],
+        "damage": "10",
+        "local": {
+          "name": "Wunderblatt",
+          "text": "Wirf so viele Münzen, wie Energiekarten an das verteidigende Pokémon angelegt sind. Wenn mindestens einmal „Kopf“ fällt, wählst du, ob das verteidigende Pokémon jetzt verwirrt oder vergiftet ist oder schläft."
+        },
+        "en": {
+          "name": "Miracle Leaf",
+          "text": "Flip a number of coins equal to the number of Energy attached to the Defending Pokémon. If you get 1 or more heads, the Defending Pokémon is now Asleep, Confused, or Poisoned (your choice)."
+        }
+      }
+    ]
+  },
+  "de-neo4-107": {
+    "kind": "pokemon",
+    "artist": "Hironobu Yoshida",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "fire",
+      "types": ["fire"],
+      "hp": 100,
+      "retreat": 3,
+      "weaknesses": [{ "energy": "water", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fire", "fire", "fire", "lightning", "lightning"],
+        "damage": "100",
+        "local": {
+          "name": "Heiße weiße Flamme",
+          "text": "Lege eine jeweils an Glurak angelegte {R}-Energiekarte und {L}-Energiekarte auf deinen Ablagestapel, oder dieser Angriff hat keine Auswirkungen. Wirf eine Münze. Bei „Zahl“ fügt sich Schimmerndes Glurak selber 30 Schadenspunkte zu."
+        },
+        "en": {
+          "name": "White-hot Flame",
+          "text": "Discard 1 Fire Energy card and 1 Lightning Energy card attached to Shining Charizard or this attack does nothing. Flip a coin. If tails, Shining Charizard does 30 damage to itself."
+        }
+      }
+    ]
+  },
+  "de-neo4-108": {
+    "kind": "pokemon",
+    "artist": "Hironobu Yoshida",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "fighting",
+      "types": ["fighting"],
+      "hp": 80,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "grass", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["fighting", "fighting", "lightning"],
+        "damage": "30+",
+        "local": {
+          "name": "Blitzschnitt",
+          "text": "Wirf eine Münze. Bei „Kopf“ fügt dieser Angriff 30 Schadenspunkte plus 10 weitere Schadenspunkte zu und außerdem jedem Pokémon auf der Bank deines Gegners 10 Schadenspunkte. (Wende Schwäche und Resistenz bei Pokémon auf der Bank nicht an.) Bei „Zahl“ fügt dieser Angriff 30 Schadenspunkte zu und Schimmerndes Kabutops fügt sich selber 30 Schadenspunkte zu."
+        },
+        "en": {
+          "name": "Lightning Cut",
+          "text": "Flip a coin. If heads, this attack does 30 damage plus 10 more damage and does 10 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.) If tails, this attack does 30 damage and Shining Kabutops does 10 damage to itself."
+        }
+      },
+      {
+        "cost": ["fighting", "fighting", "water", "water"],
+        "damage": "50+",
+        "local": {
+          "name": "Wasserschlitzer",
+          "text": "Fügt 50 Schadenspunkte plus 10 weitere Schadenspunkte für jede an Schimmerndes Kabutops angelegte {W}-Energie, die nicht zum Zahlen der Angriffskosten verwendet wird, zu. Wende Resistenz nicht an."
+        },
+        "en": {
+          "name": "Water Slash",
+          "text": "Does 50 damage plus 10 more damage for each Water Energy attached to Shining Kabutops but not used to pay for this attack's Energy cost. Don't apply Resistance."
+        }
+      }
+    ]
+  },
+  "de-neo4-109": {
+    "kind": "pokemon",
+    "artist": "Hironobu Yoshida",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "psychic",
+      "types": ["psychic"],
+      "hp": 70,
+      "retreat": 2,
+      "weaknesses": [{ "energy": "psychic", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "lightning"],
+        "damage": "",
+        "local": {
+          "name": "Reflektorschild",
+          "text": "Wirf eine Münze, wenn ein Angriff im nächsten Zug deines Gegners Schimmerndes Mewtu Schaden zufügt (selbst wenn Schimmerndes Mewtu kampfunfähig wird). Verhindere bei „Kopf“ allen Schaden, der Schimmerndes Mewtu von diesem Angriff zugefügt wird (alle anderen Effekte von Angriffen behalten ihre Wirkung) und füge dann dem angreifenden Pokémon 20 Schadenspunkte zu."
+        },
+        "en": {
+          "name": "Reflect Shield",
+          "text": "If an attack does damage to Shining Mewtwo during your opponent's next turn (even if Shining Mewtwo is Knocked Out), flip a coin. If heads, prevent all damage done to Shining Mewtwo from that attack (any other effects of attacks still happen) and do 20 damage to the attacking Pokémon."
+        }
+      },
+      {
+        "cost": ["psychic", "psychic", "fire"],
+        "damage": "40+",
+        "local": {
+          "name": "Psyexplosion",
+          "text": "Lege eine an Schimmerndes Mewtu angelegte {R}-Energiekarte auf deinen Ablagestapel, oder dieser Angriff hat keine Auswirkungen. Dieser Angriff fügt 40 Schadenspunkte plus weitere 10 Schadenspunkte für jede an das verteidigende Pokémon angelegte Energie zu."
+        },
+        "en": {
+          "name": "Psyburst",
+          "text": "Discard a Fire Energy card attached to Shining Mewtwo or this attack does nothing. This attack does 40 damage plus 10 damage for each Energy attached to the Defending Pokémon."
+        }
+      }
+    ]
+  },
+  "de-neo4-110": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "colorless",
+      "types": ["colorless"],
+      "hp": 60,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "lightning", "value": "×2" }],
+      "resistances": [{ "energy": "fighting", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["psychic", "lightning", "colorless"],
+        "damage": "30",
+        "local": {
+          "name": "Leuchtende Augen",
+          "text": "Wirf drei Münzen. Wenn genau einmal „Kopf“ fällt, schläft das verteidigende Pokémon jetzt. Wenn genau zweimal „Kopf“ fällt, ist das verteidigende Pokémon jetzt verwirrt. Wenn jedes Mal „Kopf“ fällt, ist das verteidigende Pokémon jetzt gelähmt."
+        },
+        "en": {
+          "name": "Flashing Eyes",
+          "text": "Flip 3 coins. If exactly 1 is heads, the Defending Pokémon is now Asleep. If exactly 2 are heads, the Defending Pokémon is now Confused. If all 3 are heads, the Defending Pokémon is now Paralyzed."
+        }
+      }
+    ]
+  },
+  "de-neo4-111": {
+    "kind": "pokemon",
+    "artist": "Hironobu Yoshida",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "lightning",
+      "types": ["lightning"],
+      "hp": 70,
+      "retreat": 1,
+      "weaknesses": [{ "energy": "fighting", "value": "×2" }]
+    },
+    "attacks": [
+      {
+        "cost": ["lightning", "lightning", "water", "water"],
+        "damage": "40",
+        "local": {
+          "name": "Donnernder Windstoß",
+          "text": "Wenn dein Gegner mindestens ein Pokémon auf seiner Bank hat, wähle eines von diesen und dieser Angriff fügt diesem Pokémon 10 Schadenspunkte für jede an Schimmerndes Raichu angelegte {W}-Energie zu. (Wende Schwäche und Resistenz bei Pokémon auf der Bank nicht an.)"
+        },
+        "en": {
+          "name": "Thundersquall",
+          "text": "If your opponent has any Benched Pokémon, choose 1 of them and this attack does 10 damage to that Pokémon for each Water Energy attached to Shining Raichu. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        }
+      }
+    ]
+  },
+  "de-neo4-112": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "metal",
+      "types": ["metal"],
+      "hp": 90,
+      "retreat": 4,
+      "weaknesses": [{ "energy": "fire", "value": "×2" }],
+      "resistances": [{ "energy": "grass", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["metal", "metal", "fighting", "fighting"],
+        "damage": "80",
+        "local": {
+          "name": "Zermalmende Erde",
+          "text": "Wirf eine Münze. Bei „Kopf“ fügt dieser Angriff allen Pokémon auf der Bank 10 Schadenspunkte zu (deinen und denen deines Gegners). (Wende Schwäche und Resistenz bei Pokémon auf der Bank nicht an.) Bei „Zahl“ hat dieser Angriff keine Auswirkungen. Unabhängig davon kann Schimmerndes Stahlos während deines nächsten Zuges nicht angreifen."
+        },
+        "en": {
+          "name": "Crushing Earth",
+          "text": "Flip a coin. If heads, this attack does 10 damage to each Benched Pokémon (yours and your opponent's). (Don't apply Weakness and Resistance for Benched Pokémon.) If tails, this attack does nothing. Either way, Shining Steelix can't attack during your next turn."
+        }
+      }
+    ]
+  },
+  "de-neo4-113": {
+    "kind": "pokemon",
+    "artist": "Ken Sugimori",
+    "rarity": "rare",
+    "pokemon": {
+      "energy": "darkness",
+      "types": ["darkness"],
+      "hp": 80,
+      "retreat": 3,
+      "resistances": [{ "energy": "psychic", "value": "-30" }]
+    },
+    "attacks": [
+      {
+        "cost": ["darkness", "fighting", "fighting"],
+        "damage": "30",
+        "local": {
+          "name": "Bergzermalmer",
+          "text": "Wirf eine Münze solange, bis 'Zahl' fällt. Für jeden geworfenen 'Kopf' legt dein gegner die oberste Karte seines Decks auf seinen Ablagestapel."
+        },
+        "en": {
+          "name": "Mountain Crush",
+          "text": "Flip a coin until you get tails. For each heads, your opponent discards the top card from his or her deck."
+        }
+      },
+      {
+        "cost": ["darkness", "fire", "fire", "fire"],
+        "damage": "50",
+        "local": {
+          "name": "Zerstörendes Feuer",
+          "text": "Wirf für jede an Schimmerndes Despotar abgelegte -Energiekarte eine Münze. Lege für jedes Mal 'Kopf' eine an Schimmerndes Despotar abgelegte -Energiekarte auf deinen Ablagestapel, oder dieser Angriff hat keine Auswirkungen. Wähle dann für jedes Mal 'Kopf' eine an das verteidigende Pokémon angelegte Energiekarte und lege diese auf den Ablagestapel deines gegners. Wenn das verteidigende Pokémon weniger Energiekarten hat, lege sie alle ab."
+        },
+        "en": {
+          "name": "Destructive Fire",
+          "text": "Flip a coin for each Fire Energy card attached to Shining Tyranitar. For each heads, discard a Fire Energy card attached to Shining Tyranitar or this attack does nothing. Then, for each heads, choose an Energy card attached to the Defending Pokémon and discard it. If it has fewer Energy cards than that, remove all of them."
+        }
+      }
+    ]
+  }
+}

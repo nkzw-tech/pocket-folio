@@ -1,0 +1,59 @@
+.binder-color-picker {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 76px;
+  align-items: center;
+  gap: 16px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+.binder-color-picker legend {
+  padding: 0 0 8px;
+  font-size: 13px;
+}
+.binder-color-swatches {
+  display: grid;
+  grid-template-columns: repeat(6, 44px);
+  gap: 8px;
+}
+@media (max-width: 479px) {
+  .binder-color-swatches {
+    grid-template-columns: repeat(3, 44px);
+  }
+}
+.app-dialog .binder-color-swatches input {
+  appearance: none;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  padding: 0;
+  margin: 0;
+  border: 2px solid #ffffff30;
+  border-radius: 16px;
+  corner-shape: squircle;
+  cursor: pointer;
+}
+.binder-color-swatches input:checked {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+.app-dialog .binder-custom-color {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0 0;
+}
+.app-dialog .binder-custom-color input {
+  width: 44px;
+  height: 44px;
+  padding: 4px;
+  cursor: pointer;
+}
+.binder-color-picker .binder-color-preview {
+  width: 76px;
+  height: 104px;
+  padding: 0 0 0 8px;
+  border-radius: 4px 12px 12px 4px;
+}

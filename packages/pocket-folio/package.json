@@ -1,0 +1,29 @@
+{
+  "name": "@nkzw/pocket-folio",
+  "version": "0.1.0",
+  "description": "Manage Pocket Folio Pokémon binders from your terminal or agent.",
+  "homepage": "https://folio.nakazawa.tech/agents",
+  "license": "MIT",
+  "author": {
+    "name": "Christoph Nakazawa",
+    "url": "https://nakazawa.tech"
+  },
+  "bin": {
+    "pocket-folio": "./cli/pocket-folio.mjs"
+  },
+  "files": [
+    "cli",
+    "skills"
+  ],
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prepack": "node --test tests/*.test.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

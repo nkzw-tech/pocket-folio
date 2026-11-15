@@ -1,0 +1,97 @@
+.card-search {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  max-width: 470px;
+}
+.card-search .search {
+  max-width: none;
+  min-height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  corner-shape: squircle;
+  background: var(--surface);
+}
+.card-search .search:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--tint);
+}
+.card-search .nkzw-typeahead__results,
+.card-search .nkzw-typeahead__empty {
+  position: absolute;
+  z-index: 50;
+  inset: calc(100% + 8px) 0 auto;
+  margin: 0;
+  padding: 8px;
+  max-height: min(360px, 45dvh);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  list-style: none;
+  background: var(--surface-raised);
+  color: var(--text);
+  border: 1px solid var(--border-hover);
+  border-radius: 24px;
+  corner-shape: squircle;
+  box-shadow: 0 16px 40px #0006;
+}
+.card-search .nkzw-typeahead__results:empty {
+  display: none;
+}
+.card-search .nkzw-typeahead__empty {
+  padding: 16px;
+  font-size: 13px;
+}
+.card-search .nkzw-typeahead__option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 18px;
+  corner-shape: squircle;
+  cursor: pointer;
+}
+.card-search .nkzw-typeahead__option[data-highlighted] {
+  background: var(--tint);
+}
+.card-search .nkzw-typeahead__option > img {
+  width: 34px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 3px;
+}
+.card-search-names {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  flex: 1;
+}
+.card-search-names strong {
+  font-size: 13px;
+  font-weight: 600;
+}
+.card-search-names small {
+  color: var(--muted);
+  font-size: 11px;
+}
+.card-search-names small:empty {
+  display: none;
+}
+.card-search-number {
+  flex-shrink: 0;
+  color: var(--muted);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+.picker-toolbar .card-search {
+  max-width: none;
+}
+.picker-toolbar .card-search input {
+  padding: 12px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.binder-search-results .card-search {
+  max-width: none;
+}

@@ -1,0 +1,226 @@
+/* Pocket Folio's shared control contract. All layout spacing is on a 4px grid.
+   Border strokes, type sizes, and card artwork geometry are independent. */
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --control-height: 44px;
+  --control-height-compact: 32px;
+  --control-radius: 16px;
+}
+@scope ([data-astryx-theme='pocket-folio']) {
+  .astryx-button {
+    min-height: var(--control-height);
+    height: var(--control-height);
+    padding: 8px 16px;
+    gap: 8px;
+    border: 1px solid var(--border);
+    border-radius: var(--control-radius);
+    corner-shape: squircle;
+    background: var(--surface-raised);
+    color: var(--text);
+    font: 600 14px/20px var(--font-sans);
+    text-decoration: none;
+  }
+  .astryx-button > span:first-child > span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .astryx-button[data-size='sm'] {
+    min-height: var(--control-height-compact);
+    height: var(--control-height-compact);
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+  }
+  .astryx-button[data-size='lg'] {
+    min-height: 48px;
+    height: 48px;
+    padding-inline: 20px;
+  }
+  .segments {
+    height: var(--control-height);
+  }
+  .segments .astryx-button {
+    min-height: 0;
+    height: 100%;
+    padding: 4px 8px;
+  }
+  .astryx-button[data-variant='primary'] {
+    background: #dceaff;
+    border-color: transparent;
+    color: #19191d;
+  }
+  .astryx-button[data-variant='ghost'] {
+    background: transparent;
+    border-color: transparent;
+    color: var(--muted);
+  }
+  .astryx-button[data-variant='destructive'] {
+    background: transparent;
+    color: #e5a1a1;
+  }
+  .astryx-button:is(:disabled, [aria-disabled='true']) {
+    background: var(--surface-raised);
+    border-color: var(--border);
+    color: var(--muted);
+    opacity: 0.65;
+    cursor: default;
+  }
+  .astryx-button:not(:disabled, [aria-disabled='true']):hover {
+    border-color: var(--border-hover);
+    text-decoration: none;
+  }
+  .astryx-button[data-variant='primary']:not(:disabled):hover {
+    background: #fff;
+  }
+  .astryx-button:is(.control-icon, .icon-button, .folio-icon-button) {
+    width: var(--control-height);
+    padding: 8px;
+    flex-shrink: 0;
+  }
+  .astryx-button[aria-pressed='true']:not([data-variant='primary']) {
+    background: var(--tint);
+    color: var(--text);
+    border-color: var(--border-hover);
+  }
+  :is(.astryx-text-input, .astryx-number-input, .astryx-selector) {
+    min-height: var(--control-height);
+    border: 1px solid var(--border);
+    border-radius: var(--control-radius);
+    corner-shape: squircle;
+    background: var(--surface-raised);
+    color: var(--text);
+    font: 400 14px/20px var(--font-sans);
+    padding-inline: 12px;
+  }
+  :is(.astryx-text-input, .astryx-number-input) input {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    min-width: 0;
+  }
+  .astryx-selector[data-size='sm'] {
+    min-height: var(--control-height-compact);
+    height: var(--control-height-compact);
+    border-radius: 12px;
+    font-size: 12px;
+  }
+  .astryx-field-label {
+    font: 500 12px/20px var(--font-sans);
+    color: var(--muted);
+  }
+  .astryx-field {
+    gap: 8px;
+    min-width: 0;
+  }
+  .astryx-selector-popup,
+  .astryx-dropdown-menu {
+    border-radius: 20px;
+    corner-shape: squircle;
+    border-color: var(--border);
+    background: var(--surface);
+  }
+  :is(.astryx-selector-option-row, .astryx-dropdown-menu-item) {
+    min-height: 44px;
+    border-radius: 12px;
+    corner-shape: squircle;
+    font-size: 14px;
+  }
+  .astryx-dialog.app-dialog {
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: 32px;
+    corner-shape: squircle;
+    color: var(--text);
+    background: var(--surface);
+    box-shadow: 0 24px 80px #0008;
+    animation: card-preview-in 140ms ease-out;
+  }
+  .astryx-dialog::backdrop {
+    background: #08080bb8;
+    backdrop-filter: blur(8px);
+  }
+  .astryx-tab {
+    min-height: 44px;
+    padding-inline: 12px;
+    font-weight: 650;
+  }
+}
+@media (pointer: coarse) {
+  :is(.astryx-text-input, .astryx-number-input) input {
+    font-size: 16px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .astryx-dialog.app-dialog {
+    animation: none;
+  }
+}
+.form-fields {
+  min-width: 0;
+}
+.form-fields > .astryx-button {
+  align-self: flex-start;
+}
+.auth-card .form-fields > .astryx-button {
+  align-self: stretch;
+}
+.card-status-field {
+  min-width: 0;
+}
+.card-status-field[data-status='purchased'] .astryx-selector {
+  color: #e7c69a;
+}
+.card-status-field [role='alert'] {
+  font-size: 12px;
+  color: #e5a1a1;
+}
+.account-menu-trigger.astryx-button,
+.binder-pages-trigger.astryx-button {
+  background: transparent;
+}
+
+/* The field owns its focus ring; avoid a second rectangle on the inner input. */
+:is(.astryx-text-input, .astryx-number-input) input:focus-visible {
+  outline: none;
+}
+.auth-card > p {
+  margin-top: 16px;
+}
+.auth-card > .astryx-button,
+.auth-actions {
+  margin-top: 24px;
+}
+.auth-actions > .astryx-button {
+  margin-inline-start: auto;
+}
+
+@scope ([data-astryx-theme='pocket-folio']) {
+  .astryx-text-input[data-size='sm'] {
+    min-height: var(--control-height-compact);
+    height: var(--control-height-compact);
+    border-radius: 12px;
+    padding-inline: 8px;
+  }
+}
+.move-card label {
+  flex-shrink: 0;
+  white-space: nowrap;
+  color: var(--muted);
+  font-size: 12px;
+}
+.move-card .astryx-field {
+  flex-shrink: 0;
+}
+.move-card .astryx-button {
+  flex-shrink: 0;
+}

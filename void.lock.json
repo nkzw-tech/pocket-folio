@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "source": {
+    "account_id": "004b3cabb810ff98895ea3a690f6ba00",
+    "d1_databases": [
+      {
+        "binding": "DB",
+        "database_id": "4d61e582-70f8-4ddf-b897-5b325e80b33d",
+        "database_name": "pkmn-binder-db",
+        "migrations_dir": "./db/migrations"
+      }
+    ],
+    "name": "pkmn-binder",
+    "routes": [
+      {
+        "custom_domain": true,
+        "pattern": "folio.nakazawa.tech"
+      },
+      {
+        "custom_domain": true,
+        "pattern": "pkmn.nakazawa.tech"
+      }
+    ],
+    "send_email": [
+      {
+        "allowed_sender_addresses": ["noreply@mail.pkmn.nakazawa.tech"],
+        "name": "SEND_EMAIL"
+      }
+    ],
+    "vars": {
+      "__VOID_EMAIL_FROM": "Pocket Folio <noreply@mail.pkmn.nakazawa.tech>"
+    }
+  },
+  "resolved": {
+    "account_id": "004b3cabb810ff98895ea3a690f6ba00",
+    "d1_databases": [
+      {
+        "binding": "DB",
+        "database_name": "pkmn-binder-db",
+        "database_id": "4d61e582-70f8-4ddf-b897-5b325e80b33d",
+        "migrations_dir": "./db/migrations"
+      }
+    ],
+    "name": "pkmn-binder",
+    "routes": [
+      {
+        "custom_domain": true,
+        "pattern": "folio.nakazawa.tech"
+      },
+      {
+        "custom_domain": true,
+        "pattern": "pkmn.nakazawa.tech"
+      }
+    ],
+    "send_email": [
+      {
+        "allowed_sender_addresses": ["noreply@mail.pkmn.nakazawa.tech"],
+        "name": "SEND_EMAIL"
+      }
+    ],
+    "vars": {
+      "__VOID_EMAIL_FROM": "Pocket Folio <noreply@mail.pkmn.nakazawa.tech>"
+    },
+    "compatibility_date": "2026-02-24"
+  },
+  "text": "{\n  \"account_id\": \"004b3cabb810ff98895ea3a690f6ba00\",\n  \"d1_databases\": [\n    {\n      \"binding\": \"DB\",\n      \"database_name\": \"pkmn-binder-db\",\n      \"database_id\": \"4d61e582-70f8-4ddf-b897-5b325e80b33d\",\n      \"migrations_dir\": \"./db/migrations\"\n    }\n  ],\n  \"name\": \"pkmn-binder\",\n  \"routes\": [\n    {\n      \"custom_domain\": true,\n      \"pattern\": \"folio.nakazawa.tech\"\n    },\n    {\n      \"custom_domain\": true,\n      \"pattern\": \"pkmn.nakazawa.tech\"\n    }\n  ],\n  \"send_email\": [\n    {\n      \"allowed_sender_addresses\": [\n        \"noreply@mail.pkmn.nakazawa.tech\"\n      ],\n      \"name\": \"SEND_EMAIL\"\n    }\n  ],\n  \"vars\": {\n    \"__VOID_EMAIL_FROM\": \"Pocket Folio <noreply@mail.pkmn.nakazawa.tech>\"\n  },\n  \"compatibility_date\": \"2026-02-24\"\n}\n"
+}
