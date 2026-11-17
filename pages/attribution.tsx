@@ -7,6 +7,7 @@ const sources = [
     links: [
       ['ShinyBeak', 'https://shinybeak.com/sets'],
       ['Scrydex', 'https://scrydex.com'],
+      ['Scrydex (002/P)', 'https://scrydex.com/pokemon/cards/rockets-scizor/miscpp_ja-2'],
       [
         'Bulbapedia',
         'https://bulbapedia.bulbagarden.net/wiki/Pretend_Comedian_Pikachu_(SM-P_Promo_407)',

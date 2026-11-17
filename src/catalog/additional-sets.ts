@@ -1,4 +1,5 @@
 import type { BinderSet, CardFoil, Edition } from '../binder-catalog';
+import { pPromos } from './p-promos';
 import packs from './packs.json';
 
 type Pack = Omit<BinderSet, 'cards'> & {
@@ -19,7 +20,7 @@ type Pack = Omit<BinderSet, 'cards'> & {
 };
 // Compact search metadata is eager; detailed rules and scans load only when used.
 // Generated IDs are permanent and independent of ordering or source display names.
-export const additionalSets: Array<BinderSet> = (packs as Array<Pack>).map((pack) => ({
+const generatedSets: Array<BinderSet> = (packs as Array<Pack>).map((pack) => ({
   ...pack,
   cards: pack.cards.map(
     ([
@@ -50,3 +51,5 @@ export const additionalSets: Array<BinderSet> = (packs as Array<Pack>).map((pack
     }),
   ),
 }));
+
+export const additionalSets = [...generatedSets, pPromos];

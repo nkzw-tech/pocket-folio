@@ -59,6 +59,8 @@ and configuration in `void.config.ts` and `void.lock.json`.
 
 Thanks to the [data and artwork providers](https://folio.nakazawa.tech/attribution).
 See the [source manifest](src/catalog/sources.json) for per-set credits.
+Scrydex supplies the Japanese
+[Rocket’s Scizor 002/P scan](https://scrydex.com/pokemon/cards/rockets-scizor/miscpp_ja-2).
 
 Pocket Folio is a noncommercial fan project, not affiliated with The Pokémon Company,
 Nintendo, Creatures, or GAME FREAK. The [MIT license](LICENSE) covers our code;

@@ -1,0 +1,40 @@
+{
+  "ja-p-promos-002": {
+    "kind": "pokemon",
+    "artist": "K. Hoshiba",
+    "rarity": "promo",
+    "pokemon": {
+      "energy": "metal",
+      "hp": 60,
+      "retreat": 2,
+      "weakness": { "energy": "fire", "value": "×2" },
+      "resistance": { "energy": "grass", "value": "-30" }
+    },
+    "attacks": [
+      {
+        "cost": ["colorless"],
+        "damage": "",
+        "local": {
+          "name": "きあいだめ",
+          "text": "次の自分の番、自分が使う「こうそくいどう」のダメージは「40」になる。"
+        },
+        "en": {
+          "name": "Focus",
+          "text": "During your next turn, this card's Agility attack does 40 damage."
+        }
+      },
+      {
+        "cost": ["metal", "colorless", "colorless"],
+        "damage": "20",
+        "local": {
+          "name": "こうそくいどう",
+          "text": "コインを1回投げ、「おもて」なら、次の相手の番、自分はワザによるダメージや効果を受けない。"
+        },
+        "en": {
+          "name": "Agility",
+          "text": "Flip a coin. If heads, this card takes no damage or other effects from attacks during your opponent's next turn."
+        }
+      }
+    ]
+  }
+}

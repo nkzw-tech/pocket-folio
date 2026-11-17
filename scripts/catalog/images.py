@@ -8,6 +8,7 @@ from fetch import CACHE, EN, JA, DE
 
 
 def jobs():
+    yield 'ja-p-promos-002', 'https://images.scrydex.com/pokemon/miscpp_ja-2/large'
     for sid in EN + JA:
         cards = json.loads((CACHE / f'cards-{sid}.json').read_text())
         lang = cards[0]['set']['language']
