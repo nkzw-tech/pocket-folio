@@ -67,13 +67,19 @@ void main() {
   surface = position;
   stockEdge = edge;
   texCoord = uv;
-  vec2 screen;
+  vec2 screen = p.xy;
+  float perspective = 1.0;
   if (shadow) {
-    screen = p.xy + vec2(p.z * 0.12, p.z * 0.06 + 3.0);
+    screen += vec2(p.z * 0.12, p.z * 0.06 + 3.0);
   } else {
-    screen = viewport * 0.5 + (p.xy - viewport * 0.5) * (4000.0 / (4000.0 - p.z));
+    // Keep perspective in clip-space w. Dividing xy here and emitting w=1
+    // makes UVs affine across each triangle: rigid card faces visibly swim
+    // during turns, while the sleeve's small mesh triangles mostly hide it.
+    perspective = 1.0 - p.z / 4000.0;
   }
-  gl_Position = vec4((screen.x + padding) / (viewport.x + padding * 2.0) * 2.0 - 1.0, 1.0 - (screen.y + padding) / (viewport.y + padding * 2.0) * 2.0, -p.z / 2000.0, 1.0);
+  vec2 clip = vec2((screen.x + padding) / (viewport.x + padding * 2.0) * 2.0 - 1.0,
+    1.0 - (screen.y + padding) / (viewport.y + padding * 2.0) * 2.0);
+  gl_Position = vec4(clip, -p.z / 4000.0, perspective);
 }`;
 const fragmentShader = `#version 300 es
 precision highp float;
