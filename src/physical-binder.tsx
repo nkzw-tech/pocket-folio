@@ -48,6 +48,22 @@ function subscribeToScreen(change: () => void) {
   return () => narrowScreen?.removeEventListener('change', change);
 }
 
+function CardBack({ card, className = '' }: { card: BinderCard; className?: string }) {
+  return (
+    <span className={`folio-card-back ${className}`} data-language={card.language}>
+      <img
+        alt=""
+        crossOrigin="anonymous"
+        src={cardAssetURL(
+          card.language === 'ja'
+            ? '/cards/japanese-card-sides.png'
+            : '/cards/back-international.jpg',
+        )}
+      />
+    </span>
+  );
+}
+
 function Pocket({
   backCard,
   card,
@@ -75,11 +91,33 @@ function Pocket({
   setStatus?: (card: BinderCard, status: CardStatus) => Promise<void>;
   wishlist: boolean;
 }) {
+  if (reverse) {
+    const showBack = card && (owned || purchased || wishlist);
+    return (
+      <li
+        className={`folio-pocket${owned ? ' is-occupied is-owned' : purchased ? ' is-purchased' : wishlist ? ' is-wishlist' : ''}`}
+        data-card-id={card?.id}
+      >
+        <span
+          aria-label={showBack ? `${text('Back of')} ${card.english}` : text('Empty pocket')}
+          className="folio-empty-pocket"
+          role="img"
+        >
+          {showBack && (
+            <CardBack
+              card={card}
+              className={fullColor || owned ? '' : purchased ? 'is-purchased' : 'is-wishlist'}
+            />
+          )}
+        </span>
+      </li>
+    );
+  }
   const visibleCard = card ?? backCard;
-  const showBack = Boolean(backCard) || (reverse && (owned || fullColor));
+  const showBack = Boolean(backCard);
   return (
     <li
-      className={`folio-pocket${owned || backCard ? ' is-occupied' : ''}${owned ? ' is-owned' : purchased ? ' is-purchased' : ''}${highlighted ? '' : ' is-muted'}`}
+      className={`folio-pocket${owned || backCard ? ' is-occupied' : ''}${owned ? ' is-owned' : purchased ? ' is-purchased' : wishlist ? ' is-wishlist' : ''}${highlighted ? '' : ' is-muted'}`}
       data-back-card-id={backCard?.id}
       data-card-id={card?.id}
       {...cardLightEvents}
@@ -87,27 +125,17 @@ function Pocket({
       {visibleCard ? (
         <>
           <button
-            aria-label={`${showBack || reverse ? text('Back of') : text('View')} ${(backCard ?? visibleCard).english} ${(backCard ?? visibleCard).number ?? text('Energy')}${showBack ? '' : owned ? ', owned' : purchased ? ', purchased' : wishlist ? ', wishlist' : ', missing'}`}
+            aria-label={`${showBack ? text('Back of') : text('View')} ${(backCard ?? visibleCard).english} ${(backCard ?? visibleCard).number ?? text('Energy')}${showBack ? '' : owned ? ', owned' : purchased ? ', purchased' : wishlist ? ', wishlist' : ', missing'}`}
             className="folio-card"
             onClick={() => (card ? open(card) : edit ? edit() : open(visibleCard))}
             type="button"
           >
             {showBack ? (
-              <span className="folio-card-back" data-language={(backCard ?? visibleCard).language}>
-                <img
-                  alt=""
-                  crossOrigin="anonymous"
-                  src={cardAssetURL(
-                    (backCard ?? visibleCard).language === 'ja'
-                      ? '/cards/japanese-card-sides.png'
-                      : '/cards/back-international.jpg',
-                  )}
-                />
-              </span>
-            ) : reverse ? (
-              <span className="folio-reverse-empty">{text('Empty pocket')}</span>
-            ) : owned || purchased || fullColor ? (
-              <span className={owned || fullColor ? 'folio-insert' : 'folio-insert is-purchased'}>
+              <CardBack card={backCard ?? visibleCard} />
+            ) : owned || purchased || wishlist || fullColor ? (
+              <span
+                className={`folio-insert${owned || fullColor ? '' : purchased ? ' is-purchased' : ' is-wishlist'}`}
+              >
                 <CardScan foil={visibleCard.foil} image={visibleCard.image} />
               </span>
             ) : (
@@ -116,7 +144,7 @@ function Pocket({
           </button>
           <div className="folio-pocket-label">
             <span>{card ? (card.number ?? text('Energy')) : ''}</span>
-            {!reverse && card && (
+            {card && (
               <CardStatusControl
                 compact
                 name={`${card.english} ${card.number ?? text('Energy')}`}
@@ -126,7 +154,7 @@ function Pocket({
                 }
               />
             )}
-            {edit && !reverse && (
+            {edit && (
               <button
                 aria-label={card ? text('Replace card') : text('Add card to pocket')}
                 className="folio-edit"
@@ -140,7 +168,7 @@ function Pocket({
         </>
       ) : (
         <>
-          {edit && !reverse ? (
+          {edit ? (
             <button
               aria-label={text('Add card to pocket')}
               className="folio-empty-pocket folio-add"

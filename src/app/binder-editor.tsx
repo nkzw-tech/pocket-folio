@@ -317,7 +317,7 @@ export function BinderView({
             }
             return (
               <li
-                className={`binder-card${binder.showAllCardsInColor ? ' binder-card-full-color' : ''}${card && owned.has(card.printingId) ? ' binder-card-owned' : ''}${card && purchased.has(card.printingId) ? ' binder-card-purchased' : ''}`}
+                className={`binder-card${binder.showAllCardsInColor ? ' binder-card-full-color' : ''}${card && owned.has(card.printingId) ? ' binder-card-owned' : ''}${card && purchased.has(card.printingId) ? ' binder-card-purchased' : ''}${card && wishlist.has(card.printingId) ? ' binder-card-wishlist' : ''}`}
                 key={index}
                 {...cardLightEvents}
               >
@@ -331,7 +331,7 @@ export function BinderView({
                     >
                       {!binder.showAllCardsInColor &&
                       !reveal &&
-                      ['missing', 'wishlist'].includes(cardStatus(ownership[card.printingId])) ? (
+                      cardStatus(ownership[card.printingId]) === 'missing' ? (
                         <MissingCardArtwork card={card} reveal={false} />
                       ) : (
                         <CardScan foil={card.foil} image={card.image} lazy />

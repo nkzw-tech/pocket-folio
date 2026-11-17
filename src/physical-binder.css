@@ -484,7 +484,7 @@
   --foil-opacity: 0.45;
 }
 @media (hover: hover) and (pointer: fine) {
-  .folio-table:not([data-page-motion]) .folio-pocket:hover {
+  .folio-table:not([data-page-motion]) .folio-page:not(.folio-page-reverse) .folio-pocket:hover {
     --foil-opacity: 0.86;
     box-shadow:
       0 3px 12px #bababa25,
@@ -493,12 +493,18 @@
   }
 }
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
-  .folio-table:not([data-page-motion]) .folio-pocket:hover .card-scan {
+  .folio-table:not([data-page-motion])
+    .folio-page:not(.folio-page-reverse)
+    .folio-pocket:hover
+    .card-scan {
     transform: perspective(780px) rotateX(var(--card-tilt-x, 0deg))
       rotateY(var(--card-tilt-y, 0deg));
     transition-duration: 65ms;
   }
-  .folio-table:not([data-page-motion]) .folio-pocket:hover .folio-insert {
+  .folio-table:not([data-page-motion])
+    .folio-page:not(.folio-page-reverse)
+    .folio-pocket:hover
+    .folio-insert {
     transform: translateY(-2px);
   }
 }
@@ -667,15 +673,6 @@
   width: 220.667%;
   height: 115.166%;
 }
-.folio-reverse-empty {
-  display: grid;
-  position: absolute;
-  inset: 0;
-  place-items: center;
-  color: #c0c0c06b;
-  border: 1px dashed #d2d2d21c;
-  font-size: 9px;
-}
 
 .folio-add {
   background: transparent;
@@ -695,7 +692,8 @@
   color: #aaa;
   padding: 0 4px;
 }
-.folio-insert.is-reference {
+.folio-insert.is-reference,
+.folio-card-back.is-reference {
   filter: grayscale(1);
   opacity: 0.4;
 }
