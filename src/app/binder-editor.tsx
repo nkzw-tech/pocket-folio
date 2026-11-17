@@ -621,8 +621,9 @@ function BinderSettings({
   const [pending, setPending] = useState(false);
   const [error, setError] = useState('');
   return (
-    <Dialog close={close} title="Binder settings">
+    <Dialog className="binder-settings-dialog" close={close} title="Binder settings" wide>
       <FormStack
+        className="binder-settings-form"
         onSubmit={async (event) => {
           event.preventDefault();
           setPending(true);
@@ -648,47 +649,51 @@ function BinderSettings({
           }
         }}
       >
-        <TextField
-          defaultValue={binder.name}
-          htmlName="name"
-          isRequired
-          label={text('Name')}
-          maxLength={80}
-        />
-        {preset && (
-          <Checkbox
-            defaultValue={Boolean(binder.coverSetId)}
-            htmlName="setCover"
-            label={text('Use set artwork for cover')}
-          />
-        )}
+        <div className="binder-settings-fields">
+          <Stack direction="vertical" gap={4}>
+            <TextField
+              defaultValue={binder.name}
+              htmlName="name"
+              isRequired
+              label={text('Name')}
+              maxLength={80}
+            />
+            {preset && (
+              <Checkbox
+                defaultValue={Boolean(binder.coverSetId)}
+                htmlName="setCover"
+                label={text('Use set artwork for cover')}
+              />
+            )}
 
-        <Select
-          defaultValue={`${binder.columns}x${binder.rows}`}
-          label={text('Page layout')}
-          name="layout"
-        >
-          {binderLayouts.map(([columns, rows]) => (
-            <option key={`${columns}x${rows}`} value={`${columns}x${rows}`}>
-              {columns} × {rows} · {columns * rows} {text('pockets')}
-            </option>
-          ))}
-        </Select>
+            <Select
+              defaultValue={`${binder.columns}x${binder.rows}`}
+              label={text('Page layout')}
+              name="layout"
+            >
+              {binderLayouts.map(([columns, rows]) => (
+                <option key={`${columns}x${rows}`} value={`${columns}x${rows}`}>
+                  {columns} × {rows} · {columns * rows} {text('pockets')}
+                </option>
+              ))}
+            </Select>
 
-        <Checkbox
-          defaultValue={binder.doubleSided}
-          htmlName="doubleSided"
-          label={text('Cards on both sides')}
-        />
-        <p className="muted">
-          {text('Card order and empty pockets stay in place when changing layout.')}
-        </p>
-        <Stack direction="vertical" gap={4}>
-          <h3>{text('Appearance')}</h3>
-          <BinderColorPicker value={binder.color} />
-          <PocketOpeningPicker value={binder.pocketOpening} />
-          <BinderColorDisplay binder={binder} onChange={setFullColor} value={fullColor} />
-        </Stack>
+            <Checkbox
+              defaultValue={binder.doubleSided}
+              htmlName="doubleSided"
+              label={text('Cards on both sides')}
+            />
+            <p className="muted">
+              {text('Card order and empty pockets stay in place when changing layout.')}
+            </p>
+          </Stack>
+          <Stack direction="vertical" gap={4}>
+            <h3>{text('Appearance')}</h3>
+            <BinderColorPicker value={binder.color} />
+            <PocketOpeningPicker value={binder.pocketOpening} />
+            <BinderColorDisplay binder={binder} onChange={setFullColor} value={fullColor} />
+          </Stack>
+        </div>
         {error && <p role="alert">{error}</p>}
         <footer className="binder-settings-footer">
           <Button

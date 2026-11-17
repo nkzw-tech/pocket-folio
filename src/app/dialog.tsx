@@ -6,12 +6,14 @@ import { useId, type ReactNode } from 'react';
 import { text } from '../i18n/text';
 export function Dialog({
   children,
+  className = '',
   close,
   title,
   toolbar,
   wide = false,
 }: {
   children: ReactNode;
+  className?: string;
   close: () => void;
   title: string;
   toolbar?: ReactNode;
@@ -21,7 +23,7 @@ export function Dialog({
   return (
     <AstryxDialog
       aria-labelledby={titleId}
-      className={`app-dialog${wide ? ' app-dialog-wide' : ''}`}
+      className={`app-dialog${wide ? ' app-dialog-wide' : ''} ${className}`}
       isOpen
       maxHeight="90dvh"
       onOpenChange={(open) => {

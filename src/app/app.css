@@ -706,8 +706,9 @@ html[data-catalog-navigation='true']::view-transition-old(app-page) {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: stretch;
   gap: 16px;
-  margin-top: 4px;
-  padding-top: 20px;
+  flex-shrink: 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
 }
 .app-dialog .binder-settings-footer > button {
   display: inline-flex;
@@ -861,4 +862,46 @@ html[data-catalog-navigation='true']::view-transition-old(app-page) {
 }
 .binder-share-label > [data-visible='true'] {
   visibility: visible;
+}
+
+.binder-settings-dialog .app-dialog-content {
+  overflow: hidden;
+}
+.binder-settings-dialog .app-dialog-content > header,
+.binder-settings-form > .form-fields > [role='alert'] {
+  flex-shrink: 0;
+}
+.binder-settings-dialog .binder-settings-form,
+.binder-settings-form > .form-fields {
+  min-height: 0;
+  overflow: hidden;
+}
+.binder-settings-fields {
+  display: grid;
+  gap: 24px;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 4px;
+  margin: -4px;
+  scroll-padding-block: 4px;
+}
+.binder-settings-fields > * {
+  min-width: 0;
+}
+@media (min-width: 960px) {
+  .binder-settings-fields {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    column-gap: 32px;
+  }
+  .binder-settings-footer {
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 959px) {
+  .binder-settings-dialog {
+    max-width: 480px;
+  }
 }
