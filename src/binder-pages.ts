@@ -67,3 +67,48 @@ export function pageRange(page: BinderPage) {
       ? 'Card backs'
       : 'Inside cover';
 }
+
+export type StackedCard = { card: BinderCard; depth: number; slot: number };
+
+// A transparent sheet reveals the nearest visible card underneath each pocket.
+// Resolve this from all sheets, but render at most one card per pocket. The
+// returned slots identify physical placements, keeping images stable when a
+// preloaded page becomes the resting page after a turn.
+export function binderUnderlay(
+  cards: ReadonlyArray<BinderCard | undefined>,
+  page: BinderPage,
+  visible: (card: BinderCard) => boolean,
+  columns = 3,
+  rows = 3,
+): ReadonlyArray<StackedCard | undefined> {
+  const size = columns * rows;
+  const result = Array<StackedCard | undefined>(size).fill(undefined);
+  if (page.kind !== 'front' && page.kind !== 'reverse') {
+    return result;
+  }
+  const reverse = page.kind === 'reverse';
+  const step = reverse ? -size : size;
+  let remaining = size;
+  for (
+    let start = page.start + step, depth = 1;
+    start >= 0 && start < cards.length && remaining;
+    start += step, depth++
+  ) {
+    for (let pocket = 0; pocket < size; pocket++) {
+      if (result[pocket]) {
+        continue;
+      }
+      const slot =
+        start +
+        (reverse
+          ? Math.floor(pocket / columns) * columns + columns - 1 - (pocket % columns)
+          : pocket);
+      const card = cards[slot];
+      if (card && visible(card)) {
+        result[pocket] = { card, depth, slot };
+        remaining--;
+      }
+    }
+  }
+  return result;
+}

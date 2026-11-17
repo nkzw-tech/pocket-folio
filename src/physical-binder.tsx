@@ -19,6 +19,7 @@ import type { BinderCard } from './binder-catalog';
 import { binderColorStyle } from './binder-color';
 import {
   binderPages,
+  binderUnderlay,
   cardSpread,
   pageRange,
   spreadCount,
@@ -185,6 +186,89 @@ function Pocket({
     </li>
   );
 }
+
+const PageUnderlay = memo(function PageUnderlay({
+  collection,
+  owned,
+  page,
+  purchased,
+  wishlist,
+}: {
+  collection: BinderPresentation;
+  owned: ReadonlySet<string>;
+  page: BinderPage;
+  purchased: ReadonlySet<string>;
+  wishlist: ReadonlySet<string>;
+}) {
+  const reverse = page.kind === 'reverse';
+  const fullColor = collection.showAllCardsInColor;
+  const cards = useMemo(
+    () =>
+      binderUnderlay(
+        collection.cards,
+        page,
+        (card) => {
+          const id = card.printingId ?? card.id;
+          return (
+            owned.has(id) || purchased.has(id) || wishlist.has(id) || Boolean(fullColor && !reverse)
+          );
+        },
+        collection.columns,
+        collection.rows,
+      ),
+    [
+      collection.cards,
+      collection.columns,
+      collection.rows,
+      page,
+      owned,
+      purchased,
+      wishlist,
+      fullColor,
+      reverse,
+    ],
+  );
+  if (!cards.some(Boolean)) {
+    return null;
+  }
+  return (
+    <div aria-hidden="true" className="folio-page folio-stack-page" inert>
+      <ol className="folio-pockets">
+        {cards.map((entry, pocket) => {
+          const id = entry?.card.printingId ?? entry?.card.id;
+          const appearance =
+            fullColor || (id && owned.has(id))
+              ? ''
+              : id && purchased.has(id)
+                ? 'is-purchased'
+                : 'is-wishlist';
+          return (
+            <li className="folio-pocket" key={pocket}>
+              <span className="folio-empty-pocket">
+                {entry && (
+                  <span
+                    className="folio-stack-artwork"
+                    data-stack-slot={entry.slot}
+                    key={entry.slot}
+                    style={{ opacity: 0.94 ** Math.min(entry.depth, 12) }}
+                  >
+                    {reverse ? (
+                      <CardBack card={entry.card} className={appearance} />
+                    ) : (
+                      <span className={`folio-insert ${appearance}`}>
+                        <CardScan image={entry.card.image} />
+                      </span>
+                    )}
+                  </span>
+                )}
+              </span>
+            </li>
+          );
+        })}
+      </ol>
+    </div>
+  );
+});
 
 const Page = memo(function Page({
   collection,
@@ -877,6 +961,7 @@ export function PhysicalBinder({
               inert={role !== 'folio-rest' || Boolean(turn) || (narrow && mobileSide !== side)}
               key={key}
             >
+              {!doubleSided && <PageUnderlay {...pageProps} page={page} />}
               <Page {...pageProps} page={page} />
             </div>
           ))}

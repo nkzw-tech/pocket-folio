@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
-import { binderPages, cardSpread, spreadCount } from '../src/binder-pages.ts';
+import { binderPages, binderUnderlay, cardSpread, spreadCount } from '../src/binder-pages.ts';
 
 const cards = (count) => Array.from({ length: count }, (_, index) => ({ id: String(index + 1) }));
 const ids = (page) => page.cards.map((card) => card.id);
@@ -52,4 +52,41 @@ test('every card is reachable exactly once, including partial sheets, secret rar
       }
     }
   }
+});
+
+test('single-sided stacks retain nearest visible backs across empty sheets and mirror each row', () => {
+  const set = Array(45).fill(undefined);
+  set[0] = { id: 'owned' };
+  set[4] = { id: 'wishlist' };
+  set[9] = { id: 'missing' };
+  set[13] = { id: 'purchased' };
+  const page = binderPages(set, 4, false).left;
+  const stack = binderUnderlay(set, page, (card) => card.id !== 'missing');
+  assert.equal(stack.length, 9);
+  assert.deepEqual(stack[2], { card: set[0], depth: 3, slot: 0 });
+  assert.deepEqual(stack[4], { card: set[13], depth: 2, slot: 13 });
+  assert.equal(stack.filter(Boolean).length, 2);
+  assert.equal(set[9].id, 'missing');
+});
+
+test('front stacks walk forward, skip missing cards and stop at the nearest physical slot', () => {
+  const set = cards(28);
+  const page = binderPages(set, 0, false).right;
+  const stack = binderUnderlay(set, page, (card) => ['11', '20', '28'].includes(card.id));
+  assert.deepEqual(stack[0], { card: set[27], depth: 3, slot: 27 });
+  assert.deepEqual(stack[1], { card: set[10], depth: 1, slot: 10 });
+  assert.equal(stack.filter(Boolean).length, 2);
+});
+
+test('underlays handle custom page sizes and never render through covers or double-sided backs', () => {
+  const set = cards(13);
+  const page = binderPages(set, 2, false, 2, 2).left;
+  assert.deepEqual(
+    binderUnderlay(set, page, () => true, 2, 2).map((entry) => entry?.slot),
+    [1, 0, 3, 2],
+  );
+  for (const kind of ['cover', 'inside', 'back']) {
+    assert.ok(binderUnderlay(set, { ...page, kind }, () => true).every((entry) => !entry));
+  }
+  assert.ok(binderUnderlay(set, page, () => false).every((entry) => !entry));
 });

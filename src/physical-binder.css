@@ -787,3 +787,28 @@
     display: none;
   }
 }
+
+/* Each mounted page owns its passive stack. Promoting that same page after a
+   turn preserves the decoded underlay; canvas/turning faces never capture it. */
+:is(.folio-rest, .folio-under, .folio-preload) > .folio-page:not(.folio-stack-page) {
+  position: relative;
+}
+.folio-stack-page {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  --foil-opacity: 0;
+}
+.folio-stack-page,
+.folio-stack-page .folio-pocket {
+  background: none;
+  border-color: transparent;
+  box-shadow: none;
+}
+.folio-stack-page .folio-pocket::before {
+  content: none;
+}
+.folio-stack-artwork {
+  position: absolute;
+  inset: 0;
+}
