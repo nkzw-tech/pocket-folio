@@ -51,9 +51,7 @@ import { useWorkspace } from './workspace';
 const PhysicalBinder = lazy(async () => ({
   default: (await import('../physical-binder')).PhysicalBinder,
 }));
-const CardPreview = lazy(async () => ({
-  default: (await import('../binder-card-preview')).BinderCardPreview,
-}));
+import { BinderCardPreview as CardPreview } from '../binder-card-preview';
 
 export function BinderEditor({ id }: { id: string }) {
   const { dispatch, document, ensureBinder, pending } = useWorkspace();
@@ -414,78 +412,76 @@ export function BinderView({
         </Stack>
       )}
       {preview && (
-        <Suspense>
-          <CardPreview
-            actions={
-              <Stack className="card-management" gap={3}>
-                <span>
-                  {previewPrinting && editionLabel(previewPrinting.edition)} ·{' '}
-                  {languageName(preview.language)}
-                </span>
-                {dispatch && (
-                  <>
-                    <CardStatusControl
-                      name={`${preview.english} ${preview.number ?? text('Energy')}`}
-                      onChange={(status) => setStatus!(preview, status)}
-                      status={cardStatus(ownership[preview.printingId!])}
-                    />
-                    <MoveCard
-                      from={preview.slotIndex!}
-                      key={preview.slotIndex}
-                      move={async (to) => {
-                        await run({
-                          binderId: binder.id,
-                          from: preview.slotIndex!,
-                          to,
-                          type: 'binder.move',
-                        });
+        <CardPreview
+          actions={
+            <Stack className="card-management" gap={3}>
+              <span>
+                {previewPrinting && editionLabel(previewPrinting.edition)} ·{' '}
+                {languageName(preview.language)}
+              </span>
+              {dispatch && (
+                <>
+                  <CardStatusControl
+                    name={`${preview.english} ${preview.number ?? text('Energy')}`}
+                    onChange={(status) => setStatus!(preview, status)}
+                    status={cardStatus(ownership[preview.printingId!])}
+                  />
+                  <MoveCard
+                    from={preview.slotIndex!}
+                    key={preview.slotIndex}
+                    move={async (to) => {
+                      await run({
+                        binderId: binder.id,
+                        from: preview.slotIndex!,
+                        to,
+                        type: 'binder.move',
+                      });
+                      setPreview(undefined);
+                    }}
+                    slots={binder.slots}
+                  />
+                  <Stack
+                    align="center"
+                    className="card-management-buttons"
+                    direction="horizontal"
+                    gap={4}
+                    wrap="wrap"
+                  >
+                    <Button
+                      label={text('Replace')}
+                      onClick={() => {
+                        setSlot(preview.slotIndex);
                         setPreview(undefined);
                       }}
-                      slots={binder.slots}
-                    />
-                    <Stack
-                      align="center"
-                      className="card-management-buttons"
-                      direction="horizontal"
-                      gap={4}
-                      wrap="wrap"
+                      type="button"
                     >
-                      <Button
-                        label={text('Replace')}
-                        onClick={() => {
-                          setSlot(preview.slotIndex);
-                          setPreview(undefined);
-                        }}
-                        type="button"
-                      >
-                        {text('Replace')}
-                      </Button>
-                      <Button
-                        label={text('Remove from binder')}
-                        onClick={() =>
-                          void run({
-                            binderId: binder.id,
-                            position: preview.slotIndex!,
-                            printing: null,
-                            type: 'binder.slot',
-                          })
-                            .then(() => setPreview(undefined))
-                            .catch(() => {})
-                        }
-                        type="button"
-                      >
-                        <Trash2 size={14} />
-                        {text('Remove from binder')}
-                      </Button>
-                    </Stack>
-                  </>
-                )}
-              </Stack>
-            }
-            card={preview}
-            close={() => setPreview(undefined)}
-          />
-        </Suspense>
+                      {text('Replace')}
+                    </Button>
+                    <Button
+                      label={text('Remove from binder')}
+                      onClick={() =>
+                        void run({
+                          binderId: binder.id,
+                          position: preview.slotIndex!,
+                          printing: null,
+                          type: 'binder.slot',
+                        })
+                          .then(() => setPreview(undefined))
+                          .catch(() => {})
+                      }
+                      type="button"
+                    >
+                      <Trash2 size={14} />
+                      {text('Remove from binder')}
+                    </Button>
+                  </Stack>
+                </>
+              )}
+            </Stack>
+          }
+          card={preview}
+          close={() => setPreview(undefined)}
+        />
       )}
       {slot !== undefined && dispatch && (
         <CardPicker

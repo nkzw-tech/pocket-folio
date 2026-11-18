@@ -5,6 +5,9 @@ export const cardAssetBaseURL = (
   import.meta.env?.VITE_CARD_ASSET_BASE_URL ?? (import.meta.env?.DEV ? '' : remoteCardAssetBaseURL)
 ).replace(/\/$/, '');
 
+export const isCardAssetPath = (path: string) =>
+  /^\/(cards|set-logos|energy|social)\/[^?#]+\.(jpg|png|svg|webp)(?:[?#].*)?$/.test(path);
+
 export function cardAssetURL(path: string): string {
-  return /^\/(cards|set-logos|energy|social)\//.test(path) ? `${cardAssetBaseURL}${path}` : path;
+  return isCardAssetPath(path) ? `${cardAssetBaseURL}${path}` : path;
 }

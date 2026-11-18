@@ -27,9 +27,7 @@ import { cardHref, useCardPreview, useShareParam } from './share-url';
 const NewBinderDialog = lazy(async () => ({
   default: (await import('./app/new-binder')).NewBinderDialog,
 }));
-const CardPreview = lazy(async () => ({
-  default: (await import('./binder-card-preview')).BinderCardPreview,
-}));
+import { BinderCardPreview as CardPreview } from './binder-card-preview';
 export function CollectionBinder({ collection }: { collection?: BinderSet }) {
   const { user } = useShared<Shared>();
   return user ? (
@@ -392,23 +390,21 @@ function Catalog({
         </Suspense>
       )}
       {preview && (
-        <Suspense>
-          <CardPreview
-            actions={
-              dispatch ? (
-                <CardStatusControl
-                  name={`${preview.english} ${preview.number ?? text('Energy')}`}
-                  onChange={(status) =>
-                    run({ printing: printingFor(preview), status, type: 'ownership.status' })
-                  }
-                  status={cardStatus(ownership[printingFor(preview)])}
-                />
-              ) : undefined
-            }
-            card={preview}
-            close={() => setPreview(undefined)}
-          />
-        </Suspense>
+        <CardPreview
+          actions={
+            dispatch ? (
+              <CardStatusControl
+                name={`${preview.english} ${preview.number ?? text('Energy')}`}
+                onChange={(status) =>
+                  run({ printing: printingFor(preview), status, type: 'ownership.status' })
+                }
+                status={cardStatus(ownership[printingFor(preview)])}
+              />
+            ) : undefined
+          }
+          card={preview}
+          close={() => setPreview(undefined)}
+        />
       )}
     </main>
   );

@@ -1,6 +1,6 @@
 import { Button } from '@astryxdesign/core/Button';
 import { X } from 'lucide-react';
-import { useEffect, useRef, type ReactNode } from 'react';
+import { useLayoutEffect, useRef, type ReactNode } from 'react';
 import type { CardFoil } from './binder-catalog';
 import { CardScan, cardLightEvents } from './card-scan';
 import { text } from './i18n/text';
@@ -23,7 +23,7 @@ export function CardPreview({
   title: ReactNode;
 }) {
   const dialog = useRef<HTMLDialogElement>(null);
-  useEffect(() => {
+  useLayoutEffect(() => {
     dialog.current?.showModal();
   }, []);
 

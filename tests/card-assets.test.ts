@@ -20,7 +20,13 @@ describe('card asset hosting', () => {
     for (const path of ['/cards/vs/094.webp', '/energy/fire.png', '/set-logos/base1.webp']) {
       expect(cardAssetURL(path)).toBe(`https://assets.folio.nakazawa.tech${path}`);
     }
-    for (const path of ['/cards', '/card-details/ja-m1l.json', 'https://example.com/image.webp']) {
+    for (const path of [
+      '/cards',
+      '/cards/en-me55-78',
+      '/cards/5',
+      '/card-details/ja-m1l.json',
+      'https://example.com/image.webp',
+    ]) {
       expect(cardAssetURL(path)).toBe(path);
     }
   });

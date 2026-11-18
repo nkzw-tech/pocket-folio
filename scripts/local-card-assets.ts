@@ -2,7 +2,7 @@ import { createReadStream } from 'node:fs';
 import { stat } from 'node:fs/promises';
 import { extname, resolve, sep } from 'node:path';
 import type { Plugin } from 'vite-plus';
-import { remoteCardAssetBaseURL } from '../src/card-assets';
+import { isCardAssetPath, remoteCardAssetBaseURL } from '../src/card-assets';
 import { lookup } from '../src/lookup';
 
 const types = {
@@ -25,7 +25,7 @@ export function localCardAssets(): Plugin {
           next();
           return;
         }
-        if (!/^\/(cards|set-logos|energy|social)\/.+\.(jpg|png|svg|webp)$/.test(path)) {
+        if (!isCardAssetPath(path)) {
           next();
           return;
         }
