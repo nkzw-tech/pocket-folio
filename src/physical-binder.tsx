@@ -39,6 +39,7 @@ import {
 import { text } from './i18n/text';
 import { MissingCardArtwork } from './missing-card-artwork';
 import { Select } from './select';
+import { replaceParams } from './share-url';
 import { useBinderFit } from './use-binder-fit';
 import './physical-binder.css';
 
@@ -428,14 +429,11 @@ export function PhysicalBinder({
     const params = new URLSearchParams(location.search);
     return Math.max(
       0,
-      Math.min(count - 1, Number(params.get('page') ?? params.get('spread')) - 1 || 0),
+      Math.min(count - 1, Math.trunc(Number(params.get('page') ?? params.get('spread'))) - 1 || 0),
     );
   });
   useEffect(() => {
-    const url = new URL(location.href);
-    url.searchParams.delete('spread');
-    url.searchParams.set('page', String(spread + 1));
-    history.replaceState(history.state, '', url);
+    replaceParams({ page: spread ? String(spread + 1) : '', spread: '' });
   }, [spread]);
   const [turn, setTurn] = useState<Turn>();
   const activeTurn = useRef<Turn | undefined>(undefined);
@@ -462,6 +460,9 @@ export function PhysicalBinder({
     () => new URLSearchParams(location.search).get('expanded') === '1',
   );
   const [mobileSide, setMobileSide] = useState<'left' | 'right'>('right');
+  useEffect(() => {
+    replaceParams({ expanded: immersive ? '1' : '' });
+  }, [immersive]);
   const narrow = useSyncExternalStore(
     subscribeToScreen,
     () => narrowScreen?.matches ?? false,

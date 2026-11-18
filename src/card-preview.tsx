@@ -16,7 +16,7 @@ export function CardPreview({
 }: {
   children: ReactNode;
   className?: string;
-  close: () => void;
+  close?: () => void;
   foil?: CardFoil;
   image: string;
   imageActions?: ReactNode;
@@ -33,19 +33,10 @@ export function CardPreview({
     </div>
   );
 
-  return (
-    <dialog
-      aria-labelledby="preview-title"
-      className={`card-preview ${className}`}
-      onClick={(event) => {
-        if (event.target === event.currentTarget) {
-          dialog.current?.close();
-        }
-      }}
-      onClose={close}
-      ref={dialog}
-    >
-      <div className="preview-content">
+  const Heading = close ? 'h2' : 'h1';
+  const content = (
+    <div className="preview-content">
+      {close && (
         <Button
           aria-label={text('Close image')}
           className="icon-button"
@@ -58,18 +49,38 @@ export function CardPreview({
           label={text('Close image')}
           onClick={() => dialog.current?.close()}
           type="button"
-        ></Button>
-        {imageActions ? (
-          <div className="preview-card">
-            {scan}
-            <div className="preview-card-actions">{imageActions}</div>
-          </div>
-        ) : (
-          scan
-        )}
-        <h2 id="preview-title">{title}</h2>
-        {children}
-      </div>
+        />
+      )}
+      {imageActions ? (
+        <div className="preview-card">
+          {scan}
+          <div className="preview-card-actions">{imageActions}</div>
+        </div>
+      ) : (
+        scan
+      )}
+      <Heading className="preview-title" id="preview-title">
+        {title}
+      </Heading>
+      {children}
+    </div>
+  );
+  if (!close) {
+    return <main className={`shell card-detail-page ${className}`}>{content}</main>;
+  }
+  return (
+    <dialog
+      aria-labelledby="preview-title"
+      className={`card-preview ${className}`}
+      onClick={(event) => {
+        if (event.target === event.currentTarget) {
+          dialog.current?.close();
+        }
+      }}
+      onClose={close}
+      ref={dialog}
+    >
+      {content}
     </dialog>
   );
 }

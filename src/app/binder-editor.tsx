@@ -18,6 +18,7 @@ import { MissingCardArtwork } from '../missing-card-artwork';
 import { pickerSearchData } from '../picker-search-data';
 import { Select } from '../select';
 import { SetSearch } from '../set-search';
+import { useCardPreview, useShareParam } from '../share-url';
 import { TextField, Checkbox } from '../ui/fields';
 import { FormStack } from '../ui/form-stack';
 import { BinderColorDisplay } from './binder-color-display';
@@ -87,14 +88,14 @@ export function BinderView({
   ownership: CollectionDocument['ownership'];
   pending?: number;
 }) {
-  const [layout, setLayout] = useState<'book' | 'grid'>(() =>
-    new URLSearchParams(location.search).get('view') === 'grid' ? 'grid' : 'book',
-  );
+  const [layout, setLayout] = useShareParam('view', 'book', (value) => value === 'grid');
   const [reveal] = useMissingArtwork();
-  const [search, setSearch] = useState('');
-  const [filter, setFilter] = useState('all');
+  const [search, setSearch] = useShareParam('q');
+  const [filter, setFilter] = useShareParam('status', 'all', (value) =>
+    ['missing', 'wishlist', 'purchased', 'owned'].includes(value),
+  );
   const [controls, setControls] = useState<HTMLDivElement | null>(null);
-  const [preview, setPreview] = useState<BinderCard>();
+  const [preview, setPreview] = useCardPreview();
   const [slot, setSlot] = useState<number>();
   const [settings, setSettings] = useState(false);
   const [removingPage, setRemovingPage] = useState<PersonalBinder>();
@@ -206,9 +207,23 @@ export function BinderView({
       remove={() => setRemovingPage(structuredClone(binder))}
     />
   ) : undefined;
-  const shareUrl = binder.shareToken
-    ? `${location.origin}/b/${binder.shareToken}${shareExpanded ? '?expanded=1' : ''}`
-    : '';
+  const shareUrl = (() => {
+    if (!binder.shareToken || !sharing) {
+      return '';
+    }
+    const url = new URL(`/b/${binder.shareToken}`, location.origin);
+    const current = new URLSearchParams(location.search);
+    for (const name of ['page', 'view', 'q', 'status']) {
+      const value = current.get(name);
+      if (value && (name !== 'page' || Number(value) > 1)) {
+        url.searchParams.set(name, value);
+      }
+    }
+    if (shareExpanded && layout === 'book') {
+      url.searchParams.set('expanded', '1');
+    }
+    return url.href;
+  })();
   const previewPrinting = preview?.printingId ? splitPrinting(preview.printingId) : undefined;
   return (
     <main className="shell binder-editor">
@@ -246,12 +261,7 @@ export function BinderView({
                 aria-pressed={layout === value}
                 key={value}
                 label={value === 'book' ? text('Binder') : text('Grid')}
-                onClick={() => {
-                  setLayout(value);
-                  const url = new URL(location.href);
-                  url.searchParams.set('view', value);
-                  history.replaceState(history.state, '', url);
-                }}
+                onClick={() => setLayout(value)}
                 type="button"
               >
                 {value === 'book' ? <BookOpen size={16} /> : <LayoutGrid size={16} />}

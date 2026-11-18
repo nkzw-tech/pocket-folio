@@ -52,6 +52,9 @@ export function SetSearch({
         inputProps={{ 'aria-label': text('Find a set') }}
         onSelect={({ data }) => {
           onSelect(data.id);
+          if (search !== undefined) {
+            return search;
+          }
           change('');
           return '';
         }}

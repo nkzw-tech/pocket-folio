@@ -1,7 +1,7 @@
 import { Button } from '@astryxdesign/core/Button';
 import { useShared } from '@void/react';
 import { BookOpen, Plus, ZoomIn } from 'lucide-react';
-import { lazy, Suspense, useMemo, useState } from 'react';
+import { lazy, Suspense, useEffect, useMemo, useState } from 'react';
 import { CardStatusControl } from './app/card-status';
 import {
   cardStatus,
@@ -23,6 +23,7 @@ import { CardName } from './i18n/card-language';
 import { useCardTextOptions } from './i18n/card-language-preference';
 import { text } from './i18n/text';
 import { Select } from './select';
+import { cardHref, useCardPreview, useShareParam } from './share-url';
 const NewBinderDialog = lazy(async () => ({
   default: (await import('./app/new-binder')).NewBinderDialog,
 }));
@@ -54,15 +55,22 @@ function Catalog({
   const { showOwnership } = useCatalogOwnership();
   const ownershipVisible = Boolean(dispatch && showOwnership);
   const [limit, setLimit] = useState(60);
-  const [search, setSearch] = useState('');
-  const [language, setLanguage] = useState('');
-  const [setId, setSetId] = useState('');
-  const [rarity, setRarity] = useState('');
+  const [search, setSearch] = useShareParam('q');
+  const [language, setLanguage] = useShareParam(
+    'lang',
+    '',
+    (value) => !collection && catalogLanguages.some((lang) => lang === value),
+  );
   const availableSets = useMemo(
     () => catalogSets.filter((set) => !language || set.language === language),
     [language],
   );
   const yearGroups = useMemo(() => groupSetsByYear(availableSets), [availableSets]);
+  const [setId, setSetId] = useShareParam(
+    'set',
+    '',
+    (value) => !collection && availableSets.some((set) => set.id === value),
+  );
   const selectedCollection = collection ?? availableSets.find((set) => set.id === setId);
   const title = collection?.label ?? text('Cards');
   const cards = useMemo(
@@ -74,20 +82,24 @@ function Catalog({
           : allCards,
     [language, selectedCollection],
   );
-  const [preview, setPreview] = useState<BinderCard>();
+  const [preview, setPreview] = useCardPreview();
   const rarityGroups = useMemo(() => groupRarities(cards), [cards]);
+  const [rarity, setRarity] = useShareParam('rarity');
   const activeRarity = rarityGroups.some(({ rarities }) =>
     rarities.some(({ value }) => value === rarity),
   )
     ? rarity
     : '';
   // Clear a stale selection when navigating to a set without that rarity.
-  if (rarity !== activeRarity) {
-    setRarity(activeRarity);
-    setLimit(60);
-  }
+  useEffect(() => {
+    if (rarity !== activeRarity) {
+      setRarity(activeRarity);
+    }
+  }, [rarity, activeRarity, setRarity]);
   const [error, setError] = useState('');
-  const [filter, setFilter] = useState('all');
+  const [filter, setFilter] = useShareParam('status', 'all', (value) =>
+    ['missing', 'wishlist', 'purchased', 'owned'].includes(value),
+  );
   const [markingAll, setMarkingAll] = useState(false);
   const printingFor = (card: BinderCard) => preferredPrinting(card, ownership);
   const accepts = useMemo(
@@ -261,17 +273,23 @@ function Catalog({
             key={card.id}
             {...cardLightEvents}
           >
-            <button
+            <a
               aria-label={`View ${card.english}`}
               className="binder-artwork"
-              onClick={() => setPreview(card)}
-              type="button"
+              href={cardHref(card.id)}
+              onClick={(event) => {
+                if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+                  return;
+                }
+                event.preventDefault();
+                setPreview(card);
+              }}
             >
               <CardScan foil={card.foil} image={card.image} lazy />
               <span aria-hidden="true" className="binder-zoom">
                 <ZoomIn size={15} />
               </span>
-            </button>
+            </a>
             <div className="binder-card-names">
               <div className="binder-card-title">
                 <CardName as="h3" card={card} />

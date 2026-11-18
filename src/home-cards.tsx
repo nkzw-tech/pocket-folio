@@ -1,6 +1,7 @@
-import { lazy, Suspense, useState } from 'react';
-import { binderCollections, type BinderCard } from './binder-catalog';
+import { lazy, Suspense } from 'react';
+import { binderCollections } from './binder-catalog';
 import { CardScan, cardLightEvents } from './card-scan';
+import { useCardPreview } from './share-url';
 
 const CardPreview = lazy(async () => ({
   default: (await import('./binder-card-preview')).BinderCardPreview,
@@ -9,7 +10,7 @@ export function HomeCards({ ids }: { ids: Array<string> }) {
   const cards = ids.flatMap((id) =>
     binderCollections.flatMap(({ cards }) => cards).filter((card) => card.id === id),
   );
-  const [preview, setPreview] = useState<BinderCard>();
+  const [preview, setPreview] = useCardPreview();
   return (
     <>
       <div className="welcome-cards">

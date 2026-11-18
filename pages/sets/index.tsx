@@ -1,5 +1,5 @@
 import { Link, useRouter, useShared } from '@void/react';
-import { useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import { preferredPrinting } from '../../src/app/model';
 import { useWorkspace, type Shared } from '../../src/app/workspace';
 import { languageName } from '../../src/binder-catalog';
@@ -9,6 +9,7 @@ import { text } from '../../src/i18n/text';
 import { Select } from '../../src/select';
 import { SetCover } from '../../src/set-cover';
 import { SetSearch, setDataSource } from '../../src/set-search';
+import { useShareParam } from '../../src/share-url';
 
 function SetOwnershipCount({ set }: { set: (typeof sets)[number] }) {
   const { document } = useWorkspace();
@@ -26,9 +27,13 @@ export default function SetsPage() {
   const router = useRouter();
   const { user } = useShared<Shared>();
   const { showOwnership } = useCatalogOwnership();
-  const [language, setLanguage] = useState('');
-  const [era, setEra] = useState('');
-  const [search, setSearch] = useState('');
+  const [language, setLanguage] = useShareParam('lang', '', (value) =>
+    catalogLanguages.some((lang) => lang === value),
+  );
+  const [era, setEra] = useShareParam('era', '', (value) =>
+    catalogEras.some((group) => group.era === value),
+  );
+  const [search, setSearch] = useShareParam('q');
   const eligible = useMemo(
     () =>
       sets.filter(

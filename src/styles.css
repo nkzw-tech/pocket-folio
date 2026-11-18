@@ -894,7 +894,7 @@ progress::-moz-progress-bar {
   max-width: 100%;
   object-fit: contain;
 }
-.preview-content h2 {
+.preview-title {
   font: 680 26px var(--heading);
   margin-top: 8px;
 }
@@ -1310,7 +1310,7 @@ progress::-moz-progress-bar {
     --foil-opacity: 0.48;
   }
 }
-.binder-card-preview h2 {
+.binder-card-preview .preview-title {
   grid-area: title;
   display: grid;
   gap: 4px;
@@ -1319,7 +1319,13 @@ progress::-moz-progress-bar {
   font: 500 30px/1.2 var(--heading);
   overflow-wrap: anywhere;
 }
-.binder-card-preview h2 span + span {
+.card-detail-page .preview-content {
+  padding-inline: 0;
+}
+.card-detail-page .preview-title {
+  padding-right: 0;
+}
+.binder-card-preview .preview-title span + span {
   color: var(--muted);
   font:
     630 17px/1.4 system-ui,
@@ -1589,10 +1595,10 @@ progress::-moz-progress-bar {
     width: min(100%, 260px);
     justify-self: center;
   }
-  .binder-card-preview h2 {
+  .binder-card-preview .preview-title {
     font-size: 22px;
   }
-  .binder-card-preview h2 span + span {
+  .binder-card-preview .preview-title span + span {
     font-size: 14px;
   }
 }

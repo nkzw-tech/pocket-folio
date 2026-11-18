@@ -1,4 +1,5 @@
 import { Button } from '@astryxdesign/core/Button';
+import { Link2 } from 'lucide-react';
 import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
 import type { BinderCard } from './binder-catalog';
 import { cardAssetURL } from './card-assets';
@@ -9,6 +10,7 @@ import germanDetails from './german-card-details.json';
 import { useCardTranslations, useCardNames } from './i18n/card-language';
 import { text as uiText } from './i18n/text';
 import { lookup } from './lookup';
+import { cardHref } from './share-url';
 import vsDetails from './vs-card-details.json';
 const detailPacks = new Map<string, Promise<Record<string, CardDetails>>>();
 function loadDetails(path: string) {
@@ -179,7 +181,7 @@ export function BinderCardPreview({
 }: {
   actions?: ReactNode;
   card: BinderCard;
-  close: () => void;
+  close?: () => void;
 }) {
   const { language } = card;
   const options = useCardTranslations(language);
@@ -191,6 +193,7 @@ export function BinderCardPreview({
     path: string;
   }>();
   const [retry, setRetry] = useState(0);
+  const [copyState, setCopyState] = useState<'idle' | 'copied' | 'manual'>('idle');
   useEffect(() => {
     const path = card.detailsPath;
     if (!path) {
@@ -416,6 +419,27 @@ export function BinderCardPreview({
               · {artist}
             </p>
           )}
+          <div>
+            <Button
+              icon={<Link2 size={16} />}
+              label={uiText(copyState === 'copied' ? 'Copied' : 'Copy link')}
+              onClick={async () => {
+                try {
+                  await navigator.clipboard.writeText(
+                    new URL(cardHref(card.id), location.origin).href,
+                  );
+                  setCopyState('copied');
+                } catch {
+                  setCopyState('manual');
+                }
+              }}
+              size="sm"
+              variant="ghost"
+            />
+            {copyState === 'manual' && (
+              <a href={cardHref(card.id)}>{new URL(cardHref(card.id), location.origin).href}</a>
+            )}
+          </div>
         </div>
       </CardPreview>
     </CardTextContext>
