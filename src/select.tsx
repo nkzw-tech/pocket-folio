@@ -53,6 +53,7 @@ export function Select({
   'aria-label': ariaLabel,
   children,
   className = '',
+  clearTo,
   defaultValue = '',
   disabled,
   label,
@@ -65,6 +66,7 @@ export function Select({
   'aria-label'?: string;
   children: ReactNode;
   className?: string;
+  clearTo?: string;
   defaultValue?: string | number;
   disabled?: boolean;
   label?: string;
@@ -77,17 +79,26 @@ export function Select({
   const [local, setLocal] = useState(String(defaultValue));
   const selected = String(value ?? local);
   return (
-    <div className={`select-field ${className}`} data-name={name} data-value={selected}>
+    <div
+      className={`select-field ${className}`}
+      data-at-default={clearTo === selected || undefined}
+      data-name={name}
+      data-value={selected}
+    >
       <Selector
         aria-label={ariaLabel}
+        hasClear={clearTo !== undefined}
         hasSearch={false}
         htmlName={name}
         isDisabled={disabled}
         isLabelHidden={!label}
         label={label ?? ariaLabel ?? ''}
-        onChange={(next) => {
-          setLocal(next);
-          onChange?.(next);
+        onChange={(next: string | null) => {
+          const selection = next ?? clearTo ?? '';
+          if (selection !== selected) {
+            setLocal(selection);
+            onChange?.(selection);
+          }
         }}
         options={optionsFromChildren(children)}
         renderOption={(option) => <span data-value={option.value}>{option.label}</span>}

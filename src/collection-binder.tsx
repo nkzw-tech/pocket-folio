@@ -158,6 +158,7 @@ function Catalog({
           <>
             <Select
               aria-label={text('Card language')}
+              clearTo=""
               onChange={(event) => {
                 const value = event;
                 setLanguage(value);
@@ -177,6 +178,7 @@ function Catalog({
             </Select>
             <Select
               aria-label={text('Card sets')}
+              clearTo=""
               onChange={(event) => {
                 setSetId(event);
                 setLimit(60);
@@ -199,6 +201,7 @@ function Catalog({
         <Select
           aria-label={text('Filter by rarity')}
           className="catalog-rarity-filter"
+          clearTo=""
           onChange={(value) => {
             setRarity(value);
             setLimit(60);
@@ -248,6 +251,7 @@ function Catalog({
               <Select
                 aria-label={text('Filter by ownership')}
                 className="catalog-ownership-filter"
+                clearTo="all"
                 onChange={(value) => {
                   setFilter(value);
                   setLimit(60);

@@ -1804,6 +1804,7 @@ progress::-moz-progress-bar {
   width: 100%;
 }
 .catalog-set-picker > .select-field {
+  flex: 0 1 clamp(148px, 16vw, 224px);
   max-width: 240px;
   min-width: 0;
 }
@@ -1835,9 +1836,9 @@ progress::-moz-progress-bar {
   margin-left: auto;
 }
 .catalog-ownership-filter {
-  width: 128px;
+  width: 156px;
   min-width: 0;
-  flex: 0 1 128px;
+  flex: 0 1 156px;
 }
 .catalog-card-number {
   display: inline-flex;
@@ -1923,6 +1924,12 @@ progress::-moz-progress-bar {
   }
   .picker-toolbar > .set-search-control {
     flex-basis: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .catalog-card-picker:not(:has(.catalog-set-meta)) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 .catalog-set-picker select {

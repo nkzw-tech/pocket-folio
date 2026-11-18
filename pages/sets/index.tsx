@@ -62,6 +62,7 @@ export default function SetsPage() {
         />
         <Select
           aria-label={text('Card language')}
+          clearTo=""
           onChange={(event) => setLanguage(event)}
           value={language}
         >
@@ -72,7 +73,7 @@ export default function SetsPage() {
             </option>
           ))}
         </Select>
-        <Select aria-label={text('Era')} onChange={(event) => setEra(event)} value={era}>
+        <Select aria-label={text('Era')} clearTo="" onChange={(event) => setEra(event)} value={era}>
           <option value="">{text('All eras')}</option>
           {catalogEras.map(({ era, range }) => (
             <option key={era} value={era}>
