@@ -1,5 +1,6 @@
 import { fbs } from 'fbtee';
-const messages: Record<string, () => string> = {
+import { lookup } from '../lookup';
+const messages = {
   '1. Install the CLI and skill': () =>
     String(fbs('1. Install the CLI and skill', 'Binder interface: 1. Install the CLI and skill')),
   '1st Edition': () => String(fbs('1st Edition', 'Binder interface: 1st Edition')),
@@ -963,4 +964,4 @@ const messages: Record<string, () => string> = {
         ),
       ),
 };
-export const text = (message: string): string => messages[message]?.() ?? message;
+export const text = (message: string): string => lookup(messages, message)?.() ?? message;

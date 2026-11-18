@@ -8,6 +8,7 @@ import type { CardDetails, Energy, Modifier, Translation } from './catalog/detai
 import germanDetails from './german-card-details.json';
 import { useCardTranslations, useCardNames } from './i18n/card-language';
 import { text as uiText } from './i18n/text';
+import { lookup } from './lookup';
 import vsDetails from './vs-card-details.json';
 const detailPacks = new Map<string, Promise<Record<string, CardDetails>>>();
 function loadDetails(path: string) {
@@ -64,13 +65,13 @@ const rarities = {
 
 const CardTextContext = createContext<CardTextOptions>({ interfaceLanguage: 'en', mode: 'both' });
 type Language = string;
-const cardDetails: Record<string, Record<string, CardDetails>> = {
+const cardDetails = {
   de: germanDetails as Record<string, CardDetails>,
   ja: vsDetails as Record<string, CardDetails>,
 };
 const localText = (values: { en: string } & Record<string, string>, language: string) =>
   (values as Record<string, string>)[language] ?? values.en;
-const inlineEnergy: Record<string, Energy> = {
+const inlineEnergy = {
   C: 'colorless',
   D: 'darkness',
   F: 'fighting',
@@ -82,7 +83,7 @@ const inlineEnergy: Record<string, Energy> = {
   R: 'fire',
   W: 'water',
   Y: 'fairy',
-};
+} satisfies Record<string, Energy>;
 
 function EnergySymbol({ energy, language }: { energy: Energy; language: Language }) {
   const names = energyNames[energy];
@@ -107,7 +108,7 @@ function EnergySymbol({ energy, language }: { energy: Energy; language: Language
 
 function EffectText({ language, text }: { language: Language; text: string }) {
   return text.split(/(\{[A-Z]\})/).map((part, index) => {
-    const energy = /^\{([A-Z])\}$/.test(part) && inlineEnergy[part[1]];
+    const energy = /^\{([A-Z])\}$/.test(part) && lookup(inlineEnergy, part[1]);
     return energy ? <EnergySymbol energy={energy} key={index} language={language} /> : part;
   });
 }
@@ -215,7 +216,7 @@ export function BinderCardPreview({
   const pack = loaded?.path === card.detailsPath ? loaded : undefined;
   const { artist, attacks, energy, hp, kind, pokemon, powers, rarity, rules } = card.details ??
     pack?.data?.[card.id] ??
-    cardDetails[language]?.[card.id] ?? { kind: 'pokemon' };
+    lookup(cardDetails, language)?.[card.id] ?? { kind: 'pokemon' };
   const hitPoints = pokemon?.hp ?? hp;
   const cardType = pokemon?.energy ?? energy;
   const types = pokemon?.types?.length ? pokemon.types : cardType ? [cardType] : [];

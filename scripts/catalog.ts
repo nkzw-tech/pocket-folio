@@ -18,7 +18,8 @@ for (const path of new Set(
   packs.set(path, packSchema.parse(JSON.parse(await readFile(`public${path}`, 'utf8'))));
 }
 const statements: Array<string> = [];
-const homePools: { common: Array<string>; holo: Array<string> } = { common: [], holo: [] };
+const common: Array<string> = [];
+const holo: Array<string> = [];
 for (const card of catalog) {
   const info =
     card.details ??
@@ -28,9 +29,9 @@ for (const card of catalog) {
   const { pokemon, rarity } = poolFields.parse(info);
   if (pokemon) {
     if (card.foil) {
-      homePools.holo.push(card.id);
+      holo.push(card.id);
     } else if (rarity === 'common') {
-      homePools.common.push(card.id);
+      common.push(card.id);
     }
   }
   statements.push(
@@ -45,4 +46,4 @@ for (const card of catalog) {
 await mkdir('.void', { recursive: true });
 await writeFile('.void/catalog.sql', statements.join('\n'));
 // Keep the homepage's small selection manifest separate from the full card rules.
-await writeFile('src/home-card-pools.json', JSON.stringify(homePools, null, 2) + '\n');
+await writeFile('src/home-card-pools.json', JSON.stringify({ common, holo }, null, 2) + '\n');

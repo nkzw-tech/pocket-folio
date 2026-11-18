@@ -2,10 +2,11 @@ import { useEffect, useRef, useState, type ComponentProps } from 'react';
 import { observeAhead } from './observe-ahead';
 
 export function CardImage({
+  alt,
   loading,
   src,
   ...props
-}: Omit<ComponentProps<'img'>, 'ref' | 'src'> & { src: string }) {
+}: Omit<ComponentProps<'img'>, 'ref' | 'src'> & { alt: string; src: string }) {
   const image = useRef<HTMLImageElement>(null);
   const [decoded, setDecoded] = useState<string>();
   useEffect(() => {
@@ -47,6 +48,7 @@ export function CardImage({
   return (
     <img
       {...props}
+      alt={alt}
       data-loaded={decoded === src || undefined}
       key={src}
       loading={loading}

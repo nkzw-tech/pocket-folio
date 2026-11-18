@@ -63,7 +63,7 @@ export function mergeWorkspace(
   const updated = new Map(delta.binders.map((binder) => [binder.id, binder]));
   const ids = new Set(base.binders.map(({ id }) => id));
   const order = new Map(state.order?.map((id, index) => [id, index]));
-  return {
+  const document: CollectionDocument = {
     binders: [
       ...base.binders
         .filter(({ id }) => !delta.deleted.includes(id))
@@ -71,7 +71,10 @@ export function mergeWorkspace(
       ...delta.binders.filter(({ id }) => !ids.has(id)),
     ].sort((a, b) => (order.get(a.id) ?? 0) - (order.get(b.id) ?? 0)),
     ownership: { ...base.ownership, ...delta.ownership },
-    ...(delta.profile ? { profile: delta.profile } : {}),
     version: 1,
   };
+  if (delta.profile) {
+    document.profile = delta.profile;
+  }
+  return document;
 }

@@ -988,15 +988,12 @@ export function PhysicalBinder({
                   drag.flexible = false;
                 }
                 const value = activeTurn.current;
-                updateTurn(
-                  value
-                    ? {
-                        ...value,
-                        flexible: false,
-                        ...(drag?.active ? { grip: drag.grip, progress: drag.progress } : {}),
-                      }
-                    : undefined,
-                );
+                const next = value ? { ...value, flexible: false } : undefined;
+                if (next && drag?.active) {
+                  next.grip = drag.grip;
+                  next.progress = drag.progress;
+                }
+                updateTurn(next);
                 setFlexible(false);
               }}
               pageKey={spread}
@@ -1022,12 +1019,11 @@ export function PhysicalBinder({
                   '--turn-shade':
                     turn.progress !== undefined ? Math.sin(turn.progress * Math.PI) : 0,
                   '--turn-start': `${turn.settleFrom ?? (turn.direction === 'next' ? 0 : -180)}deg`,
-                  ...(turn.progress !== undefined
-                    ? {
-                        animation: 'none',
-                        transform: `rotateY(${turnAngle(turn.direction, turn.progress)}deg)`,
-                      }
-                    : {}),
+                  animation: turn.progress === undefined ? undefined : 'none',
+                  transform:
+                    turn.progress === undefined
+                      ? undefined
+                      : `rotateY(${turnAngle(turn.direction, turn.progress)}deg)`,
                 } as CSSProperties
               }
             >

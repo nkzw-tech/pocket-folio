@@ -53,5 +53,9 @@ export async function installSkill({ agent, directory, replace = false }) {
   for (const [index, file] of files.entries()) {
     await writeFile(join(target, file), contents[index], { flag: 'wx' });
   }
-  return { ...(backup ? { backup } : {}), path: target, status: 'installed' };
+  const result = { path: target, status: 'installed' };
+  if (backup) {
+    result.backup = backup;
+  }
+  return result;
 }

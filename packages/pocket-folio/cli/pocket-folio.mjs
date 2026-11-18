@@ -133,9 +133,10 @@ async function hiddenKey() {
 }
 async function call(target, key, path, body) {
   const response = await globalThis.fetch(`${target}/api/v1/${path}`, {
+    body: body ? JSON.stringify(body) : undefined,
     headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
+    method: body ? 'POST' : 'GET',
     redirect: 'error',
-    ...(body ? { body: JSON.stringify(body), method: 'POST' } : {}),
     signal: globalThis.AbortSignal.timeout(30_000),
   });
   const data = await response.json();

@@ -1,4 +1,4 @@
-import nkzw from '@nkzw/oxlint-config';
+import nkzw from '@nkzw/oxlint-config/with-sorting';
 import fbtee from '@nkzw/vite-plugin-fbtee';
 import { voidReact } from '@void/react/plugin';
 import { defineConfig } from 'vite-plus';
@@ -36,7 +36,7 @@ export default defineConfig({
       'db/migrations/',
       'vite.config.ts.timestamp-*',
     ],
-    options: { typeAware: true, typeCheck: true },
+    options: { typeCheck: true },
   },
   plugins: [
     localCardAssets(),

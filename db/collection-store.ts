@@ -9,7 +9,10 @@ import {
 } from '../src/app/model';
 
 export type Statement = { sql: string; values: Array<string | number | null> };
-export type CollectionDatabase = Pick<D1Database, 'batch' | 'prepare'>;
+export type CollectionDatabase<Prepared> = {
+  batch(statements: Array<Prepared>): Promise<Array<{ results: Array<unknown> }>>;
+  prepare(sql: string): { bind(...values: Statement['values']): Prepared };
+};
 export type ReadScope = {
   binderIds?: Array<string>;
   hydrateBinderIds?: Array<string>;
@@ -63,11 +66,11 @@ const countRow = z.object({
   total: z.number(),
   wishlist: z.number(),
 });
-export function prepare(db: CollectionDatabase, statement: Statement) {
+export function prepare<Prepared>(db: CollectionDatabase<Prepared>, statement: Statement) {
   return db.prepare(statement.sql).bind(...statement.values);
 }
-export async function readCollection(
-  db: CollectionDatabase,
+export async function readCollection<Prepared>(
+  db: CollectionDatabase<Prepared>,
   userId: string,
   scope: ReadScope = {},
 ) {
@@ -152,14 +155,22 @@ export async function readCollection(
         scope.loadedBinderIds === undefined || scope.loadedBinderIds.includes(row.id)
           ? Array(row.slotCount).fill(null)
           : [],
-      ...(row.showAllCardsInColor == null
-        ? {}
-        : { showAllCardsInColor: !!row.showAllCardsInColor }),
-      ...(row.color == null ? {} : { color: row.color }),
-      ...(row.coverSetConfigured ? { coverSetId: row.coverSetId } : {}),
-      ...(row.presetSetId == null ? {} : { presetSetId: row.presetSetId }),
-      ...(row.pocketOpening == null ? {} : { pocketOpening: row.pocketOpening }),
     };
+    if (row.color != null) {
+      binder.color = row.color;
+    }
+    if (row.coverSetConfigured) {
+      binder.coverSetId = row.coverSetId;
+    }
+    if (row.pocketOpening != null) {
+      binder.pocketOpening = row.pocketOpening;
+    }
+    if (row.presetSetId != null) {
+      binder.presetSetId = row.presetSetId;
+    }
+    if (row.showAllCardsInColor != null) {
+      binder.showAllCardsInColor = !!row.showAllCardsInColor;
+    }
     byId.set(row.id, binder);
     document.binders.push(binder);
   }

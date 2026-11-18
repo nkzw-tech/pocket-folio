@@ -47,7 +47,7 @@ function fixture() {
       }
     },
     prepare: sqlPrepare,
-  } as unknown as CollectionDatabase;
+  } satisfies CollectionDatabase<Statement>;
   const commit = async (
     userId: string,
     before: Awaited<ReturnType<typeof readCollection>>,

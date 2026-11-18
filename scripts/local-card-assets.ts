@@ -3,8 +3,9 @@ import { stat } from 'node:fs/promises';
 import { extname, resolve, sep } from 'node:path';
 import type { Plugin } from 'vite-plus';
 import { remoteCardAssetBaseURL } from '../src/card-assets';
+import { lookup } from '../src/lookup';
 
-const types: Record<string, string> = {
+const types = {
   '.jpg': 'image/jpeg',
   '.png': 'image/png',
   '.svg': 'image/svg+xml',
@@ -46,7 +47,7 @@ export function localCardAssets(): Plugin {
           response.writeHead(200, {
             'Cache-Control': 'no-cache',
             'Content-Length': info.size,
-            'Content-Type': types[extname(file)],
+            'Content-Type': lookup(types, extname(file)) ?? 'application/octet-stream',
           });
           if (request.method === 'HEAD') {
             response.end();

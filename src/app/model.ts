@@ -288,7 +288,7 @@ export function makeBinder(
 ): PersonalBinder {
   const set = binderCollections.find(({ id }) => id === setId);
   const { columns = 3, doubleSided = set?.doubleSided ?? false, rows = 3 } = options;
-  return {
+  const binder: PersonalBinder = {
     color: options.color ?? defaultBinderColor,
     columns,
     coverSetId: options.coverSetId ?? null,
@@ -296,7 +296,6 @@ export function makeBinder(
     id: crypto.randomUUID(),
     name: name.trim() || set?.label || 'My pretty binder',
     pocketOpening: options.pocketOpening ?? 'top',
-    ...(set ? { presetSetId: set.id } : {}),
     rows,
     shareToken: null,
     showAllCardsInColor: options.showAllCardsInColor ?? false,
@@ -304,6 +303,10 @@ export function makeBinder(
       ? set.cards.map((card) => preferredPrinting(card, ownership))
       : Array(columns * rows).fill(null),
   };
+  if (set) {
+    binder.presetSetId = set.id;
+  }
+  return binder;
 }
 export function preferredPrinting(card: BinderCard, ownership: CollectionDocument['ownership']) {
   const printings = card.editions.map((edition) => printingId(card.id, edition));

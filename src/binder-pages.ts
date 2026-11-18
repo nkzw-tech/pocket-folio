@@ -28,13 +28,15 @@ export function cardSpread(index: number, doubleSided: boolean, capacity = 9) {
     ? Math.floor((Math.floor(index / capacity) + 1) / 2)
     : Math.floor(index / capacity);
 }
+type BinderSpread = { left: BinderPage; right: BinderPage };
+
 export function binderPages(
   cards: ReadonlyArray<BinderCard | undefined>,
   spread: number,
   doubleSided: boolean,
   columns = 3,
   rows = 3,
-): { left: BinderPage; right: BinderPage } {
+): BinderSpread {
   const size = columns * rows;
   const start = spread * (doubleSided ? size * 2 : size);
   const oppositeFace = (start: number) =>

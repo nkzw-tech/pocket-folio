@@ -1,7 +1,7 @@
 import { and, eq } from 'drizzle-orm';
-import { type CloudContext } from 'void';
+import type { CloudContext } from 'void';
 import { getAuth, getSession } from 'void/auth';
-import { type z } from 'zod';
+import type { z } from 'zod';
 import { agentKeyPolicy, user } from '../../db/schema';
 import { primaryDb } from '../../db/workspace';
 import { ApiError, type Grant, type Scope } from './policy';
@@ -103,7 +103,7 @@ export async function authenticateKey(c: CloudContext, required?: Scope): Promis
     .where(eq(agentKeyPolicy.id, grant.id));
   return grant;
 }
-export async function apiResponse(c: CloudContext, action: () => Promise<unknown>) {
+export async function apiResponse<T>(c: CloudContext, action: () => Promise<T>) {
   c.header('Cache-Control', 'no-store');
   try {
     return c.json(await action());

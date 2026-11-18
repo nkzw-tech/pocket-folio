@@ -36,10 +36,12 @@ for (const language of ['de', 'ja']) {
     visit(JSON.parse(await readFile(path, 'utf8')));
   }
   const translations = Object.fromEntries(
-    [...phrases]
-      .filter(([, values]) => values.size === 1)
-      .map(([key, values]) => [key, [...values][0]])
-      .sort(([a], [b]) => a.localeCompare(b)),
+    Array.from(
+      phrases
+        .entries()
+        .filter(([, values]) => values.size === 1)
+        .map(([key, values]) => [key, values.values().next().value]),
+    ).sort(([a], [b]) => a.localeCompare(b)),
   );
   await writeFile(`public/card-translations/${language}.json`, JSON.stringify(translations) + '\n');
 }

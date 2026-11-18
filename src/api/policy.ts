@@ -120,33 +120,39 @@ export function authorizeCommands(doc: CollectionDocument, commands: Array<Comma
 }
 export function collectionChanges(before: CollectionDocument, after: CollectionDocument) {
   const ids = new Set([...Object.keys(before.ownership), ...Object.keys(after.ownership)]);
-  return {
-    ...(JSON.stringify(before.profile) !== JSON.stringify(after.profile)
-      ? { profile: { after: after.profile ?? null, before: before.profile ?? null } }
-      : {}),
-    binders: [...new Set([...before.binders, ...after.binders].map(({ id }) => id))].flatMap(
-      (id) => {
-        const previous = before.binders.find((b) => b.id === id),
-          next = after.binders.find((b) => b.id === id);
-        return JSON.stringify(previous) === JSON.stringify(next)
-          ? []
-          : [
-              {
-                action: !previous ? 'created' : !next ? 'deleted' : 'updated',
-                after: next ?? null,
-                before: previous ?? null,
-                id,
-                name: next?.name ?? previous!.name,
-              },
-            ];
-      },
-    ),
-    ownership: [...ids]
+  const binders = [...new Set([...before.binders, ...after.binders].map(({ id }) => id))].flatMap(
+    (id) => {
+      const previous = before.binders.find((b) => b.id === id),
+        next = after.binders.find((b) => b.id === id);
+      return JSON.stringify(previous) === JSON.stringify(next)
+        ? []
+        : [
+            {
+              action: !previous ? 'created' : !next ? 'deleted' : 'updated',
+              after: next ?? null,
+              before: previous ?? null,
+              id,
+              name: next?.name ?? previous!.name,
+            },
+          ];
+    },
+  );
+  const ownership = Array.from(
+    ids
+      .values()
       .filter((id) => before.ownership[id] !== after.ownership[id])
       .map((printing) => ({
         after: after.ownership[printing] ?? false,
         before: before.ownership[printing] ?? false,
         printing,
       })),
+  );
+  if (JSON.stringify(before.profile) === JSON.stringify(after.profile)) {
+    return { binders, ownership };
+  }
+  return {
+    binders,
+    ownership,
+    profile: { after: after.profile ?? null, before: before.profile ?? null },
   };
 }

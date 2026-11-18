@@ -1,8 +1,9 @@
 import type { BinderCard } from './binder-catalog';
 import { catalogLanguages } from './catalog-navigation';
 import { text } from './i18n/text';
+import { lookup } from './lookup';
 
-const rarityNames: Record<string, string> = {
+const rarityNames = {
   AR: 'Art Rare',
   CHR: 'Character Rare',
   CSR: 'Character Super Rare',
@@ -59,7 +60,7 @@ const languageOrder = (language: string) => {
 };
 
 export function rarityLabel(rarity: string) {
-  const name = rarityNames[rarity];
+  const name = lookup(rarityNames, rarity);
   return name
     ? `${rarity} · ${text(name)}`
     : rarity === 'Special Illustration Rare'

@@ -1,17 +1,23 @@
 import { useEffect, useState } from 'react';
 
+const segmenter = new Intl.Segmenter(undefined, { granularity: 'grapheme' });
+
 function initials(name: string) {
   const parts = name
     .trim()
     .split(/\s+/)
-    .map((part) => part.replaceAll(/[^\p{L}\p{N}]/gu, ''))
-    .filter(Boolean);
+    .map((word) =>
+      Array.from(segmenter.segment(word), ({ segment }) => segment).filter((letter) =>
+        /[\p{L}\p{N}]/u.test(letter),
+      ),
+    )
+    .filter((letters) => letters.length);
+  if (!parts.length) {
+    return '?';
+  }
   return (
-    (parts.length > 1
-      ? `${[...parts[0]][0]}${[...parts.at(-1)!][0]}`
-      : [...(parts[0] ?? '')].slice(0, 2).join('')
-    ).toLocaleUpperCase() || '?'
-  );
+    parts.length > 1 ? parts[0][0] + parts.at(-1)![0] : parts[0].slice(0, 2).join('')
+  ).toLocaleUpperCase();
 }
 
 export function AccountAvatar({ email, name }: { email: string; name: string }) {

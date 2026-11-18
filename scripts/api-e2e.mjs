@@ -96,9 +96,9 @@ try {
   });
   const call = async (path, body, token = key.key) => {
     const response = await owner.request.fetch(base + '/api/v1/' + path, {
+      data: body || undefined,
       headers: { Authorization: `Bearer ${token}` },
       method: body ? 'POST' : 'GET',
-      ...(body ? { data: body } : {}),
     });
     return { body: await response.json(), status: response.status() };
   };

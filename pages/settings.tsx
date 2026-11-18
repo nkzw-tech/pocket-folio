@@ -74,10 +74,11 @@ const permissions: Array<[Scope, string]> = [
   ['sharing:write', 'Manage share links'],
 ];
 async function request<T>(path: string, schema: z.ZodType<T>, options?: RequestInit): Promise<T> {
-  const response = await fetch(path, {
-    ...options,
-    headers: { 'Content-Type': 'application/json', ...options?.headers },
-  });
+  const headers = new Headers(options?.headers);
+  if (!headers.has('Content-Type')) {
+    headers.set('Content-Type', 'application/json');
+  }
+  const response = await fetch(path, { ...options, headers });
   const data: unknown = await response.json();
   if (!response.ok) {
     throw new Error(

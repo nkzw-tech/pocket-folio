@@ -20,7 +20,7 @@ import { createWorkspaceClient, WorkspaceView } from '../state';
 import { workspaceAccountChanged, workspaceAccountHeader } from '../workspace-account';
 import { RevisionView } from '../workspace-live';
 import { Loading } from './loading';
-import { type CollectionDocument, type Command, type Operation } from './model';
+import type { CollectionDocument, Command, Operation } from './model';
 import {
   WorkspaceRevisionMismatch,
   workspaceResponseSchema,
