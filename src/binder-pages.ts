@@ -88,25 +88,22 @@ export function binderUnderlay(
   }
   const reverse = page.kind === 'reverse';
   const step = reverse ? -size : size;
-  let remaining = size;
-  for (
-    let start = page.start + step, depth = 1;
-    start >= 0 && start < cards.length && remaining;
-    start += step, depth++
-  ) {
-    for (let pocket = 0; pocket < size; pocket++) {
-      if (result[pocket]) {
-        continue;
-      }
-      const slot =
-        start +
-        (reverse
-          ? Math.floor(pocket / columns) * columns + columns - 1 - (pocket % columns)
-          : pocket);
+  for (let pocket = 0; pocket < size; pocket++) {
+    if (!reverse && page.cards[pocket]) {
+      continue;
+    }
+    const offset = reverse
+      ? Math.floor(pocket / columns) * columns + columns - 1 - (pocket % columns)
+      : pocket;
+    for (
+      let slot = page.start + step + offset, depth = 1;
+      slot >= 0 && slot < cards.length;
+      slot += step, depth++
+    ) {
       const card = cards[slot];
       if (card && visible(card)) {
         result[pocket] = { card, depth, slot };
-        remaining--;
+        break;
       }
     }
   }

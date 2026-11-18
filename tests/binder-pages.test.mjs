@@ -69,12 +69,15 @@ test('single-sided stacks retain nearest visible backs across empty sheets and m
   assert.equal(set[9].id, 'missing');
 });
 
-test('front stacks walk forward, skip missing cards and stop at the nearest physical slot', () => {
-  const set = cards(28);
+test('front stacks show through empty pockets but never through an assigned missing card', () => {
+  const set = cards(68);
+  set[0] = undefined;
+  set[1] = undefined;
   const page = binderPages(set, 0, false).right;
-  const stack = binderUnderlay(set, page, (card) => ['11', '20', '28'].includes(card.id));
+  const stack = binderUnderlay(set, page, (card) => ['11', '20', '28', '68'].includes(card.id));
   assert.deepEqual(stack[0], { card: set[27], depth: 3, slot: 27 });
   assert.deepEqual(stack[1], { card: set[10], depth: 1, slot: 10 });
+  assert.equal(stack[4], undefined);
   assert.equal(stack.filter(Boolean).length, 2);
 });
 
