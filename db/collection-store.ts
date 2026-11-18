@@ -1,5 +1,12 @@
+import { z } from 'zod';
 import type { Grant } from '../src/api/policy';
-import { cardStatus, type CollectionDocument, type PersonalBinder } from '../src/app/model';
+import {
+  cardStatus,
+  cardStatuses,
+  pocketOpeningSchema,
+  type CollectionDocument,
+  type PersonalBinder,
+} from '../src/app/model';
 
 export type Statement = { sql: string; values: Array<string | number | null> };
 export type CollectionDatabase = Pick<D1Database, 'batch' | 'prepare'>;
@@ -12,15 +19,50 @@ export type ReadScope = {
   shareToken?: string;
   since?: number;
 };
-type BinderRow = Omit<PersonalBinder, 'slots'> & {
-  coverSetConfigured: number;
-  deleted: number;
-  position: number;
-  slotCount: number;
-};
-type PocketRow = { binderId: string; position: number; printingId: string };
-type OwnershipRow = { printingId: string; status: string };
-type ProfileRow = { binderIds: string; name: string; token: string | null };
+const sqliteFlag = z.literal([0, 1]);
+const stringList = z.array(z.string());
+const parseStringList = (json: string) => stringList.parse(JSON.parse(json));
+const metaRow = z.object({
+  binderCount: z.number(),
+  binderOrder: z.string(),
+  nextPosition: z.number(),
+  revision: z.number(),
+});
+const binderRows = z.array(
+  z.object({
+    color: z.string().nullable(),
+    columns: z.number(),
+    coverSetConfigured: sqliteFlag,
+    coverSetId: z.string().nullable(),
+    deleted: sqliteFlag,
+    doubleSided: sqliteFlag,
+    id: z.string(),
+    name: z.string(),
+    pocketOpening: pocketOpeningSchema.nullable(),
+    position: z.number(),
+    presetSetId: z.string().nullable(),
+    rows: z.number(),
+    shareToken: z.string().nullable(),
+    showAllCardsInColor: sqliteFlag.nullable(),
+    slotCount: z.number(),
+  }),
+);
+const pocketRow = z.object({ binderId: z.string(), position: z.number(), printingId: z.string() });
+const ownershipRow = z.object({ printingId: z.string(), status: z.enum(cardStatuses) });
+const profileRow = z.object({
+  binderIds: z.string().transform(parseStringList),
+  name: z.string(),
+  token: z.string().nullable(),
+});
+const countRow = z.object({
+  coverPrintings: z.string().transform(parseStringList),
+  firstPrinting: z.string().nullable(),
+  id: z.string(),
+  owned: z.number(),
+  purchased: z.number(),
+  total: z.number(),
+  wishlist: z.number(),
+});
 export function prepare(db: CollectionDatabase, statement: Statement) {
   return db.prepare(statement.sql).bind(...statement.values);
 }
@@ -91,13 +133,8 @@ export async function readCollection(
             .bind(userId),
         ]),
   ]);
-  const meta = results[0].results[0] as {
-    binderCount: number;
-    binderOrder: string;
-    nextPosition: number;
-    revision: number;
-  };
-  const rows = results[1].results as unknown as Array<BinderRow>;
+  const meta = metaRow.parse(results[0].results[0]);
+  const rows = binderRows.parse(results[1].results);
   const document: CollectionDocument = { binders: [], ownership: {}, version: 1 };
   const byId = new Map<string, PersonalBinder>();
   for (const row of rows) {
@@ -126,13 +163,15 @@ export async function readCollection(
     byId.set(row.id, binder);
     document.binders.push(binder);
   }
-  for (const row of results[2].results as unknown as Array<PocketRow>) {
+  for (const result of results[2].results) {
+    const row = pocketRow.parse(result);
     const binder = byId.get(row.binderId);
     if (binder && row.position < binder.slots.length) {
       binder.slots[row.position] = row.printingId;
     }
   }
-  for (const row of results[3].results as unknown as Array<OwnershipRow>) {
+  for (const result of results[3].results) {
+    const row = ownershipRow.parse(result);
     document.ownership[row.printingId] =
       row.status === 'owned'
         ? true
@@ -140,35 +179,15 @@ export async function readCollection(
           ? row.status
           : false;
   }
-  const profile = results[4].results[0] as unknown as ProfileRow | undefined;
-  if (profile) {
-    document.profile = {
-      binderIds: JSON.parse(profile.binderIds),
-      name: profile.name,
-      token: profile.token,
-    };
+  if (results[4].results.length) {
+    document.profile = profileRow.parse(results[4].results[0]);
   }
   return {
     ...meta,
-    counts: (
-      results[5]?.results as unknown as
-        | Array<{
-            coverPrintings: string;
-            firstPrinting: string | null;
-            id: string;
-            owned: number;
-            purchased: number;
-            total: number;
-            wishlist: number;
-          }>
-        | undefined
-    )?.map(({ coverPrintings, ...count }) => ({
-      ...count,
-      coverPrintings: JSON.parse(coverPrintings) as Array<string>,
-    })),
+    counts: results[5]?.results.map((row) => countRow.parse(row)),
     deleted: rows.filter((row) => row.deleted).map(({ id }) => id),
     document,
-    order: JSON.parse(meta.binderOrder) as Array<string>,
+    order: parseStringList(meta.binderOrder),
     positions: Object.fromEntries(rows.map(({ id, position }) => [id, position])),
   };
 }

@@ -6,7 +6,8 @@ import { Link, useRouter, useShared } from '@void/react';
 import { useLocaleContext } from 'fbtee';
 import { RefreshCw } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import type { collectionChanges, Scope } from '../src/api/policy';
+import { z } from 'zod';
+import { scopes as apiScopes, type Scope } from '../src/api/policy';
 import { AccountSecurity } from '../src/app/account-security';
 import { AgentSetup } from '../src/app/agent-setup';
 import { BinderAppearance } from '../src/app/binder-appearance';
@@ -21,24 +22,50 @@ import { Select } from '../src/select';
 import { Checkbox } from '../src/ui/fields';
 import { FormStack } from '../src/ui/form-stack';
 import '../src/app/settings.css';
-type Key = {
-  binderIds: string;
-  createdAt: number;
-  expiresAt: number;
-  id: string;
-  lastUsedAt: number | null;
-  name: string;
-  prefix: string;
-  revokedAt: number | null;
-  scopes: string;
-};
-type Activity = {
-  changes: string;
-  createdAt: number;
-  id: string;
-  keyName: string;
-  revision: number;
-};
+const jsonString = z.string().transform((source, context) => {
+  try {
+    const value: unknown = JSON.parse(source);
+    return value;
+  } catch {
+    context.addIssue({ code: 'custom', message: 'Invalid JSON' });
+    return z.NEVER;
+  }
+});
+const keySchema = z.object({
+  expiresAt: z.number(),
+  id: z.string(),
+  lastUsedAt: z.number().nullable(),
+  name: z.string(),
+  prefix: z.string(),
+  revokedAt: z.number().nullable(),
+  scopes: jsonString.pipe(z.array(z.enum(apiScopes))),
+});
+const statusValue = z.union([z.boolean(), z.enum(['purchased', 'wishlist'])]);
+const activitySchema = z.object({
+  changes: jsonString.pipe(
+    z.object({
+      binders: z.array(
+        z.object({
+          action: z.enum(['created', 'deleted', 'updated']),
+          id: z.string(),
+          name: z.string(),
+        }),
+      ),
+      ownership: z.array(
+        z.object({ after: statusValue, before: statusValue, printing: z.string() }),
+      ),
+      profile: z.object({}).optional(),
+    }),
+  ),
+  createdAt: z.number(),
+  id: z.string(),
+  keyName: z.string(),
+});
+const keyList = z.object({ keys: z.array(keySchema) });
+const activityList = z.object({ activity: z.array(activitySchema) });
+const createdKey = z.object({ key: z.string().min(1) });
+const revokedKey = z.object({ revoked: z.literal(true) });
+const errorResponse = z.object({ error: z.string() });
 const permissions: Array<[Scope, string]> = [
   ['collection:read', 'Read collection'],
   ['ownership:write', 'Change card status'],
@@ -46,16 +73,22 @@ const permissions: Array<[Scope, string]> = [
   ['binders:delete', 'Delete binders'],
   ['sharing:write', 'Manage share links'],
 ];
-async function request<T>(path: string, options?: RequestInit): Promise<T> {
+async function request<T>(path: string, schema: z.ZodType<T>, options?: RequestInit): Promise<T> {
   const response = await fetch(path, {
     ...options,
     headers: { 'Content-Type': 'application/json', ...options?.headers },
   });
-  const data = (await response.json()) as { error?: string };
+  const data: unknown = await response.json();
   if (!response.ok) {
-    throw new Error(data.error ?? text('Could not complete the request.'));
+    throw new Error(
+      errorResponse.safeParse(data).data?.error ?? text('Could not complete the request.'),
+    );
   }
-  return data as T;
+  const result = schema.safeParse(data);
+  if (!result.success) {
+    throw new Error(text('Could not complete the request.'));
+  }
+  return result.data;
 }
 export default function Settings() {
   const { user } = useShared<Shared>();
@@ -163,8 +196,8 @@ function APISettings({ verified, verifyEmail }: { verified: boolean; verifyEmail
   const { document } = useWorkspace();
   const { locale } = useLocaleContext();
   const [now, setNow] = useState(() => Date.now());
-  const [keys, setKeys] = useState<Array<Key>>([]),
-    [activity, setActivity] = useState<Array<Activity>>([]);
+  const [keys, setKeys] = useState<z.infer<typeof keyList>['keys']>([]),
+    [activity, setActivity] = useState<z.infer<typeof activityList>['activity']>([]);
   const [name, setName] = useState(''),
     [scopes, setScopes] = useState<Array<Scope>>(['collection:read', 'ownership:write']);
   const [binderId, setBinderId] = useState(''),
@@ -175,8 +208,8 @@ function APISettings({ verified, verifyEmail }: { verified: boolean; verifyEmail
     [copied, setCopied] = useState(false);
   const refresh = async () => {
     const [k, a] = await Promise.all([
-      request<{ keys: Array<Key> }>('/api/settings/keys'),
-      request<{ activity: Array<Activity> }>('/api/settings/activity'),
+      request('/api/settings/keys', keyList),
+      request('/api/settings/activity', activityList),
     ]);
     setNow(Date.now());
     setKeys(k.keys);
@@ -195,7 +228,7 @@ function APISettings({ verified, verifyEmail }: { verified: boolean; verifyEmail
     setSecret('');
     setCopied(false);
     try {
-      const data = await request<{ key: string }>('/api/settings/keys', {
+      const data = await request('/api/settings/keys', createdKey, {
         body: JSON.stringify({
           binderIds: binderId ? [binderId] : [],
           expiresInDays: Number(days),
@@ -351,7 +384,7 @@ function APISettings({ verified, verifyEmail }: { verified: boolean; verifyEmail
                     : text('Never used')}
                 </small>
                 <p>
-                  {(JSON.parse(key.scopes) as Array<Scope>)
+                  {key.scopes
                     .map((scope) => text(permissions.find(([id]) => id === scope)?.[1] ?? scope))
                     .join(' · ')}
                 </p>
@@ -360,7 +393,7 @@ function APISettings({ verified, verifyEmail }: { verified: boolean; verifyEmail
                 <Button
                   label={text('Revoke')}
                   onClick={() => {
-                    void request('/api/settings/keys', {
+                    void request('/api/settings/keys', revokedKey, {
                       body: JSON.stringify({ id: key.id }),
                       method: 'DELETE',
                     })
@@ -407,7 +440,7 @@ function APISettings({ verified, verifyEmail }: { verified: boolean; verifyEmail
         </Stack>
         {!activity.length && <p>{text('No agent changes yet.')}</p>}
         {activity.map((entry) => {
-          const changes = JSON.parse(entry.changes) as ReturnType<typeof collectionChanges>;
+          const { changes } = entry;
           return (
             <details className="activity-row" key={entry.id}>
               <summary>
