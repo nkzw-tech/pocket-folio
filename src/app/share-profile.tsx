@@ -11,7 +11,7 @@ import { useWorkspace, type Shared } from './workspace';
 
 export function ShareProfile({ close }: { close: () => void }) {
   const { user } = useShared<Shared>();
-  const { dispatch, document, error: syncError, pending } = useWorkspace();
+  const { dispatch, document, pending } = useWorkspace();
   const profile = document.profile;
   const [name, setName] = useState(profile?.name ?? user?.name ?? '');
   const [selected, setSelected] = useState(() => new Set(profile?.binderIds ?? []));
@@ -120,7 +120,7 @@ export function ShareProfile({ close }: { close: () => void }) {
           </Stack>
         </Stack>
       )}
-      {(error || syncError) && <p role="alert">{error || syncError}</p>}
+      {error && <p role="alert">{error}</p>}
     </Dialog>
   );
 }

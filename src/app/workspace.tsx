@@ -21,6 +21,7 @@ import { workspaceAccountChanged, workspaceAccountHeader } from '../workspace-ac
 import { RevisionView } from '../workspace-live';
 import { Loading } from './loading';
 import type { CollectionDocument, Command, Operation } from './model';
+import { SyncNotification } from './sync-notification';
 import {
   WorkspaceRevisionMismatch,
   workspaceResponseSchema,
@@ -32,7 +33,6 @@ export type Shared = { user: SessionUser | null };
 type WorkspaceContext = {
   completeDocument: () => Promise<CollectionDocument>;
   deleteAccount: (password: string) => Promise<void>;
-  discard: () => Promise<void>;
   dispatch: (command: Command) => Promise<void>;
   document: CollectionDocument;
   ensureBinder: (id: string) => Promise<void> | undefined;
@@ -40,9 +40,7 @@ type WorkspaceContext = {
   loaded: boolean;
   pending: number;
   ready: Promise<void>;
-  refresh: () => Promise<void>;
   summaries: Array<BinderSummary>;
-  syncing: boolean;
 };
 const Workspace = createContext<WorkspaceContext | null>(null);
 export function useWorkspace() {
@@ -353,7 +351,7 @@ function ConnectedWorkspace({ children, userId }: { children: ReactNode; userId:
     },
     [client, ensureBinder],
   );
-  const discard = async () => {
+  const discard = useCallback(async () => {
     const state = await readResponse(
       await fetch('/api/workspace', {
         cache: 'no-store',
@@ -368,7 +366,7 @@ function ConnectedWorkspace({ children, userId }: { children: ReactNode; userId:
       input: { ...state, acknowledged: [], discard: true },
     });
     setError('');
-  };
+  }, [client, userId]);
   const deleteAccount = async (password: string) => {
     if (paused.current || !mounted.current) {
       throw new Error(text('Please reload to try again.'));
@@ -410,7 +408,6 @@ function ConnectedWorkspace({ children, userId }: { children: ReactNode; userId:
       value={{
         completeDocument,
         deleteAccount,
-        discard,
         dispatch,
         document,
         ensureBinder,
@@ -418,11 +415,18 @@ function ConnectedWorkspace({ children, userId }: { children: ReactNode; userId:
         loaded: data.loaded,
         pending: pending.length,
         ready: readiness.promise,
-        refresh,
         summaries,
-        syncing,
       }}
     >
+      {data.loaded && (error || pending.length > 0) && (
+        <SyncNotification
+          discard={discard}
+          error={error}
+          pending={pending.length}
+          retry={refresh}
+          syncing={syncing}
+        />
+      )}
       <ErrorBoundary
         fallbackRender={() => (
           <main className="shell workspace-retry">

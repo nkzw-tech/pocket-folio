@@ -25,7 +25,6 @@ import { BinderColorDisplay } from './binder-color-display';
 import { BinderColorPicker } from './binder-color-picker';
 import { CardStatusControl } from './card-status';
 import { Dialog } from './dialog';
-import { SyncStatus } from './library';
 import {
   catalog,
   binderColorSchema,
@@ -269,7 +268,6 @@ export function BinderView({
           </div>
         </Stack>
       </div>
-      {dispatch && <SyncStatus showPending={!sharing} />}
       {error && (
         <p className="form-error" role="alert">
           {error}
@@ -606,7 +604,6 @@ export function BinderView({
               {text('Stop sharing')}
             </Button>
           </Stack>
-          <SyncStatus showPending={false} />
         </Dialog>
       )}
     </main>

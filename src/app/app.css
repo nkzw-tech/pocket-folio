@@ -46,14 +46,8 @@
   font-size: 12px;
   color: var(--muted);
 }
-.sync-status {
-  font-size: 11px;
-  color: #8f8f9c;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+[popover][role='region']:has(.sync-notification) {
   align-items: center;
-  margin-bottom: 16px;
 }
 .workspace-retry {
   display: grid;

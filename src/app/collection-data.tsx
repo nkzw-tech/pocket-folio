@@ -3,7 +3,6 @@ import { Stack } from '@astryxdesign/core/Stack';
 import { Download, Upload } from 'lucide-react';
 import { useMemo, useRef, useState } from 'react';
 import { text } from '../i18n/text';
-import { SyncStatus } from './library';
 import { applyCommand, documentSchema, type CollectionDocument } from './model';
 import { useWorkspace } from './workspace';
 
@@ -212,7 +211,6 @@ export function CollectionData() {
       )}
       {error && <p role="alert">{error}</p>}
       {notice && <p role="status">{notice}</p>}
-      <SyncStatus />
     </section>
   );
 }
