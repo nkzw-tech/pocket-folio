@@ -1,3 +1,4 @@
+import { useRouter } from '@void/react';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { BinderCard } from './binder-catalog';
 
@@ -21,8 +22,9 @@ export function replaceParams(values: Record<string, string>) {
 }
 
 export function useShareParam(name: string, fallback = '', accepts?: (value: string) => boolean) {
+  const router = useRouter();
   const [value, setValue] = useState(() => {
-    const initial = new URLSearchParams(location.search).get(name);
+    const initial = router.url.searchParams.get(name);
     return initial && (!accepts || accepts(initial)) ? initial : fallback;
   });
   const update = useCallback(

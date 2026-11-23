@@ -16,6 +16,12 @@
   border-color: var(--accent);
   box-shadow: 0 0 0 3px var(--tint);
 }
+.card-search .search input {
+  min-width: 0;
+}
+.card-search .search:not([data-clearable]) .astryx-input-clear-button {
+  visibility: hidden;
+}
 .card-search .nkzw-typeahead__results,
 .card-search .nkzw-typeahead__empty {
   position: absolute;

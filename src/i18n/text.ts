@@ -170,6 +170,7 @@ const messages = {
     String(fbs('Choose a new password', 'Binder interface: Choose a new password')),
   'Choose collection file': () =>
     String(fbs('Choose collection file', 'Binder interface: Choose collection file')),
+  'Clear search': () => String(fbs('Clear search', 'Binder interface: Clear search')),
   'Close dialog': () => String(fbs('Close dialog', 'Binder interface: Close dialog')),
   'Close image': () => String(fbs('Close image', 'Binder interface: Close image')),
   'Cloudflare provides hosting, database storage, security, and account email delivery. Gravatar provides profile pictures: your browser sends it a hash of your email address and normal connection information, including your IP address, even if no avatar exists. A hash is not anonymous. Card scans are served by our hosted app; following external links is subject to those sites’ policies.':

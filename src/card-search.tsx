@@ -1,6 +1,4 @@
-import Typeahead from '@nkzw/typeahead';
 import type { TypeaheadDataSource } from '@nkzw/typeahead/core';
-import { Search } from 'lucide-react';
 import { useMemo } from 'react';
 import { languageName } from './binder-catalog';
 import { cardAssetURL } from './card-assets';
@@ -9,7 +7,7 @@ import { CardDataSource, type SearchCard } from './card-search-data';
 import { CardName } from './i18n/card-language';
 import { useCardTextOptions } from './i18n/card-language-preference';
 import { text } from './i18n/text';
-import './card-search.css';
+import { SearchTypeahead } from './search-typeahead';
 
 export function CardSearch<T extends SearchCard>({
   autoFocus = false,
@@ -38,7 +36,7 @@ export function CardSearch<T extends SearchCard>({
     [cards, cardTextOptions, dataSource],
   );
   return (
-    <Typeahead
+    <SearchTypeahead
       autoFocus={autoFocus}
       blurOnSelect
       className="card-search"
@@ -52,12 +50,6 @@ export function CardSearch<T extends SearchCard>({
       }}
       onValueChange={onChange}
       placeholder={placeholder ?? text('Search by name or number')}
-      renderInput={(props) => (
-        <div className="search">
-          <Search aria-hidden="true" size={18} />
-          <input {...props} />
-        </div>
-      )}
       renderItem={({ data: card }) => (
         <>
           <CardImage alt="" crossOrigin="anonymous" loading="lazy" src={cardAssetURL(card.image)} />
