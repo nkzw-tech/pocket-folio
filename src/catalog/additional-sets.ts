@@ -1,6 +1,7 @@
 import type { BinderSet, CardFoil, Edition } from '../binder-catalog';
 import { pPromos } from './p-promos';
 import packs from './packs.json';
+import { vsPromos } from './vs-promos';
 
 type Pack = Omit<BinderSet, 'cards'> & {
   cards: Array<
@@ -52,4 +53,4 @@ const generatedSets: Array<BinderSet> = (packs as Array<Pack>).map((pack) => ({
   ),
 }));
 
-export const additionalSets = [...generatedSets, pPromos];
+export const additionalSets = [...generatedSets, pPromos, vsPromos];

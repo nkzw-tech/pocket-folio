@@ -9,6 +9,8 @@ from fetch import CACHE, EN, JA, DE
 
 def jobs():
     yield 'ja-p-promos-002', 'https://images.scrydex.com/pokemon/miscpp_ja-2/large'
+    yield 'ja-p-promos-003', 'https://images.scrydex.com/pokemon/miscpp_ja-3/large'
+    yield 'ja-vs-promos-041', 'https://img.cardcorpus.com/s1/960/36d3ae050d1cebade5193bca1f70ace0.avif'
     for sid in EN + JA:
         cards = json.loads((CACHE / f'cards-{sid}.json').read_text())
         lang = cards[0]['set']['language']
@@ -30,14 +32,16 @@ def image(job):
     path = Path(f'.cache/card-assets/files/cards/catalog/{id}.webp')
     if path.exists():
         return
+    raw = CACHE / f'{id}.scan'
+    source = raw.with_suffix('.png') if url.endswith('.avif') else raw
     for attempt in range(5):
         try:
-            raw = CACHE / f'{id}.scan'
             # curl's HTTP/2 transport avoids stalls from the image CDN's HTTP/1 clients.
             subprocess.run(['curl','--fail','--silent','--show-error','--max-time','35','--user-agent','PokemonBinderCatalog/1.0',url,'--output',str(raw)], check=True, capture_output=True)
             # cwebp decodes the source: HTML errors and corrupt scans fail validation.
-            result = subprocess.run(['cwebp','-quiet','-q','84','-resize','0','900',str(raw),'-o',str(path)+'.tmp'], capture_output=True)
-            raw.unlink(missing_ok=True)
+            if source != raw:
+                subprocess.run(['magick', f'avif:{raw}', str(source)], check=True, capture_output=True)
+            result = subprocess.run(['cwebp','-quiet','-q','84','-resize','0','900',str(source),'-o',str(path)+'.tmp'], capture_output=True)
             if result.returncode:
                 raise ValueError(result.stderr.decode()[:180])
             Path(str(path)+'.tmp').replace(path)
@@ -47,6 +51,10 @@ def image(job):
             if attempt == 4:
                 raise
             time.sleep(attempt+1)
+        finally:
+            raw.unlink(missing_ok=True)
+            if source != raw:
+                source.unlink(missing_ok=True)
 
 
 if __name__ == '__main__':

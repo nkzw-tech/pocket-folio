@@ -36,5 +36,43 @@
         }
       }
     ]
+  },
+  "ja-p-promos-003": {
+    "kind": "pokemon",
+    "artist": "Katsura Tabata",
+    "rarity": "promo",
+    "pokemon": {
+      "energy": "darkness",
+      "hp": 60,
+      "retreat": 1,
+      "weakness": { "energy": "fighting", "value": "×2" },
+      "resistance": { "energy": "psychic", "value": "-30" }
+    },
+    "attacks": [
+      {
+        "cost": ["darkness"],
+        "damage": "",
+        "local": {
+          "name": "おいつめる",
+          "text": "次の相手の番、このワザを受けた相手は「にげる」ことができない。"
+        },
+        "en": {
+          "name": "Entrap",
+          "text": "The Defending Pokémon can't retreat during your opponent's next turn."
+        }
+      },
+      {
+        "cost": ["colorless", "colorless"],
+        "damage": "10×",
+        "local": {
+          "name": "れんぞくひっかき",
+          "text": "コインを4回投げ、「おもて」の数×10ダメージ。"
+        },
+        "en": {
+          "name": "Continuous Scratch",
+          "text": "Flip 4 coins. This attack does 10 damage for each coin that lands heads."
+        }
+      }
+    ]
   }
 }
