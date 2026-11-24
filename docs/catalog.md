@@ -97,7 +97,7 @@ which this deployment uses; it exceeds the free plan's 20,000-file allowance. Ke
 as static assets for now. Recheck the actual build file count before substantially expanding
 the catalog again; the entire image directory is not part of the Worker JavaScript bundle.
 
-Reproduce the snapshot from the repository root (Python 3 and `cwebp` required):
+Reproduce the snapshot from the repository root (Python 3, `cwebp`, and ImageMagick for AVIF scans):
 
 ```sh
 python3 scripts/catalog/fetch.py

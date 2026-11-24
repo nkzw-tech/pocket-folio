@@ -60,7 +60,9 @@ and configuration in `void.config.ts` and `void.lock.json`.
 Thanks to the [data and artwork providers](https://folio.nakazawa.tech/attribution).
 See the [source manifest](src/catalog/sources.json) for per-set credits.
 Scrydex supplies the Japanese
-[Rocket’s Scizor 002/P scan](https://scrydex.com/pokemon/cards/rockets-scizor/miscpp_ja-2).
+[Rocket’s Scizor 002/P](https://scrydex.com/pokemon/cards/rockets-scizor/miscpp_ja-2) and
+[Rocket’s Sneasel 003/P](https://scrydex.com/pokemon/cards/rockets-sneasel/miscpp_ja-3) scans.
+PennySleeve and CardCorpus supply the [Pryce’s Lapras booklet promo scan](https://pennysleeve.app/distributions/pokemon-card-information-pack).
 
 Pocket Folio is a noncommercial fan project, not affiliated with The Pokémon Company,
 Nintendo, Creatures, or GAME FREAK. The [MIT license](LICENSE) covers our code;
