@@ -344,7 +344,7 @@ function ConnectedWorkspace({ children, userId }: { children: ReactNode; userId:
           ),
         );
       }
-      if ('binderId' in command) {
+      if ('binderId' in command && command.type !== 'shelf.move') {
         await ensureBinder(command.binderId);
       }
       await client.mutations.workspace.enqueue({ input: { command, id: crypto.randomUUID() } });

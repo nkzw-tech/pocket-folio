@@ -1,5 +1,10 @@
 import { describe, expect, it } from 'vitest';
-import { authorizeCommands, projectCollection, type Grant } from '../src/api/policy';
+import {
+  authorizeCommands,
+  collectionChanges,
+  projectCollection,
+  type Grant,
+} from '../src/api/policy';
 import { applyCommand, emptyDocument, makeBinder } from '../src/app/model';
 
 const grant: Grant = {
@@ -10,6 +15,22 @@ const grant: Grant = {
   userId: 'owner',
 };
 describe('agent capabilities', () => {
+  it('previews shelf moves by position and requires collection-wide binder access', () => {
+    const [one, two, three] = ['One', 'Two', 'Three'].map((name) => makeBinder(name));
+    const doc = { ...emptyDocument(), binders: [one, two, three] };
+    const move = { beforeId: two.id, binderId: three.id, type: 'shelf.move' } as const;
+    const next = authorizeCommands(doc, [move], grant);
+    expect(next.binders).toEqual([one, three, two]);
+    expect(applyCommand(next, move)).toEqual(next);
+    expect(applyCommand(next, { ...move, beforeId: crypto.randomUUID() })).toEqual(next);
+    expect(collectionChanges(doc, next).binders).toEqual([
+      { action: 'updated', afterPosition: 2, beforePosition: 1, id: two.id, name: 'Two' },
+      { action: 'updated', afterPosition: 1, beforePosition: 2, id: three.id, name: 'Three' },
+    ]);
+    expect(() => authorizeCommands(doc, [move], { ...grant, binderIds: [three.id] })).toThrow(
+      'cannot reorder',
+    );
+  });
   it('prevents ownership and sharing through otherwise allowed binder commands', () => {
     const binder = makeBinder('Test');
     const doc = applyCommand(emptyDocument(), { binder, type: 'binder.create' });

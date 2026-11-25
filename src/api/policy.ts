@@ -83,6 +83,9 @@ export function authorizeCommands(doc: CollectionDocument, commands: Array<Comma
       throw new ApiError(403, 'Changing ownership requires ownership:write.');
     }
     if (grant.binderIds.length) {
+      if (command.type === 'shelf.move') {
+        throw new ApiError(403, 'Binder-restricted keys cannot reorder the collection.');
+      }
       if (command.type === 'profile.settings') {
         throw new ApiError(403, 'Binder-restricted keys cannot change profile sharing.');
       }
@@ -120,17 +123,26 @@ export function authorizeCommands(doc: CollectionDocument, commands: Array<Comma
 }
 export function collectionChanges(before: CollectionDocument, after: CollectionDocument) {
   const ids = new Set([...Object.keys(before.ownership), ...Object.keys(after.ownership)]);
+  const previousIds = before.binders.map(({ id }) => id);
+  const nextIds = after.binders.map(({ id }) => id);
+  const previousOrder = previousIds.filter((id) => nextIds.includes(id));
+  const nextOrder = nextIds.filter((id) => previousIds.includes(id));
   const binders = [...new Set([...before.binders, ...after.binders].map(({ id }) => id))].flatMap(
     (id) => {
       const previous = before.binders.find((b) => b.id === id),
         next = after.binders.find((b) => b.id === id);
-      return JSON.stringify(previous) === JSON.stringify(next)
+      const moved = previous && next && previousOrder.indexOf(id) !== nextOrder.indexOf(id);
+      const contentsChanged = JSON.stringify(previous) !== JSON.stringify(next);
+      return !moved && !contentsChanged
         ? []
         : [
             {
               action: !previous ? 'created' : !next ? 'deleted' : 'updated',
-              after: next ?? null,
-              before: previous ?? null,
+              ...(contentsChanged && { after: next ?? null, before: previous ?? null }),
+              ...(moved && {
+                afterPosition: nextIds.indexOf(id),
+                beforePosition: previousIds.indexOf(id),
+              }),
               id,
               name: next?.name ?? previous!.name,
             },

@@ -58,7 +58,7 @@ export async function readProfileSummary(token: string) {
     left join binder b on b.userId=pb.userId and b.id=pb.binderId and b.deleted=0
     left join binder_pocket p on p.userId=b.userId and p.binderId=b.id
     left join card_ownership o on o.userId=p.userId and o.printingId=p.printingId
-    where cp.token=? group by cp.userId,b.id order by pb.position`)
+    where cp.token=? group by cp.userId,b.id order by b.position`)
     .bind(token)
     .all<BinderSummary & { coverPrintings: string; profileName: string }>();
   if (!rows.results.length) {

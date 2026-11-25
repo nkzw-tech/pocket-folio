@@ -64,6 +64,27 @@
   color: var(--text);
   min-width: 0;
 }
+.shelf-binder {
+  position: relative;
+  min-width: 0;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+.shelf-binder .binder-book {
+  display: block;
+}
+.shelf-binder[data-dragging] {
+  z-index: 1;
+  cursor: grabbing;
+}
+.shelf-binder[data-dragging] .binder-book {
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .shelf-binder {
+    transition: none !important;
+  }
+}
 .binder-book:hover {
   text-decoration: none;
 }

@@ -31,6 +31,7 @@ boolean ownership values (`true` = owned, `false`/absent = missing), plus `"wish
 Binder commands (`binders:write`):
 
 - `binder.create`: `binder:{id:UUID,name,rows:3,columns:3,doubleSided:false,shareToken:null,slots:[]}`.
+- `shelf.move`: `binderId`, `beforeId` (another binder ID, or `null` for the end). Requires collection-wide `binders:write`.
   Optional `color` is a six-digit hex color (`#RRGGBB`); omitted colors use charcoal.
   Optional `pocketOpening` is `top` (default), `side`, or `none` (no visible opening).
   Optional `presetSetId` remembers the starting catalog set; `coverSetId` selects its cover artwork.

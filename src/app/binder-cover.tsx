@@ -9,14 +9,13 @@ import { CardFan, SetCover } from '../set-cover';
 
 export function BinderCover({
   binder,
-  href,
+  ...linkProps
 }: {
   binder: BinderSummary;
-  href: ComponentProps<typeof Link>['href'];
-}) {
+} & Pick<ComponentProps<typeof Link>, 'aria-describedby' | 'href'>) {
   const coverSet = binderCollections.find((set) => set.id === binder.coverSetId);
   return (
-    <Link className="binder-book" href={href} style={binderColorStyle(binder.color)}>
+    <Link {...linkProps} className="binder-book" style={binderColorStyle(binder.color)}>
       <div
         className={`binder-book-cover${coverSet || binder.images.length ? ' binder-book-set-cover' : ''}`}
       >

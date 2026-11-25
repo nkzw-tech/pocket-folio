@@ -84,6 +84,7 @@ export const commandSchema = z.discriminatedUnion('type', [
   z.object({ profile: profileSchema, type: z.literal('profile.settings') }),
   z.object({ document: documentSchema, type: z.literal('collection.import') }),
   z.object({ binder: binderSchema, type: z.literal('binder.create') }),
+  z.object({ beforeId: binderId.nullable(), binderId, type: z.literal('shelf.move') }),
   z.object({
     binderId,
     color: binderColorSchema.optional(),
@@ -141,6 +142,17 @@ export function applyCommand(current: CollectionDocument, command: Command): Col
       throw new Error('A selected binder no longer exists.');
     }
     doc.profile = structuredClone(command.profile);
+  } else if (command.type === 'shelf.move') {
+    const from = doc.binders.findIndex(({ id }) => id === command.binderId);
+    const before =
+      command.beforeId === null
+        ? doc.binders.length
+        : doc.binders.findIndex(({ id }) => id === command.beforeId);
+    // A concurrent deletion can remove either end of a queued move.
+    if (from >= 0 && before >= 0 && from !== before) {
+      const [binder] = doc.binders.splice(from, 1);
+      doc.binders.splice(before > from ? before - 1 : before, 0, binder);
+    }
   } else if (command.type === 'collection.import') {
     const existing = new Set(doc.binders.map(({ id }) => id));
     for (const binder of command.document.binders) {

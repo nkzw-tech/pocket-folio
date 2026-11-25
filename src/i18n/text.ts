@@ -105,6 +105,7 @@ const messages = {
   Blue: () => String(fbs('Blue', 'Binder interface: Blue')),
   'Browse the cards': () => String(fbs('Browse the cards', 'Binder interface: Browse the cards')),
   Cancel: () => String(fbs('Cancel', 'Binder interface: Cancel')),
+  Cancelled: () => String(fbs('Cancelled', 'Binder interface: Cancelled')),
   'card changes ·': () => String(fbs('card changes ·', 'Binder interface: card changes ·')),
   'Card edition': () => String(fbs('Card edition', 'Binder interface: Card edition')),
   'Card language': () => String(fbs('Card language', 'Binder interface: Card language')),
@@ -603,6 +604,14 @@ const messages = {
         ),
       ),
   'Policy updates': () => String(fbs('Policy updates', 'Binder interface: Policy updates')),
+  'Press Space to pick up a binder, use the arrow keys to move it, then press Space to drop or Escape to cancel.':
+    () =>
+      String(
+        fbs(
+          'Press Space to pick up a binder, use the arrow keys to move it, then press Space to drop or Escape to cancel.',
+          'Binder interface: Press Space to pick up a binder, use the arrow keys to move it, then press Space to drop or Escape to cancel.',
+        ),
+      ),
   Previous: () => String(fbs('Previous', 'Binder interface: Previous')),
   'Previous binder page': () =>
     String(fbs('Previous binder page', 'Binder interface: Previous binder page')),

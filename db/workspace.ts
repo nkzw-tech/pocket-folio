@@ -84,7 +84,10 @@ function commandScope(operations: Array<Operation>, grant?: Grant): ReadScope {
         ),
     ) ||
     operations.some(
-      ({ command }) => command.type === 'collection.import' || command.type === 'profile.settings',
+      ({ command }) =>
+        command.type === 'collection.import' ||
+        command.type === 'profile.settings' ||
+        command.type === 'shelf.move',
     )
   ) {
     return grant?.binderIds.length ? { binderIds: grant.binderIds } : {};
