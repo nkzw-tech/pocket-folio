@@ -18,7 +18,7 @@ import {
 } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { Plus } from 'lucide-react';
-import { startTransition, useOptimistic, useState } from 'react';
+import { startTransition, useEffect, useOptimistic, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { text } from '../i18n/text';
 import type { BinderSummary } from '../profile';
@@ -72,6 +72,25 @@ export function BinderShelf({ create }: { create: () => void }) {
   const { dispatch, summaries } = useWorkspace();
   const [binders, setDropOrder] = useOptimistic(summaries);
   const [error, setError] = useState(false);
+  const shelf = useRef<HTMLDivElement>(null);
+  const suppressReleaseClick = useRef(false);
+  useEffect(() => {
+    // dnd-kit stops click propagation at document, but the link can still navigate natively.
+    const cancelReleaseClick = (event: MouseEvent) => {
+      if (
+        suppressReleaseClick.current &&
+        event.detail !== 0 &&
+        shelf.current &&
+        event.composedPath().includes(shelf.current)
+      ) {
+        suppressReleaseClick.current = false;
+        event.preventDefault();
+        event.stopPropagation();
+      }
+    };
+    window.addEventListener('click', cancelReleaseClick, true);
+    return () => window.removeEventListener('click', cancelReleaseClick, true);
+  }, []);
   const sensors = useSensors(
     useSensor(MouseSensor, { activationConstraint: { distance: 6 } }),
     useSensor(TouchSensor, { activationConstraint: { delay: 250, tolerance: 6 } }),
@@ -126,10 +145,19 @@ export function BinderShelf({ create }: { create: () => void }) {
           }
         });
       }}
+      onDragStart={({ activatorEvent }) => {
+        suppressReleaseClick.current = activatorEvent.type !== 'keydown';
+      }}
       sensors={sensors}
     >
       {error && <p role="alert">{text('Couldn’t save. Try again.')}</p>}
-      <div className="binder-shelf">
+      <div
+        className="binder-shelf"
+        onPointerDownCapture={() => {
+          suppressReleaseClick.current = false;
+        }}
+        ref={shelf}
+      >
         <SortableContext items={ids} strategy={rectSortingStrategy}>
           {binders.map((binder) => (
             <SortableBinder binder={binder} disabled={ids.length < 2} key={binder.id} />
