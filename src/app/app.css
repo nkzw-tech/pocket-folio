@@ -70,14 +70,14 @@
   user-select: none;
   -webkit-touch-callout: none;
 }
-.shelf-binder .binder-book {
+.shelf-binder .binder-book,
+.shelf-preview .binder-book {
   display: block;
 }
 .shelf-binder[data-dragging] {
-  z-index: 1;
-  cursor: grabbing;
+  opacity: 0;
 }
-.shelf-binder[data-dragging] .binder-book {
+.shelf-preview {
   pointer-events: none;
 }
 @media (prefers-reduced-motion: reduce) {
