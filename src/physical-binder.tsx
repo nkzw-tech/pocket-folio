@@ -1,4 +1,5 @@
 import { Button } from '@astryxdesign/core/Button';
+import { Stack } from '@astryxdesign/core/Stack';
 import { ArrowLeft, ArrowRight, BookOpen, Maximize2, Minimize2 } from 'lucide-react';
 import {
   memo,
@@ -665,6 +666,8 @@ export function PhysicalBinder({
   }
 
   const canPrevious = destination > 0;
+  const compactNavigation = immersive || narrow;
+  const navigationSize = immersive && !narrow ? 'sm' : undefined;
   const canNext =
     destination < count - 1 ||
     (narrow &&
@@ -1042,28 +1045,39 @@ export function PhysicalBinder({
         </div>
       </div>
       <div className="folio-navigation">
-        <Button
-          aria-label={text('Previous binder page')}
-          icon={immersive ? <ArrowLeft size={17} /> : undefined}
-          isDisabled={!canPrevious}
-          isIconOnly={immersive}
-          label={text('Previous binder page')}
-          onClick={() => navigate(-1)}
-          size={immersive && !narrow ? 'sm' : undefined}
-          type="button"
-        >
-          {!immersive && (
-            <>
-              <ArrowLeft size={17} />
-              <span>{text('Previous')}</span>
-            </>
-          )}
-        </Button>
+        <Stack direction="horizontal" gap={1}>
+          <Button
+            icon={<span aria-hidden="true">⏮︎</span>}
+            isDisabled={!canPrevious}
+            isIconOnly
+            label={text('First binder page')}
+            onClick={() => goTo(0)}
+            size={navigationSize}
+            type="button"
+          />
+          <Button
+            aria-label={text('Previous binder page')}
+            icon={compactNavigation ? <ArrowLeft size={17} /> : undefined}
+            isDisabled={!canPrevious}
+            isIconOnly={compactNavigation}
+            label={text('Previous binder page')}
+            onClick={() => navigate(-1)}
+            size={navigationSize}
+            type="button"
+          >
+            {!compactNavigation && (
+              <>
+                <ArrowLeft size={17} />
+                <span>{text('Previous')}</span>
+              </>
+            )}
+          </Button>
+        </Stack>
         <div className="folio-page-picker">
           <Select
             aria-label={text('Jump to binder page')}
             onChange={(event) => goTo(Number(event))}
-            size={immersive && !narrow ? 'sm' : undefined}
+            size={navigationSize}
             value={destination}
           >
             {Array.from({ length: count }, (_, index) => {
@@ -1079,23 +1093,34 @@ export function PhysicalBinder({
           </Select>
           {!immersive && pageActions}
         </div>
-        <Button
-          aria-label={text('Next binder page')}
-          icon={immersive ? <ArrowRight size={17} /> : undefined}
-          isDisabled={!canNext}
-          isIconOnly={immersive}
-          label={text('Next binder page')}
-          onClick={() => navigate(1)}
-          size={immersive && !narrow ? 'sm' : undefined}
-          type="button"
-        >
-          {!immersive && (
-            <>
-              <span>{text('Next')}</span>
-              <ArrowRight size={17} />
-            </>
-          )}
-        </Button>
+        <Stack direction="horizontal" gap={1}>
+          <Button
+            aria-label={text('Next binder page')}
+            icon={compactNavigation ? <ArrowRight size={17} /> : undefined}
+            isDisabled={!canNext}
+            isIconOnly={compactNavigation}
+            label={text('Next binder page')}
+            onClick={() => navigate(1)}
+            size={navigationSize}
+            type="button"
+          >
+            {!compactNavigation && (
+              <>
+                <span>{text('Next')}</span>
+                <ArrowRight size={17} />
+              </>
+            )}
+          </Button>
+          <Button
+            icon={<span aria-hidden="true">⏭︎</span>}
+            isDisabled={!canNext}
+            isIconOnly
+            label={text('Last binder page')}
+            onClick={() => goTo(count - 1)}
+            size={navigationSize}
+            type="button"
+          />
+        </Stack>
       </div>
     </section>
   );

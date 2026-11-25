@@ -586,13 +586,6 @@
     padding: 16px 8px;
     gap: 4px;
   }
-  .folio-navigation > button {
-    min-width: 44px;
-    padding: 8px;
-  }
-  .folio-navigation > button > span > span > span {
-    display: none;
-  }
   .folio-own {
     padding: 0;
     width: 28px;
@@ -610,6 +603,7 @@
    header row or a generous footer around the binder. */
 .folio.folio-immersive {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   grid-template-rows: minmax(0, 1fr) auto;
   height: 100dvh;
   overflow: hidden;

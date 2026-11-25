@@ -394,6 +394,8 @@ const messages = {
   'Filter card set': () => String(fbs('Filter card set', 'Binder interface: Filter card set')),
   'Find a card': () => String(fbs('Find a card', 'Binder interface: Find a card')),
   'Find a set': () => String(fbs('Find a set', 'Binder interface: Find a set')),
+  'First binder page': () =>
+    String(fbs('First binder page', 'Binder interface: First binder page')),
   'Flexible pages': () => String(fbs('Flexible pages', 'Binder interface: Flexible pages')),
   'Forgot password?': () => String(fbs('Forgot password?', 'Binder interface: Forgot password?')),
   'Futuristic Rare': () => String(fbs('Futuristic Rare', 'Binder interface: Futuristic Rare')),
@@ -437,6 +439,7 @@ const messages = {
     String(fbs('Jump to matching card', 'Binder interface: Jump to matching card')),
   'Key name': () => String(fbs('Key name', 'Binder interface: Key name')),
   Language: () => String(fbs('Language', 'Binder interface: Language')),
+  'Last binder page': () => String(fbs('Last binder page', 'Binder interface: Last binder page')),
   'Last updated: November 17, 2026': () =>
     String(
       fbs('Last updated: November 17, 2026', 'Binder interface: Last updated: November 17, 2026'),
