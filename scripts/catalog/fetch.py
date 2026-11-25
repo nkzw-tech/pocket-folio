@@ -66,14 +66,17 @@ EN += ['sv1', 'sv2', 'sv3', 'sv4', 'sv5', 'sv6', 'sv7', 'sv8', 'sv9', 'sv10', 's
 JA += ['base1_ja', 'base2_ja', 'base3_ja', 'base4_ja', 'm6a_ja', 'mp_ja', 'sv1s_ja', 'sv1v_ja', 'sv1a_ja', 'sv2p_ja', 'sv2d_ja', 'sv3_ja', 'sv3a_ja', 'sv4k_ja', 'sv4m_ja', 'sv4a_ja', 'sv5k_ja', 'sv5m_ja', 'sv5a_ja', 'sv6_ja', 'sv6a_ja', 'sv7_ja', 'sv7a_ja', 'sv8_ja', 'sv8a_ja', 'sv9_ja', 'sv9a_ja', 'sv10_ja', 'sv11b_ja', 'sv11w_ja', 'svp_ja', 'swsh6a_ja', 'swsh7d_ja', 'swsh7r_ja', 'swsh8b_ja', 'swsh9_ja', 'swsh9a_ja', 'swsh10d_ja', 'swsh10p_ja', 'swsh10a_ja', 'swsh11_ja', 'swsh11a_ja', 'swsh12_ja', 'swshp_ja', 'sm8b_ja', 'sm9_ja', 'sm9a_ja', 'sm9b_ja', 'sm10_ja', 'sm10a_ja', 'sm10b_ja', 'sm11_ja', 'sm11a_ja', 'sm11b_ja', 'sm12_ja', 'sm12a_ja', 'smp_ja']
 # Pokémon GO special expansion, including secret rares.
 EN += ['pgo']
-JA += ['swsh10b_ja']
+JA += ['swsh10b_ja', 'm7_ja']
 # Reference-only English printings supply translations for Japanese reprint sets.
 REFERENCE = [f'swsh{i}' for i in range(1,13)] + [f'sv{i}' for i in range(1,11)] + ['sv4pt5','sv6pt5','sv8pt5','xy12','rsv10pt5','zsv10pt5']
 REFERENCE += [f'sm{i}' for i in range(1,9)] + ['sm35', 'sm75', 'xy5']
 DE = ['neo1','neo2','neo3','neo4','ecard1','ecard2','ecard3','ex1','ex2','ex3','sv03.5','swsh12.5','swsh12.5gg','swsh10.5']
 
 
-def shiny(id):
+def fetch_set(id):
+    if id == 'm7_ja':
+        from aura_seeker import acquire
+        return acquire()
     path = CACHE / f'shiny-{id}.html'
     html = download(f'https://shinybeak.com/sets/{id}', path)
     cards = shiny_cards(html)
@@ -94,7 +97,7 @@ def german(id):
 if __name__ == '__main__':
     failures = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
-        tasks = {pool.submit(shiny, id): id for id in dict.fromkeys(EN + JA + REFERENCE)}
+        tasks = {pool.submit(fetch_set, id): id for id in dict.fromkeys(EN + JA + REFERENCE)}
         for task in concurrent.futures.as_completed(tasks):
             try:
                 task.result()

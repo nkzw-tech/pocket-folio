@@ -147,3 +147,5 @@ and cached paths are recorded in `src/catalog/set-covers.json`; regenerate these
 `python3 scripts/catalog/set-covers.py`. Logos live under `/set-logos/` to avoid the `/sets/[id]` route.
 
 Card text display uses the original language and the viewer’s interface language. Run `vp run catalog:translations` after changing detail packs to regenerate the lazily loaded German/Japanese phrase dictionaries from existing catalog text. Ambiguous translations are omitted; unavailable phrases fall back to English. Card images and search aliases stay unchanged.
+
+The Japanese M7 preview contains the 78 main-set cards and five revealed alternate arts as of November 25, 2026. The acquisition script uses the [official card gallery](https://www.pokemon-card.com/ex/m7/), [Limitless TCG](https://limitlesstcg.com/cards/jp/M7) for card text and English translations, and [Serebii](https://www.serebii.net/card/auraseeker/) for additional scans and the logo. IDs use the Japanese printed numerator, including secret rares. English Flowing Fists will need its own verified roster.

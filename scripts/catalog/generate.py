@@ -199,7 +199,7 @@ for source_id in EN + JA:
     language = meta['language']
     assert language in ['en','ja']
     assert len(cards) == meta['total'], (source_id,len(cards),meta['total'])
-    emit(source_id, cards, {'label':meta['name'], 'englishLabel':SET_ENGLISH_NAMES.get(source_id) or meta.get('englishName') or meta['name'], 'releaseYear':int(meta['releaseDate'][:4]), 'era':meta['series']}, language, f'https://shinybeak.com/sets/{source_id}')
+    emit(source_id, cards, {'label':meta['name'], 'englishLabel':SET_ENGLISH_NAMES.get(source_id) or meta.get('englishName') or meta['name'], 'releaseYear':int(meta['releaseDate'][:4]), 'era':meta['series']}, language, meta.get('sourceUrl') or f'https://shinybeak.com/sets/{source_id}')
 
 mapping = {'swsh10.5':'pgo','sv03.5':'sv3pt5','swsh12.5':'swsh12pt5','swsh12.5gg':'swsh12pt5gg'}
 for source_id in DE:

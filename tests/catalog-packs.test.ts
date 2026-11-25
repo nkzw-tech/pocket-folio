@@ -1,3 +1,4 @@
+/// <reference types="node" />
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import images from '../assets/card-images.json';
@@ -151,6 +152,7 @@ describe('expanded catalog packs', () => {
       'ja-m4',
       'ja-m5',
       'ja-m6',
+      'ja-m7',
     ]) {
       const set = binderCollections.find((set) => set.id === id)!;
       expect(set.cards.length).toBeGreaterThan(0);

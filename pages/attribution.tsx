@@ -7,6 +7,9 @@ const sources = [
     links: [
       ['ShinyBeak', 'https://shinybeak.com/sets'],
       ['Scrydex', 'https://scrydex.com'],
+      ['Pokémon Card Game (Aura Seeker)', 'https://www.pokemon-card.com/ex/m7/'],
+      ['Limitless TCG (Aura Seeker translations)', 'https://limitlesstcg.com/cards/jp/M7'],
+      ['Serebii (Aura Seeker)', 'https://www.serebii.net/card/auraseeker/'],
       ['Scrydex (002/P)', 'https://scrydex.com/pokemon/cards/rockets-scizor/miscpp_ja-2'],
       ['Scrydex (003/P)', 'https://scrydex.com/pokemon/cards/rockets-sneasel/miscpp_ja-3'],
       [
