@@ -1,4 +1,5 @@
 import { lazy, Suspense, useState, type ReactNode } from 'react';
+import { Loading } from './app/loading';
 import type { BinderCard } from './binder-catalog';
 import { CardPreview } from './card-preview';
 import type { CardDetails } from './catalog/details';
@@ -35,11 +36,7 @@ function Details({ card }: { card: BinderCard }) {
   const [pack, setPack] = useState(() => loadPack(card.detailsPath));
   return (
     <Suspense
-      fallback={
-        <p className="binder-details" role="status">
-          {text('Loading card details…')}
-        </p>
-      }
+      fallback={<Loading className="binder-details">{text('Loading card details…')}</Loading>}
     >
       <CardRules card={card} pack={pack} retry={() => setPack(loadPack(card.detailsPath))} />
     </Suspense>

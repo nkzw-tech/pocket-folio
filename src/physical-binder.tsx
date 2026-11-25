@@ -15,7 +15,9 @@ import {
 } from 'react';
 import { createPortal, flushSync } from 'react-dom';
 import { CardStatusControl } from './app/card-status';
+import { Loading } from './app/loading';
 import type { CardStatus } from './app/model';
+import { BinderCanvas, type BinderCanvasController } from './binder-canvas';
 import type { BinderCard } from './binder-catalog';
 import { binderColorStyle } from './binder-color';
 import {
@@ -32,11 +34,6 @@ import { cardAssetURL } from './card-assets';
 import { CardScan, cardLightEvents } from './card-scan';
 import { CardSearch } from './card-search';
 import { clamp, type PageGrip } from './flexible-page-math';
-import {
-  FlexiblePageTurn,
-  supportsFlexiblePages,
-  type FlexiblePageController,
-} from './flexible-page-turn';
 import { text } from './i18n/text';
 import { MissingCardArtwork } from './missing-card-artwork';
 import { Select } from './select';
@@ -147,6 +144,16 @@ function Pocket({
           </button>
           <div className="folio-pocket-label">
             <span>{card ? (card.number ?? text('Energy')) : ''}</span>
+            {edit && (
+              <button
+                aria-label={card ? text('Replace card') : text('Add card to pocket')}
+                className="folio-edit"
+                onClick={edit}
+                type="button"
+              >
+                <span aria-hidden="true">…</span>
+              </button>
+            )}
             {card && (
               <CardStatusControl
                 compact
@@ -156,16 +163,6 @@ function Pocket({
                   owned ? 'owned' : purchased ? 'purchased' : wishlist ? 'wishlist' : 'missing'
                 }
               />
-            )}
-            {edit && (
-              <button
-                aria-label={card ? text('Replace card') : text('Add card to pocket')}
-                className="folio-edit"
-                onClick={edit}
-                type="button"
-              >
-                ⋯
-              </button>
             )}
           </div>
         </>
@@ -359,16 +356,14 @@ const Page = memo(function Page({
 type Turn = {
   cancel?: boolean;
   direction: 'next' | 'previous';
-  flexible?: boolean;
   grip?: PageGrip;
   progress?: number;
-  settleFrom?: number;
+  side?: 'left' | 'right';
   to: number;
 };
 type PageDrag = {
   active: boolean;
   direction: -1 | 1;
-  flexible: boolean;
   grip: PageGrip;
   height: number;
   lastTime: number;
@@ -384,9 +379,6 @@ type PageDrag = {
   x: number;
   y: number;
 };
-
-const turnAngle = (direction: 'next' | 'previous', progress: number) =>
-  direction === 'next' ? -180 * progress : -180 + 180 * progress;
 
 export function PhysicalBinder({
   collection,
@@ -439,11 +431,17 @@ export function PhysicalBinder({
   const [turn, setTurn] = useState<Turn>();
   const activeTurn = useRef<Turn | undefined>(undefined);
   const [destination, setDestination] = useState(spread);
-  const requestedPage = useRef({ side: 'right' as 'left' | 'right', spread });
+
   const updateTurn = useCallback((next: Turn | undefined) => {
     activeTurn.current = next;
     setTurn(next);
   }, []);
+  const [mobileSide, setMobileSide] = useState<'left' | 'right'>(() =>
+    binderPages(collection.cards, spread, doubleSided, columns, rows).right.kind === 'cover'
+      ? 'left'
+      : 'right',
+  );
+  const requestedPage = useRef({ side: mobileSide, spread });
   const finishTurn = useCallback((completed: Turn | undefined) => {
     // A superseded animation must never restore an older page.
     if (!completed || activeTurn.current !== completed) {
@@ -451,16 +449,17 @@ export function PhysicalBinder({
     }
     if (!completed.cancel) {
       setSpread(completed.to);
+      setMobileSide(completed.side ?? requestedPage.current.side);
     }
     activeTurn.current = undefined;
     setTurn(undefined);
   }, []);
-  const [flexible, setFlexible] = useState(supportsFlexiblePages);
+
   const [reveal] = useMissingArtwork();
   const [immersive, setImmersive] = useState(
     () => new URLSearchParams(location.search).get('expanded') === '1',
   );
-  const [mobileSide, setMobileSide] = useState<'left' | 'right'>('right');
+
   useEffect(() => {
     replaceParams({ expanded: immersive ? '1' : '' });
   }, [immersive]);
@@ -471,7 +470,9 @@ export function PhysicalBinder({
   );
   const suppressClick = useRef(false);
   const gesture = useRef<PageDrag | undefined>(undefined);
-  const flexiblePages = useRef<FlexiblePageController | null>(null);
+  const binderCanvas = useRef<BinderCanvasController | null>(null);
+  const [presented, setPresented] = useState(false);
+  const present = useCallback(() => setPresented(true), []);
   const table = useRef<HTMLDivElement>(null);
   useBinderFit(table, immersive, columns, rows, narrow);
   const [dragging, setDragging] = useState(false);
@@ -492,7 +493,7 @@ export function PhysicalBinder({
     const slot = Math.max(0, Math.min(length - 1, requested ? pageRequest : currentSlot));
     const next = cardSpread(slot, doubleSided, capacity);
     const side = doubleSided && Math.floor(slot / capacity) % 2 ? 'left' : 'right';
-    flexiblePages.current?.cancel();
+    binderCanvas.current?.cancel();
     updateTurn(undefined);
     const pointerId = gesture.current?.pointerId;
     if (pointerId !== undefined && table.current?.hasPointerCapture(pointerId)) {
@@ -532,7 +533,7 @@ export function PhysicalBinder({
     () => binderPages(collection.cards, Math.max(0, spread - 1), doubleSided, columns, rows),
     [collection.cards, spread, doubleSided, columns, rows],
   );
-  const target = turn?.direction === 'previous' ? previousPages : nextPages;
+
   // Promote already-mounted pages at settlement. Replacing src on the old
   // spread's images can briefly expose undecoded images and transfer focus.
   const mountedPages = new Map<
@@ -571,17 +572,6 @@ export function PhysicalBinder({
     wishlist,
   };
 
-  // A fallback also settles a turn if animations are disabled or interrupted by a resize.
-  useEffect(() => {
-    if (!turn || turn.flexible || turn.progress !== undefined) {
-      return;
-    }
-    const timer = window.setTimeout(() => {
-      finishTurn(turn);
-    }, 620);
-    return () => window.clearTimeout(timer);
-  }, [finishTurn, turn]);
-
   useEffect(() => {
     if (!immersive) {
       return;
@@ -613,27 +603,29 @@ export function PhysicalBinder({
     const nextSide = nextPages.right.kind === 'cover' ? 'left' : side;
     requestedPage.current = { side: nextSide, spread: next };
     setDestination(next);
-    setMobileSide(nextSide);
+
     const interrupted = Boolean(activeTurn.current);
-    flexiblePages.current?.cancel();
+    binderCanvas.current?.cancel();
     updateTurn(undefined);
     if (next === spread) {
+      setMobileSide(nextSide);
       setSpread(next);
       return;
     }
     if (
       interrupted ||
-      narrow ||
+      !binderCanvas.current?.ready() ||
       Math.abs(next - spread) !== 1 ||
       window.matchMedia('(prefers-reduced-motion: reduce)').matches
     ) {
       setSpread(next);
+      setMobileSide(nextSide);
     } else {
       const direction = next > spread ? 'next' : 'previous';
       table.current?.setAttribute('data-page-motion', '');
       updateTurn({
         direction,
-        flexible: flexible && Boolean(flexiblePages.current?.ready(direction)),
+        side: nextSide,
         to: next,
       });
     }
@@ -692,23 +684,26 @@ export function PhysicalBinder({
     }
     const commit =
       allowCommit &&
-      (drag.flexible && drag.visualTurn
+      (drag.visualTurn
         ? drag.progress > 0.32 ||
           (drag.velocity * Math.exp(-(performance.now() - drag.lastTime) / 80) > 0.5 &&
             drag.progress > 0.08)
         : drag.offset >= Math.min(90, drag.width * 0.25));
     if (drag.visualTurn) {
       const direction = drag.direction === 1 ? 'next' : 'previous';
+      const side =
+        drag.direction === 1 && (nextPages.right.kind === 'cover' || (narrow && doubleSided))
+          ? 'left'
+          : 'right';
       if (commit) {
-        requestedPage.current = { side: mobileSide, spread: spread + drag.direction };
+        requestedPage.current = { side, spread: spread + drag.direction };
         setDestination(spread + drag.direction);
       }
       updateTurn({
         cancel: !commit,
         direction,
-        flexible: drag.flexible,
         grip: drag.grip,
-        settleFrom: turnAngle(direction, drag.progress),
+        side,
         to: spread + drag.direction,
       });
     } else if (commit) {
@@ -782,8 +777,9 @@ export function PhysicalBinder({
           searchControls,
         )}
       <div
+        aria-busy={!presented}
         aria-label={text('Binder pages. Use left and right arrow keys to turn pages.')}
-        className={`folio-table${turn ? ' is-turning' : ''}${dragging ? ' is-dragging' : ''}`}
+        className={`folio-table${dragging ? ' is-dragging' : ''}`}
         onClickCapture={(event) => {
           if (suppressClick.current && event.detail !== 0) {
             event.preventDefault();
@@ -834,27 +830,31 @@ export function PhysicalBinder({
             event.currentTarget.removeAttribute('data-page-motion');
           }
           if (
+            !presented ||
             turn ||
-            (event.pointerType === 'touch' &&
-              (event.target as HTMLElement).closest('[data-card-touch]')) ||
             !event.isPrimary ||
             event.button !== 0 ||
-            (event.target as HTMLElement).closest('.card-status, .folio-own')
+            (event.target as HTMLElement).closest('.card-status, .folio-add, .folio-edit')
           ) {
             return;
           }
           const book = event.currentTarget.querySelector('.folio-book');
           const bounds = book?.getBoundingClientRect();
           const width = (bounds?.width ?? 600) / (narrow ? 1 : 2);
+          const spine =
+            bounds &&
+            (narrow
+              ? mobileSide === 'right'
+                ? bounds.left
+                : bounds.right
+              : bounds.left + bounds.width / 2);
+
           gesture.current = {
             active: false,
             direction: 1,
-            flexible: false,
             grip: {
               pull: 0,
-              x: bounds
-                ? clamp(Math.abs(event.clientX - bounds.left - bounds.width / 2) / width)
-                : 1,
+              x: spine === undefined ? 1 : clamp(Math.abs(event.clientX - spine) / width),
               y: bounds ? clamp((event.clientY - bounds.top) / bounds.height) : 0.5,
             },
             height: bounds?.height ?? 600,
@@ -898,10 +898,16 @@ export function PhysicalBinder({
             drag.active = true;
             drag.direction = dx < 0 ? 1 : -1;
             drag.valid = drag.direction === 1 ? canNext : canPrevious;
-            drag.visualTurn = drag.valid && !narrow && !drag.reducedMotion;
-            drag.flexible =
-              flexible &&
-              Boolean(flexiblePages.current?.ready(drag.direction === 1 ? 'next' : 'previous'));
+            const changeSide =
+              narrow &&
+              doubleSided &&
+              ((mobileSide === 'left' && drag.direction === 1) ||
+                (mobileSide === 'right' && drag.direction === -1));
+            drag.visualTurn =
+              drag.valid &&
+              !drag.reducedMotion &&
+              Boolean(binderCanvas.current?.ready()) &&
+              !changeSide;
             suppressClick.current = true;
             event.currentTarget.setPointerCapture(event.pointerId);
             event.currentTarget.focus({ preventScroll: true });
@@ -915,24 +921,20 @@ export function PhysicalBinder({
           drag.lastX = event.clientX;
           drag.lastTime = event.timeStamp;
           drag.grip.pull = dy / drag.height;
-          drag.progress =
-            drag.flexible && drag.visualTurn
-              ? Math.acos(
-                  clamp(1 - drag.offset / (drag.width * Math.max(0.55, drag.grip.x)), -1, 1),
-                ) / Math.PI
-              : Math.min(1, drag.offset / drag.width);
+          drag.progress = drag.visualTurn
+            ? Math.acos(
+                clamp(1 - drag.offset / (drag.width * Math.max(0.55, drag.grip.x)), -1, 1),
+              ) / Math.PI
+            : Math.min(1, drag.offset / drag.width);
           if (drag.visualTurn) {
             const nextTurn: Turn = {
               direction: drag.direction === 1 ? 'next' : 'previous',
-              flexible: drag.flexible,
               grip: { ...drag.grip },
               progress: drag.progress,
               to: spread + drag.direction,
             };
-            if (drag.flexible) {
-              flexiblePages.current?.update(nextTurn);
-            }
-            if (starting || !drag.flexible) {
+            binderCanvas.current?.update(nextTurn);
+            if (starting) {
               updateTurn(nextTurn);
             }
           } else if (drag.valid && !drag.reducedMotion) {
@@ -950,7 +952,13 @@ export function PhysicalBinder({
         ref={table}
         tabIndex={0}
       >
-        <div className="folio-book" data-mobile-side={mobileSide} data-turn={turn?.direction}>
+        {!presented && <Loading className="folio-loading" />}
+        <div
+          className="folio-book"
+          data-mobile-side={mobileSide}
+          data-turn={turn?.direction}
+          inert={!presented}
+        >
           <div aria-hidden="true" className="folio-lining folio-lining-left" />
           <div aria-hidden="true" className="folio-lining folio-lining-right" />
           <div aria-hidden="true" className="folio-spine">
@@ -962,6 +970,8 @@ export function PhysicalBinder({
             <div
               aria-hidden={role !== 'folio-rest' ? true : undefined}
               className={`${role} ${role === 'folio-rest' ? 'folio' : role}-${side}`}
+              data-face-side={side}
+              data-sheet={page.sheet}
               inert={role !== 'folio-rest' || Boolean(turn) || (narrow && mobileSide !== side)}
               key={key}
             >
@@ -969,79 +979,22 @@ export function PhysicalBinder({
               <Page {...pageProps} page={page} />
             </div>
           ))}
-          {!narrow && flexible && (
-            <FlexiblePageTurn
-              columns={columns}
-              complete={() => {
-                // Commit the resting pages underneath the retained GPU view.
-                // The renderer removes it once the real pages can be painted.
-                flushSync(() => {
-                  finishTurn(turn);
-                });
-              }}
-              doubleSided={doubleSided}
-              faces={[
-                <Page {...pageProps} key="next-front" page={pages.right} />,
-                <Page {...pageProps} key="next-back" page={nextPages.left} />,
-                <Page {...pageProps} key="previous-front" page={previousPages.right} />,
-                <Page {...pageProps} key="previous-back" page={pages.left} />,
-              ]}
-              failed={() => {
-                const drag = gesture.current;
-                if (drag) {
-                  drag.flexible = false;
-                }
-                const value = activeTurn.current;
-                const next = value ? { ...value, flexible: false } : undefined;
-                if (next && drag?.active) {
-                  next.grip = drag.grip;
-                  next.progress = drag.progress;
-                }
-                updateTurn(next);
-                setFlexible(false);
-              }}
-              pageKey={spread}
-              ref={flexiblePages}
-              rows={rows}
-              turn={turn?.flexible ? turn : undefined}
-            />
-          )}
-          {turn && !narrow && !turn.flexible && (
-            <div
-              aria-hidden="true"
-              className={`folio-turn folio-turn-${turn.direction}`}
-              inert
-              onAnimationEnd={(event) => {
-                if (event.target === event.currentTarget && turn.progress === undefined) {
-                  finishTurn(turn);
-                }
-              }}
-              style={
-                {
-                  '--turn-duration': turn.settleFrom !== undefined ? '220ms' : '540ms',
-                  '--turn-end': `${turn.cancel ? (turn.direction === 'next' ? 0 : -180) : turn.direction === 'next' ? -180 : 0}deg`,
-                  '--turn-shade':
-                    turn.progress !== undefined ? Math.sin(turn.progress * Math.PI) : 0,
-                  '--turn-start': `${turn.settleFrom ?? (turn.direction === 'next' ? 0 : -180)}deg`,
-                  animation: turn.progress === undefined ? undefined : 'none',
-                  transform:
-                    turn.progress === undefined
-                      ? undefined
-                      : `rotateY(${turnAngle(turn.direction, turn.progress)}deg)`,
-                } as CSSProperties
-              }
-            >
-              <div className="folio-face folio-face-front">
-                <Page
-                  {...pageProps}
-                  page={turn.direction === 'next' ? pages.right : target.right}
-                />
-              </div>
-              <div className="folio-face folio-face-back">
-                <Page {...pageProps} page={turn.direction === 'next' ? target.left : pages.left} />
-              </div>
-            </div>
-          )}
+          <BinderCanvas
+            complete={() => flushSync(() => finishTurn(activeTurn.current))}
+            onReady={present}
+            ref={binderCanvas}
+            turn={turn}
+            view={{
+              color: collection.color ?? '#323236',
+              columns,
+              doubleSided,
+              mobileSide,
+              narrow,
+              rows,
+              sheets: Math.ceil(collection.cards.length / (capacity * (doubleSided ? 2 : 1))),
+              spread,
+            }}
+          />
         </div>
       </div>
       <div className="folio-navigation">

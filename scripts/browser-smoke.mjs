@@ -62,7 +62,10 @@ try {
   await publicPage
     .getByRole('button', { exact: true, name: 'View Alakazam 1/102, owned' })
     .waitFor();
-  assert.equal(await publicPage.locator('.folio-add,.folio-edit,.folio-own').count(), 0);
+  assert.equal(
+    await publicPage.locator('.folio-add,.folio-edit,.folio-pocket .card-status select').count(),
+    0,
+  );
   assert.equal(
     await publicPage.getByRole('button', { exact: true, name: 'Binder settings' }).count(),
     0,

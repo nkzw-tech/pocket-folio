@@ -25,6 +25,7 @@ import { BinderColorDisplay } from './binder-color-display';
 import { BinderColorPicker } from './binder-color-picker';
 import { CardStatusControl } from './card-status';
 import { Dialog } from './dialog';
+import { Loading } from './loading';
 import {
   catalog,
   binderColorSchema,
@@ -295,7 +296,7 @@ export function BinderView({
         {layout === 'grid' && pageActions}
       </div>
       {layout === 'book' ? (
-        <Suspense fallback={<div className="empty">{text('Opening your binder…')}</div>}>
+        <Suspense fallback={<Loading className="empty">{text('Opening your binder…')}</Loading>}>
           <PhysicalBinder
             collection={collection}
             editSlot={dispatch ? setSlot : undefined}

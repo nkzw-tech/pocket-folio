@@ -1,9 +1,15 @@
 import { text } from '../i18n/text';
 
-export function Loading() {
+export function Loading({
+  children = text('Thinking…'),
+  className = 'startup',
+}: {
+  children?: string;
+  className?: string;
+}) {
   return (
-    <p className="startup" role="status">
-      {text('Thinking…')}
+    <p className={`loading-text ${className}`} role="status">
+      {children}
     </p>
   );
 }
